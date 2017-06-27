@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+	<iframe src="iframe.html" id="iframe"></iframe>
+	<script type="text/javascript">
+		setTimeout(function(){
+			//var frame = document.getElementById("iframe");
+			console.log(frames.length);
+		}, 1000);
+		setTimeout(function(){
+			//var frame = document.getElementById("iframe");
+			console.log(frames.length);
+			console.log(frames[0].document.body.innerHTML);
+		}, 3000);
+	</script>
+</body>
+</html>

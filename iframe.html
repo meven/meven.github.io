@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+<p>First line</p>
+	<script type="text/javascript">
+		console.log("log1");
+		document.write('<p>Second line</p><script>console.log("log2");<\/script>');
+		console.log(document.body.innerHTML);
+	</script>
+</body>
+</html>
