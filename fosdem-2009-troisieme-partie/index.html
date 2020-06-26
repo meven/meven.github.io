@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        Fosdem 2009 troisième partie - meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/fosdem-2009-troisieme-partie/">
+            <p class="title article-title">Fosdem 2009 troisième partie
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2009-03-07</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;2 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <h4 id="upstart-par-scott-james-remnant"><a href="http://upstart.ubuntu.com/">Upstart</a> par Scott James Remnant</h4>
+<p>L'objectif de Upstart est de fournir un gestionnaire de démarrage remplaçant des scripts init et un système de gestion de services, leur démarrage, arrêt et status.</p>
+<p>Les avancés promises par Upstart sont nombreuses.
+On oublie les &quot;sleep&quot; dans les scripts init qui faisait perdre beaucoup de temps au démarrage.
+Upstart sera charger de synchroniser le démarrage des services du sytème et d'en gérer les dépendances, Par exemple 'gnome a besoin de dbus pour démarrer.'.
+Il fournit également un mécanisme d'évènements du type &quot;dbus quitte&quot;.
+Oublier la torture des runlevels.</p>
+<p>Upstart est utilisé dans ubuntu et dans fedora 10.</p>
+<p>L'année 2009 devrait être marquée par ce projet par la sortie de upstart 1.0 ou bien 0.5 si toutes les fonctionnalités ne sont pas implémentées.
+Cette future version sera le fruit d'une réécriture complète.</p>
+<h4 id="mediawiki-par-brion-vibber-cto-de-l-ong-wikimedia"><a href="http://fosdem.org/2009/schedule/events/mediawiki">MediaWiki</a> par Brion Vibber (<a href="http://en.wikipedia.org/wiki/Chief_technical_officer">CTO</a> de l'ONG Wikimedia)</h4>
+<p>[((http://farm1.static.flickr.com/197/3263794887_dcda6058c4_m.jpg|Conférence MediaWiki|C))|http://www.flickr.com/photos/philliecasablanca/3263794887/sizes/l/]
+<a href="http://www.flickr.com/photos/philliecasablanca/3263794887/">Photo par Phillie Casablanca sous licence CC</a></p>
+<blockquote>
+<p>Vous connaissez sans doute wikipedia.
+Si vous ne le connaissez pas, c'est sans doute que vous n'avez pas été sur internet depuis un moment.
+C'est une citation du conférencier que j'ai pu intercepter.</p>
+</blockquote>
+<p>La fondation <a href="http://fr.wikipedia.org/wiki/Wikimedia_Foundation">wikimedia</a> se fixe d'ambitieux objectifs.
+La conférence parle du point de vue technique, on parle donc de mediawiki, le wiki qui fait vivre <a href="http://fr.wikipedia.org/wiki/Accueil">wikipedia</a>.</p>
+<p>Apprendre de wordpress pour l'amélioration de l'utilisabilité/ergonomie, ouvrir le développement de mediawiki au maximum pour avoir une liaison avec la communauté (actuellement ce projet compte 55 développeurs et quelques millions d'utilisateur :P).</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2009-03-07">
+    2009-03-07
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/monde-libre/">
+    <span class="tag is-success">
+        Monde libre
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/fosdem/">
+    <span class="tag is-link">fosdem </span>
+</a>
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>

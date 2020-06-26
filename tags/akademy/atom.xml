@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - akademy</title>
+	<link href="https://meven.github.io/tags/akademy/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2007-07-04T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/akademy/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
+		<published>2007-07-04T00:00:00+00:00</published>
+		<updated>2007-07-04T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
+		<id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
+		<content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
+&lt;p&gt;Il rappelle pourquoi le logiciel libre dans les collectivités et les secteurs publics est si évident :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;développement libre = intérêt collectif&lt;&#x2F;li&gt;
+&lt;li&gt;coût des licences : logiciel libre = économie et meilleur utilisation&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Pourquoi le marché des OS est tel quel (95% pour l&#x27;un, les restes pour les autres) :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pour la plupart des gens, un PC c&#x27;est une machine qui fait tourner windÔws. C&#x27;est à dire l&#x27;ignorance de la concurrence.&lt;&#x2F;li&gt;
+&lt;li&gt;faire comprendre aux sceptiques que &amp;quot;un processus collaboratif peut non seulement marcher mais peut marcher &lt;strong&gt;mieux&lt;&#x2F;strong&gt; que pour un processsus propriétaire&amp;quot;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Il parlent également des conséquences des idées du libre sur le monde politique.
+Et si les lois, les décisions étaient conçues, débattues avec une forme de wiki : collaborativement et coopérativement, ouvert aux suggestions, ouvert au plus grand nombre ?&lt;&#x2F;p&gt;
+&lt;p&gt;Un peu plus et on peut imaginer une démocratie 2.0 et une république 6.0.1 :) .&lt;&#x2F;p&gt;
+&lt;p&gt;Je suis d&#x27;accord avec son point de vue. Il faudrait que nos élus en prennent de la graine. Surtout un sujet, qu&#x27;en France, ils sont peux à connaitre et encore moins à maitriser.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;EDIT&lt;&#x2F;strong&gt; : le &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;&quot;&gt;dot&lt;&#x2F;a&gt; en &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;1184072113&#x2F;&quot;&gt;parle&lt;&#x2F;a&gt; aussi&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

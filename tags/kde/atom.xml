@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - kde</title>
+	<link href="https://meven.github.io/tags/kde/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2019-10-10T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/kde/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Wayland goal - Call for Action</title>
+		<published>2019-10-10T00:00:00+00:00</published>
+		<updated>2019-10-10T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/wayland-goal/" type="text/html"/>
+		<id>https://meven.github.io/wayland-goal/</id>
+		<content type="html">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
+&lt;p&gt;This entails making Plasma running smoothly under Wayland, but also making sure KDE Apps can run without bugs and missing features.
+It also means that we want to help the wider Wayland community to fill missing features and fix bugs.&lt;&#x2F;p&gt;
+&lt;p&gt;I call App users and developers to try out their favorite app in Wayland and report the issue that may arise. and add wayland as keyword to the bug to keep track on those bugs.&lt;&#x2F;p&gt;
+&lt;p&gt;And you don&#x27;t need a wayland session to test an app, you can do it in wayland within a X session !&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;kwin_wayland # start an embed kwind_wayland&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;in-another-terminal&quot;&gt;In another terminal&lt;&#x2F;h1&gt;
+&lt;p&gt;gwenview --platform wayland # starts gwenview in the wayland session&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;gwenview_in_wayland_in_X.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;gwenview_in_wayland_in_X.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;We have a page listing &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Guidelines_and_HOWTOs&#x2F;Wayland_Porting_Notes&quot;&gt;how to fix a few pitfalls&lt;&#x2F;a&gt; that applications may have in Wayland.&lt;&#x2F;p&gt;
+&lt;p&gt;You can also test Plasma Wayland session of course and report the same way issues that may arise.&lt;&#x2F;p&gt;
+&lt;p&gt;You can reach us at #kde-devel or #plasma in &lt;a href=&quot;https:&#x2F;&#x2F;webchat.kde.org&quot;&gt;webchat.kde.org&lt;&#x2F;a&gt; or freenode.&lt;&#x2F;p&gt;
+&lt;p&gt;More information on the &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal page&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Recently Used ioslave</title>
+		<published>2019-10-05T00:00:00+00:00</published>
+		<updated>2019-10-05T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/recently-used-ioslave/" type="text/html"/>
+		<id>https://meven.github.io/recently-used-ioslave/</id>
+		<content type="html">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
+This differential revision adds two entries &amp;quot;Recent Files&amp;quot; and &amp;quot;Recent Locations&amp;quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;captures&#x2F;recently-used.png&quot; alt=&quot;Recent screenshot&quot; &#x2F;&gt;
+&lt;p&gt;It leverages the ioslave recentlyused:&#x2F; introduced in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;D22144&lt;&#x2F;a&gt;, allowing to access KActivity data.
+KActivity is the service that provides &amp;quot;recent&amp;quot; elements to kickoff menu and is activity aware as the name suggests.&lt;&#x2F;p&gt;
+&lt;p&gt;So now &amp;quot;Recent Files&amp;quot;, &amp;quot;Recent Locations&amp;quot; in the places panel share the same underlining data with kickoff.&lt;&#x2F;p&gt;
+&lt;p&gt;But recentlyused:&#x2F; can be used to create your virtual folders for recent files or folders. For instance&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;{{recentlyused:&#x2F;files?type=video&#x2F;&lt;em&gt;,audio&#x2F;&lt;&#x2F;em&gt;}}
+To filter recently accessed video and audio files.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;{{recentlyused:&#x2F;files?path=&#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;*&amp;amp;type=text&#x2F;plain}}
+To filter recently accessed text files in any subdirectory of &#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;{{recentlyused:&#x2F;locations?path=&#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;*}}
+To filter recently accessed folders in any subdirectory of &#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can read the &lt;a href=&quot;https:&#x2F;&#x2F;cgit.kde.org&#x2F;kio-extras.git&#x2F;tree&#x2F;recentlyused&#x2F;recentlyused.h#n28&quot;&gt;documentation&lt;&#x2F;a&gt; for more details.&lt;&#x2F;p&gt;
+&lt;p&gt;When working on this new feature, It was a great time to improve KActivity.
+So I allowed KActivity to ingest data from gtk applications in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D23112&quot;&gt;differential D23112&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work. 
+And I want to thank all the other reviewers involved.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>KDE First Contributions and first sprint</title>
+		<published>2019-07-26T00:00:00+00:00</published>
+		<updated>2019-07-26T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/first-contributions-and-first-sprint/" type="text/html"/>
+		<id>https://meven.github.io/first-contributions-and-first-sprint/</id>
+		<content type="html">&lt;p&gt;I have been a KDE User for more than 10 years.
+I really love KDE community, Plasma and its apps.
+I have been reading eagerly &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate Graham&#x27;s blog&lt;&#x2F;a&gt;
+He gave me the inspiration to start contributing.&lt;&#x2F;p&gt;
+&lt;p&gt;It has been a opportunity to learn some C++, Qt and some Qml.&lt;&#x2F;p&gt;
+&lt;p&gt;So far I am very happy to have contributed a few features and bug fixes :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D20096&quot;&gt;Provide file date creation in KDE Apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Improvements to the KDE Open&#x2F;Save dialog : &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D21459&quot;&gt;keeping view settings when changing views&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D21315&quot;&gt;icons to show view mode&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D20838&quot;&gt;allow to drop a file or directory on the main file area&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;In Dolphin some improvements to its information panel, in particular an &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19782&quot;&gt;auto play feature&lt;&#x2F;a&gt; and some &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19936&quot;&gt;smaller&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19843&quot;&gt;on&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19832&quot;&gt;e&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19844&quot;&gt;s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D15739&quot;&gt;Do not show the root folder by defaults in places&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;And a few less noticeable as well.&lt;&#x2F;p&gt;
+&lt;p&gt;And I have quite a lot more in the back of my head.
+I am close to completing adding &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22183&quot;&gt;click-to-play to video and audio previews&lt;&#x2F;a&gt; in dolphin information panel.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usablity-productivity-sprint-in-valencia&quot;&gt;Usablity &amp;amp; Productivity Sprint in Valencia&lt;&#x2F;h2&gt;
+&lt;p&gt;I participated last month to the Usablity &amp;amp; Productivity Sprint in Valencia.
+I have been very happy to meet some great KDE community members from three continents and 9 countries.&lt;&#x2F;p&gt;
+&lt;p&gt;There I improved the kinfocenter consistency thanks to the help of Filip and Marco and added a &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D20533&quot;&gt;link from the system battery plasmoid to the corresponding kinfocenter kcm&lt;&#x2F;a&gt;.
+I started to work on a &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;new recently used document ioslave&lt;&#x2F;a&gt; that will match the same feature as in kicker&#x2F;kickoff.
+Adding some consistency and activity awareness to dolphin and KDE Open&#x2F;Save dialogs.
+I learned about Kwin debugging with David Edmundson.
+And I had great discussions with the people there.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;i-am-going-to-akademy-2019&quot;&gt;I am going to Akademy 2019 !&lt;&#x2F;h2&gt;
+&lt;p&gt;And since I am a big fan of &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust-lang&lt;&#x2F;a&gt;, this will be a nice opportunity to debate on the matter and on the future of KDE.
+&lt;a href=&quot;https:&#x2F;&#x2F;akademy.kde.org&#x2F;2019&quot;&gt;((https:&#x2F;&#x2F;cdn.kde.org&#x2F;akademy&#x2F;2019&#x2F;imgoing&#x2F;Akademy2019BannerDuomo-wee.png))&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

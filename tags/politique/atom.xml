@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - politique</title>
+	<link href="https://meven.github.io/tags/politique/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2012-01-15T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/politique/atom.xml</id>
+	<entry xml:lang="en">
+		<title>28c3</title>
+		<published>2012-01-15T00:00:00+00:00</published>
+		<updated>2012-01-15T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/" type="text/html"/>
+		<id>https://meven.github.io/28c3-j-aurais-voulu-y-etre/</id>
+		<content type="html">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
+&lt;p&gt;Je vous recommande vivement de les regarder.
+Si vous aimez internet davantage que la censure, ou la distribution des savoirs plus que le contrôle.&lt;&#x2F;p&gt;
+&lt;p&gt;&#x2F;&#x2F;&#x2F;html&lt;&#x2F;p&gt;
+&lt;div class=&quot;external-media&quot; style=&quot;margin: 1em auto; text-align: center;&quot;&gt;
+&lt;object type=&quot;application&#x2F;x-shockwave-flash&quot; data=&quot;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;HUEvRyemKSg&quot; width=&quot;425&quot; height=&quot;350&quot;&gt;
+  &lt;param name=&quot;movie&quot; value=&quot;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;HUEvRyemKSg&quot; &#x2F;&gt;
+  &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; &#x2F;&gt;
+&lt;&#x2F;object&gt;
+&lt;br &#x2F;&gt;28c3: The coming war on general computation 
+&lt;&#x2F;div&gt;
+&#x2F;&#x2F;&#x2F;
+&lt;p&gt;Il y a en relation un article sur linuxfr ( &lt;a href=&quot;http:&#x2F;&#x2F;linuxfr.org&#x2F;news&#x2F;%C2%A0guerre-et-paix%C2%A0%C2%A0-tolsto%C3%AF-au-21e-si%C3%A8cle-par-cory-doctorow-au-28c3&quot;&gt;Guerre et paix : Tolstoï au 21e siècle, par Cory Doctorow au 28C3&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.torproject.org&#x2F;&quot;&gt;Tor&lt;&#x2F;a&gt; est le plus connu des outils d&#x27;anonymisation sur internet.
+Il est combattu par les gouvernements, les même qui privent à leur citoyen certaines libertés élémentaires.
+Son actualité est très animée.&lt;&#x2F;p&gt;
+&lt;p&gt;&#x2F;&#x2F;&#x2F;html&lt;&#x2F;p&gt;
+&lt;div class=&quot;external-media&quot; style=&quot;margin: 1em auto; text-align: center;&quot;&gt;
+&lt;object type=&quot;application&#x2F;x-shockwave-flash&quot; data=&quot;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;DX46Qv_b7F4&amp;amp;hl=en&quot; width=&quot;425&quot; height=&quot;350&quot;&gt;
+  &lt;param name=&quot;movie&quot; value=&quot;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;DX46Qv_b7F4&quot; &#x2F;&gt;
+  &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; &#x2F;&gt;
+&lt;&#x2F;object&gt;
+&lt;br &#x2F;&gt;28c3: How governments have tried to block Tor 
+&lt;&#x2F;div&gt;
+&#x2F;&#x2F;&#x2F;
+&lt;p&gt;Je qualifie ce billet de politique car il en traite.
+Les questions soulevées sont des choix de société, d&#x27;éthique, rien de moi.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Table ronde politique</title>
+		<published>2009-07-09T00:00:00+00:00</published>
+		<updated>2009-07-09T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/table-ronde-politique/" type="text/html"/>
+		<id>https://meven.github.io/table-ronde-politique/</id>
+		<content type="html">&lt;p&gt;Je participe cette année aux &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;&#x2F;a&gt;
+J&#x27;ai eu l&#x27;occasion d&#x27;assister à la table ronde politique qui s&#x27;y tient.
+Cette année, elle n&#x27;accueille pas de politiques :&#x2F;.&lt;&#x2F;p&gt;
+&lt;p&gt;Ce n&#x27;est pas les bonnes volontés qui ont manqué, semble-t-il. Il faut croire que l&#x27;actualité des parlementaires ne permet pas à nos députés de participer au débat public, hors-hémicycle.&lt;&#x2F;p&gt;
+&lt;p&gt;Ce qui est sûr, c&#x27;est que les associations, les personnes mobilisées de tout bord eux sont bien présents.&lt;&#x2F;p&gt;
+&lt;p&gt;La table ronde politique accueille notamment Benjamin Bayart, le président de FDN (célèbre orateur de la conférence &lt;a href=&quot;&#x2F;post&#x2F;2007&#x2F;08&#x2F;14&#x2F;Internet-libre-ou-Minitel-20-fdn&quot;&gt;minitel 2.0&lt;&#x2F;a&gt;), la chargée des affaires publiques de l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&quot;&gt;April&lt;&#x2F;a&gt;, le porte parole de la quadrature du net et Tangi Mortier, un membre de &lt;a href=&quot;http:&#x2F;&#x2F;www.deputesgodillots.info&quot;&gt;deputesgodillots.info&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;00010_coupe.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;00010_coupe.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Le titre de la conférence &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&#x2F;Table-ronde-politique.html?lang=fr&quot;&gt;Neutralité du Net, liberté d’expression sur Internet&lt;&#x2F;a&gt; en dit long. Et l&#x27;actualité sur ces sujets mérite d&#x27;être débattue.&lt;&#x2F;p&gt;
+&lt;p&gt;La table ronde a été ponctuée d&#x27;extraits vidéo des positions de la député Martine Billard participante active aux débats sur l&#x27;HADOPI.&lt;&#x2F;p&gt;
+&lt;p&gt;Cela a permis d&#x27;illustrer la nouvelle forme de débat qui se construit avec les débats HADOPI mais qui se pré-sentait à l&#x27;époque de DADVSI.
+Notamment, les envois de mail, d&#x27;argumentaires, d&#x27;encouragement à leurs députés ont pesés sur les débats.&lt;&#x2F;p&gt;
+&lt;p&gt;On a vu de nouveaux comportements apparaître ou une nouvelle exposition par la retransmission des débats.
+D&#x27;où l&#x27;initiative &lt;a href=&quot;http:&#x2F;&#x2F;www.deputesgodillots.info&#x2F;a-propos&quot;&gt;députés godillots&lt;&#x2F;a&gt;, qui recense les députés  expriment des opinions opposés à leur vote au nom du parti ou qui ne comprennent pas grand chose aux débats, d&#x27;où le fameux pare-feu d&#x27;open-office et autre citation croustillantes.&lt;&#x2F;p&gt;
+&lt;p&gt;On a eu différents exemples des actions et résultat des différentes actions engagés par des citoyens.
+En particulier, d&#x27;excellentes anecdotes de &lt;a href=&quot;http:&#x2F;&#x2F;www.deputesgodillots.info&#x2F;&quot;&gt;députés godillots&lt;&#x2F;a&gt; que je vous conseille. On pourra apprendre là-bas les noms des meilleurs députés joueurs de démineur et autre freecell.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;La transparence des débats&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Une notion qui émerge au travers de ces débats et de cette table ronde, on voit apparaître un besoin accru de transparence des débats. Il faut que les citoyens puisent suivre les débats, les prises de position de nos députés élus. Or lors de ces débats, les citoyens assistant aux débats, ont vu de nouvelles réactions apparaître.
+Au choix :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;le déplacement dans les tribunes des citoyens suivant les débats. Un forme de routage non neutre.&lt;&#x2F;li&gt;
+&lt;li&gt;l&#x27;interdiction des trombinoscopes en dépit des règles, (ce sont des documents parlementaires, donc autorisés par le règlement), il aura fallu l&#x27;intervention de Martine Billard pour rappeler le règlement.&lt;&#x2F;li&gt;
+&lt;li&gt;l&#x27;accès au nombre d&#x27;intervention des députés, qui n&#x27;est plus diffusé depuis peu.&lt;&#x2F;li&gt;
+&lt;li&gt;l&#x27;autorisation récente des ordinateurs dans l&#x27;hémicycle, mais sans accès au réseau.&lt;&#x2F;li&gt;
+&lt;li&gt;l&#x27;interdiction des ordinateurs pour le public assistant au débat.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;Morceaux choisis&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Entendu au sujet des envois des mails envoyés aux députés lors des débats :
+{{Il ne faut pas croire qu&#x27;envoyer un mail n&#x27;est pas redirigé vers &#x2F; dev &#x2F; null}} Alix Cazenave&lt;&#x2F;p&gt;
+&lt;p&gt;Au sujet du déplacement du public dans les tribunes :
+{{Vous dérangez la droite, on vous met à gauche.}} Tangi Mortier&lt;&#x2F;p&gt;
+&lt;p&gt;{{J&#x27;attends les tweets de Martine depuis l&#x27;hémicycle.}} Benjamin Bayart&lt;&#x2F;p&gt;
+&lt;p&gt;La vidéo de la table ronde sera bientôt mise en ligne des formats ouverts et des licences ouvertes sur le site des &lt;strong&gt;&lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;RMLL&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Black out</title>
+		<published>2009-02-26T00:00:00+00:00</published>
+		<updated>2009-02-26T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/black-out/" type="text/html"/>
+		<id>https://meven.github.io/black-out/</id>
+		<content type="html">&lt;p&gt;[((http:&#x2F;&#x2F;media.laquadrature.net&#x2F;Quadrature_black-out_HADOPI_425x600px.gif|HADOPI - Le Net en France : black-out|C))|http:&#x2F;&#x2F;www.laquadrature.net&#x2F;HADOPI|fr|HADOPI - Le Net en France : black-out]&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>April needs You !</title>
+		<published>2008-12-15T00:00:00+00:00</published>
+		<updated>2008-12-15T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/april-needs-you/" type="text/html"/>
+		<id>https://meven.github.io/april-needs-you/</id>
+		<content type="html">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Si vous ne connaissez pas l&#x27;april déjà, je vous invite à découvrir &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;association&#x2F;&quot;&gt;cette association&lt;&#x2F;a&gt;, pilier de la promotion et de la défense du logiciel libre en France.
+Et vous connaissez sans doute déjà certaines personnes qui la soutienne : &lt;a href=&quot;http:&#x2F;&#x2F;www.standblog.org&quot;&gt;Tristan Nitot&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;www.framasoft.net&#x2F;&quot;&gt;framasoft&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;ubuntu-fr.org&#x2F;&quot;&gt;ubuntu-fr&lt;&#x2F;a&gt;...&lt;&#x2F;p&gt;
+&lt;p&gt;L&#x27;april s&#x27;était fixé comme objectif 5000 adhérent pour fin 2008.
+Bien que ce nombre n&#x27;a pas été atteint, c&#x27;est tout de même plus de 1000 personnes qui ont rejoint l&#x27;april depuis le début de la campagne, portant le nombre d&#x27;adhérent à plus de 3600.&lt;&#x2F;p&gt;
+&lt;p&gt;Mais cet objectif n&#x27;est pas abandonné, la durée de la campagne a été allongé jusqu&#x27;au 14 février, date de la prochaine assemblée générale de l&#x27;april.&lt;&#x2F;p&gt;
+&lt;p&gt;A cette occasion, les petites mains de l&#x27;april ont réalisé un questionnaire, sous forme de roman photo pour le moins humoristique...&lt;&#x2F;p&gt;
+&lt;p&gt;Je vous le laisse &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-campagne-adhesion&quot;&gt;le découvrir&lt;&#x2F;a&gt; : &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-pourquoi-lapril-a-t-elle-besoin-de-financement&quot;&gt;Pourquoi l&#x27;April a-t-elle besoin de financement ?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-pourquoi-lapril-a-t-elle-besoin-de-plus-de-membres&quot;&gt;Pourquoi l&#x27;April a-t-elle besoin de plus de membres ?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-pourquoi-adherer-a-lapril&quot;&gt;Pourquoi adhérer à l&#x27;April ?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
+		<published>2007-07-04T00:00:00+00:00</published>
+		<updated>2007-07-04T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
+		<id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
+		<content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
+&lt;p&gt;Il rappelle pourquoi le logiciel libre dans les collectivités et les secteurs publics est si évident :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;développement libre = intérêt collectif&lt;&#x2F;li&gt;
+&lt;li&gt;coût des licences : logiciel libre = économie et meilleur utilisation&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Pourquoi le marché des OS est tel quel (95% pour l&#x27;un, les restes pour les autres) :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;pour la plupart des gens, un PC c&#x27;est une machine qui fait tourner windÔws. C&#x27;est à dire l&#x27;ignorance de la concurrence.&lt;&#x2F;li&gt;
+&lt;li&gt;faire comprendre aux sceptiques que &amp;quot;un processus collaboratif peut non seulement marcher mais peut marcher &lt;strong&gt;mieux&lt;&#x2F;strong&gt; que pour un processsus propriétaire&amp;quot;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Il parlent également des conséquences des idées du libre sur le monde politique.
+Et si les lois, les décisions étaient conçues, débattues avec une forme de wiki : collaborativement et coopérativement, ouvert aux suggestions, ouvert au plus grand nombre ?&lt;&#x2F;p&gt;
+&lt;p&gt;Un peu plus et on peut imaginer une démocratie 2.0 et une république 6.0.1 :) .&lt;&#x2F;p&gt;
+&lt;p&gt;Je suis d&#x27;accord avec son point de vue. Il faudrait que nos élus en prennent de la graine. Surtout un sujet, qu&#x27;en France, ils sont peux à connaitre et encore moins à maitriser.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;EDIT&lt;&#x2F;strong&gt; : le &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;&quot;&gt;dot&lt;&#x2F;a&gt; en &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;1184072113&#x2F;&quot;&gt;parle&lt;&#x2F;a&gt; aussi&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

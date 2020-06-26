@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - web</title>
+	<link href="https://meven.github.io/tags/web/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2009-12-11T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/web/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Weave par Mozilla la sauvegarde de profil fait maison</title>
+		<published>2009-12-11T00:00:00+00:00</published>
+		<updated>2009-12-11T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/" type="text/html"/>
+		<id>https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/</id>
+		<content type="html">&lt;p&gt;Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
+Et si pour synchroniser mes marques-pages je pouvais me passer des serveurs de google pour changer.
+Et mieux encore, et si, je pouvais synchroniser les deux meilleurs navigateurs du moment chrome et firefox.&lt;&#x2F;p&gt;
+&lt;p&gt;J&#x27;en rếvais, Mozilla l&#x27;a déjà fait.
+Le projet dont je parle s&#x27;appelle &lt;a href=&quot;https:&#x2F;&#x2F;mozillalabs.com&#x2F;weave&#x2F;&quot;&gt;Weave&lt;&#x2F;a&gt;.
+Il est issu du Mozilla Labs, la pépinière d&#x27;innovation de mozilla.
+&lt;img src=&quot;&#x2F;logos&#x2F;weave-logo.png&quot; alt=&quot;Mozilla Weave&quot; &#x2F;&gt;
+Il vise à permettre de fusionner ses marques-pages d&#x27;un poste à l&#x27;autre et plus encore, de manière sécurisée et {{in the cloud}} --(Un buzzword, un)--.&lt;&#x2F;p&gt;
+&lt;p&gt;D&#x27;un côté une extension firefox ou fennec (le firefox mobile) qui récupère les données et de l&#x27;autre un serveur qui les stockent et les rend disponible n&#x27;importe quand.&lt;&#x2F;p&gt;
+&lt;p&gt;Ce type de fonctionnalités n&#x27;est pas nouveau, et google le propose dans chrome directement sans extensions.
+La grande différence avec les autres services du genre et celui de google est selon moi &lt;strong&gt;son ouverture&lt;&#x2F;strong&gt;.
+Le code est entièrement ouvert côté client (l&#x27;extension pour firefox) et, chose moins commune, &lt;a href=&quot;https:&#x2F;&#x2F;wiki.mozilla.org&#x2F;Labs&#x2F;Weave&#x2F;1.0&#x2F;Setup&#x2F;Storage&quot;&gt;côté serveur&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Résultat : rien n&#x27;empêche d&#x27;héberger son propre serveur weave pour plus d&#x27;indépendance vis à vis de google ou même de mozilla. 
+C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F;wiki.mozilla.org&#x2F;Labs&#x2F;Weave&#x2F;1.0&#x2F;Setup&#x2F;Storage&quot;&gt;procédure&lt;&#x2F;a&gt; du wiki de weave (attention la documentation a des défauts, à suivre avec précaution). Le serveur est en Php, ce qui simplifie grandement le déploiement.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;Capture.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;Capture.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;L&#x27;outil est d&#x27;ores et déjà fonctionnel et la version 1.0 est en préparation.&lt;&#x2F;p&gt;
+&lt;p&gt;Dans ces conditions, à quand une synchronisation des marques-pages et paramètres de chrome avec weave et mieux encore avec firefox. Le tout totalement &lt;strong&gt;indépendamment de google !&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Je pense que ce n&#x27;est qu&#x27;une question de temps, sinon je m&#x27;intéresserais bien à l&#x27;écriture d&#x27;une extension pour chrome ;).&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Changement de thème pour Meven&#x27;s blog, Enfin !</title>
+		<published>2008-03-23T00:00:00+00:00</published>
+		<updated>2008-03-23T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/" type="text/html"/>
+		<id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
+		<content type="html">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
+On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
+Pour mémoire, mon blog ressemblait à cela avant :
+&lt;a href=&quot;&#x2F;captures&#x2F;offre1.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;offre1.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Un thème créé par mes soins mais n&#x27;ayant pas rencontré son public mais plutôt ses critiques ! J&#x27;espère que ce nouveau thème rendra la lecture de mon blog plus agréable ;) .&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

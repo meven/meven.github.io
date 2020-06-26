@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - python</title>
+	<link href="https://meven.github.io/tags/python/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2009-01-16T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/python/atom.xml</id>
+	<entry xml:lang="en">
+		<title>musicimporter, nouvelle version</title>
+		<published>2009-01-16T00:00:00+00:00</published>
+		<updated>2009-01-16T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/musicimporter-nouvelle-version/" type="text/html"/>
+		<id>https://meven.github.io/musicimporter-nouvelle-version/</id>
+		<content type="html">&lt;p&gt;Voici une nouvelle version de mon script &lt;a href=&quot;&#x2F;post&#x2F;2008&#x2F;09&#x2F;07&#x2F;MusiImporter-importer-proprement-ses-fichiers-audio-dans-sa-collection&quot;&gt;musicimporter&lt;&#x2F;a&gt; qui permet de déplacer, renommer et nettoyer des fichiers musicaux. Par nettoyer, j&#x27;entends supprimer les tags inutiles dans les fichiers mp3 (commentaires,...).&lt;&#x2F;p&gt;
+&lt;p&gt;Le script permet désormais également de supprimer les dossiers qui contenaient les fichiers musicaux lorsqu&#x27;ils sont devenus inutiles pour encore davantage automatiser l&#x27;import de fichier de musique.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;les-nouveautes&quot;&gt;Les nouveautés&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;supporte les fichiers ogg avec l&#x27;extension oga&lt;&#x2F;li&gt;
+&lt;li&gt;nouvelle option -d, supprime les fichiers inutiles dans le dossier source (fichier txt jpg m3u et nfo) et les dossiers sources qui sont devenus vides suite à l&#x27;exécution du script. À utiliser conjointement avec l&#x27;option -m.&lt;&#x2F;li&gt;
+&lt;li&gt;nouvelle option -c, pour copier les fichiers au lieu de les déplacer, modifie les tags après le déplacement.&lt;&#x2F;li&gt;
+&lt;li&gt;amélioration générale du code, plusieurs bugs corrigés&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;exemple-d-utilisation&quot;&gt;Exemple d&#x27;utilisation&lt;&#x2F;h4&gt;
+&lt;p&gt;On vérifie que l&#x27;import est possible (le script indiquera si il manque des tags aux fichiers par exemple):&lt;&#x2F;p&gt;
+&lt;p&gt;&#x2F;&#x2F;&#x2F;
+musicimporter -v Dossier Source&#x2F; ~&#x2F;Musique&#x2F;
+&#x2F;&#x2F;&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;Si tout c&#x27;est bien passé, on importe dans sa collection :&lt;&#x2F;p&gt;
+&lt;p&gt;&#x2F;&#x2F;&#x2F;
+musicimporter -vmwd Dossier Source&#x2F; ~&#x2F;Musique&#x2F;
+&#x2F;&#x2F;&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;La prochaine fonctionnalité envisagée est de permettre l&#x27;utilisation d&#x27;un fichier de configuration plutôt que des options en ligne de commande.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Téléchargement : &lt;a href=&quot;http:&#x2F;&#x2F;www.bivouak.fr&#x2F;public&#x2F;musicimporter.py&quot;&gt;musicimporter.py&lt;&#x2F;a&gt;.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Tous les commentaires sont les bienvenus.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>MusicImporter, importer proprement ses fichiers audio dans sa collection.</title>
+		<published>2008-09-07T00:00:00+00:00</published>
+		<updated>2008-09-07T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/" type="text/html"/>
+		<id>https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/</id>
+		<content type="html">&lt;p&gt;Je viens d&#x27;écrire un script en python pour se simplifier la vie dans le classement&#x2F;rangement de fichier audio récupéré.
+Il s&#x27;appelle simplement musicimporter.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;utilisation&quot;&gt;Utilisation&lt;&#x2F;h4&gt;
+&lt;p&gt;Le script prend en entrée un nombre quelconque de dossiers et un dossier de sortie.
+Il cherche récursivement les fichiers se trouvant dans les sous répertoires des dossiers en entrée. Il traite ensuite les dossiers trouvés selon les options sélectionnées.
+Pour l&#x27;instant, seuls les formats ogg vorbis, flac et mp3 sont supportés.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;L&#x27;option -w nettoie les tags des fichiers mp3 trouvés, en supprimant tous les tags ne concernant pas le titre, l&#x27;album, l&#x27;année ou le numéro de la chanson. L&#x27;option convertit également le tags ID3v1 subsistant en tag ID3v2.4.&lt;&#x2F;li&gt;
+&lt;li&gt;L&#x27;option -m déplace les fichiers dans le dossier output_dir suivant le format de sortie. Le format peut être changer avec l&#x27;option -o.&lt;&#x2F;li&gt;
+&lt;li&gt;-v, verbose mode, permet de suivre de plus prêt ce que fait le script.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&#x2F;&#x2F;&#x2F;
+Usage: musicimporter.py [options] src_dir... output_dir&lt;&#x2F;p&gt;
+&lt;p&gt;moves and renames audio files cleaning files metadata. It supports mp3 Ogg
+Vorbis and Flac&lt;&#x2F;p&gt;
+&lt;p&gt;Options:
+-h, --help            show this help message and exit
+-v, --verbose
+-w, --write           clean metadata of mp3 files, delete ID3v1 tags in
+favor of ID3v2.4
+-m, --move            move files
+-o OUTPUT_FORMAT, --output-format=OUTPUT_FORMAT
+The format of renamed files. Default is
+&#x27;$artist&#x2F;$album&#x2F;$track $title.$extension&#x27;
+&#x2F;&#x2F;&#x2F;
+Ce script nécessite &lt;a href=&quot;http:&#x2F;&#x2F;www.sacredchao.net&#x2F;quodlibet&#x2F;wiki&#x2F;Development&#x2F;Mutagen&quot;&gt;mutagen&lt;&#x2F;a&gt;.
+Disponible dans Debian&#x2F;ubuntu dans le paquet python-mutagen .&lt;&#x2F;p&gt;
+&lt;p&gt;Téléchargement : &lt;a href=&quot;http:&#x2F;&#x2F;www.bivouak.fr&#x2F;public&#x2F;musicimporter.py&quot;&gt;musicimporter.py&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Si vous avez des remarques ou suggestions laissez un commentaire.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>afpyro le mardi 24 juin, 19h30 : Apéro Rennais des utilisateurs de python</title>
+		<published>2008-06-19T00:00:00+00:00</published>
+		<updated>2008-06-19T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/" type="text/html"/>
+		<id>https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
+L&#x27;idée est très simple: tu utilises python, ou des projets gravitant autour comme django ou zope, tu aimes bien causer et boire un verre, alors cette apéro est faite pour toi!&lt;&#x2F;p&gt;
+&lt;p&gt;Cela se passe au O&#x27;Connels Pub &lt;a href=&quot;http:&#x2F;&#x2F;maps.google.fr&#x2F;maps?f=l&amp;amp;hl=fr&amp;amp;geocode=&amp;amp;q=o%27connels&amp;amp;near=rennes&amp;amp;ie=UTF8&amp;amp;ll=48.111944,-1.680264&amp;amp;spn=0.008138,0.023389&amp;amp;t=h&amp;amp;z=16&amp;amp;iwloc=A&quot;&gt;itinéraire&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;gulliver.eu.org&#x2F;wiki&#x2F;Python&#x2F;&quot;&gt;Plus d&#x27;info sur le site de Gulliver&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Storm le sqlobject de canonical</title>
+		<published>2007-07-16T00:00:00+00:00</published>
+		<updated>2007-07-16T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/storm-le-sqlobject-de-canonical/" type="text/html"/>
+		<id>https://meven.github.io/storm-le-sqlobject-de-canonical/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;caninical.png&quot; alt=&quot;caninica&quot; &#x2F;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.canonical.com&#x2F;&quot;&gt;Canonical&lt;&#x2F;a&gt; vient de libérer un composant de leur site &lt;a href=&quot;https:&#x2F;&#x2F;launchpad.net&quot;&gt;launchpad&lt;&#x2F;a&gt;.
+Ils ont libérer Storm, un Object-relational mapping en python, autrement dit un composant qui permet de simplifier les relations entre les données d&#x27;une base de données et les instances des objets instanciés.
+Étant un utilisateur de &lt;a href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;django&lt;&#x2F;a&gt;, je suis déjà familier avec ce genre de concept.
+Leur implémentation est un peu différente de celle de django, mais elle permet les mêmes possibilités et même plus.
+Un projet à surveiller.&lt;&#x2F;p&gt;
+&lt;p&gt;Plus d&#x27;infos sur le site officiel :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;storm.canonical.com&#x2F;FrontPage&quot;&gt;https:&#x2F;&#x2F;storm.canonical.com&#x2F;FrontPage&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;le tutorial : &lt;a href=&quot;https:&#x2F;&#x2F;storm.canonical.com&#x2F;Tutorial&quot;&gt;https:&#x2F;&#x2F;storm.canonical.com&#x2F;Tutorial&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Django-fr ouvre ses portes</title>
+		<published>2007-06-29T00:00:00+00:00</published>
+		<updated>2007-06-29T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/djangofr-ouvre-ses-portes/" type="text/html"/>
+		<id>https://meven.github.io/djangofr-ouvre-ses-portes/</id>
+		<content type="html">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;public&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.&lt;br &#x2F;&gt;nJe suis très content de cette création étant moi même un utilisateur de djangonet un supporteur.&lt;br &#x2F;&gt;n&lt;br &#x2F;&gt;nPour rappel django est un framework de développement web en python. Sanphilosophie est simplicité et efficacité.&lt;br &#x2F;&gt;nJe vous le conseille. Il est facile à prendre en main grâce à landocumentation(ce sera plus long si vous découvrez aussi python :)).&lt;br &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Helloworld série : faire une fenêtre helloworld en Python et Gtk</title>
+		<published>2007-05-26T00:00:00+00:00</published>
+		<updated>2007-05-26T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/helloworld-serie-1-python-et-gtk/" type="text/html"/>
+		<id>https://meven.github.io/helloworld-serie-1-python-et-gtk/</id>
+		<content type="html">&lt;p&gt;J&#x27;entame une série de billet avec pour thème la comparaison de différents langages de programmation moderne et de différentes bibliothèques graphiques.
+J&#x27;ai choisi de faire simple et, pour être un tant soit peu comparable, j&#x27;ai choisi de créer une fenêtre helloworld standard dans chacune des paires langage&#x2F;librairie graphique. Juste une fenêtre et un bouton qui ferme la fenêtre.
+Le but étant de faire découvrir les B-A-Ba de la programmation d&#x27;une interface graphique avec les différentes approches à la fois des langages et des librairies.
+Au menu :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;les langages python,java,c++&lt;&#x2F;li&gt;
+&lt;li&gt;les librairies graphiques qt,gtk et swing.
+Je ferais des billets python&#x2F;gtk, python&#x2F;qt, java&#x2F;swing, c++&#x2F;qt, au moins, et certainement c++&#x2F;gtk.
+Le premier de la série Helloworld est en python&#x2F;Gtk.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;La capture d&#x27;écran.
+&lt;img src=&quot;&#x2F;py_gtk.png&quot; alt=&quot;helloworld py&#x2F;gtk&quot; &#x2F;&gt;
+Attention elle a été faire sous kubuntu&#x2F;KDE, elle n&#x27;aurait pas la même décoration et apparence sous ubuntu&#x2F;GNOME.
+Le source :
+&#x2F;&#x2F;&#x2F;
+#!&#x2F;usr&#x2F;bin&#x2F;python&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;coding-utf-8&quot;&gt;-&lt;em&gt;- coding: UTF-8 -&lt;&#x2F;em&gt;-&lt;&#x2F;h1&gt;
+&lt;p&gt;import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
+import gtk&lt;&#x2F;p&gt;
+&lt;p&gt;class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&#x27;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
+def &lt;strong&gt;init&lt;&#x2F;strong&gt;(self):
+self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
+self.set_title(&amp;quot;Hello World !&amp;quot;) # On choisit le titre de la fanêtre
+button = gtk.Button(&amp;quot;Hello World !&amp;quot;) # création d&#x27;un bouton
+button.connect(&amp;quot;clicked&amp;quot;, gtk.main_quit ) # connection de l&#x27;évènement du bouton clicked avec la fonction gtk.main_quit
+self.add( button) # on ajoute le bouton à la fenêtre
+self.connect(&amp;quot;delete_event&amp;quot;, gtk.main_quit ) # on &amp;quot;connecte&amp;quot; l&#x27;évènement de la fenêtre avec la même fonction
+self.show_all() # on affiche les composants
+def main(self):
+gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction&lt;&#x2F;p&gt;
+&lt;p&gt;if &lt;strong&gt;name&lt;&#x2F;strong&gt; ==&amp;quot;&lt;strong&gt;main&lt;&#x2F;strong&gt;&amp;quot;: # équivalent du &#x27;main&#x27; de java et c++
+hello = HelloWorld() # on  crée instance de l&#x27;objet HelloWorld - noter le typage dynamique de python
+hello.main() # lancement de l&#x27;interface
+&#x2F;&#x2F;&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;Plus aller plus loin, je vous recommande ces tutoriels :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;le&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;tut&#x2F;tut.html&quot;&gt; tutoriel python en anglais&lt;&#x2F;a&gt; de Guido Von Rossum (l&#x27;auteur de de python)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.cifen.ulg.ac.be&#x2F;inforef&#x2F;swi&#x2F;python.htm&quot;&gt;celui en français&lt;&#x2F;a&gt; de Gérard Swinnen&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pygtk.org&#x2F;pygtk2tutorial&#x2F;index.html&quot;&gt;le tutoriel en anglais&lt;&#x2F;a&gt; sur python&#x2F;Gtk&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

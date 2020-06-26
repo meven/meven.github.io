@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        Yet another sudoku solver, in rust - meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/">
+            <p class="title article-title">Yet another sudoku solver, in rust
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2017-01-08</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;4 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <p>I have been quite interested recently with the new languages <a href="https://golang.org/">Go</a> and <a href="https://www.rust-lang.org/">rust</a>.
+Go and rust have some very nice new features and their design and tooling reflects the standards of this days.
+So I have been hacking with go and rust.</p>
+<p>I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
+It is not very much optimized as the algorithm is naive, but the purpose of this code was to get more comfortable with rust.</p>
+<p>///</p>
+<p>fn print_grid(g: [Option<i32>; 81]) {</p>
+<pre style="background-color:#2b303b;">
+<code>let mut cnt = 0;
+let mut line = 0;
+
+for &amp;x in g.iter() {
+
+    cnt = cnt + 1;
+
+    match x {
+        Some(i) =&gt; print!(&quot;{}&quot;, i),
+        None =&gt; print!(&quot;_&quot;),
+    }
+
+    if cnt == 9 {
+        line = line + 1;
+        println!(&quot;&quot;);
+        cnt = 0;
+        if line == 3 {
+            line = 0;
+            println!(&quot;&quot;);
+        }
+    } else if cnt % 3 == 0 {
+        print!(&quot;   &quot;);
+
+    } else {
+        print!(&quot; &quot;);
+    }
+}
+</code></pre>
+<p>}</p>
+<p>fn check_grid(g: [Option<i32>; 81]) -&gt; bool {</p>
+<pre style="background-color:#2b303b;">
+<code>// check lines
+for x in 0..9 {
+    let i = 9 * x;
+    let val = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8];
+
+    for v in 0..(val.len() - 1) {
+        let valv = g[val[v]];
+        if valv != None {
+            for c in 1..val.len() {
+                let valc = g[val[c]];
+                if valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                    // println!(&quot;Block false at {}&quot;, x);
+                    return false;
+                }
+            }
+        }
+    }
+}
+
+// check columns
+for x in 0..9 {
+    let val = [x, x + 9, x + 18, x + 27, x + 36, x + 45, x + 54, x + 63, x + 72];
+
+    for v in 0..(val.len() - 1) {
+        let valv = g[val[v]];
+        if valv != None {
+            for c in 1..val.len() {
+                let valc = g[val[c]];
+                if valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                    // println!(&quot;Block false at {}&quot;, x);
+                    return false;
+                }
+            }
+        }
+    }
+}
+
+// check blocks
+for x in 0..9 {
+    let mut i = 3 * (x % 3);
+    if x &gt; 2 {
+        i = i + 27;
+    } else if x &gt; 5 {
+        i = i + 54;
+    }
+
+    let val = [i, i + 1, i + 2, i + 9, i + 10, i + 11, i + 18, i + 19, i + 20];
+
+    for v in 0..(val.len() - 1) {
+        let valv = g[val[v]];
+        if valv != None {
+            for c in 1..val.len() {
+                let valc = g[val[c]];
+                if valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                    // println!(&quot;Block false at {}&quot;, x);
+                    return false;
+                }
+            }
+        }
+    }
+}
+
+return true;
+</code></pre>
+<p>}</p>
+<p>fn is_grid_complete(g: [Option<i32>; 81]) -&gt; bool {
+let mut ret = true;
+for &amp;x in g.iter() {
+match x {
+Some(_) =&gt; {}
+None =&gt; {
+ret = false;
+break;
+}
+}
+}
+return ret;
+}</p>
+<p>fn clone_grid(g: [Option<i32>; 81]) -&gt; [Option<i32>; 81] {
+let mut new_g: [Option<i32>; 81] = [None; 81];
+for x in 0..g.len() {
+new_g[x] = g[x];
+}
+return new_g;
+}</p>
+<p>fn solve_grid(g: [Option<i32>; 81]) -&gt; Option&lt;[Option<i32>; 81]&gt; {</p>
+<pre style="background-color:#2b303b;">
+<code>if is_grid_complete(g) {
+    return Some(g);
+}
+
+for x in 0..g.len() {
+    match g[x] {
+        Some(_) =&gt; {}
+        None =&gt; {
+
+            let mut checked: [bool; 9] = [false; 9];
+
+            for v in 1..10 {
+
+                let mut new_g = clone_grid(g);
+                new_g[x] = Some(v);
+
+                checked[(v - 1) as usize] = true;
+
+                if check_grid(new_g) {
+                    match solve_grid(new_g) {
+                        None =&gt; {
+                            if checked == [true; 9] {
+                                // the path is a dead end
+                                return None;
+                            } else {
+                                continue;
+                            }
+                        }
+
+                        Some(gx) =&gt; return Some(gx),
+                    }
+                }
+            }
+
+            if checked == [true; 9] {
+                // Detected a dead end
+                return None;
+            }
+        }
+    }
+}
+
+return None;
+</code></pre>
+<p>}</p>
+<p>fn parse_grid(grid_string: &amp;str) -&gt; [Option<i32>; 81] {
+let mut grid = [None; 81];</p>
+<pre style="background-color:#2b303b;">
+<code>let mut i = 0;
+for s in grid_string.split_whitespace() {
+    match s {
+        &quot;_&quot; =&gt; {}
+        val =&gt; {
+            grid[i] = Some(val.parse::&lt;i32&gt;().unwrap());
+        }
+    }
+    i = i + 1;
+}
+
+return grid;
+</code></pre>
+<p>}</p>
+<p>fn main() {
+let grid_string = r#&quot;
+1 _ _   _ _ _   _ _ 3
+_ 4 _   _ _ 9   2 6 _
+_ _ _   7 _ _   _ 5 4</p>
+<pre style="background-color:#2b303b;">
+<code>        _ _ _   1 7 _   9 _ _
+        _ _ 2   _ _ _   6 _ _
+        _ _ 3   _ 9 5   _ _ _
+
+        2 7 _   _ _ 1   _ _ _
+        _ 8 9   3 _ _   _ 7 _
+        6 _ _   _ _ _   _ _ 2&quot;#;
+
+let grid: [Option&lt;i32&gt;; 81] = parse_grid(grid_string);
+
+print_grid(grid);
+
+match solve_grid(grid) {
+    Some(g) =&gt; {
+        println!(&quot;Grid complete !&quot;);
+        print_grid(g)
+    }
+    None =&gt; println!(&quot;Couldn't solve the sudoku&quot;),
+}
+</code></pre>
+<p>}</p>
+<p>///</p>
+<p>You can just, given you have installed <a href="https://www.rustup.rs/">rust</a>.
+///
+cargo build
+///</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2017-01-08">
+    2017-01-08
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/divers/">
+    <span class="tag is-success">
+        Divers
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/english/">
+    <span class="tag is-link">english </span>
+</a>
+
+
+
+and
+
+
+
+
+<a href="https://meven.github.io/tags/rust/">
+    <span class="tag is-link">rust </span>
+</a>
+
+
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>

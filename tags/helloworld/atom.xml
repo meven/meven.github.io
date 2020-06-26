@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - helloworld</title>
+	<link href="https://meven.github.io/tags/helloworld/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2007-05-26T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/helloworld/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Helloworld série : faire une fenêtre helloworld en Python et Gtk</title>
+		<published>2007-05-26T00:00:00+00:00</published>
+		<updated>2007-05-26T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/helloworld-serie-1-python-et-gtk/" type="text/html"/>
+		<id>https://meven.github.io/helloworld-serie-1-python-et-gtk/</id>
+		<content type="html">&lt;p&gt;J&#x27;entame une série de billet avec pour thème la comparaison de différents langages de programmation moderne et de différentes bibliothèques graphiques.
+J&#x27;ai choisi de faire simple et, pour être un tant soit peu comparable, j&#x27;ai choisi de créer une fenêtre helloworld standard dans chacune des paires langage&#x2F;librairie graphique. Juste une fenêtre et un bouton qui ferme la fenêtre.
+Le but étant de faire découvrir les B-A-Ba de la programmation d&#x27;une interface graphique avec les différentes approches à la fois des langages et des librairies.
+Au menu :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;les langages python,java,c++&lt;&#x2F;li&gt;
+&lt;li&gt;les librairies graphiques qt,gtk et swing.
+Je ferais des billets python&#x2F;gtk, python&#x2F;qt, java&#x2F;swing, c++&#x2F;qt, au moins, et certainement c++&#x2F;gtk.
+Le premier de la série Helloworld est en python&#x2F;Gtk.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;La capture d&#x27;écran.
+&lt;img src=&quot;&#x2F;py_gtk.png&quot; alt=&quot;helloworld py&#x2F;gtk&quot; &#x2F;&gt;
+Attention elle a été faire sous kubuntu&#x2F;KDE, elle n&#x27;aurait pas la même décoration et apparence sous ubuntu&#x2F;GNOME.
+Le source :
+&#x2F;&#x2F;&#x2F;
+#!&#x2F;usr&#x2F;bin&#x2F;python&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;coding-utf-8&quot;&gt;-&lt;em&gt;- coding: UTF-8 -&lt;&#x2F;em&gt;-&lt;&#x2F;h1&gt;
+&lt;p&gt;import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
+import gtk&lt;&#x2F;p&gt;
+&lt;p&gt;class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&#x27;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
+def &lt;strong&gt;init&lt;&#x2F;strong&gt;(self):
+self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
+self.set_title(&amp;quot;Hello World !&amp;quot;) # On choisit le titre de la fanêtre
+button = gtk.Button(&amp;quot;Hello World !&amp;quot;) # création d&#x27;un bouton
+button.connect(&amp;quot;clicked&amp;quot;, gtk.main_quit ) # connection de l&#x27;évènement du bouton clicked avec la fonction gtk.main_quit
+self.add( button) # on ajoute le bouton à la fenêtre
+self.connect(&amp;quot;delete_event&amp;quot;, gtk.main_quit ) # on &amp;quot;connecte&amp;quot; l&#x27;évènement de la fenêtre avec la même fonction
+self.show_all() # on affiche les composants
+def main(self):
+gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction&lt;&#x2F;p&gt;
+&lt;p&gt;if &lt;strong&gt;name&lt;&#x2F;strong&gt; ==&amp;quot;&lt;strong&gt;main&lt;&#x2F;strong&gt;&amp;quot;: # équivalent du &#x27;main&#x27; de java et c++
+hello = HelloWorld() # on  crée instance de l&#x27;objet HelloWorld - noter le typage dynamique de python
+hello.main() # lancement de l&#x27;interface
+&#x2F;&#x2F;&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;Plus aller plus loin, je vous recommande ces tutoriels :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;le&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;tut&#x2F;tut.html&quot;&gt; tutoriel python en anglais&lt;&#x2F;a&gt; de Guido Von Rossum (l&#x27;auteur de de python)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.cifen.ulg.ac.be&#x2F;inforef&#x2F;swi&#x2F;python.htm&quot;&gt;celui en français&lt;&#x2F;a&gt; de Gérard Swinnen&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;pygtk.org&#x2F;pygtk2tutorial&#x2F;index.html&quot;&gt;le tutoriel en anglais&lt;&#x2F;a&gt; sur python&#x2F;Gtk&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
+</feed>

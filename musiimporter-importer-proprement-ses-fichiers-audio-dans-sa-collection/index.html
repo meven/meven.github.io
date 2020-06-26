@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        MusicImporter, importer proprement ses fichiers audio dans sa collection. - meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/">
+            <p class="title article-title">MusicImporter, importer proprement ses fichiers audio dans sa collection.
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2008-09-07</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;2 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <p>Je viens d'écrire un script en python pour se simplifier la vie dans le classement/rangement de fichier audio récupéré.
+Il s'appelle simplement musicimporter.</p>
+<h4 id="utilisation">Utilisation</h4>
+<p>Le script prend en entrée un nombre quelconque de dossiers et un dossier de sortie.
+Il cherche récursivement les fichiers se trouvant dans les sous répertoires des dossiers en entrée. Il traite ensuite les dossiers trouvés selon les options sélectionnées.
+Pour l'instant, seuls les formats ogg vorbis, flac et mp3 sont supportés.</p>
+<ul>
+<li>L'option -w nettoie les tags des fichiers mp3 trouvés, en supprimant tous les tags ne concernant pas le titre, l'album, l'année ou le numéro de la chanson. L'option convertit également le tags ID3v1 subsistant en tag ID3v2.4.</li>
+<li>L'option -m déplace les fichiers dans le dossier output_dir suivant le format de sortie. Le format peut être changer avec l'option -o.</li>
+<li>-v, verbose mode, permet de suivre de plus prêt ce que fait le script.</li>
+</ul>
+<p>///
+Usage: musicimporter.py [options] src_dir... output_dir</p>
+<p>moves and renames audio files cleaning files metadata. It supports mp3 Ogg
+Vorbis and Flac</p>
+<p>Options:
+-h, --help            show this help message and exit
+-v, --verbose
+-w, --write           clean metadata of mp3 files, delete ID3v1 tags in
+favor of ID3v2.4
+-m, --move            move files
+-o OUTPUT_FORMAT, --output-format=OUTPUT_FORMAT
+The format of renamed files. Default is
+'$artist/$album/$track $title.$extension'
+///
+Ce script nécessite <a href="http://www.sacredchao.net/quodlibet/wiki/Development/Mutagen">mutagen</a>.
+Disponible dans Debian/ubuntu dans le paquet python-mutagen .</p>
+<p>Téléchargement : <a href="http://www.bivouak.fr/public/musicimporter.py">musicimporter.py</a>.</p>
+<p>Si vous avez des remarques ou suggestions laissez un commentaire.</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2008-09-07">
+    2008-09-07
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/monde-libre/">
+    <span class="tag is-success">
+        Monde libre
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/musicimporter/">
+    <span class="tag is-link">musicimporter </span>
+</a>
+
+
+
+,
+
+
+
+
+<a href="https://meven.github.io/tags/python/">
+    <span class="tag is-link">python </span>
+</a>
+
+
+
+and
+
+
+
+
+<a href="https://meven.github.io/tags/script/">
+    <span class="tag is-link">script </span>
+</a>
+
+
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>
