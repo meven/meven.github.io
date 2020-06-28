@@ -1,0 +1,10 @@
++++
+title = "Scroogled de Cory Doctorow, nouvelle des temps présents, vous ne regarderez plus google comme avant"
+slug="Scroogled-de-Cory-Doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant"
+draft = false
+date = 2007-10-02
+[taxonomies]
+categories = [ "Monde libre" ]
+tags = [ "littérature" ]
++++
+<p>Je vous recommande la lecture de la nouvelle <a href="http://cfeditions.com/scroogled/" hreflang="fr">''Scroogled'' ou enGooglisénen<br />nfrançais</a> de Cory Doctorow.<br />n<br />nCory Doctorow est un auteur libertaire, geek à ses heures et l'un desnauteurs<br />nd'un des plus gros blogs au monde <a href="http://www.boingboing.net" hreflang="en">boingboing.net</a>. Il publie ses textes sous licence librenexactement<br />ncomme un logiciel open-source. C'est pourquoi je peux le citer librement.<br />n<br />nPetits morceaux choisis :<br />n<br />n<q>Chaque fois que tu as visité une page qui comportait de la publiciténGoogle,<br />nou utilisé une carte Google ou le courrier Gmail, ils ont collecté tes<br />ninformations. Tu es en filature Google. Maintenant tu dois vivre ta vienen<br />nsachant qu'il y a constamment une personne penchée sur ton épaule ànsurveiller<br />nce que tu fais. Tu connais la profession de foi, n'est ce pas ? Organiser<br />ntoute l'information du Monde. Toute l'information. Donne nous cinq ans etnnous<br />nsaurons combien de crottes étaient dans ta cuvette avant de tirer lanchasse<br />nd'eau. Rajoute au tableau une suspicion automatisée de quiconque colle avecnle<br />nportrait statistique d'un méchant et tu es... »</q><br />n<br />n<q>Laurie tapotait les chiens entre les épaules. « Mes parents ont quitté<br />nl'Allemagne de l'Est en 65. Ils me parlaient souvent de la Stasi. Lanpolice<br />nsecrète mettait tout ce qu'elle savait sur vous dans un fichier, si vousnaviez<br />nraconté une blague anti-patriotique, n'importe quoi. Qu'ils le veuillentnou<br />nnon, ce qu'a créé Google n'est pas très différent. »</q></p>

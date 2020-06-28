@@ -1,0 +1,30 @@
+# The URL the site will be built for
+#base_url = "http://bivouak.fr"
+base_url= "https://meven.github.io"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+generate_feed = true
+generate_rss = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+theme = "Zulma"
+
+title = "meven's blog"
+
+taxonomies = [
+    {name = "tags", lang = "fr"},
+    {name = "tags", lang = "en", rss=true, feed=true},
+    {name = "categories", lang = "fr"},
+    {name = "categories", lang = "en", rss=true, feed=true},
+]
+
+[extra]
+# Put all your custom variables here
