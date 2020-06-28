@@ -28,3 +28,5 @@ taxonomies = [
 
 [extra]
 # Put all your custom variables here
+zulma_title = "meven's blog"
+zulma_theme = "darkly"
