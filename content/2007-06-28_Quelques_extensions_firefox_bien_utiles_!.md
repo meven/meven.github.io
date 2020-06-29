@@ -5,7 +5,7 @@ draft = false
 date = 2007-06-28
 [taxonomies]
 categories = [ "Monde libre" ]
-tags = [ "firefox","extension" ]
+tags = [ "extension","firefox" ]
 +++
 Si vous avez la fâcheuse manie d'avoir un maximum d'onglets ouverts dans firefox comme moi, cela risque de vous intéresser.
 

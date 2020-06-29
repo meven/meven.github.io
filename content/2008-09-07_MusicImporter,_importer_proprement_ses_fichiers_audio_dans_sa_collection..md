@@ -22,7 +22,7 @@ Pour l'instant, seuls les formats ogg vorbis, flac et mp3 sont supportés.
 * L'option -m déplace les fichiers dans le dossier output_dir suivant le format de sortie. Le format peut être changer avec l'option -o.
 * -v, verbose mode, permet de suivre de plus prêt ce que fait le script.
 
-///
+```
 Usage: musicimporter.py [options] src_dir... output_dir
 
 moves and renames audio files cleaning files metadata. It supports mp3 Ogg
@@ -37,7 +37,7 @@ Options:
   -o OUTPUT_FORMAT, --output-format=OUTPUT_FORMAT
                         The format of renamed files. Default is
                         '$artist/$album/$track $title.$extension'
-///
+```
 Ce script nécessite [mutagen](http://www.sacredchao.net/quodlibet/wiki/Development/Mutagen).
 Disponible dans Debian/ubuntu dans le paquet python-mutagen .
 

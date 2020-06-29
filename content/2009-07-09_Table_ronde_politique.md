@@ -5,7 +5,7 @@ draft = false
 date = 2009-07-09
 [taxonomies]
 categories = [ "Monde libre" ]
-tags = [ "rmll2009","politique" ]
+tags = [ "politique","rmll2009" ]
 +++
 Je participe cette année aux [Rencontres Mondiales du Logiciel Libre](http://2009.rmll.info)
 J'ai eu l'occasion d'assister à la table ronde politique qui s'y tient.

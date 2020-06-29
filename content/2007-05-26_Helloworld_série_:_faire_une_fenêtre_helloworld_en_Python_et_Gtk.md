@@ -5,7 +5,7 @@ draft = false
 date = 2007-05-26
 [taxonomies]
 categories = [ "Monde libre" ]
-tags = [ "gtk","python","helloworld" ]
+tags = [ "gtk","helloworld","python" ]
 +++
 J'entame une série de billet avec pour thème la comparaison de différents langages de programmation moderne et de différentes bibliothèques graphiques.
 J'ai choisi de faire simple et, pour être un tant soit peu comparable, j'ai choisi de créer une fenêtre helloworld standard dans chacune des paires langage/librairie graphique. Juste une fenêtre et un bouton qui ferme la fenêtre.
@@ -21,7 +21,7 @@ La capture d'écran.
 <img src="/py_gtk.png" alt="helloworld py/gtk" />
 Attention elle a été faire sous kubuntu/KDE, elle n'aurait pas la même décoration et apparence sous ubuntu/GNOME.
 Le source :
-///
+```
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
@@ -42,7 +42,7 @@ class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d'une s
 if __name__ =="__main__": # équivalent du 'main' de java et c++
 	hello = HelloWorld() # on  crée instance de l'objet HelloWorld - noter le typage dynamique de python
 	hello.main() # lancement de l'interface
-///
+```
 
 Plus aller plus loin, je vous recommande ces tutoriels :
 * le[ tutoriel python en anglais](http://docs.python.org/tut/tut.html) de Guido Von Rossum (l'auteur de de python)

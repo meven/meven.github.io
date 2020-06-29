@@ -14,7 +14,7 @@ So I have been hacking with go and rust.
 I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
 It is not very much optimized as the algorithm is naive, but the purpose of this code was to get more comfortable with rust.
 
-///
+```
 
 fn print_grid(g: [Option<i32>; 81]) {
 
@@ -229,9 +229,9 @@ fn main() {
 
 }
 
-///
+```
 
 You can just, given you have installed [rust](https://www.rustup.rs/).
-///
+```
 cargo build
-///
+```

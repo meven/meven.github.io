@@ -5,7 +5,7 @@ draft = false
 date = 2012-10-14
 [taxonomies]
 categories = [ "Voyage" ]
-tags = [ "Malaysie","Sydney","Australie" ]
+tags = [ "Australie","Malaysie","Sydney" ]
 +++
 Atterrissage à Kuaka Lumpur à 6h10, 00h10 heure française.
 J'ai 14h à passer sur place, la visite de la ville s'impose donc.

@@ -32,7 +32,7 @@ On verra bien. L'été ne commence que dans deux jours.
 Et Rock en seine, le mercredi, dernière date de Rage against the Machine en France avant longtemps.
 Surtout qu'en ce moment, ils sont plutôt en forme même encagoulé façon Guantanamo. Des images valent mieux que des mots :
 
-///html
+```html
 <div class="external-media" style="margin: 1em auto; text-align: center;">
 <object type="application/x-shockwave-flash" data="http://www.youtube.com/v/r9-B47hg9aQ&amp;hl=en" width="425" height="350">
   <param name="movie" value="http://www.youtube.com/v/r9-B47hg9aQ&amp;hl=en" />
@@ -40,4 +40,4 @@ Surtout qu'en ce moment, ils sont plutôt en forme même encagoulé façon Guant
 </object>
 <br />Rage Against The Machine &quot;Intro Bombtrack&quot; Pinkpop 2008
 </div>
-///
+```

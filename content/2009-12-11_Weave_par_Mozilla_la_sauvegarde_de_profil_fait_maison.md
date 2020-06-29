@@ -5,7 +5,7 @@ draft = false
 date = 2009-12-11
 [taxonomies]
 categories = [ "Monde libre" ]
-tags = [ "extension","web","mozilla" ]
+tags = [ "extension","mozilla","web" ]
 +++
 Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
 Et si pour synchroniser mes marques-pages je pouvais me passer des serveurs de google pour changer.

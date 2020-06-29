@@ -21,15 +21,15 @@ Le script permet désormais également de supprimer les dossiers qui contenaient
 
 On vérifie que l'import est possible (le script indiquera si il manque des tags aux fichiers par exemple):
 
-///
+```
 musicimporter -v Dossier Source/ ~/Musique/
-///
+```
 
 Si tout c'est bien passé, on importe dans sa collection :
 
-///
+```
 musicimporter -vmwd Dossier Source/ ~/Musique/
-///
+```
 
 La prochaine fonctionnalité envisagée est de permettre l'utilisation d'un fichier de configuration plutôt que des options en ligne de commande.
 

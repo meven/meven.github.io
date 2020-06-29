@@ -5,7 +5,7 @@ draft = false
 date = 2008-06-19
 [taxonomies]
 categories = [ "Monde libre" ]
-tags = [ "développement web","django","python","Rennes" ]
+tags = [ "Rennes","django","développement web","python" ]
 +++
 <img src="/logos/afpy_logo.png" alt="afpy logo" />Gulliver organise un apéro sur le modèle de ceux organiser par [l'association francophone Python](http://afpy.org/).
 L'idée est très simple: tu utilises python, ou des projets gravitant autour comme django ou zope, tu aimes bien causer et boire un verre, alors cette apéro est faite pour toi!

@@ -5,7 +5,7 @@ draft = false
 date = 2013-06-09
 [taxonomies]
 categories = [ "Voyage" ]
-tags = [ "Australie","Queensland","Northern Territory" ]
+tags = [ "Australie","Northern Territory","Queensland" ]
 +++
 J'ai passé un mois à Cairns.
 J'y ai fait pas mal la fête. J'y ai trouvé un boulot mais pas génial et qui n'a pas duré.

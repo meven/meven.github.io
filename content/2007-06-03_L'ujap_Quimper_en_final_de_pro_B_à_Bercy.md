@@ -7,4 +7,22 @@ date = 2007-06-03
 categories = [ "Divers" ]
 tags = [  ]
 +++
-Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.<br />nPremiere fois à Bercy, je découvre le métro Parisien, le RER. C'est pas aussinterrible que je pensais, enfin que l'image que je pouvais m'en avoirnfaite.<br />n<a href="/public/photos/IMG_3429.JPG"><img style="margin: 0 auto; display: block;" alt="" src="/public/photos/.IMG_3429_m.jpg" /></a><br />nOn a eu le droit à un belle finale de play-off en PRO A entre Roanne et Nancy,nbien disputée si bien que Nancy qui avait eu l'avantage du score au long dunmatch, a finalement laissé filer 7 points d'avance pour Roanne juste dans lendernier quart temps. Nancy devient du même coup le poulidor de PRO A aprèsntrois finales consécutive perdues. Roanne l'emporte 81-74.<br />n<br />n<a href="/public/photos/bachlot.jpg"><img style="margin: 0 auto; display: block;" alt="" src="/public/photos/.bachlot_m.jpg" /></a><br />nOn a pu voir du BEAU monde. Roselyne Bachelot notre ministre des sports toutende violet vêtue. Et Clara Morgane ! Elle était venue faire la promo de sonnsingle (elle fait tout(attention aux sous-entendus) et chante même).<br />n<br />nPour le match de l'ujap face à Vichy la moitié du stade au moins s'était vidé.nOn a pu avoir de meilleurs places :).<br />n<a href="/public/photos/IMG_3467.JPG"><img style="margin: 0 auto; display: block;" alt="" src="/public/photos/.IMG_3467_m.jpg" /></a><br />nL'ujap s'est incliné face à Vichy, de 21 points, 49-70. Score justifié.<br />n<br />nOn regrettera pas d'en être arrivé là. En trois saison de PRO B, on estnvice-champion, c'est une belle performance. En cas de victoire, l'ujapnarrivait  même en PRO A.<br />nMais Quimper ne peut pas devenir un gros si vite, déjà en PRO B l'ujap est unnpoids léger, en PRO A ça aurait été un poids plume. (d'un point de vuenbudgetaire)<br />nMaintenant, il ne reste que des questions. Est ce que notre entraineur OliviernCousin à qui on doit beaucoup va quitter le club ? (il a été élu meilleurnentraineur de PRO B)<br />nEst ce que les joueurs vont rester ? Aura-t-on les moyens de les garder ou d'ennavoir d'autre ?<br />n<br />nCe qui est sur et rassurant, c'est que en restant en PRO B, on peut espérerndisputer le haut du pavé et ne pas avoir de contraintes budgtairesnsupplémentaires.<br />
+Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.
+Premiere fois à Bercy, je découvre le métro Parisien, le RER. C'est pas aussinterrible que je pensais, enfin que l'image que je pouvais m'en avoirnfaite.
+<a href="/photos/IMG_3429.JPG"><img style="margin: 0 auto; display: block;" alt="" src="/photos/.IMG_3429_m.jpg" /></a>
+On a eu le droit à un belle finale de play-off en PRO A entre Roanne et Nancy,nbien disputée si bien que Nancy qui avait eu l'avantage du score au long dunmatch, a finalement laissé filer 7 points d'avance pour Roanne juste dans lendernier quart temps. Nancy devient du même coup le poulidor de PRO A aprèsntrois finales consécutive perdues. Roanne l'emporte 81-74.
+
+<a href="/photos/bachlot.jpg"><img style="margin: 0 auto; display: block;" alt="" src="/photos/.bachlot_m.jpg" /></a>
+On a pu voir du BEAU monde. Roselyne Bachelot notre ministre des sports toutende violet vêtue. Et Clara Morgane ! Elle était venue faire la promo de sonnsingle (elle fait tout(attention aux sous-entendus) et chante même).
+
+Pour le match de l'ujap face à Vichy la moitié du stade au moins s'était vidé.nOn a pu avoir de meilleurs places :).
+<a href="/photos/IMG_3467.JPG"><img style="margin: 0 auto; display: block;" alt="" src="/photos/.IMG_3467_m.jpg" /></a>
+L'ujap s'est incliné face à Vichy, de 21 points, 49-70. Score justifié.
+
+On regrettera pas d'en être arrivé là. En trois saison de PRO B, on estnvice-champion, c'est une belle performance. En cas de victoire, l'ujapnarrivait  même en PRO A.
+Mais Quimper ne peut pas devenir un gros si vite, déjà en PRO B l'ujap est unnpoids léger, en PRO A ça aurait été un poids plume. (d'un point de vuenbudgetaire)
+Maintenant, il ne reste que des questions. Est ce que notre entraineur OliviernCousin à qui on doit beaucoup va quitter le club ? (il a été élu meilleurnentraineur de PRO B)
+Est ce que les joueurs vont rester ? Aura-t-on les moyens de les garder ou d'ennavoir d'autre ?
+
+Ce qui est sur et rassurant, c'est que en restant en PRO B, on peut espérerndisputer le haut du pavé et ne pas avoir de contraintes budgtairesnsupplémentaires.
+
