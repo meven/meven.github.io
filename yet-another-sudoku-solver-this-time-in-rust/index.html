@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/">
+            <p class="title article-title">Yet another sudoku solver, in rust
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2017-01-08</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;4 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <p>I have been quite interested recently with the new languages <a href="https://golang.org/">Go</a> and <a href="https://www.rust-lang.org/">rust</a>.
+Go and rust have some very nice new features and their design and tooling reflects the standards of this days.
+So I have been hacking with go and rust.</p>
+<p>I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
+It is not very much optimized as the algorithm is naive, but the purpose of this code was to get more comfortable with rust.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">print_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) {
+
+    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> cnt = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
+    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> line = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
+
+    </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">&amp;x in g.</span><span style="color:#96b5b4;">iter</span><span style="color:#c0c5ce;">() {
+
+        cnt = cnt + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;
+
+        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> x {
+            Some(i) =&gt; print!(&quot;</span><span style="color:#d08770;">{}</span><span style="color:#c0c5ce;">&quot;, i),
+            None =&gt; print!(&quot;</span><span style="color:#a3be8c;">_</span><span style="color:#c0c5ce;">&quot;),
+        }
+
+        </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> cnt == </span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
+            line = line + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;
+            println!(&quot;&quot;);
+            cnt = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
+            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> line == </span><span style="color:#d08770;">3 </span><span style="color:#c0c5ce;">{
+                line = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
+                println!(&quot;&quot;);
+            }
+        } </span><span style="color:#b48ead;">else if</span><span style="color:#c0c5ce;"> cnt % </span><span style="color:#d08770;">3 </span><span style="color:#c0c5ce;">== </span><span style="color:#d08770;">0 </span><span style="color:#c0c5ce;">{
+            print!(&quot;   &quot;);
+
+        } </span><span style="color:#b48ead;">else </span><span style="color:#c0c5ce;">{
+            print!(&quot; &quot;);
+        }
+    }
+}
+
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">check_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; </span><span style="color:#b48ead;">bool </span><span style="color:#c0c5ce;">{
+
+    </span><span style="color:#65737e;">// check lines
+    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
+        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> i = </span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">* x;
+        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> val = [i, i + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">4</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">5</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">6</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">7</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">8</span><span style="color:#c0c5ce;">];
+
+        </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..(val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) {
+            </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valv = g[val[v]];
+            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valv != None {
+                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> c in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
+                    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valc = g[val[c]];
+                    </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                        </span><span style="color:#65737e;">// println!(&quot;Block false at {}&quot;, x);
+                        </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
+                    }
+                }
+            }
+        }
+    }
+
+    </span><span style="color:#65737e;">// check columns
+    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
+        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> val = [x, x + </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">18</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">27</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">36</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">45</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">54</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">63</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">72</span><span style="color:#c0c5ce;">];
+
+        </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..(val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) {
+            </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valv = g[val[v]];
+            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valv != None {
+                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> c in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
+                    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valc = g[val[c]];
+                    </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                        </span><span style="color:#65737e;">// println!(&quot;Block false at {}&quot;, x);
+                        </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
+                    }
+                }
+            }
+        }
+    }
+
+    </span><span style="color:#65737e;">// check blocks
+    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
+        </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> i = </span><span style="color:#d08770;">3 </span><span style="color:#c0c5ce;">* (x % </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;">);
+        </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> x &gt; </span><span style="color:#d08770;">2 </span><span style="color:#c0c5ce;">{
+            i = i + </span><span style="color:#d08770;">27</span><span style="color:#c0c5ce;">;
+        } </span><span style="color:#b48ead;">else if</span><span style="color:#c0c5ce;"> x &gt; </span><span style="color:#d08770;">5 </span><span style="color:#c0c5ce;">{
+            i = i + </span><span style="color:#d08770;">54</span><span style="color:#c0c5ce;">;
+        }
+
+        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> val = [i, i + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">11</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">18</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">19</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">20</span><span style="color:#c0c5ce;">];
+
+        </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..(val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) {
+            </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valv = g[val[v]];
+            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valv != None {
+                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> c in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
+                    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valc = g[val[c]];
+                    </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                        </span><span style="color:#65737e;">// println!(&quot;Block false at {}&quot;, x);
+                        </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
+                    }
+                }
+            }
+        }
+    }
+
+    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">;
+}
+
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">is_grid_complete</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; </span><span style="color:#b48ead;">bool </span><span style="color:#c0c5ce;">{
+    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> ret = </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">;
+    </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">&amp;x in g.</span><span style="color:#96b5b4;">iter</span><span style="color:#c0c5ce;">() {
+        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> x {
+            Some(_) =&gt; {}
+            None =&gt; {
+                ret = </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
+                </span><span style="color:#b48ead;">break</span><span style="color:#c0c5ce;">;
+            }
+        }
+    }
+    </span><span style="color:#b48ead;">return</span><span style="color:#c0c5ce;"> ret;
+}
+
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">clone_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] {
+    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> new_g: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] = [None; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">];
+    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..g.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
+        new_g[x] = g[x];
+    }
+    </span><span style="color:#b48ead;">return</span><span style="color:#c0c5ce;"> new_g;
+}
+
+
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">solve_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; Option&lt;[Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">]&gt; {
+
+    </span><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">is_grid_complete</span><span style="color:#c0c5ce;">(g) {
+        </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Some(g);
+    }
+
+    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..g.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
+        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> g[x] {
+            Some(_) =&gt; {}
+            None =&gt; {
+
+                </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> checked: [</span><span style="color:#b48ead;">bool</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">] = [</span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">];
+
+                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">10 </span><span style="color:#c0c5ce;">{
+
+                    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> new_g = </span><span style="color:#96b5b4;">clone_grid</span><span style="color:#c0c5ce;">(g);
+                    new_g[x] = Some(v);
+
+                    checked[(v - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) as </span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">] = </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">;
+
+                    </span><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">check_grid</span><span style="color:#c0c5ce;">(new_g) {
+                        </span><span style="color:#b48ead;">match </span><span style="color:#96b5b4;">solve_grid</span><span style="color:#c0c5ce;">(new_g) {
+                            None =&gt; {
+                                </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> checked == [</span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">] {
+                                    </span><span style="color:#65737e;">// the path is a dead end
+                                    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">None;
+                                } </span><span style="color:#b48ead;">else </span><span style="color:#c0c5ce;">{
+                                    </span><span style="color:#b48ead;">continue</span><span style="color:#c0c5ce;">;
+                                }
+                            }
+
+                            Some(gx) =&gt; </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Some(gx),
+                        }
+                    }
+                }
+
+                </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> checked == [</span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">] {
+                    </span><span style="color:#65737e;">// Detected a dead end
+                    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">None;
+                }
+            }
+        }
+    }
+
+    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">None;
+}
+
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">parse_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">grid_string</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">str</span><span style="color:#c0c5ce;">) -&gt; [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] {
+    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> grid = [None; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">];
+
+    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> i = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
+    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> s in grid_string.</span><span style="color:#96b5b4;">split_whitespace</span><span style="color:#c0c5ce;">() {
+        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> s {
+            &quot;</span><span style="color:#a3be8c;">_</span><span style="color:#c0c5ce;">&quot; =&gt; {}
+            val =&gt; {
+                grid[i] = Some(val.parse::&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;().</span><span style="color:#96b5b4;">unwrap</span><span style="color:#c0c5ce;">());
+            }
+        }
+        i = i + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;
+    }
+
+    </span><span style="color:#b48ead;">return</span><span style="color:#c0c5ce;"> grid;
+}
+
+</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">() {
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> grid_string = </span><span style="color:#b48ead;">r</span><span style="color:#c0c5ce;">#&quot;</span><span style="color:#a3be8c;">
+            1 _ _   _ _ _   _ _ 3
+            _ 4 _   _ _ 9   2 6 _
+            _ _ _   7 _ _   _ 5 4
+
+            _ _ _   1 7 _   9 _ _
+            _ _ 2   _ _ _   6 _ _
+            _ _ 3   _ 9 5   _ _ _
+
+            2 7 _   _ _ 1   _ _ _
+            _ 8 9   3 _ _   _ 7 _
+            6 _ _   _ _ _   _ _ 2</span><span style="color:#c0c5ce;">&quot;#;
+
+    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> grid: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] = </span><span style="color:#96b5b4;">parse_grid</span><span style="color:#c0c5ce;">(grid_string);
+
+    </span><span style="color:#96b5b4;">print_grid</span><span style="color:#c0c5ce;">(grid);
+
+    </span><span style="color:#b48ead;">match </span><span style="color:#96b5b4;">solve_grid</span><span style="color:#c0c5ce;">(grid) {
+        Some(g) =&gt; {
+            println!(&quot;</span><span style="color:#a3be8c;">Grid complete !</span><span style="color:#c0c5ce;">&quot;);
+            </span><span style="color:#96b5b4;">print_grid</span><span style="color:#c0c5ce;">(g)
+        }
+        None =&gt; println!(&quot;</span><span style="color:#a3be8c;">Couldn&#39;t solve the sudoku</span><span style="color:#c0c5ce;">&quot;),
+    }
+
+}
+
+</span></code></pre>
+<p>You can just, given you have installed <a href="https://www.rustup.rs/">rust</a>.</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">cargo build
+</span></code></pre>
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2017-01-08">
+    2017-01-08
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/divers/">
+    <span class="tag is-success">
+        Divers
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/english/">
+    <span class="tag is-link">english </span>
+</a>
+
+
+
+and
+
+
+
+
+<a href="https://meven.github.io/tags/rust/">
+    <span class="tag is-link">rust </span>
+</a>
+
+
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>

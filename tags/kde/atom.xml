@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - kde</title>
+	<link href="https://meven.github.io/tags/kde/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-01-10T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/kde/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Wayland Goal Virtual Sprint 2021</title>
+		<published>2021-01-10T00:00:00+00:00</published>
+		<updated>2021-01-10T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/wayland-goal-virtual-sprint-2021/" type="text/html"/>
+		<id>https://meven.github.io/wayland-goal-virtual-sprint-2021/</id>
+		<content type="html">&lt;p&gt;Happy new year everyone !&lt;&#x2F;p&gt;
+&lt;p&gt;We will be having a Virtual Sprint for the &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal&lt;&#x2F;a&gt; between Saturday 23rd and Sunday 24th January 2021.&lt;&#x2F;p&gt;
+&lt;p&gt;This is open to contributors, you can have a look at the current program and more details at &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Sprints&#x2F;Wayland&#x2F;2020Virtual&quot;&gt;Wayland Virtual Sprint&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Wayland Status for Plasma 5.20</title>
+		<published>2020-11-15T00:00:00+00:00</published>
+		<updated>2020-11-15T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/wayland-status-plasma-5-20/" type="text/html"/>
+		<id>https://meven.github.io/wayland-status-plasma-5-20/</id>
+		<content type="html">&lt;p&gt;The KDE community has made some great progress on Plasma Wayland support during this release cycle.
+Some people on the Internet have qualified Plasma Wayland session as stable, but I wouldn&#x27;t go that far yet.
+I would qualify Plasma sessions as beta preview, we still have a long way to go.
+In some configurations and workflow It might suit you but certainly not all users for now.&lt;&#x2F;p&gt;
+&lt;p&gt;I am going to highlight a bit this progress below but first I&#x27;d like to explain the technical challenges the KDE Wayland community Goal faces.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;why-wayland-migration-takes-time&quot;&gt;Why Wayland migration takes time&lt;&#x2F;h1&gt;
+&lt;p&gt;Wayland related issues have different origins.
+Here are the main ones :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Missing wayland protocol or missing protocol implementation.&lt;br &#x2F;&gt;
+Wayland defines a way to exchange data between an application and the compositor (in Plasma that&#x27;s KWin). Those exchanges are formalized with protocols. Wayland provides quite a few &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wayland-project&#x2F;wayland-protocols&quot;&gt;standard ones&lt;&#x2F;a&gt;. For instance we have a protocol for  when a GUI Application starts, it will ask the compositor some memory to draw its GUI in, and another for when the compositor gives the application the keyboard focus.
+And for each particular window interaction between applications and the compositor we need such a protocol.&lt;br &#x2F;&gt;
+Standard protocols are not enough to build a Plasma session upon, it is generic and is meant to be usable by desktop and embed all the same.
+So KWin and Plasma have &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;libraries&#x2F;plasma-wayland-protocols&quot;&gt;some specific protocols&lt;&#x2F;a&gt;. Those, for instance, allow Plasma taskbar to manage other windows.&lt;br &#x2F;&gt;
+Despite Wayland is not anymore a new technology, its protocols mature slowly. Their definition takes time, they are validated through a review process, and are updated as needed. After that step, developers must implement their support in compositors, and sometimes also in applications or frameworks.&lt;br &#x2F;&gt;
+If you are interested on this subject, I can recommend again Drew DeVault&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;wayland-book.com&#x2F;&quot;&gt;the wayland book&lt;&#x2F;a&gt;.&lt;br &#x2F;&gt;
+Those are often the cause of missing features whether we a protocol does not exist yet or we lack an implementation. The task manager window thumbnails is in this category.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Fill the blank issues: the X.Org Display Server encompasses a lot of things, from keyboard input to screensavers, to screen management. And those features need to be reimplemented somehow whether it is through Wayland protocols or new completely new solutions. We have made good progress on this but a few missing cases remain.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Immaturity issues: Wayland implementations and related APIs are relatively young especially when you compare to X.Org Server. And on the desktop those implementation have not been used much, preventing issues to be discovered and fixed. Furthermore clients and compositors especially have a lot more responsibility compared to what they had with X, meaning a lot of new code is written, and new code means less stability.
+With &lt;a href=&quot;https:&#x2F;&#x2F;www.phoronix.com&#x2F;scan.php?page=news_item&amp;amp;px=Ajax-On-The-X-Server&quot;&gt;X.org display server now abandonware&lt;&#x2F;a&gt;, this should help motivate more users and developers to test and stabilise things.
+Those cause crashes, misbehaviour or feature missing.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Compatibility issues: Wayland is very different to what we had in X. And we need to adapt to this new paradigm in a lot of places. For instance in plasma, with Xorg the taskbar could simply access Xorg API and manage windows directly. Now it must ask the Compositor to use its Window management API and this is a different API and KWin is the one defining and implementing it. One way to mitigate those issues, is to have a proxy. we try to maintain compatibility with X applications through XWayland notably.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;And some issues can be caused by several of those subjective origins.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;major-plasma-5-20-wayland-improvements&quot;&gt;Major Plasma 5.20 Wayland improvements&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The Task Manager has now window thumbnails Wayland. (Aleix Pol Gonzalez) &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;plasma-desktop&#x2F;-&#x2F;merge_requests&#x2F;36&#x2F;&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Screen recording and screencasting now works on Wayland for compatible applications (e.g. OBS Studio and more to come) (Aleix Pol Gonzalez)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;libraries&#x2F;plasma-wayland-protocols&#x2F;-&#x2F;merge_requests&#x2F;1&quot;&gt;merge request&lt;&#x2F;a&gt;
+&lt;br &#x2F;&gt; That&#x27;s a fill the blank issue and missing protocol issue : Xorg allows any program to record the screen with its own API. We needed a new protocol to expose a screencasting feature.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Klipper now uses the Wayland clipboard and works as you would expect in a Wayland session (David Edmundson)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;plasma-workspace&#x2F;-&#x2F;merge_requests&#x2F;1&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Implemented the Wayland input-method-unstable-v1 protocol, which opens the door for proper virtual keyboard support on Plasma Mobile, among other benefits! (Aleix Pol Gonzalez)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;106&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;bug-fixes&quot;&gt;Bug fixes&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;stability-improvement&quot;&gt;Stability improvement&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;In a Plasma Wayland session, XWayland no longer brings down the whole session when it crashes; it just restarts normally (Vlad Zahorodniy, Plasma 5.20) &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;125&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Clearing the clipboard history on Wayland no longer crashes Plasma (David Edmundson, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=396308&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;On Wayland, clicking on a Task Manager entry while that entry’s tooltip is visible no longer crashes Plasma (Vlad Zahorodnii, Plasma 5.20)
+&lt;a href=&quot;hhttps:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=425869&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;KWin no longer sometimes crashes when exiting or re-launching (Vlad Zahorodnii, Plasma 5.20) &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;328&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;feature-parity&quot;&gt;Feature Parity&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;On Wayland, context menus on the desktop and throughout Plasma now close when they’re supposed to (Vlad Zahorodnii, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=379635&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;On Wayland, Task Manager tooltip window thumbnails are no longer overlapped by the app’s icon (Nate Graham, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=427076&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;On Wayland, pressing Ctrl+Alt+Esc twice no longer results in the “Click a window to kill it” message being re-positioned into the top-left corner of the screen (Vlad Zahorodnii, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=400675&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;KRunner is now more responsive to typed text on Wayland (Alexander Lohnau, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=426746&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed the initialization of dmabuf textures in KWin on Wayland, which in practical terms should ensure that videos played Firefox no longer sometimes display garbage instead of the video (Vlad Zahorodnii, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;323&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Clicking on a Task Manager thumbnail now activates that window, as you would expect (Marco Martin, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=426925&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;the window stacking order is now always correct (Vlad Zahorodnii, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;288&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;context menus now always have shadows, as expected (Vlad Zahorodnii, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwayland-integration&#x2F;-&#x2F;merge_requests&#x2F;3&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved the graphics performance on Wayland (Gang Wu, Plasma 5.20) by allowing KWin not to draw windows placed behind opaque others.
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;228&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It’s now possible to drag windows on Wayland from their empty areas, just like on X11 (Vlad Zahorodnii, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;breeze&#x2F;-&#x2F;merge_requests&#x2F;8&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Plasma no longer sometimes crashes when you hover the cursor over an auto-hide Panel (Andreas Haratzis, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;83&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a case where KWin could crash when logging out of a Wayland session (Andrey Butirsky, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=420077&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Edge swipe gestures and showing a hidden panel by tapping the screen edge now work on Wayland (Xaver Hugl, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=421212&quot;&gt;bug&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=423842&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The System Settings Accessibility page is now available (Michael Weghorn, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=414546&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed the “Windows can cover” panel setting on Wayland (Xaver Hugl, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwayland-server&#x2F;-&#x2F;merge_requests&#x2F;60&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The last-used keyboard layout is now remembered on Wayland (Andrey Butirsky, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=412101&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Fixed a crash on Wayland when waking up the computer while multiple screens are attached (Andreas Haratzis, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=422460&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;you can now enter full screen mode in MPV by double-clicking on the video (Benjamin Port, Plasma 5.20.0)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=421232&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Previews for cursor themes now correctly display real-time previews as you hover your cursor over them on Wayland (David Redondo, Plasma 5.20)
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=424048&quot;&gt;bug&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Spectacle now lets you take a screenshot on Wayland without needing to click first to confirm it (Méven Car, Spectacle 20.12)
+&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;graphics&#x2F;spectacle&#x2F;-&#x2F;merge_requests&#x2F;13&quot;&gt;merge request&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Special shoutout to our newest ambitious and prolific KWin contributor Xaver Hugl.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate blog&lt;&#x2F;a&gt; that makes putting this together so much easier.&lt;&#x2F;p&gt;
+&lt;p&gt;We are on &lt;a href=&quot;https:&#x2F;&#x2F;t.me&#x2F;waylandkdegoal&quot;&gt;telegram&lt;&#x2F;a&gt; and IRC &lt;em&gt;#kde-wayland-goal&lt;&#x2F;em&gt; on freenode.
+More on the community wiki &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Wayland Status update for Plasma 5.19</title>
+		<published>2020-06-02T00:00:00+00:00</published>
+		<updated>2020-06-02T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/wayland-status-update-plasma-5-19/" type="text/html"/>
+		<id>https://meven.github.io/wayland-status-update-plasma-5-19/</id>
+		<content type="html">&lt;p&gt;We have been busy recently on the Wayland Goal.&lt;&#x2F;p&gt;
+&lt;p&gt;A few of those points were already highlight on &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate&#x27;s excellent blog&lt;&#x2F;a&gt;.
+But some were missing, and I wanted to highlight those dedicated to Wayland with more context.&lt;&#x2F;p&gt;
+&lt;p&gt;The changes I mention here will be present in Plasma 5.19, but they are not exhaustive.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;kwin-and-architecture-changes&quot;&gt;KWin and architecture changes&lt;&#x2F;h4&gt;
+&lt;p&gt;Thanks to Aleix Pol, KWin Wayland in Plasma 5.19 now has &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wayland-project&#x2F;wayland-protocols&#x2F;blob&#x2F;master&#x2F;unstable&#x2F;tablet&#x2F;tablet-unstable-v2.xml&quot;&gt;Wayland tablet protocol&lt;&#x2F;a&gt; support meaning we have tablet touch and pen pressure. &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D26859&quot;&gt;Kwin patch&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D26858&quot;&gt;KWayland patch&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Vlad improved &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=387313&quot;&gt;subsurface clipping&lt;&#x2F;a&gt;, it means the compositor can do less work and better figure out what to paint and not to paint.
+It is most visible for applications like Firefox that uses a lot of Wayland surfaces. &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29131&quot;&gt;D29131&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;5&quot;&gt;kwin!5&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29250&quot;&gt;D29250&lt;&#x2F;a&gt; the resizing of XWayland windows has become less resource demanding and matches X experience.
+This still needs next version of XWayland 1.21 to work though.&lt;&#x2F;p&gt;
+&lt;p&gt;And KWin has had more changes under the surface.&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;frameworks&#x2F;kwayland&quot;&gt;KWayland library&lt;&#x2F;a&gt; has been split library into two libraries.
+One KWayland contains the regular @@KWayland::Client@@ stuff but the new &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwayland-server&quot;&gt;kwayland-server&lt;&#x2F;a&gt; contains now the @@KWayland::Server@@ part.&lt;&#x2F;p&gt;
+&lt;p&gt;Because @@KWayland@@ is part of &lt;a href=&quot;https:&#x2F;&#x2F;kde.org&#x2F;products&#x2F;frameworks&#x2F;&quot;&gt;KDE frameworks&lt;&#x2F;a&gt; it is released monthly, independently of Plasma releases, and we have to care about not breaking the API when making changes.
+But on the other hand @@KWayland::Server@@ is only ever used by KWin, so it added some churn to the development of @@KWayland::Server@@ which was not needed.
+Now @@KWayland-server@@ will have a Plasma release cycle same as KWin, and will simplify our workflow evolving our Wayland compositor implementation.
+New depot is at &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwayland-server&quot;&gt;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwayland-server&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;plasma&quot;&gt;Plasma&lt;&#x2F;h4&gt;
+&lt;p&gt;The global application menu has is now working in Wayland thanks to Carson Black patch serie: &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27464&quot;&gt;D27464&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28168&quot;&gt;D28168&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28150&quot;&gt;D28150&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28112&quot;&gt;D28112&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27959&quot;&gt;D27959&lt;&#x2F;a&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27818&quot;&gt;D27818&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28146&quot;&gt;D28146&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=385880&quot;&gt;bug&lt;&#x2F;a&gt;.
+This is typical Wayland work : make new APIs because old ones were X specific or could not work with Wayland, add some wiring code and then use the new one in programs using.
+This most often end up in better code architecture, better decoupled. &lt;&#x2F;p&gt;
+&lt;p&gt;The task manager can now bring forward multiple windows of the same program and remembering in which order they are stacked together
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=370258&quot;&gt;bug&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29054&quot;&gt;patch 1&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29054&quot;&gt;patch 2&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29055&quot;&gt;patch 3&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29056&quot;&gt;patch 4&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;KRunner is &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27458&quot;&gt;better positioned&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Kscreen Osd are now usable, allowing you to to setup a newly connected screen and identify your plugged-in screen &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=385672&quot;&gt;bug&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28817&quot;&gt;D28817&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28818&quot;&gt;D28818&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28916&quot;&gt;D28916&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;bugfixes&quot;&gt;Bugfixes&lt;&#x2F;h4&gt;
+&lt;p&gt;Quite a few crash KWin were resolved :&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28668&quot;&gt;D28668&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28858&quot;&gt;D28858&lt;&#x2F;a&gt;  &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28889&quot;&gt;D28889&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27536&quot;&gt;D27536&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;9&quot;&gt;kwin!9&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x2F;kwin&#x2F;-&#x2F;merge_requests&#x2F;8&quot;&gt;kwin!8&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;And drkonqi got a couple fix : &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28692&quot;&gt;D28692&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28832&quot;&gt;D28832&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;plasma-wayland-specific-features&quot;&gt;Plasma Wayland specific features&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;scroll-speed.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;scroll-speed.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to the way Wayland is architectured, we can add features than are impossible with X server.
+For instance in plasma 5.19 in Wayland you will be able to setup a scrolling speed for mice and touchpads. &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28331&quot;&gt;D28331&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28310&quot;&gt;D28310&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;But our journey is far from over.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Our goal&lt;&#x2F;a&gt; is in part to make Plasma run in Wayland by default allowing pixel perfection, real security in the display server, better performance and  overall better architecture.&lt;&#x2F;p&gt;
+&lt;p&gt;The road is still long to reach feature parity with the venerable X based sessions.
+So we need as much people to help whether it is for testing, hacking code or reporting bugs.&lt;&#x2F;p&gt;
+&lt;p&gt;There is a Plasma virtual Sprint starting right now spawning two weeks, where a lot of people involved in the Goal will participate.
+I invite you to join-in : &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Sprints&#x2F;Plasma&#x2F;2020Virtual&quot;&gt;Plasma virtual sprint 2020&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Also Drew DeVault released a great book about Wayland you can read at &lt;a href=&quot;https:&#x2F;&#x2F;wayland-book.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;wayland-book.com&#x2F;&lt;&#x2F;a&gt; to better understand Wayland inner-workings.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Wayland goal - Call for Action</title>
+		<published>2019-10-10T00:00:00+00:00</published>
+		<updated>2019-10-10T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/wayland-goal/" type="text/html"/>
+		<id>https://meven.github.io/wayland-goal/</id>
+		<content type="html">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
+&lt;p&gt;This entails making Plasma running smoothly under Wayland, but also making sure KDE Apps can run without bugs and missing features.
+It also means that we want to help the wider Wayland community to fill missing features and fix bugs.&lt;&#x2F;p&gt;
+&lt;p&gt;I call App users and developers to try out their favorite app in Wayland and report the issue that may arise. and add wayland as keyword to the bug to keep track on those bugs.&lt;&#x2F;p&gt;
+&lt;p&gt;And you don&#x27;t need a wayland session to test an app, you can do it in wayland within a X session !&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;kwin_wayland # start an embed kwind_wayland&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;in-another-terminal&quot;&gt;In another terminal&lt;&#x2F;h1&gt;
+&lt;p&gt;gwenview --platform wayland # starts gwenview in the wayland session&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;gwenview_in_wayland_in_X.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;gwenview_in_wayland_in_X.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;We have a page listing &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Guidelines_and_HOWTOs&#x2F;Wayland_Porting_Notes&quot;&gt;how to fix a few pitfalls&lt;&#x2F;a&gt; that applications may have in Wayland.&lt;&#x2F;p&gt;
+&lt;p&gt;You can also test Plasma Wayland session of course and report the same way issues that may arise.&lt;&#x2F;p&gt;
+&lt;p&gt;You can reach us at #kde-devel or #plasma in &lt;a href=&quot;https:&#x2F;&#x2F;webchat.kde.org&quot;&gt;webchat.kde.org&lt;&#x2F;a&gt; or freenode.&lt;&#x2F;p&gt;
+&lt;p&gt;More information on the &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal page&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Recently Used ioslave</title>
+		<published>2019-10-05T00:00:00+00:00</published>
+		<updated>2019-10-05T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/recently-used-ioslave/" type="text/html"/>
+		<id>https://meven.github.io/recently-used-ioslave/</id>
+		<content type="html">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
+This differential revision adds two entries &amp;quot;Recent Files&amp;quot; and &amp;quot;Recent Locations&amp;quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;captures&#x2F;recently-used.png&quot; alt=&quot;Recent screenshot&quot; &#x2F;&gt;
+&lt;p&gt;It leverages the ioslave recentlyused:&#x2F; introduced in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;D22144&lt;&#x2F;a&gt;, allowing to access KActivity data.
+KActivity is the service that provides &amp;quot;recent&amp;quot; elements to kickoff menu and is activity aware as the name suggests.&lt;&#x2F;p&gt;
+&lt;p&gt;So now &amp;quot;Recent Files&amp;quot;, &amp;quot;Recent Locations&amp;quot; in the places panel share the same underlining data with kickoff.&lt;&#x2F;p&gt;
+&lt;p&gt;But recentlyused:&#x2F; can be used to create your virtual folders for recent files or folders. For instance&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;{{recentlyused:&#x2F;files?type=video&#x2F;&lt;em&gt;,audio&#x2F;&lt;&#x2F;em&gt;}}
+To filter recently accessed video and audio files.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;{{recentlyused:&#x2F;files?path=&#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;*&amp;amp;type=text&#x2F;plain}}
+To filter recently accessed text files in any subdirectory of &#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;{{recentlyused:&#x2F;locations?path=&#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;*}}
+To filter recently accessed folders in any subdirectory of &#x2F;home&#x2F;meven&#x2F;kde&#x2F;src&#x2F;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can read the &lt;a href=&quot;https:&#x2F;&#x2F;cgit.kde.org&#x2F;kio-extras.git&#x2F;tree&#x2F;recentlyused&#x2F;recentlyused.h#n28&quot;&gt;documentation&lt;&#x2F;a&gt; for more details.&lt;&#x2F;p&gt;
+&lt;p&gt;When working on this new feature, It was a great time to improve KActivity.
+So I allowed KActivity to ingest data from gtk applications in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D23112&quot;&gt;differential D23112&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work. 
+And I want to thank all the other reviewers involved.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>KDE First Contributions and first sprint</title>
+		<published>2019-07-26T00:00:00+00:00</published>
+		<updated>2019-07-26T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/first-contributions-and-first-sprint/" type="text/html"/>
+		<id>https://meven.github.io/first-contributions-and-first-sprint/</id>
+		<content type="html">&lt;p&gt;I have been a KDE User for more than 10 years.
+I really love KDE community, Plasma and its apps.
+I have been reading eagerly &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate Graham&#x27;s blog&lt;&#x2F;a&gt;
+He gave me the inspiration to start contributing.&lt;&#x2F;p&gt;
+&lt;p&gt;It has been a opportunity to learn some C++, Qt and some Qml.&lt;&#x2F;p&gt;
+&lt;p&gt;So far I am very happy to have contributed a few features and bug fixes :&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D20096&quot;&gt;Provide file date creation in KDE Apps&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Improvements to the KDE Open&#x2F;Save dialog : &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D21459&quot;&gt;keeping view settings when changing views&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D21315&quot;&gt;icons to show view mode&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D20838&quot;&gt;allow to drop a file or directory on the main file area&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;In Dolphin some improvements to its information panel, in particular an &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19782&quot;&gt;auto play feature&lt;&#x2F;a&gt; and some &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19936&quot;&gt;smaller&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19843&quot;&gt;on&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19832&quot;&gt;e&lt;&#x2F;a&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D19844&quot;&gt;s&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D15739&quot;&gt;Do not show the root folder by defaults in places&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;And a few less noticeable as well.&lt;&#x2F;p&gt;
+&lt;p&gt;And I have quite a lot more in the back of my head.
+I am close to completing adding &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22183&quot;&gt;click-to-play to video and audio previews&lt;&#x2F;a&gt; in dolphin information panel.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;usablity-productivity-sprint-in-valencia&quot;&gt;Usablity &amp;amp; Productivity Sprint in Valencia&lt;&#x2F;h2&gt;
+&lt;p&gt;I participated last month to the Usablity &amp;amp; Productivity Sprint in Valencia.
+I have been very happy to meet some great KDE community members from three continents and 9 countries.&lt;&#x2F;p&gt;
+&lt;p&gt;There I improved the kinfocenter consistency thanks to the help of Filip and Marco and added a &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D20533&quot;&gt;link from the system battery plasmoid to the corresponding kinfocenter kcm&lt;&#x2F;a&gt;.
+I started to work on a &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;new recently used document ioslave&lt;&#x2F;a&gt; that will match the same feature as in kicker&#x2F;kickoff.
+Adding some consistency and activity awareness to dolphin and KDE Open&#x2F;Save dialogs.
+I learned about Kwin debugging with David Edmundson.
+And I had great discussions with the people there.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;i-am-going-to-akademy-2019&quot;&gt;I am going to Akademy 2019 !&lt;&#x2F;h2&gt;
+&lt;p&gt;And since I am a big fan of &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust-lang&lt;&#x2F;a&gt;, this will be a nice opportunity to debate on the matter and on the future of KDE.
+&lt;a href=&quot;https:&#x2F;&#x2F;akademy.kde.org&#x2F;2019&quot;&gt;((https:&#x2F;&#x2F;cdn.kde.org&#x2F;akademy&#x2F;2019&#x2F;imgoing&#x2F;Akademy2019BannerDuomo-wee.png))&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

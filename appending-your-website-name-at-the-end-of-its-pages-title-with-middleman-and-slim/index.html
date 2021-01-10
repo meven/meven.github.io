@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/appending-your-website-name-at-the-end-of-its-pages-title-with-middleman-and-slim/">
+            <p class="title article-title">Appending your website name at the end of its pages titles with middleman and slim
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2018-06-27</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;1 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <p>If you use <a href="https://github.com/middleman/middleman">middleman</a>  and the nice template solution <a href="https://github.com/slim-template/slim">slim</a> you might encounter the same need as I did: appending your site name at the end of your page titles without hardcoding it everywhere.</p>
+<p>I found a simple solution, in my layout I added:</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">    - if current_page.data.title?
+        title= current_page.data.title + &quot; | My Website&quot;
+    - else
+        title My Website
+</span></code></pre>
+<p>When in your slim pages you have :</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">---
+title: My page title
+---
+
+</span></code></pre>
+<p>You end up in your generated code using <a href="https://github.com/middleman/middleman">middleman</a> with the title</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">&lt;title&gt;My page title | My Website&lt;/title&gt;
+</span></code></pre>
+<p>And if the page has no title it will default to :</p>
+<pre style="background-color:#2b303b;">
+<code><span style="color:#c0c5ce;">&lt;title&gt;My Website&lt;/title&gt;
+</span></code></pre>
+<p>This was found when trying to <a href="https://github.com/sgrif/diesel.rs-website/pull/65">improve diesel documentation</a>.</p>
+<p>I hope this can be useful to somebody else.</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2018-06-27">
+    2018-06-27
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/monde-libre/">
+    <span class="tag is-success">
+        Monde libre
+    </span>
+</a>
+
+
+                    
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://meven.github.io/sitemap.xml

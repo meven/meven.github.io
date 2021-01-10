@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - BSD</title>
+	<link href="https://meven.github.io/tags/bsd/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2007-06-09T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/bsd/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Test de OpenBSD l&#x27;OS le plus sur au monde</title>
+		<published>2007-06-09T00:00:00+00:00</published>
+		<updated>2007-06-09T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/" type="text/html"/>
+		<id>https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/</id>
+		<content type="html">&lt;p&gt;J&#x27;ai installé OpenBSD et le moins que je puisse dire c&#x27;est que je n&#x27;ai pas été déçu !
+&lt;img src=&quot;&#x2F;puffy41.gif&quot; alt=&quot;Puffy la mas&quot; &#x2F;&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;OpenBSD&quot;&gt;OpenBSD&lt;&#x2F;a&gt; est pour ce qui le savent pas un système Unix libre.
+Historiquement il est basé sur le noyau &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Berkeley_Software_Distribution&quot;&gt;BSD&lt;&#x2F;a&gt; lui-même héritié direct du noyau UNIX originel de 1970. C&#x27;est donc un cousin éloigné du noyau Linux.
+Voilà pour la petite histoire.&lt;&#x2F;p&gt;
+&lt;p&gt;OpenBSD est dans la famille des &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;BSD&quot;&gt;*BSD&lt;&#x2F;a&gt;, le plus orienté sécurité. Le système est réputé pour cela. On lui doit notamment &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;OpenSSH&quot;&gt;openSSH&lt;&#x2F;a&gt;, l&#x27;implémentation libre du célèbre protocole ssh.&lt;&#x2F;p&gt;
+&lt;p&gt;Le système est à des années lumières de la simplicité de ubuntu qu&#x27;on se le dise mais il n&#x27;est fait pour. Ce qu&#x27;il recherche c&#x27;est la sécurité maximum et la fiabilité.
+Résultat une installation en mode texte( partitionage ..), pas d&#x27;interface graphique installée par défaut. Pas de compte sudo non plus, un compte root après à toi de te débrouillé. La seule chose en commun avec linux, c&#x27;est le shell ! Et encore ici pas de bash c&#x27;est ksh ou csh !&lt;&#x2F;p&gt;
+&lt;p&gt;Pas de système de gestion de packet style apt (debian&#x2F;ubuntu) ou emerge(gentoo). Pour installer un logiciel, il faut d&#x27;abord ajouter dans une variable d&#x27;environnement l&#x27;emplacement du serveur ftp qui fait office de dépôt. On utilise alors le script pkg_add. Il télécharge les packets au format tgz (tar.gz) contenant les binaires et le reste. Le script gère les dépendances. J&#x27;ai pu installé Kde mais ce n&#x27;est pas parfait. La résolution a un problème, il n&#x27;y a ni konqueror ni les autres application utiles et je ne peux lancer KDE que avec l&#x27;utilisateur root.&lt;&#x2F;p&gt;
+&lt;p&gt;Un conseil si vous voulez l&#x27;essayer, renseignez vous bien surtout si vous voulez tenter un dual boot. Personnellement je ne l&#x27;aurais pas essayer si je n&#x27;avais pas un disque dur de libre.
+&lt;a href=&quot;http:&#x2F;&#x2F;www.openbsd.org&#x2F;&quot;&gt;Site officiel&lt;&#x2F;a&gt;
+&lt;a href=&quot;http:&#x2F;&#x2F;www.openbsd-france.org&#x2F;%5Bfr&quot;&gt;Side de la communauté française&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

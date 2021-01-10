@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>meven&#x27;s blog - développement web</title>
+	<link href="https://meven.github.io/tags/developpement-web/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://meven.github.io"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2009-07-25T00:00:00+00:00</updated>
+	<id>https://meven.github.io/tags/developpement-web/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Google Wave s&#x27;ouvre un peu</title>
+		<published>2009-07-25T00:00:00+00:00</published>
+		<updated>2009-07-25T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/google-wave-s-ouvre-un-peu/" type="text/html"/>
+		<id>https://meven.github.io/google-wave-s-ouvre-un-peu/</id>
+		<content type="html">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
+Cela représente au total 40 000 lignes de code de java disponible via &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Mercurial&quot;&gt;mercurial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;le-operational-transform-ot-c-est-en-fait-l-api-de-base-pour-le-protocole-wave-et-son-modele&quot;&gt;le &amp;quot;Operational Transform&amp;quot; (OT), c&#x27;est en fait l&#x27;API de base pour le protocole Wave et son modèle.&lt;&#x2F;h1&gt;
+&lt;h1 id=&quot;un-prototype-de-client-serveur-implementant-le-protocole-wave&quot;&gt;un prototype de client&#x2F;serveur implémentant le protocole Wave.&lt;&#x2F;h1&gt;
+&lt;p&gt;Le serveur est une extension du serveur XMPP &lt;a href=&quot;http:&#x2F;&#x2F;www.igniterealtime.org&#x2F;projects&#x2F;openfire&#x2F;index.jsp&quot;&gt;openfire&lt;&#x2F;a&gt;.
+Une procédure d&#x27;installation est disponible, que j&#x27;ai testé.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;wave&#x2F;Capture-Wave-console.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;wave&#x2F;Capture-Wave-console.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;On se retrouve avec un serveur XMPP avec l&#x27;extension Wave et un client en ligne de commande avec des commandes tel que :&lt;&#x2F;p&gt;
+&lt;p&gt;&#x2F;open     id                       open a wave given an inbox id&lt;&#x2F;p&gt;
+&lt;p&gt;On retrouve les principes des waves : partage d&#x27;objet, mise à jour temps réel entre les participants.&lt;&#x2F;p&gt;
+&lt;p&gt;Le client n&#x27;a pas encore qu&#x27;une fraction des fonctionnalités du client GWT, mais avec une base de code pour travailler, qui sait ce que l&#x27;on peut obtenir.&lt;&#x2F;p&gt;
+&lt;p&gt;Pour le serveur, d&#x27;après le billet de google, il implémente une version plus récente du protocole que le serveur de preview wavesandbox...&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Premières impressions sur Google Wave</title>
+		<published>2009-07-20T00:00:00+00:00</published>
+		<updated>2009-07-20T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/premieres-impressions-sur-google-wave/" type="text/html"/>
+		<id>https://meven.github.io/premieres-impressions-sur-google-wave/</id>
+		<content type="html">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
+&lt;p&gt;J&#x27;avais été assez enthousiasmé en juin quand le projet avait été dévoilé.&lt;&#x2F;p&gt;
+&lt;p&gt;Comme vous le savez sans doute, les wave sont des mixs de mail, messagerie instantanée, wiki et plus combiné dans une une même web-app.
+L&#x27;application est à la fois synchrone et asynchrone, extensible via des bots (traduction, publication...), des gadgets (carte, sondage etc..) qui permette d&#x27;enrichir l&#x27;utilisation.&lt;&#x2F;p&gt;
+&lt;p&gt;Je vous livre mes premières impressions.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;Capture-google-wave.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;Capture-google-wave.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Rapide&lt;&#x2F;strong&gt; : On est surpris par la fréquence des mises à jour et l&#x27;instantanéité. On peut suivre un autre utilisateur en train d&#x27;éditer une wave. On se croirait avec &lt;a href=&quot;http:&#x2F;&#x2F;gobby.0x539.de&#x2F;trac&#x2F;&quot;&gt;gobby&lt;&#x2F;a&gt;, excepté qu&#x27;il s&#x27;agit d&#x27;une application web dans un navigateur.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Bruyant&lt;&#x2F;strong&gt; : Les utilisateurs sont des développeurs. On parle nouveauté, information pratique, le tout avec beaucoup, beaucoup de bruit. Il y a une fonction &amp;quot;spam!&amp;quot;, il faudra que je la teste.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Prometteur&lt;&#x2F;strong&gt; : Les fonctionnalités sont là : édition des pages à plusieurs, messages en fil de discussion, avec possibilité de le faire en privé...&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;En devenir&lt;&#x2F;strong&gt; On est encore au stade preview, l&#x27;instabilité se fait sentir. Et pour moi il manque surtout l&#x27;ouverture d&#x27;une implémentation d&#x27;un serveur, qui promet d&#x27;être interopérable avec les autres serveurs implémentant le &lt;a href=&quot;http:&#x2F;&#x2F;www.waveprotocol.org&#x2F;&quot;&gt;protocole&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;J&#x27;ai hâte d&#x27;en avoir une utilisation dans un cadre réel et davantage décentralisé.&lt;&#x2F;p&gt;
+&lt;p&gt;Pour l&#x27;heure, il me reste plus qu&#x27;à découvrir le nouveau joujou du point de vue d&#x27;un développeur ;)&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>afpyro le mardi 24 juin, 19h30 : Apéro Rennais des utilisateurs de python</title>
+		<published>2008-06-19T00:00:00+00:00</published>
+		<updated>2008-06-19T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/" type="text/html"/>
+		<id>https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/</id>
+		<content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
+L&#x27;idée est très simple: tu utilises python, ou des projets gravitant autour comme django ou zope, tu aimes bien causer et boire un verre, alors cette apéro est faite pour toi!&lt;&#x2F;p&gt;
+&lt;p&gt;Cela se passe au O&#x27;Connels Pub &lt;a href=&quot;http:&#x2F;&#x2F;maps.google.fr&#x2F;maps?f=l&amp;amp;hl=fr&amp;amp;geocode=&amp;amp;q=o%27connels&amp;amp;near=rennes&amp;amp;ie=UTF8&amp;amp;ll=48.111944,-1.680264&amp;amp;spn=0.008138,0.023389&amp;amp;t=h&amp;amp;z=16&amp;amp;iwloc=A&quot;&gt;itinéraire&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;gulliver.eu.org&#x2F;wiki&#x2F;Python&#x2F;&quot;&gt;Plus d&#x27;info sur le site de Gulliver&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Changement de thème pour Meven&#x27;s blog, Enfin !</title>
+		<published>2008-03-23T00:00:00+00:00</published>
+		<updated>2008-03-23T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/" type="text/html"/>
+		<id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
+		<content type="html">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
+On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
+Pour mémoire, mon blog ressemblait à cela avant :
+&lt;a href=&quot;&#x2F;captures&#x2F;offre1.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;offre1.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+Un thème créé par mes soins mais n&#x27;ayant pas rencontré son public mais plutôt ses critiques ! J&#x27;espère que ce nouveau thème rendra la lecture de mon blog plus agréable ;) .&lt;&#x2F;p&gt;
+</content>
+	</entry>
+	<entry xml:lang="en">
+		<title>Django-fr ouvre ses portes</title>
+		<published>2007-06-29T00:00:00+00:00</published>
+		<updated>2007-06-29T00:00:00+00:00</updated>
+		<link href="https://meven.github.io/djangofr-ouvre-ses-portes/" type="text/html"/>
+		<id>https://meven.github.io/djangofr-ouvre-ses-portes/</id>
+		<content type="html">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.
+Je suis très content de cette création étant moi même un utilisateur de djangonet un supporteur.&lt;&#x2F;p&gt;
+&lt;p&gt;Pour rappel django est un framework de développement web en python. Sanphilosophie est simplicité et efficacité.
+Je vous le conseille. Il est facile à prendre en main grâce à landocumentation(ce sera plus long si vous découvrez aussi python :)).&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

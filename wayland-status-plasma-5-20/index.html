@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/wayland-status-plasma-5-20/">
+            <p class="title article-title">Wayland Status for Plasma 5.20
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2020-11-15</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;8 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <p>The KDE community has made some great progress on Plasma Wayland support during this release cycle.
+Some people on the Internet have qualified Plasma Wayland session as stable, but I wouldn't go that far yet.
+I would qualify Plasma sessions as beta preview, we still have a long way to go.
+In some configurations and workflow It might suit you but certainly not all users for now.</p>
+<p>I am going to highlight a bit this progress below but first I'd like to explain the technical challenges the KDE Wayland community Goal faces.</p>
+<h1 id="why-wayland-migration-takes-time">Why Wayland migration takes time</h1>
+<p>Wayland related issues have different origins.
+Here are the main ones :</p>
+<ul>
+<li>
+<p>Missing wayland protocol or missing protocol implementation.<br />
+Wayland defines a way to exchange data between an application and the compositor (in Plasma that's KWin). Those exchanges are formalized with protocols. Wayland provides quite a few <a href="https://github.com/wayland-project/wayland-protocols">standard ones</a>. For instance we have a protocol for  when a GUI Application starts, it will ask the compositor some memory to draw its GUI in, and another for when the compositor gives the application the keyboard focus.
+And for each particular window interaction between applications and the compositor we need such a protocol.<br />
+Standard protocols are not enough to build a Plasma session upon, it is generic and is meant to be usable by desktop and embed all the same.
+So KWin and Plasma have <a href="https://invent.kde.org/libraries/plasma-wayland-protocols">some specific protocols</a>. Those, for instance, allow Plasma taskbar to manage other windows.<br />
+Despite Wayland is not anymore a new technology, its protocols mature slowly. Their definition takes time, they are validated through a review process, and are updated as needed. After that step, developers must implement their support in compositors, and sometimes also in applications or frameworks.<br />
+If you are interested on this subject, I can recommend again Drew DeVault's <a href="https://wayland-book.com/">the wayland book</a>.<br />
+Those are often the cause of missing features whether we a protocol does not exist yet or we lack an implementation. The task manager window thumbnails is in this category.</p>
+</li>
+<li>
+<p>Fill the blank issues: the X.Org Display Server encompasses a lot of things, from keyboard input to screensavers, to screen management. And those features need to be reimplemented somehow whether it is through Wayland protocols or new completely new solutions. We have made good progress on this but a few missing cases remain.</p>
+</li>
+<li>
+<p>Immaturity issues: Wayland implementations and related APIs are relatively young especially when you compare to X.Org Server. And on the desktop those implementation have not been used much, preventing issues to be discovered and fixed. Furthermore clients and compositors especially have a lot more responsibility compared to what they had with X, meaning a lot of new code is written, and new code means less stability.
+With <a href="https://www.phoronix.com/scan.php?page=news_item&amp;px=Ajax-On-The-X-Server">X.org display server now abandonware</a>, this should help motivate more users and developers to test and stabilise things.
+Those cause crashes, misbehaviour or feature missing.</p>
+</li>
+<li>
+<p>Compatibility issues: Wayland is very different to what we had in X. And we need to adapt to this new paradigm in a lot of places. For instance in plasma, with Xorg the taskbar could simply access Xorg API and manage windows directly. Now it must ask the Compositor to use its Window management API and this is a different API and KWin is the one defining and implementing it. One way to mitigate those issues, is to have a proxy. we try to maintain compatibility with X applications through XWayland notably.</p>
+</li>
+</ul>
+<p>And some issues can be caused by several of those subjective origins.</p>
+<h1 id="major-plasma-5-20-wayland-improvements">Major Plasma 5.20 Wayland improvements</h1>
+<ul>
+<li>
+<p>The Task Manager has now window thumbnails Wayland. (Aleix Pol Gonzalez) <a href="https://invent.kde.org/plasma/plasma-desktop/-/merge_requests/36/">merge request</a></p>
+</li>
+<li>
+<p>Screen recording and screencasting now works on Wayland for compatible applications (e.g. OBS Studio and more to come) (Aleix Pol Gonzalez)
+<a href="https://invent.kde.org/libraries/plasma-wayland-protocols/-/merge_requests/1">merge request</a>
+<br /> That's a fill the blank issue and missing protocol issue : Xorg allows any program to record the screen with its own API. We needed a new protocol to expose a screencasting feature.</p>
+</li>
+<li>
+<p>Klipper now uses the Wayland clipboard and works as you would expect in a Wayland session (David Edmundson)
+<a href="https://invent.kde.org/plasma/plasma-workspace/-/merge_requests/1">merge request</a></p>
+</li>
+<li>
+<p>Implemented the Wayland input-method-unstable-v1 protocol, which opens the door for proper virtual keyboard support on Plasma Mobile, among other benefits! (Aleix Pol Gonzalez)
+<a href="https://invent.kde.org/plasma/kwin/-/merge_requests/106">merge request</a></p>
+</li>
+</ul>
+<h1 id="bug-fixes">Bug fixes</h1>
+<h2 id="stability-improvement">Stability improvement</h2>
+<ul>
+<li>
+<p>In a Plasma Wayland session, XWayland no longer brings down the whole session when it crashes; it just restarts normally (Vlad Zahorodniy, Plasma 5.20) <a href="https://invent.kde.org/plasma/kwin/-/merge_requests/125">merge request</a></p>
+</li>
+<li>
+<p>Clearing the clipboard history on Wayland no longer crashes Plasma (David Edmundson, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=396308">bug</a></p>
+</li>
+<li>
+<p>On Wayland, clicking on a Task Manager entry while that entry’s tooltip is visible no longer crashes Plasma (Vlad Zahorodnii, Plasma 5.20)
+<a href="hhttps://bugs.kde.org/show_bug.cgi?id=425869">bug</a></p>
+</li>
+<li>
+<p>KWin no longer sometimes crashes when exiting or re-launching (Vlad Zahorodnii, Plasma 5.20) <a href="https://invent.kde.org/plasma/kwin/-/merge_requests/328">merge request</a></p>
+</li>
+</ul>
+<h2 id="feature-parity">Feature Parity</h2>
+<ul>
+<li>
+<p>On Wayland, context menus on the desktop and throughout Plasma now close when they’re supposed to (Vlad Zahorodnii, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=379635">bug</a></p>
+</li>
+<li>
+<p>On Wayland, Task Manager tooltip window thumbnails are no longer overlapped by the app’s icon (Nate Graham, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=427076">bug</a></p>
+</li>
+<li>
+<p>On Wayland, pressing Ctrl+Alt+Esc twice no longer results in the “Click a window to kill it” message being re-positioned into the top-left corner of the screen (Vlad Zahorodnii, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=400675">bug</a></p>
+</li>
+<li>
+<p>KRunner is now more responsive to typed text on Wayland (Alexander Lohnau, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=426746">bug</a></p>
+</li>
+<li>
+<p>Fixed the initialization of dmabuf textures in KWin on Wayland, which in practical terms should ensure that videos played Firefox no longer sometimes display garbage instead of the video (Vlad Zahorodnii, Plasma 5.20)
+<a href="https://invent.kde.org/plasma/kwin/-/merge_requests/323">merge request</a></p>
+</li>
+<li>
+<p>Clicking on a Task Manager thumbnail now activates that window, as you would expect (Marco Martin, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=426925">bug</a></p>
+</li>
+<li>
+<p>the window stacking order is now always correct (Vlad Zahorodnii, Plasma 5.20)
+<a href="https://invent.kde.org/plasma/kwin/-/merge_requests/288">merge request</a></p>
+</li>
+<li>
+<p>context menus now always have shadows, as expected (Vlad Zahorodnii, Plasma 5.20)
+<a href="https://invent.kde.org/plasma/kwayland-integration/-/merge_requests/3">merge request</a></p>
+</li>
+<li>
+<p>Improved the graphics performance on Wayland (Gang Wu, Plasma 5.20) by allowing KWin not to draw windows placed behind opaque others.
+<a href="https://invent.kde.org/plasma/kwin/-/merge_requests/228">merge request</a></p>
+</li>
+<li>
+<p>It’s now possible to drag windows on Wayland from their empty areas, just like on X11 (Vlad Zahorodnii, Plasma 5.20)
+<a href="https://invent.kde.org/plasma/breeze/-/merge_requests/8">merge request</a></p>
+</li>
+<li>
+<p>Plasma no longer sometimes crashes when you hover the cursor over an auto-hide Panel (Andreas Haratzis, Plasma 5.20)
+<a href="https://invent.kde.org/plasma/kwin/-/merge_requests/83">merge request</a></p>
+</li>
+<li>
+<p>Fixed a case where KWin could crash when logging out of a Wayland session (Andrey Butirsky, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=420077">bug</a></p>
+</li>
+<li>
+<p>Edge swipe gestures and showing a hidden panel by tapping the screen edge now work on Wayland (Xaver Hugl, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=421212">bug</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=423842">bug</a></p>
+</li>
+<li>
+<p>The System Settings Accessibility page is now available (Michael Weghorn, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=414546">bug</a></p>
+</li>
+<li>
+<p>Fixed the “Windows can cover” panel setting on Wayland (Xaver Hugl, Plasma 5.20)
+<a href="https://invent.kde.org/plasma/kwayland-server/-/merge_requests/60">merge request</a></p>
+</li>
+<li>
+<p>The last-used keyboard layout is now remembered on Wayland (Andrey Butirsky, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=412101">bug</a></p>
+</li>
+<li>
+<p>Fixed a crash on Wayland when waking up the computer while multiple screens are attached (Andreas Haratzis, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=422460">bug</a></p>
+</li>
+<li>
+<p>you can now enter full screen mode in MPV by double-clicking on the video (Benjamin Port, Plasma 5.20.0)
+<a href="https://bugs.kde.org/show_bug.cgi?id=421232">bug</a></p>
+</li>
+<li>
+<p>Previews for cursor themes now correctly display real-time previews as you hover your cursor over them on Wayland (David Redondo, Plasma 5.20)
+<a href="https://bugs.kde.org/show_bug.cgi?id=424048">bug</a></p>
+</li>
+<li>
+<p>Spectacle now lets you take a screenshot on Wayland without needing to click first to confirm it (Méven Car, Spectacle 20.12)
+<a href="https://invent.kde.org/graphics/spectacle/-/merge_requests/13">merge request</a></p>
+</li>
+</ul>
+<p>Special shoutout to our newest ambitious and prolific KWin contributor Xaver Hugl.</p>
+<p>Thanks to <a href="https://pointieststick.com/">Nate blog</a> that makes putting this together so much easier.</p>
+<p>We are on <a href="https://t.me/waylandkdegoal">telegram</a> and IRC <em>#kde-wayland-goal</em> on freenode.
+More on the community wiki <a href="https://community.kde.org/Goals/Wayland">Wayland Goal</a>.</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2020-11-15">
+    2020-11-15
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/monde-libre/">
+    <span class="tag is-success">
+        Monde libre
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/kde/">
+    <span class="tag is-link">kde </span>
+</a>
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>
