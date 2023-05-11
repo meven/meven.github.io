@@ -16,7 +16,7 @@
     
 
 <link id="darkly" class="stylesheet" rel="stylesheet"
-    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+    href="https://meven.github.io/darkly.css" />
 
 
     <!-- This script must follow css -->
@@ -25,8 +25,8 @@
     
 
     
-    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
-    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    <script defer type="text/javascript" src="https://meven.github.io/elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https://meven.github.io/search_index.en.js"></script>
     
 
     
@@ -123,195 +123,194 @@ Go and rust have some very nice new features and their design and tooling reflec
 So I have been hacking with go and rust.</p>
 <p>I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
 It is not very much optimized as the algorithm is naive, but the purpose of this code was to get more comfortable with rust.</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">print_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) {
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">
+fn print_grid(g: [Option&lt;i32&gt;; 81]) {
 
-    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> cnt = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
-    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> line = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
+    let mut cnt = 0;
+    let mut line = 0;
 
-    </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">&amp;x in g.</span><span style="color:#96b5b4;">iter</span><span style="color:#c0c5ce;">() {
+    for &amp;x in g.iter() {
 
-        cnt = cnt + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;
+        cnt = cnt + 1;
 
-        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> x {
-            Some(i) =&gt; print!(&quot;</span><span style="color:#d08770;">{}</span><span style="color:#c0c5ce;">&quot;, i),
-            None =&gt; print!(&quot;</span><span style="color:#a3be8c;">_</span><span style="color:#c0c5ce;">&quot;),
+        match x {
+            Some(i) =&gt; print!(&quot;{}&quot;, i),
+            None =&gt; print!(&quot;_&quot;),
         }
 
-        </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> cnt == </span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
-            line = line + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;
+        if cnt == 9 {
+            line = line + 1;
             println!(&quot;&quot;);
-            cnt = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
-            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> line == </span><span style="color:#d08770;">3 </span><span style="color:#c0c5ce;">{
-                line = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
+            cnt = 0;
+            if line == 3 {
+                line = 0;
                 println!(&quot;&quot;);
             }
-        } </span><span style="color:#b48ead;">else if</span><span style="color:#c0c5ce;"> cnt % </span><span style="color:#d08770;">3 </span><span style="color:#c0c5ce;">== </span><span style="color:#d08770;">0 </span><span style="color:#c0c5ce;">{
+        } else if cnt % 3 == 0 {
             print!(&quot;   &quot;);
 
-        } </span><span style="color:#b48ead;">else </span><span style="color:#c0c5ce;">{
+        } else {
             print!(&quot; &quot;);
         }
     }
 }
 
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">check_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; </span><span style="color:#b48ead;">bool </span><span style="color:#c0c5ce;">{
+fn check_grid(g: [Option&lt;i32&gt;; 81]) -&gt; bool {
 
-    </span><span style="color:#65737e;">// check lines
-    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> i = </span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">* x;
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> val = [i, i + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">4</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">5</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">6</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">7</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">8</span><span style="color:#c0c5ce;">];
+    &#x2F;&#x2F; check lines
+    for x in 0..9 {
+        let i = 9 * x;
+        let val = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8];
 
-        </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..(val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) {
-            </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valv = g[val[v]];
-            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valv != None {
-                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> c in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
-                    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valc = g[val[c]];
-                    </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
-                        </span><span style="color:#65737e;">// println!(&quot;Block false at {}&quot;, x);
-                        </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
+        for v in 0..(val.len() - 1) {
+            let valv = g[val[v]];
+            if valv != None {
+                for c in 1..val.len() {
+                    let valc = g[val[c]];
+                    if valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                        &#x2F;&#x2F; println!(&quot;Block false at {}&quot;, x);
+                        return false;
                     }
                 }
             }
         }
     }
 
-    </span><span style="color:#65737e;">// check columns
-    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> val = [x, x + </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">18</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">27</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">36</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">45</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">54</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">63</span><span style="color:#c0c5ce;">, x + </span><span style="color:#d08770;">72</span><span style="color:#c0c5ce;">];
+    &#x2F;&#x2F; check columns
+    for x in 0..9 {
+        let val = [x, x + 9, x + 18, x + 27, x + 36, x + 45, x + 54, x + 63, x + 72];
 
-        </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..(val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) {
-            </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valv = g[val[v]];
-            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valv != None {
-                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> c in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
-                    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valc = g[val[c]];
-                    </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
-                        </span><span style="color:#65737e;">// println!(&quot;Block false at {}&quot;, x);
-                        </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
+        for v in 0..(val.len() - 1) {
+            let valv = g[val[v]];
+            if valv != None {
+                for c in 1..val.len() {
+                    let valc = g[val[c]];
+                    if valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                        &#x2F;&#x2F; println!(&quot;Block false at {}&quot;, x);
+                        return false;
                     }
                 }
             }
         }
     }
 
-    </span><span style="color:#65737e;">// check blocks
-    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">9 </span><span style="color:#c0c5ce;">{
-        </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> i = </span><span style="color:#d08770;">3 </span><span style="color:#c0c5ce;">* (x % </span><span style="color:#d08770;">3</span><span style="color:#c0c5ce;">);
-        </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> x &gt; </span><span style="color:#d08770;">2 </span><span style="color:#c0c5ce;">{
-            i = i + </span><span style="color:#d08770;">27</span><span style="color:#c0c5ce;">;
-        } </span><span style="color:#b48ead;">else if</span><span style="color:#c0c5ce;"> x &gt; </span><span style="color:#d08770;">5 </span><span style="color:#c0c5ce;">{
-            i = i + </span><span style="color:#d08770;">54</span><span style="color:#c0c5ce;">;
+    &#x2F;&#x2F; check blocks
+    for x in 0..9 {
+        let mut i = 3 * (x % 3);
+        if x &gt; 2 {
+            i = i + 27;
+        } else if x &gt; 5 {
+            i = i + 54;
         }
 
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> val = [i, i + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">2</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">10</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">11</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">18</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">19</span><span style="color:#c0c5ce;">, i + </span><span style="color:#d08770;">20</span><span style="color:#c0c5ce;">];
+        let val = [i, i + 1, i + 2, i + 9, i + 10, i + 11, i + 18, i + 19, i + 20];
 
-        </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..(val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) {
-            </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valv = g[val[v]];
-            </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valv != None {
-                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> c in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..val.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
-                    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> valc = g[val[c]];
-                    </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
-                        </span><span style="color:#65737e;">// println!(&quot;Block false at {}&quot;, x);
-                        </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
+        for v in 0..(val.len() - 1) {
+            let valv = g[val[v]];
+            if valv != None {
+                for c in 1..val.len() {
+                    let valc = g[val[c]];
+                    if valc != None &amp;&amp; val[v] != val[c] &amp;&amp; valv == valc {
+                        &#x2F;&#x2F; println!(&quot;Block false at {}&quot;, x);
+                        return false;
                     }
                 }
             }
         }
     }
 
-    </span><span style="color:#b48ead;">return </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">;
+    return true;
 }
 
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">is_grid_complete</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; </span><span style="color:#b48ead;">bool </span><span style="color:#c0c5ce;">{
-    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> ret = </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">;
-    </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">&amp;x in g.</span><span style="color:#96b5b4;">iter</span><span style="color:#c0c5ce;">() {
-        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> x {
+fn is_grid_complete(g: [Option&lt;i32&gt;; 81]) -&gt; bool {
+    let mut ret = true;
+    for &amp;x in g.iter() {
+        match x {
             Some(_) =&gt; {}
             None =&gt; {
-                ret = </span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">;
-                </span><span style="color:#b48ead;">break</span><span style="color:#c0c5ce;">;
+                ret = false;
+                break;
             }
         }
     }
-    </span><span style="color:#b48ead;">return</span><span style="color:#c0c5ce;"> ret;
+    return ret;
 }
 
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">clone_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] {
-    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> new_g: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] = [None; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">];
-    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..g.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
+fn clone_grid(g: [Option&lt;i32&gt;; 81]) -&gt; [Option&lt;i32&gt;; 81] {
+    let mut new_g: [Option&lt;i32&gt;; 81] = [None; 81];
+    for x in 0..g.len() {
         new_g[x] = g[x];
     }
-    </span><span style="color:#b48ead;">return</span><span style="color:#c0c5ce;"> new_g;
+    return new_g;
 }
 
 
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">solve_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">g</span><span style="color:#c0c5ce;">: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; 81]) -&gt; Option&lt;[Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">]&gt; {
+fn solve_grid(g: [Option&lt;i32&gt;; 81]) -&gt; Option&lt;[Option&lt;i32&gt;; 81]&gt; {
 
-    </span><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">is_grid_complete</span><span style="color:#c0c5ce;">(g) {
-        </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Some(g);
+    if is_grid_complete(g) {
+        return Some(g);
     }
 
-    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> x in </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..g.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">() {
-        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> g[x] {
+    for x in 0..g.len() {
+        match g[x] {
             Some(_) =&gt; {}
             None =&gt; {
 
-                </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> checked: [</span><span style="color:#b48ead;">bool</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">] = [</span><span style="color:#d08770;">false</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">];
+                let mut checked: [bool; 9] = [false; 9];
 
-                </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> v in </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">..</span><span style="color:#d08770;">10 </span><span style="color:#c0c5ce;">{
+                for v in 1..10 {
 
-                    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> new_g = </span><span style="color:#96b5b4;">clone_grid</span><span style="color:#c0c5ce;">(g);
+                    let mut new_g = clone_grid(g);
                     new_g[x] = Some(v);
 
-                    checked[(v - </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">) as </span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">] = </span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">;
+                    checked[(v - 1) as usize] = true;
 
-                    </span><span style="color:#b48ead;">if </span><span style="color:#96b5b4;">check_grid</span><span style="color:#c0c5ce;">(new_g) {
-                        </span><span style="color:#b48ead;">match </span><span style="color:#96b5b4;">solve_grid</span><span style="color:#c0c5ce;">(new_g) {
+                    if check_grid(new_g) {
+                        match solve_grid(new_g) {
                             None =&gt; {
-                                </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> checked == [</span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">] {
-                                    </span><span style="color:#65737e;">// the path is a dead end
-                                    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">None;
-                                } </span><span style="color:#b48ead;">else </span><span style="color:#c0c5ce;">{
-                                    </span><span style="color:#b48ead;">continue</span><span style="color:#c0c5ce;">;
+                                if checked == [true; 9] {
+                                    &#x2F;&#x2F; the path is a dead end
+                                    return None;
+                                } else {
+                                    continue;
                                 }
                             }
 
-                            Some(gx) =&gt; </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Some(gx),
+                            Some(gx) =&gt; return Some(gx),
                         }
                     }
                 }
 
-                </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> checked == [</span><span style="color:#d08770;">true</span><span style="color:#c0c5ce;">; </span><span style="color:#d08770;">9</span><span style="color:#c0c5ce;">] {
-                    </span><span style="color:#65737e;">// Detected a dead end
-                    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">None;
+                if checked == [true; 9] {
+                    &#x2F;&#x2F; Detected a dead end
+                    return None;
                 }
             }
         }
     }
 
-    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">None;
+    return None;
 }
 
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">parse_grid</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">grid_string</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">str</span><span style="color:#c0c5ce;">) -&gt; [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] {
-    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> grid = [None; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">];
+fn parse_grid(grid_string: &amp;str) -&gt; [Option&lt;i32&gt;; 81] {
+    let mut grid = [None; 81];
 
-    </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> i = </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;
-    </span><span style="color:#b48ead;">for</span><span style="color:#c0c5ce;"> s in grid_string.</span><span style="color:#96b5b4;">split_whitespace</span><span style="color:#c0c5ce;">() {
-        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> s {
-            &quot;</span><span style="color:#a3be8c;">_</span><span style="color:#c0c5ce;">&quot; =&gt; {}
+    let mut i = 0;
+    for s in grid_string.split_whitespace() {
+        match s {
+            &quot;_&quot; =&gt; {}
             val =&gt; {
-                grid[i] = Some(val.parse::&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;().</span><span style="color:#96b5b4;">unwrap</span><span style="color:#c0c5ce;">());
+                grid[i] = Some(val.parse::&lt;i32&gt;().unwrap());
             }
         }
-        i = i + </span><span style="color:#d08770;">1</span><span style="color:#c0c5ce;">;
+        i = i + 1;
     }
 
-    </span><span style="color:#b48ead;">return</span><span style="color:#c0c5ce;"> grid;
+    return grid;
 }
 
-</span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">main</span><span style="color:#c0c5ce;">() {
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> grid_string = </span><span style="color:#b48ead;">r</span><span style="color:#c0c5ce;">#&quot;</span><span style="color:#a3be8c;">
+fn main() {
+    let grid_string = r#&quot;
             1 _ _   _ _ _   _ _ 3
             _ 4 _   _ _ 9   2 6 _
             _ _ _   7 _ _   _ 5 4
@@ -322,27 +321,27 @@ It is not very much optimized as the algorithm is naive, but the purpose of this
 
             2 7 _   _ _ 1   _ _ _
             _ 8 9   3 _ _   _ 7 _
-            6 _ _   _ _ _   _ _ 2</span><span style="color:#c0c5ce;">&quot;#;
+            6 _ _   _ _ _   _ _ 2&quot;#;
 
-    </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> grid: [Option&lt;</span><span style="color:#b48ead;">i32</span><span style="color:#c0c5ce;">&gt;; </span><span style="color:#d08770;">81</span><span style="color:#c0c5ce;">] = </span><span style="color:#96b5b4;">parse_grid</span><span style="color:#c0c5ce;">(grid_string);
+    let grid: [Option&lt;i32&gt;; 81] = parse_grid(grid_string);
 
-    </span><span style="color:#96b5b4;">print_grid</span><span style="color:#c0c5ce;">(grid);
+    print_grid(grid);
 
-    </span><span style="color:#b48ead;">match </span><span style="color:#96b5b4;">solve_grid</span><span style="color:#c0c5ce;">(grid) {
+    match solve_grid(grid) {
         Some(g) =&gt; {
-            println!(&quot;</span><span style="color:#a3be8c;">Grid complete !</span><span style="color:#c0c5ce;">&quot;);
-            </span><span style="color:#96b5b4;">print_grid</span><span style="color:#c0c5ce;">(g)
+            println!(&quot;Grid complete !&quot;);
+            print_grid(g)
         }
-        None =&gt; println!(&quot;</span><span style="color:#a3be8c;">Couldn&#39;t solve the sudoku</span><span style="color:#c0c5ce;">&quot;),
+        None =&gt; println!(&quot;Couldn&#x27;t solve the sudoku&quot;),
     }
 
 }
 
-</span></code></pre>
+</code></pre>
 <p>You can just, given you have installed <a href="https://www.rustup.rs/">rust</a>.</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">cargo build
-</span></code></pre>
+<pre><code>cargo build
+</code></pre>
+
                             </div>
                         </div>
                         
@@ -420,10 +419,10 @@ and
 
     
 
-    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_navbar.js"></script>
 
     
-    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_search.js"></script>
     
 
     

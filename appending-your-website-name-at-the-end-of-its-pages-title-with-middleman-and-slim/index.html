@@ -16,7 +16,7 @@
     
 
 <link id="darkly" class="stylesheet" rel="stylesheet"
-    href="https:&#x2F;&#x2F;meven.github.io&#x2F;darkly.css" />
+    href="https://meven.github.io/darkly.css" />
 
 
     <!-- This script must follow css -->
@@ -25,8 +25,8 @@
     
 
     
-    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;elasticlunr.min.js"></script>
-    <script defer type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;search_index.en.js"></script>
+    <script defer type="text/javascript" src="https://meven.github.io/elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https://meven.github.io/search_index.en.js"></script>
     
 
     
@@ -120,27 +120,23 @@
                             <div itemprop="articleBody" class="content article-body">
                                 <p>If you use <a href="https://github.com/middleman/middleman">middleman</a>  and the nice template solution <a href="https://github.com/slim-template/slim">slim</a> you might encounter the same need as I did: appending your site name at the end of your page titles without hardcoding it everywhere.</p>
 <p>I found a simple solution, in my layout I added:</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">    - if current_page.data.title?
+<pre><code>    - if current_page.data.title?
         title= current_page.data.title + &quot; | My Website&quot;
     - else
         title My Website
-</span></code></pre>
+</code></pre>
 <p>When in your slim pages you have :</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">---
+<pre><code>---
 title: My page title
 ---
 
-</span></code></pre>
+</code></pre>
 <p>You end up in your generated code using <a href="https://github.com/middleman/middleman">middleman</a> with the title</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">&lt;title&gt;My page title | My Website&lt;/title&gt;
-</span></code></pre>
+<pre><code>&lt;title&gt;My page title | My Website&lt;&#x2F;title&gt;
+</code></pre>
 <p>And if the page has no title it will default to :</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#c0c5ce;">&lt;title&gt;My Website&lt;/title&gt;
-</span></code></pre>
+<pre><code>&lt;title&gt;My Website&lt;&#x2F;title&gt;
+</code></pre>
 <p>This was found when trying to <a href="https://github.com/sgrif/diesel.rs-website/pull/65">improve diesel documentation</a>.</p>
 <p>I hope this can be useful to somebody else.</p>
 
@@ -200,10 +196,10 @@ in <a href="https://meven.github.io/categories/monde-libre/">
 
     
 
-    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_navbar.js"></script>
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_navbar.js"></script>
 
     
-    <script type="text/javascript" src="https:&#x2F;&#x2F;meven.github.io&#x2F;js&#x2F;zulma_search.js"></script>
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_search.js"></script>
     
 
     
