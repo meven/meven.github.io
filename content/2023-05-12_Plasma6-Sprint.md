@@ -2,7 +2,7 @@
 title = "Plasma 6 Sprint 2023"
 slug="Plasma6-Sprint-2023"
 draft = false
-date = 2023-05-11
+date = 2023-05-12
 [taxonomies]
 categories = [ "Monde libre" ]
 tags = [ "kde" ]
@@ -11,7 +11,7 @@ tags = [ "kde" ]
 
 # Plasma 6 Sprint
 
-The sprint took place in Augsburg at [Tuxedo](https://www.tuxedocomputers.com/) office, a well-known german company selling computers that offers preinstalled with Gnu/Linux and KDE Plasma. They also are a KDE e.v (i.e foundation) sponsor. I will certainly consider their offers when buying hardware.
+I was at the Plasma 6 sprint. It took place in Augsburg at [Tuxedo](https://www.tuxedocomputers.com/) office, a well-known german company selling computers that offers preinstalled with Gnu/Linux and KDE Plasma. They also are a KDE e.v (i.e foundation) sponsor. I will certainly consider their offers when buying hardware.
 Their office were great and very nice people welcomed us.
 
 It was great to get to work in person again with KDE community members, since I wasn't in person at last Akademy in Barcelona.
