@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https://meven.github.io/darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https://meven.github.io/elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https://meven.github.io/search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/plasma6-sprint-2023/">
+            <p class="title article-title">Plasma 6 Sprint 2023
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2023-05-11</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;4 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <h1 id="plasma-6-sprint">Plasma 6 Sprint</h1>
+<p>The sprint took place in Augsburg at <a href="https://www.tuxedocomputers.com/">Tuxedo</a> office, a well-known german company selling computers that offers preinstalled with Gnu/Linux and KDE Plasma. They also are a KDE e.v (i.e foundation) sponsor. I will certainly consider their offers when buying hardware.
+Their office were great and very nice people welcomed us.</p>
+<p>It was great to get to work in person again with KDE community members, since I wasn't in person at last Akademy in Barcelona.</p>
+<p>I am very happy to have met the new contributors that I hadn't met before.</p>
+<p>Meetings and discussions were incredibly valuable and galvanizing.</p>
+<h2 id="plasma-6">Plasma 6</h2>
+<p>After some detour building plasma 6, I am now using Plasma 6 Wayland.
+It turns out only Qt 6.5.1 and 6.5.0 are compatible with Plasma 6, not even dev branch (6.6) are compatible with current plasma dev.</p>
+<p>The stability is decent but it made a few issues glaring that we can take care of head-on, both visualy and with our development environment.
+Qt6 is now 5 years and we never really used it, so a few paper cuts were to-be expected.</p>
+<p>Still all in all, everything runs well enough.
+Don't do that at home ;)</p>
+<p>This relative stability won't last very long as important refactoring is taking place and has not yet reached our main branches.</p>
+<p>It seems Qt dev branch currently (to be 6.6) should be preferable to use, because it is expected to be the version Plasma 6.0 will use and it can be contributed to contrary to Qt 6.5 that is in maintenance mode.
+An important area for this is Wayland support.</p>
+<p>Plasma 6 uses now <a href="https://en.cppreference.com/w/cpp/20">C++20</a> which solves a few shortcomings.
+I am especially happy about <a href="https://en.cppreference.com/w/cpp/header/ranges">ranges</a> that is going to make let boiler-plate-y to loop over collections, and c++ modules.</p>
+<h2 id="dolphin-kf6">dolphin + kf6</h2>
+<p>As dolphin co-maintainer and a KIO framework contributor, I felt the need to have a Dolphin kf6 version to be able to test our work, this is now done.
+I made a <a href="https://invent.kde.org/system/dolphin/-/tree/kf6">kf6 branch</a> and it can be installed using <a href="https://nicolasfella.de/posts/building-plasma-against-qt6/">kdesrc-build6</a> dolphin.
+I took care first of <a href="https://invent.kde.org/libraries/baloo-widgets/-/merge_requests/52">baloo-widgets</a> and then of <a href="https://invent.kde.org/sdk/dolphin-plugins/-/merge_requests/39">dolphin-plugins</a> along the way.</p>
+<p><a href="https://invent.kde.org/network/kio-extras/">kio-extras</a>, the library that provides <code>recentlyused:/</code> protocol and thumbnail generators should soon have a kf6 branck too.</p>
+<p>This work took me longer that I would have expected, having to learn the many ways CI tools and cmake can trick you.
+Fortunately I had great people around to help me getting through it and iterate faster.
+Thank you Nicolas and even more Alexander.</p>
+<h2 id="plasma-contributions">Plasma contributions</h2>
+<p>Apart from that, I did some work improving plasma dependency declaration so that developers wouldn't miss important runtime dependencies and some warning fix.</p>
+<p>I started my self-assigned task for Plasma 6, <a href="https://phabricator.kde.org/T12622">the wallpaper Kcm in systemsettings</a>.
+Discussing with <a href="https://notmart.org/blog/author/mart/">Marco</a> gave me the direction to follow it through.</p>
+<p>I finished the work initiated by Jonathan Haney to fix <a href="https://bugs.kde.org/show_bug.cgi?id=348529">bug 348529</a>, that was his first contribution !</p>
+<p>In plasma 6 when your screen is locked by default it will turn off the screen after 60 seconds by default.</p>
+<p>A question I am asking myself is do we want backport to plasma 5.27 ?</p>
+<p>Knowing that if we did, we wouldn't have the UI to change the 60 seconds threshold or turn off the feature, we'd have to edit by hand a tricky config file.
+It is a high priority feature request that can be considered a bug as without this you might waste energy consumption.
+And with Plasma 6 very far off this seems to me reasonable. </p>
+<p>Do you think that would be acceptable ?</p>
+<p>I should be at <a href="https://akademy.kde.org/2023/">Akademy 2023</a>.</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2023-05-11">
+    2023-05-11
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/monde-libre/">
+    <span class="tag is-success">
+        Monde libre
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/kde/">
+    <span class="tag is-link">kde </span>
+</a>
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>
