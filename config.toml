@@ -1,6 +1,6 @@
 # The URL the site will be built for
-#base_url = "http://bivouak.fr"
-base_url= "https://meven.github.io"
+base_url = "http://bivouak.fr"
+#base_url= "https://meven.github.io"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -20,10 +20,14 @@ theme = "Zulma"
 title = "meven's blog"
 
 taxonomies = [
-    {name = "tags", lang = "fr"},
-    {name = "tags", lang = "en", rss=true, feed=true},
-    {name = "categories", lang = "fr"},
-    {name = "categories", lang = "en", rss=true, feed=true},
+    {name = "tags", feed=true},
+    {name = "categories", feed=true},
+]
+
+[language.fr]
+taxonomies = [
+    {name = "tags", feed=true},
+    {name = "categories", feed=true},
 ]
 
 [extra]
