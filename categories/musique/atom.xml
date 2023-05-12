@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - Musique</title>
-	<link href="https://meven.github.io/categories/musique/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2009-03-11T00:00:00+00:00</updated>
-	<id>https://meven.github.io/categories/musique/atom.xml</id>
-	<entry xml:lang="en">
-		<title>La Création, c&#x27;est la taxe - internet c&#x27;est le contrôle</title>
-		<published>2009-03-11T00:00:00+00:00</published>
-		<updated>2009-03-11T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/creation-et-liberte-taxe-et-flicage/" type="text/html"/>
-		<id>https://meven.github.io/creation-et-liberte-taxe-et-flicage/</id>
-		<content type="html">&lt;p&gt;Avec la loi dite &amp;quot;Internet et création&amp;quot;, dite HADOPI, nos ministres sont de dignes de &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;George_Orwell&quot;&gt;Georges Orwell&lt;&#x2F;a&gt; qui avait imaginé un système politique dans lequel le pouvoir se projetait dans un anti-thèse &amp;quot;La guerre c’est la paix - La liberté, c’est l’esclavage - L’ignorance, c’est la force&amp;quot;.&lt;&#x2F;p&gt;
+    <title>meven&#x27;s blog - Musique</title>
+    <link href="https://meven.github.io/categories/musique/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2009-03-11T00:00:00+00:00</updated>
+    <id>https://meven.github.io/categories/musique/atom.xml</id>
+    <entry xml:lang="en">
+        <title>La Création, c&#x27;est la taxe - internet c&#x27;est le contrôle</title>
+        <published>2009-03-11T00:00:00+00:00</published>
+        <updated>2009-03-11T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/creation-et-liberte-taxe-et-flicage/" type="text/html"/>
+        <id>https://meven.github.io/creation-et-liberte-taxe-et-flicage/</id>
+        
+        <content type="html">&lt;p&gt;Avec la loi dite &amp;quot;Internet et création&amp;quot;, dite HADOPI, nos ministres sont de dignes de &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;George_Orwell&quot;&gt;Georges Orwell&lt;&#x2F;a&gt; qui avait imaginé un système politique dans lequel le pouvoir se projetait dans un anti-thèse &amp;quot;La guerre c’est la paix - La liberté, c’est l’esclavage - L’ignorance, c’est la force&amp;quot;.&lt;&#x2F;p&gt;
 &lt;p&gt;Il n&#x27;y a pas de quoi rougir de la comparaison. Ce texte de loi n&#x27;est tout simplement pas ce qu&#x27;il prétend être mais son exact opposé - tout comme Orwell l&#x27;avait imaginé.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Cette loi affirme soutenir la création&lt;&#x2F;strong&gt; - hors elle ne prévoit nullement de soutien à la création, pas de financement, ni aucun autre forme de soutien.
 Tout ce qu&#x27;elle érige, c&#x27;est une rustine pour faire peur aux internautes et les rediriger vers les distributeurs autorisés tels que deezer, itunes ou si ils ont les moyens vers un supermarché de la musique.&lt;&#x2F;p&gt;
@@ -55,14 +59,19 @@ Le premier pas serait d&#x27;adopté des principes qui garantiraient nos libert�
 &lt;&#x2F;blockquote&gt;
 &lt;p&gt;Et sur une note pour plus légère : &lt;a href=&quot;http:&#x2F;&#x2F;www.cinqgusdansungarage.org&#x2F;&quot;&gt;Je suis un guss dans un garage&lt;&#x2F;a&gt; et vous ?&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Retour de Budapest Sziget ça a le feu</title>
-		<published>2008-08-21T00:00:00+00:00</published>
-		<updated>2008-08-21T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/" type="text/html"/>
-		<id>https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/</id>
-		<content type="html">&lt;p&gt;Je suis rentré mardi de Sziget.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Retour de Budapest Sziget ça a le feu</title>
+        <published>2008-08-21T00:00:00+00:00</published>
+        <updated>2008-08-21T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/" type="text/html"/>
+        <id>https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/</id>
+        
+        <content type="html">&lt;p&gt;Je suis rentré mardi de Sziget.
 C&#x27;est un festival pour le moins impressionnant.
 La taille d&#x27;abord, 6 jours 385 000 visiteurs.
 Un festival bien plus international que ceux de Bretagne.
@@ -74,26 +83,36 @@ Je retiendrais la très bonne prestation de R.E.M; les bons concerts de l&#x27;a
 &lt;p&gt;D&#x27;un point de vue critique, j&#x27;ai trouvé le public moins présent qu&#x27;à un festival Breton, mais ça peut être du à mon côté chauvin.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;y retournerais sans doute.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Sziget J -7</title>
-		<published>2008-08-05T00:00:00+00:00</published>
-		<updated>2008-08-05T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/sziget-j-7/" type="text/html"/>
-		<id>https://meven.github.io/sziget-j-7/</id>
-		<content type="html">&lt;p&gt;&lt;img title=&quot;sziget 2008, juin 2008&quot; style=&quot;margin: 0 0 1em 1em; float: right;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;sziget-2008-affiche.jpg&quot; &#x2F;&gt;Dans 7 jours démarre Sziget, le plusngrand festival d&#x27;Europe environ 400 000 personnes sur 6 jours... Dont moi!&lt;&#x2F;p&gt;n&lt;p&gt;J&#x27;arrête avec les chiffres.&lt;&#x2F;p&gt;n&lt;p&gt;La programmation est pour la moins sympathique. Pour donner une idée de lanprogrammation :&lt;&#x2F;p&gt;n&lt;ul&gt;n&lt;li&gt;mardi 12: Iron Maïden&lt;&#x2F;li&gt;n&lt;li&gt;mercredi 13 : THe kooks, Alanis Morissette&lt;&#x2F;li&gt;n&lt;li&gt;jeudi 14 : Kaiser Chiefs, Jamiroquai&lt;&#x2F;li&gt;n&lt;li&gt;vendredi 15 : Sex Pistols&lt;&#x2F;li&gt;n&lt;li&gt;samedi 16 : REM, Serj Talkian, Mademoiselle K&lt;&#x2F;li&gt;n&lt;li&gt;dimanche 17: The killers, The Wombats, Babyshambles&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nEt ça ce ne sont que quelques têtes d&#x27;affiche, après il y a la scène jazz,nWorld, Métal...
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Sziget J -7</title>
+        <published>2008-08-05T00:00:00+00:00</published>
+        <updated>2008-08-05T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/sziget-j-7/" type="text/html"/>
+        <id>https://meven.github.io/sziget-j-7/</id>
+        
+        <content type="html">&lt;p&gt;&lt;img title=&quot;sziget 2008, juin 2008&quot; style=&quot;margin: 0 0 1em 1em; float: right;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;sziget-2008-affiche.jpg&quot; &#x2F;&gt;Dans 7 jours démarre Sziget, le plusngrand festival d&#x27;Europe environ 400 000 personnes sur 6 jours... Dont moi!&lt;&#x2F;p&gt;n&lt;p&gt;J&#x27;arrête avec les chiffres.&lt;&#x2F;p&gt;n&lt;p&gt;La programmation est pour la moins sympathique. Pour donner une idée de lanprogrammation :&lt;&#x2F;p&gt;n&lt;ul&gt;n&lt;li&gt;mardi 12: Iron Maïden&lt;&#x2F;li&gt;n&lt;li&gt;mercredi 13 : THe kooks, Alanis Morissette&lt;&#x2F;li&gt;n&lt;li&gt;jeudi 14 : Kaiser Chiefs, Jamiroquai&lt;&#x2F;li&gt;n&lt;li&gt;vendredi 15 : Sex Pistols&lt;&#x2F;li&gt;n&lt;li&gt;samedi 16 : REM, Serj Talkian, Mademoiselle K&lt;&#x2F;li&gt;n&lt;li&gt;dimanche 17: The killers, The Wombats, Babyshambles&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nEt ça ce ne sont que quelques têtes d&#x27;affiche, après il y a la scène jazz,nWorld, Métal...
 &lt;p&gt;Du bon temps en perspective.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela se passe sur cette île en plein milieu de Budapest (merci &lt;a hreflang=&quot;en&quot; href=&quot;http:&#x2F;&#x2F;www.openstreetmap.org&#x2F;&quot;&gt;openstreetmap&lt;&#x2F;a&gt;) :
 &lt;a href=&quot;&#x2F;captures&#x2F;map.png&quot;&gt;&lt;img title=&quot;île de sziget, aoû 2008&quot; style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;captures&#x2F;.map_m.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Un été, des festivals</title>
-		<published>2008-06-19T00:00:00+00:00</published>
-		<updated>2008-06-19T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/un-ete-des-festivals/" type="text/html"/>
-		<id>https://meven.github.io/un-ete-des-festivals/</id>
-		<content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;sziget-2008-affiche.jpg|sziget 2008|R))&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Un été, des festivals</title>
+        <published>2008-06-19T00:00:00+00:00</published>
+        <updated>2008-06-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/un-ete-des-festivals/" type="text/html"/>
+        <id>https://meven.github.io/un-ete-des-festivals/</id>
+        
+        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;sziget-2008-affiche.jpg|sziget 2008|R))&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;sziget-a-budapest-hongrie&quot;&gt;Sziget à Budapest, Hongrie.&lt;&#x2F;h4&gt;
 &lt;p&gt;J&#x27;y serais en découverte. J&#x27;en ai déjà entendu beaucoup de bien.
 C&#x27;est un gros festival. Une catégorie au dessus du plus grand festival français.
@@ -114,31 +133,35 @@ Route du rock ?
 On verra bien. L&#x27;été ne commence que dans deux jours.&lt;&#x2F;p&gt;
 &lt;p&gt;Et Rock en seine, le mercredi, dernière date de Rage against the Machine en France avant longtemps.
 Surtout qu&#x27;en ce moment, ils sont plutôt en forme même encagoulé façon Guantanamo. Des images valent mieux que des mots :&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;external-media&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;style&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;auto; text-align: center;&amp;quot;&amp;gt;
-&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;application&#x2F;x-shockwave-flash&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;data&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;r9-B47hg9aQ&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hl=en&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;width&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;425&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;350&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;
-  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;movie&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;r9-B47hg9aQ&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hl=en&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &#x2F;&amp;gt;
-  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;wmode&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;transparent&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &#x2F;&amp;gt;
-&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
-&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;br &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&#x2F;&amp;gt;Rage Against The Machine &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;Intro Bombtrack&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; Pinkpop 2008
-&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Vieilles Charrues 2007 : géniales comme d&#x27;habitude</title>
-		<published>2007-07-25T00:00:00+00:00</published>
-		<updated>2007-07-25T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/" type="text/html"/>
-		<id>https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/</id>
-		<content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;Mes quatrième vieilles charrues restent fidèle aux autres crus : des concerts marquants et survoltés ; une ambiance conviviale, festive et délirante.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
+&amp;lt;object type=&amp;quot;application&amp;#x2F;x-shockwave-flash&amp;quot; data=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;r9-B47hg9aQ&amp;amp;amp;hl=en&amp;quot; width=&amp;quot;425&amp;quot; height=&amp;quot;350&amp;quot;&amp;gt;
+  &amp;lt;param name=&amp;quot;movie&amp;quot; value=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;r9-B47hg9aQ&amp;amp;amp;hl=en&amp;quot; &amp;#x2F;&amp;gt;
+  &amp;lt;param name=&amp;quot;wmode&amp;quot; value=&amp;quot;transparent&amp;quot; &amp;#x2F;&amp;gt;
+&amp;lt;&amp;#x2F;object&amp;gt;
+&amp;lt;br &amp;#x2F;&amp;gt;Rage Against The Machine &amp;amp;quot;Intro Bombtrack&amp;amp;quot; Pinkpop 2008
+&amp;lt;&amp;#x2F;div&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Vieilles Charrues 2007 : géniales comme d&#x27;habitude</title>
+        <published>2007-07-25T00:00:00+00:00</published>
+        <updated>2007-07-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/" type="text/html"/>
+        <id>https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/</id>
+        
+        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;Mes quatrième vieilles charrues restent fidèle aux autres crus : des concerts marquants et survoltés ; une ambiance conviviale, festive et délirante.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Le Vendredi, j&#x27;en retiendrais le show de Donovan Frankenreiter.&lt;&#x2F;strong&gt;
 Sa musique était ensoleillé par son funk surfeur et le soleil à la fois. Je n&#x27;ai pu profité que de la deuxième moitié du concert (saleté embouteillage mais quand on est quelques milliers à se rendre au même endroit ça semble normal).
 &lt;strong&gt;Je retiendrais également kaolin&lt;&#x2F;strong&gt;, encore un bon groupe de rock à surveiller, en anglais ce serait YARBTKAEO : Yet another rock band to keep an eye on.
 &lt;strong&gt;Que dire de Arcade fire&lt;&#x2F;strong&gt;, « ils mirent le feu » serait un euphémisme. Les dix artistes sur scène étaient géniaux, alternant les instruments entre les morceaux et entre eux aussi : orgue, guitares, caisse claire, batterie (il y a un batteur et une batteuse), violons . .  . Un concert époustouflant pour mon plus grand plaisir et celui du public.
 Le dernier de mes concerts du vendredi était &lt;strong&gt;clap your hands Say Yeah&lt;&#x2F;strong&gt;. Malheureusement, je n&#x27;en ai vu que les première vingt minutes, (mes potes étaient trop crevé, tout le monde ne peut être en vacance au moment des charrues). C&#x27;est d&#x27;autant plus dommage que le concert a mis un certains temps à se lancer, tant pis. Je suis quand même très content de les avoir vu et d&#x27;entendre leur « Yankee go home ».&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;code&gt;Le lendemain retour sur le site vers 17h40, dommage, on a raté tout le concert de Sean Lennon. Je n&#x27;ai fait que l&#x27;entendre de loin. Quand on a enfin passé la fil à l&#x27;entrée, on a pu profité que de son dernier petit solo psychédélique et puis plus rien, il a terminé avec 15 minutes d&#x27;avance :&#x27;( .
-__Ensuite vînt Bryan Ferry__, je ne connaissais ni son répertoire, ni le personnage. Il semblerait qu&#x27;il s&#x27;est approprié celui de Dylan récemment, un peu comme Renaud chante Brassens. C&#x27;était sympas, la musique était bonne, et on a pu reconnaître « knocking on heaven&#x27;s door » ainsi qu&#x27;une chanson de Lennon, père.
+&lt;pre&gt;&lt;code&gt;Le lendemain retour sur le site vers 17h40, dommage, on a raté tout le concert de Sean Lennon. Je n&amp;#x27;ai fait que l&amp;#x27;entendre de loin. Quand on a enfin passé la fil à l&amp;#x27;entrée, on a pu profité que de son dernier petit solo psychédélique et puis plus rien, il a terminé avec 15 minutes d&amp;#x27;avance :&amp;#x27;( .
+__Ensuite vînt Bryan Ferry__, je ne connaissais ni son répertoire, ni le personnage. Il semblerait qu&amp;#x27;il s&amp;#x27;est approprié celui de Dylan récemment, un peu comme Renaud chante Brassens. C&amp;#x27;était sympas, la musique était bonne, et on a pu reconnaître « knocking on heaven&amp;#x27;s door » ainsi qu&amp;#x27;une chanson de Lennon, père.
 &lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;__S&#x27;en suivis le moment fort du samedi, la prestation de Tryo.__J&#x27;avais déjà assisté à un concert de tryo mais sans y prêter attention. Là rien à voir, ambiance de dingue. Un karoaké de 40 000 personnes vous avez déjà vu ? Plus tout l&#x27;humour du groupe, l&#x27;invité surprise Bernard Lavilliers... Encore un concert dont je me souviendrai longtemps.
 &lt;strong&gt;Emillie Simon enchaîna sur la seconde scène.&lt;&#x2F;strong&gt;
@@ -147,22 +170,32 @@ Puis vînt Joey Starr. Je n&#x27;ai pas suivi le concert, non pas qu&#x27;il ne 
 &lt;strong&gt;Puis ce fut Mass Hytéria&lt;&#x2F;strong&gt;, groupe que j&#x27;ai déjà croisé mais jamais vu. C&#x27;est chose fait et je ne suis pas déçu. Ils nous ont offert un concert résolument métal. J&#x27;ai fait un petit tour jusqu&#x27;au pogo, et l&#x27;agitation d&#x27;un concert de métal était bien là.&lt;&#x2F;p&gt;
 &lt;p&gt;En conclusion j&#x27;en veux encore, j&#x27;attends l&#x27;édition 2008 de pied ferme :D , encore 360 jours :&#x27;( . Il faudra attendre le printemps pour connaître la nouvelle programmation que va t elle nous réservé comme surprise ?&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Vieilles charrues iminentes !</title>
-		<published>2007-07-17T00:00:00+00:00</published>
-		<updated>2007-07-17T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/vieilles-charrues-iminentes/" type="text/html"/>
-		<id>https://meven.github.io/vieilles-charrues-iminentes/</id>
-		<content type="html">&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; alt=&quot;affiche2007_340.jpg&quot; &#x2F;&gt;</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Retour du festival des Terres Neuvas à Bobital</title>
-		<published>2007-07-12T00:00:00+00:00</published>
-		<updated>2007-07-12T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/retour-de-bobital/" type="text/html"/>
-		<id>https://meven.github.io/retour-de-bobital/</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;header_titre.gif&quot; alt=&quot;header_titre.gif&quot; &#x2F;&gt; Je suis rentré dimanche de Bobital.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Vieilles charrues iminentes !</title>
+        <published>2007-07-17T00:00:00+00:00</published>
+        <updated>2007-07-17T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/vieilles-charrues-iminentes/" type="text/html"/>
+        <id>https://meven.github.io/vieilles-charrues-iminentes/</id>
+        
+        <content type="html">&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; alt=&quot;affiche2007_340.jpg&quot; &#x2F;&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Retour du festival des Terres Neuvas à Bobital</title>
+        <published>2007-07-12T00:00:00+00:00</published>
+        <updated>2007-07-12T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/retour-de-bobital/" type="text/html"/>
+        <id>https://meven.github.io/retour-de-bobital/</id>
+        
+        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;header_titre.gif&quot; alt=&quot;header_titre.gif&quot; &#x2F;&gt; Je suis rentré dimanche de Bobital.
 Presque trois heures de route au travers de la Bretagne :D&lt;&#x2F;p&gt;
 &lt;p&gt;Bobital était sympas, Je découvrait le festival.
 Le cadre est bien, le site se trouve juste à côté du bourg en fait. On est pas perdu c&#x27;est foutu comme aux vieilles charrues à quelques exceptions près.&lt;&#x2F;p&gt;
@@ -189,19 +222,25 @@ Vraiment très bon concert. Je suis très content de pourvoir dire j&#x27;y éta
 &lt;p&gt;Mon impression sur Bobital : un bon festival, de belle tête d&#x27;affiche mais à mon goût il manque un peu d&#x27;âme par la programmation et par le publique qui m&#x27;a semblé beaucoup plus passif que dans d&#x27;autre festivals bretons notamment les vieilles charrues.&lt;&#x2F;p&gt;
 &lt;p&gt;En parlant de ces dernières je vais y faire un tour aussi, il y a une affiche très intéressante en particulier le vendredi avec Arcade Fire, Clap Your Hands Say Yeah, Peter Gabriel ... et Dj Zebra, je ne l&#x27;aurais jamais vu que trois fois cette année :) .&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Bobital c&#x27;est dans une semaine</title>
-		<published>2007-07-01T00:00:00+00:00</published>
-		<updated>2007-07-01T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/bobital-cest-dans-une-semaine/" type="text/html"/>
-		<id>https://meven.github.io/bobital-cest-dans-une-semaine/</id>
-		<content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;header_titre.gif|header_titre.gif|R))
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bobital c&#x27;est dans une semaine</title>
+        <published>2007-07-01T00:00:00+00:00</published>
+        <updated>2007-07-01T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/bobital-cest-dans-une-semaine/" type="text/html"/>
+        <id>https://meven.github.io/bobital-cest-dans-une-semaine/</id>
+        
+        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;header_titre.gif|header_titre.gif|R))
 Le festival des terre Neuvas à Bobital, c&#x27;est dans moins d&#x27;une semaine maintenant.
 J&#x27;y  serais le samedi, Je suis impatient.
 L&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.festival-terre-neuvas.com&#x2F;&quot;&gt;affiche&lt;&#x2F;a&gt; est vraiment énorme le samedi : Marilyn Manson, Status Quo, Ziggy Marley, Da Silva, Placebo, Dj Zebra. .   .   .
 Plus de 40 000 personnes juste le samedi. Plus de 120 000 sur les trois jours.
 C&#x27;est le festival breton qui monte.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

@@ -1,211 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - Divers</title>
-	<link href="https://meven.github.io/categories/divers/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2017-01-08T00:00:00+00:00</updated>
-	<id>https://meven.github.io/categories/divers/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Yet another sudoku solver, in rust</title>
-		<published>2017-01-08T00:00:00+00:00</published>
-		<updated>2017-01-08T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/" type="text/html"/>
-		<id>https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/</id>
-		<content type="html">&lt;p&gt;I have been quite interested recently with the new languages &lt;a href=&quot;https:&#x2F;&#x2F;golang.org&#x2F;&quot;&gt;Go&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.
+    <title>meven&#x27;s blog - Divers</title>
+    <link href="https://meven.github.io/categories/divers/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2017-01-08T00:00:00+00:00</updated>
+    <id>https://meven.github.io/categories/divers/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Yet another sudoku solver, in rust</title>
+        <published>2017-01-08T00:00:00+00:00</published>
+        <updated>2017-01-08T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/" type="text/html"/>
+        <id>https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/</id>
+        
+        <content type="html">&lt;p&gt;I have been quite interested recently with the new languages &lt;a href=&quot;https:&#x2F;&#x2F;golang.org&#x2F;&quot;&gt;Go&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.
 Go and rust have some very nice new features and their design and tooling reflects the standards of this days.
 So I have been hacking with go and rust.&lt;&#x2F;p&gt;
 &lt;p&gt;I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
 It is not very much optimized as the algorithm is naive, but the purpose of this code was to get more comfortable with rust.&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; 81]) {
+&lt;pre data-lang=&quot;rust&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;
+fn print_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) {
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; cnt = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; line = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+    let mut cnt = 0;
+    let mut line = 0;
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;amp;x in g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;iter&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
+    for &amp;amp;x in g.iter() {
 
-        cnt = cnt + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+        cnt = cnt + 1;
 
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x {
-            Some(i) =&amp;gt; print!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;{}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;, i),
-            None =&amp;gt; print!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;),
+        match x {
+            Some(i) =&amp;gt; print!(&amp;quot;{}&amp;quot;, i),
+            None =&amp;gt; print!(&amp;quot;_&amp;quot;),
         }
 
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; cnt == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-            line = line + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+        if cnt == 9 {
+            line = line + 1;
             println!(&amp;quot;&amp;quot;);
-            cnt = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; line == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-                line = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+            cnt = 0;
+            if line == 3 {
+                line = 0;
                 println!(&amp;quot;&amp;quot;);
             }
-        } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; cnt % &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+        } else if cnt % 3 == 0 {
             print!(&amp;quot;   &amp;quot;);
 
-        } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+        } else {
             print!(&amp;quot; &amp;quot;);
         }
     }
 }
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;check_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; 81]) -&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;bool &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+fn check_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; bool {
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; check lines
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;* x;
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; val = [i, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;];
+    &amp;#x2F;&amp;#x2F; check lines
+    for x in 0..9 {
+        let i = 9 * x;
+        let val = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8];
 
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..(val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) {
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valv = g[val[v]];
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valv != None {
-                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; c in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valc = g[val[c]];
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
-                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
-                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+        for v in 0..(val.len() - 1) {
+            let valv = g[val[v]];
+            if valv != None {
+                for c in 1..val.len() {
+                    let valc = g[val[c]];
+                    if valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
+                        &amp;#x2F;&amp;#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
+                        return false;
                     }
                 }
             }
         }
     }
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; check columns
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; val = [x, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;18&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;27&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;36&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;54&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;63&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;72&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;];
+    &amp;#x2F;&amp;#x2F; check columns
+    for x in 0..9 {
+        let val = [x, x + 9, x + 18, x + 27, x + 36, x + 45, x + 54, x + 63, x + 72];
 
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..(val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) {
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valv = g[val[v]];
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valv != None {
-                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; c in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valc = g[val[c]];
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
-                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
-                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+        for v in 0..(val.len() - 1) {
+            let valv = g[val[v]];
+            if valv != None {
+                for c in 1..val.len() {
+                    let valc = g[val[c]];
+                    if valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
+                        &amp;#x2F;&amp;#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
+                        return false;
                     }
                 }
             }
         }
     }
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; check blocks
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;* (x % &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;);
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x &amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-            i = i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;27&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
-        } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x &amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-            i = i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;54&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+    &amp;#x2F;&amp;#x2F; check blocks
+    for x in 0..9 {
+        let mut i = 3 * (x % 3);
+        if x &amp;gt; 2 {
+            i = i + 27;
+        } else if x &amp;gt; 5 {
+            i = i + 54;
         }
 
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; val = [i, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;18&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;19&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;];
+        let val = [i, i + 1, i + 2, i + 9, i + 10, i + 11, i + 18, i + 19, i + 20];
 
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..(val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) {
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valv = g[val[v]];
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valv != None {
-                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; c in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valc = g[val[c]];
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
-                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
-                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+        for v in 0..(val.len() - 1) {
+            let valv = g[val[v]];
+            if valv != None {
+                for c in 1..val.len() {
+                    let valc = g[val[c]];
+                    if valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
+                        &amp;#x2F;&amp;#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
+                        return false;
                     }
                 }
             }
         }
     }
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+    return true;
 }
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;is_grid_complete&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; 81]) -&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;bool &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; ret = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;amp;x in g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;iter&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x {
+fn is_grid_complete(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; bool {
+    let mut ret = true;
+    for &amp;amp;x in g.iter() {
+        match x {
             Some(_) =&amp;gt; {}
             None =&amp;gt; {
-                ret = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
-                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;break&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+                ret = false;
+                break;
             }
         }
     }
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; ret;
+    return ret;
 }
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;clone_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; 81]) -&amp;gt; [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] {
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; new_g: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] = [None; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;];
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
+fn clone_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; [Option&amp;lt;i32&amp;gt;; 81] {
+    let mut new_g: [Option&amp;lt;i32&amp;gt;; 81] = [None; 81];
+    for x in 0..g.len() {
         new_g[x] = g[x];
     }
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; new_g;
+    return new_g;
 }
 
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;solve_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; 81]) -&amp;gt; Option&amp;lt;[Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;]&amp;gt; {
+fn solve_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; Option&amp;lt;[Option&amp;lt;i32&amp;gt;; 81]&amp;gt; {
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;is_grid_complete&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(g) {
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;Some(g);
+    if is_grid_complete(g) {
+        return Some(g);
     }
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; g[x] {
+    for x in 0..g.len() {
+        match g[x] {
             Some(_) =&amp;gt; {}
             None =&amp;gt; {
 
-                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; checked: [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;bool&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;];
+                let mut checked: [bool; 9] = [false; 9];
 
-                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
+                for v in 1..10 {
 
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; new_g = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;clone_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(g);
+                    let mut new_g = clone_grid(g);
                     new_g[x] = Some(v);
 
-                    checked[(v - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) as &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+                    checked[(v - 1) as usize] = true;
 
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;check_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(new_g) {
-                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;solve_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(new_g) {
+                    if check_grid(new_g) {
+                        match solve_grid(new_g) {
                             None =&amp;gt; {
-                                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; checked == [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] {
-                                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; the path is a dead end
-                                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;None;
-                                } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
-                                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;continue&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+                                if checked == [true; 9] {
+                                    &amp;#x2F;&amp;#x2F; the path is a dead end
+                                    return None;
+                                } else {
+                                    continue;
                                 }
                             }
 
-                            Some(gx) =&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;Some(gx),
+                            Some(gx) =&amp;gt; return Some(gx),
                         }
                     }
                 }
 
-                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; checked == [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] {
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Detected a dead end
-                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;None;
+                if checked == [true; 9] {
+                    &amp;#x2F;&amp;#x2F; Detected a dead end
+                    return None;
                 }
             }
         }
     }
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;None;
+    return None;
 }
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;parse_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;grid_string&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) -&amp;gt; [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] {
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; grid = [None; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;];
+fn parse_grid(grid_string: &amp;amp;str) -&amp;gt; [Option&amp;lt;i32&amp;gt;; 81] {
+    let mut grid = [None; 81];
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; s in grid_string.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;split_whitespace&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
-        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; s {
-            &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; =&amp;gt; {}
+    let mut i = 0;
+    for s in grid_string.split_whitespace() {
+        match s {
+            &amp;quot;_&amp;quot; =&amp;gt; {}
             val =&amp;gt; {
-                grid[i] = Some(val.parse::&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;unwrap&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;());
+                grid[i] = Some(val.parse::&amp;lt;i32&amp;gt;().unwrap());
             }
         }
-        i = i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;
+        i = i + 1;
     }
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; grid;
+    return grid;
 }
 
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;() {
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; grid_string = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;r&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;#&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;
+fn main() {
+    let grid_string = r#&amp;quot;
             1 _ _   _ _ _   _ _ 3
             _ 4 _   _ _ 9   2 6 _
             _ _ _   7 _ _   _ 5 4
@@ -216,35 +219,40 @@ It is not very much optimized as the algorithm is naive, but the purpose of this
 
             2 7 _   _ _ 1   _ _ _
             _ 8 9   3 _ _   _ 7 _
-            6 _ _   _ _ _   _ _ 2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;#;
+            6 _ _   _ _ _   _ _ 2&amp;quot;#;
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; grid: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;] = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;parse_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(grid_string);
+    let grid: [Option&amp;lt;i32&amp;gt;; 81] = parse_grid(grid_string);
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(grid);
+    print_grid(grid);
 
-    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;solve_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(grid) {
+    match solve_grid(grid) {
         Some(g) =&amp;gt; {
-            println!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Grid complete !&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;);
-            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print_grid&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(g)
+            println!(&amp;quot;Grid complete !&amp;quot;);
+            print_grid(g)
         }
-        None =&amp;gt; println!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Couldn&amp;#39;t solve the sudoku&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;),
+        None =&amp;gt; println!(&amp;quot;Couldn&amp;#x27;t solve the sudoku&amp;quot;),
     }
 
 }
 
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;You can just, given you have installed &lt;a href=&quot;https:&#x2F;&#x2F;www.rustup.rs&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;cargo build
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>La main Visible par Dale Dougherty</title>
-		<published>2008-11-19T00:00:00+00:00</published>
-		<updated>2008-11-19T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/la-main-visible/" type="text/html"/>
-		<id>https://meven.github.io/la-main-visible/</id>
-		<content type="html">&lt;p&gt;Je suis tombé sur cette article 
+&lt;pre&gt;&lt;code&gt;cargo build
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>La main Visible par Dale Dougherty</title>
+        <published>2008-11-19T00:00:00+00:00</published>
+        <updated>2008-11-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/la-main-visible/" type="text/html"/>
+        <id>https://meven.github.io/la-main-visible/</id>
+        
+        <content type="html">&lt;p&gt;Je suis tombé sur cette article 
 [http:&#x2F;&#x2F;radar.oreilly.com&#x2F;2008&#x2F;11&#x2F;the-visible-hand.html] via [http:&#x2F;&#x2F;standblog.org&#x2F;blog&#x2F;post&#x2F;2008&#x2F;11&#x2F;17&#x2F;En-vrac-de-retour-de-Californie].&lt;&#x2F;p&gt;
 &lt;p&gt;Je le trouve assez intéressant pour avoir envie de le traduire en partie.
 Morceau choisit traduit par mes soins. Je vous recommande la lecture de l&#x27;article original pour éviter les contre sens qui m&#x27;ont certainement échappés, mais en substance l&#x27;idée devrait être là.
@@ -262,28 +270,38 @@ Ces évènements secouent notre croyance que les marchés libres fonctionne pour
 &lt;p&gt;Un défi aussi grand peut faire ressortir le meilleur de nous. On a besoin de tout le monde, parce que tout le monde a une sa contribution à apporter. Nous avons besoin de toutes les bonnes volontés.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Meizu M6 par Danelec : avec la radio FM s&#x27;il vous plaît</title>
-		<published>2008-08-24T00:00:00+00:00</published>
-		<updated>2008-08-24T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/" type="text/html"/>
-		<id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
-		<content type="html">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Meizu M6 par Danelec : avec la radio FM s&#x27;il vous plaît</title>
+        <published>2008-08-24T00:00:00+00:00</published>
+        <updated>2008-08-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/" type="text/html"/>
+        <id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
+        
+        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
 &lt;p&gt;Si comme moi, vous possédez un &amp;quot;meizu by Danelec&amp;quot;, voici un truc qui pourrait vous servir.
 Le meizu m6 (de son vrai nom) ne possède pas de tuner FM.
 Et bien Si en réalité !
 Pour s&#x27;en convaincre il suffit d&#x27;installer le firmware original, de la version SP du baladeur (disponible  &lt;a href=&quot;http:&#x2F;&#x2F;en.meizu.com&#x2F;down_x.asp?MZ_ID=140&amp;amp;Type=2&quot;&gt;là bas&lt;&#x2F;a&gt;) du constructeur.&lt;&#x2F;p&gt;
 &lt;p&gt;Après la mise à jour, vous aurez un nouveau onglet &amp;quot;FM Tuner&amp;quot; :p&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>L&#x27;ipod est mort, vive le miniPlayer</title>
-		<published>2008-07-09T00:00:00+00:00</published>
-		<updated>2008-07-09T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
-		<id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
-		<content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>L&#x27;ipod est mort, vive le miniPlayer</title>
+        <published>2008-07-09T00:00:00+00:00</published>
+        <updated>2008-07-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
+        <id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
+        
+        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;mort-de-mon-ipod&quot;&gt;Mort de mon ipod&lt;&#x2F;h2&gt;
 &lt;p&gt;A bout de 2 dans de bons et loyaux services mon ipod 4G 40Go est mort.
 Cela faisait en réalité presque 4 ans que j&#x27;avais un ipod 4G, grâce à une extension de garantie, J&#x27;avais pu l&#x27;échanger quand j&#x27;ai eu des pépins.
@@ -305,28 +323,38 @@ Rockbox est un firmware alternatif libre, qui supporte une trentaine de modèles
 &lt;p&gt;C&#x27;est particulièrement vrai avec un ipod, qui ne supporte que quelques formats audio(3 il me semble), quand Rockbox supporte tous les principaux, dont le ogg, le flac.&lt;&#x2F;p&gt;
 &lt;p&gt;Et la bonne nouvelle c&#x27;est que un port de Rockbox sur meizu m6 est en cours.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Changement de thème pour Meven&#x27;s blog, Enfin !</title>
-		<published>2008-03-23T00:00:00+00:00</published>
-		<updated>2008-03-23T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/" type="text/html"/>
-		<id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
-		<content type="html">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Changement de thème pour Meven&#x27;s blog, Enfin !</title>
+        <published>2008-03-23T00:00:00+00:00</published>
+        <updated>2008-03-23T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/" type="text/html"/>
+        <id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
+        
+        <content type="html">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
 Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
 On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
 Pour mémoire, mon blog ressemblait à cela avant :
 &lt;a href=&quot;&#x2F;captures&#x2F;offre1.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;offre1.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 Un thème créé par mes soins mais n&#x27;ayant pas rencontré son public mais plutôt ses critiques ! J&#x27;espère que ce nouveau thème rendra la lecture de mon blog plus agréable ;) .&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>La difficulté de choisir un ultra-portable</title>
-		<published>2007-08-27T00:00:00+00:00</published>
-		<updated>2007-08-27T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/" type="text/html"/>
-		<id>https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/</id>
-		<content type="html">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>La difficulté de choisir un ultra-portable</title>
+        <published>2007-08-27T00:00:00+00:00</published>
+        <updated>2007-08-27T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/" type="text/html"/>
+        <id>https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/</id>
+        
+        <content type="html">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
 Je privilégie la mobilité et l&#x27;autonomie avant tout. Je me tourne donc vers la catégorie dite des ultra-portable.
 Ca tombe bien, ils sont devenus abordables, l&#x27;entrée de gamme est devenue moins chère, 1000€ environ pour mon plus grand bonheur.
 Etant étudiant je ne peut pas me permettre d&#x27;investir plus de toute façon.
@@ -352,14 +380,19 @@ Deux regrets sur ces offres : &lt;&#x2F;li&gt;
 &lt;p&gt;Prochain épisode dans un mois environ quand l&#x27;heure sera venue de passer à la caisse. Les choses auront certainement évoluées en particulier pour les délais du dell et de l&#x27;asus.
 SI quelqu&#x27;un a vu une offre qui m&#x27;a échappé et remplissant mes critères qu&#x27;il n&#x27;hésite pas à laisser un commentaire.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Chronique d&#x27;un sauvetage d&#x27;ipod</title>
-		<published>2007-07-26T00:00:00+00:00</published>
-		<updated>2007-07-26T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/chronique-dun-sauvetage-dipod/" type="text/html"/>
-		<id>https://meven.github.io/chronique-dun-sauvetage-dipod/</id>
-		<content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Chronique d&#x27;un sauvetage d&#x27;ipod</title>
+        <published>2007-07-26T00:00:00+00:00</published>
+        <updated>2007-07-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/chronique-dun-sauvetage-dipod/" type="text/html"/>
+        <id>https://meven.github.io/chronique-dun-sauvetage-dipod/</id>
+        
+        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
 Mon bon vieux ipod 4G me faisait drolement peur depuis que l&#x27;icône de l&#x27;ipod triste apparaissait à l&#x27;écran. Surtout que je savais qu&#x27;il avait pris un joli coup après une chute très récemment. J&#x27;ai bien cru que c&#x27;était la fin (à nouveau).
 Je me retrouvais au pied du mur, complètement addicte au meilleur des balladeurs mp3. Il allait falloir m&#x27;en acheter un nouveau.
 J&#x27;aurais opté pour un nano 8Go plus petit et plus costaud que mon 4G avec son gros disque dur si fragile. Mais à 259€, je le trouve vraiment trop cher, franchement apple abuse. Mais avec &lt;a href=&quot;http:&#x2F;&#x2F;hideapod.com&#x2F;&quot;&gt;une concurrence aussi impuissante&lt;&#x2F;a&gt; à proposer un produit qui tienne la route, rien ne pousse apple à réduire ses marges.
@@ -372,14 +405,19 @@ Alors je me dis et pourquoi pas tester le disque, ça ne mange pas de pain, je r
 Je referme tout ça, depuis ça roule comme sur des roulettes.
 Conclusion: encore un happy ending à l&#x27;américaine ;)&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>L&#x27;ujap Quimper en final de pro B à Bercy</title>
-		<published>2007-06-03T00:00:00+00:00</published>
-		<updated>2007-06-03T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/" type="text/html"/>
-		<id>https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/</id>
-		<content type="html">&lt;p&gt;Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>L&#x27;ujap Quimper en final de pro B à Bercy</title>
+        <published>2007-06-03T00:00:00+00:00</published>
+        <updated>2007-06-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/" type="text/html"/>
+        <id>https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/</id>
+        
+        <content type="html">&lt;p&gt;Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.
 Premiere fois à Bercy, je découvre le métro Parisien, le RER. C&#x27;est pas aussinterrible que je pensais, enfin que l&#x27;image que je pouvais m&#x27;en avoirnfaite.
 &lt;a href=&quot;&#x2F;photos&#x2F;IMG_3429.JPG&quot;&gt;&lt;img style=&quot;margin: 0 auto; display: block;&quot; alt=&quot;&quot; src=&quot;&#x2F;photos&#x2F;.IMG_3429_m.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 On a eu le droit à un belle finale de play-off en PRO A entre Roanne et Nancy,nbien disputée si bien que Nancy qui avait eu l&#x27;avantage du score au long dunmatch, a finalement laissé filer 7 points d&#x27;avance pour Roanne juste dans lendernier quart temps. Nancy devient du même coup le poulidor de PRO A aprèsntrois finales consécutive perdues. Roanne l&#x27;emporte 81-74.&lt;&#x2F;p&gt;
@@ -394,5 +432,6 @@ Maintenant, il ne reste que des questions. Est ce que notre entraineur OliviernC
 Est ce que les joueurs vont rester ? Aura-t-on les moyens de les garder ou d&#x27;ennavoir d&#x27;autre ?&lt;&#x2F;p&gt;
 &lt;p&gt;Ce qui est sur et rassurant, c&#x27;est que en restant en PRO B, on peut espérerndisputer le haut du pavé et ne pas avoir de contraintes budgtairesnsupplémentaires.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

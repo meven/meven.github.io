@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - meizu</title>
-	<link href="https://meven.github.io/tags/meizu/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2008-08-24T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/meizu/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Meizu M6 par Danelec : avec la radio FM s&#x27;il vous plaît</title>
-		<published>2008-08-24T00:00:00+00:00</published>
-		<updated>2008-08-24T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/" type="text/html"/>
-		<id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
-		<content type="html">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
+    <title>meven&#x27;s blog - meizu</title>
+    <link href="https://meven.github.io/tags/meizu/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-08-24T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/meizu/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Meizu M6 par Danelec : avec la radio FM s&#x27;il vous plaît</title>
+        <published>2008-08-24T00:00:00+00:00</published>
+        <updated>2008-08-24T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/" type="text/html"/>
+        <id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
+        
+        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
 &lt;p&gt;Si comme moi, vous possédez un &amp;quot;meizu by Danelec&amp;quot;, voici un truc qui pourrait vous servir.
 Le meizu m6 (de son vrai nom) ne possède pas de tuner FM.
 Et bien Si en réalité !
 Pour s&#x27;en convaincre il suffit d&#x27;installer le firmware original, de la version SP du baladeur (disponible  &lt;a href=&quot;http:&#x2F;&#x2F;en.meizu.com&#x2F;down_x.asp?MZ_ID=140&amp;amp;Type=2&quot;&gt;là bas&lt;&#x2F;a&gt;) du constructeur.&lt;&#x2F;p&gt;
 &lt;p&gt;Après la mise à jour, vous aurez un nouveau onglet &amp;quot;FM Tuner&amp;quot; :p&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>L&#x27;ipod est mort, vive le miniPlayer</title>
-		<published>2008-07-09T00:00:00+00:00</published>
-		<updated>2008-07-09T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
-		<id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
-		<content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>L&#x27;ipod est mort, vive le miniPlayer</title>
+        <published>2008-07-09T00:00:00+00:00</published>
+        <updated>2008-07-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
+        <id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
+        
+        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;mort-de-mon-ipod&quot;&gt;Mort de mon ipod&lt;&#x2F;h2&gt;
 &lt;p&gt;A bout de 2 dans de bons et loyaux services mon ipod 4G 40Go est mort.
 Cela faisait en réalité presque 4 ans que j&#x27;avais un ipod 4G, grâce à une extension de garantie, J&#x27;avais pu l&#x27;échanger quand j&#x27;ai eu des pépins.
@@ -48,5 +57,6 @@ Rockbox est un firmware alternatif libre, qui supporte une trentaine de modèles
 &lt;p&gt;C&#x27;est particulièrement vrai avec un ipod, qui ne supporte que quelques formats audio(3 il me semble), quand Rockbox supporte tous les principaux, dont le ogg, le flac.&lt;&#x2F;p&gt;
 &lt;p&gt;Et la bonne nouvelle c&#x27;est que un port de Rockbox sur meizu m6 est en cours.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

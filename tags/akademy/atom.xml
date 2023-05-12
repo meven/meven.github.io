@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - akademy</title>
-	<link href="https://meven.github.io/tags/akademy/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2007-07-04T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/akademy/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
-		<published>2007-07-04T00:00:00+00:00</published>
-		<updated>2007-07-04T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
-		<id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
-		<content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
+    <title>meven&#x27;s blog - akademy</title>
+    <link href="https://meven.github.io/tags/akademy/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2007-07-04T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/akademy/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
+        <published>2007-07-04T00:00:00+00:00</published>
+        <updated>2007-07-04T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
+        <id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
+        
+        <content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
 &lt;p&gt;Il rappelle pourquoi le logiciel libre dans les collectivités et les secteurs publics est si évident :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;développement libre = intérêt collectif&lt;&#x2F;li&gt;
@@ -29,5 +33,6 @@ Et si les lois, les décisions étaient conçues, débattues avec une forme de w
 &lt;p&gt;Je suis d&#x27;accord avec son point de vue. Il faudrait que nos élus en prennent de la graine. Surtout un sujet, qu&#x27;en France, ils sont peux à connaitre et encore moins à maitriser.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;EDIT&lt;&#x2F;strong&gt; : le &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;&quot;&gt;dot&lt;&#x2F;a&gt; en &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;1184072113&#x2F;&quot;&gt;parle&lt;&#x2F;a&gt; aussi&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

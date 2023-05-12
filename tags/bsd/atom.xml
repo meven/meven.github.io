@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - BSD</title>
-	<link href="https://meven.github.io/tags/bsd/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2007-06-09T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/bsd/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Test de OpenBSD l&#x27;OS le plus sur au monde</title>
-		<published>2007-06-09T00:00:00+00:00</published>
-		<updated>2007-06-09T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/" type="text/html"/>
-		<id>https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/</id>
-		<content type="html">&lt;p&gt;J&#x27;ai installé OpenBSD et le moins que je puisse dire c&#x27;est que je n&#x27;ai pas été déçu !
+    <title>meven&#x27;s blog - BSD</title>
+    <link href="https://meven.github.io/tags/bsd/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2007-06-09T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/bsd/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Test de OpenBSD l&#x27;OS le plus sur au monde</title>
+        <published>2007-06-09T00:00:00+00:00</published>
+        <updated>2007-06-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/" type="text/html"/>
+        <id>https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/</id>
+        
+        <content type="html">&lt;p&gt;J&#x27;ai installé OpenBSD et le moins que je puisse dire c&#x27;est que je n&#x27;ai pas été déçu !
 &lt;img src=&quot;&#x2F;puffy41.gif&quot; alt=&quot;Puffy la mas&quot; &#x2F;&gt;
 &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;OpenBSD&quot;&gt;OpenBSD&lt;&#x2F;a&gt; est pour ce qui le savent pas un système Unix libre.
 Historiquement il est basé sur le noyau &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Berkeley_Software_Distribution&quot;&gt;BSD&lt;&#x2F;a&gt; lui-même héritié direct du noyau UNIX originel de 1970. C&#x27;est donc un cousin éloigné du noyau Linux.
@@ -25,5 +29,6 @@ Résultat une installation en mode texte( partitionage ..), pas d&#x27;interface
 &lt;a href=&quot;http:&#x2F;&#x2F;www.openbsd.org&#x2F;&quot;&gt;Site officiel&lt;&#x2F;a&gt;
 &lt;a href=&quot;http:&#x2F;&#x2F;www.openbsd-france.org&#x2F;%5Bfr&quot;&gt;Side de la communauté française&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

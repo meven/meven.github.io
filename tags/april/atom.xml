@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - april</title>
-	<link href="https://meven.github.io/tags/april/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2008-12-15T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/april/atom.xml</id>
-	<entry xml:lang="en">
-		<title>April needs You !</title>
-		<published>2008-12-15T00:00:00+00:00</published>
-		<updated>2008-12-15T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/april-needs-you/" type="text/html"/>
-		<id>https://meven.github.io/april-needs-you/</id>
-		<content type="html">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+    <title>meven&#x27;s blog - april</title>
+    <link href="https://meven.github.io/tags/april/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-12-15T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/april/atom.xml</id>
+    <entry xml:lang="en">
+        <title>April needs You !</title>
+        <published>2008-12-15T00:00:00+00:00</published>
+        <updated>2008-12-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/april-needs-you/" type="text/html"/>
+        <id>https://meven.github.io/april-needs-you/</id>
+        
+        <content type="html">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Si vous ne connaissez pas l&#x27;april déjà, je vous invite à découvrir &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;association&#x2F;&quot;&gt;cette association&lt;&#x2F;a&gt;, pilier de la promotion et de la défense du logiciel libre en France.
 Et vous connaissez sans doute déjà certaines personnes qui la soutienne : &lt;a href=&quot;http:&#x2F;&#x2F;www.standblog.org&quot;&gt;Tristan Nitot&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;www.framasoft.net&#x2F;&quot;&gt;framasoft&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;ubuntu-fr.org&#x2F;&quot;&gt;ubuntu-fr&lt;&#x2F;a&gt;...&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;april s&#x27;était fixé comme objectif 5000 adhérent pour fin 2008.
@@ -26,5 +30,6 @@ Bien que ce nombre n&#x27;a pas été atteint, c&#x27;est tout de même plus de 
 &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-pourquoi-adherer-a-lapril&quot;&gt;Pourquoi adhérer à l&#x27;April ?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

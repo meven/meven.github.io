@@ -1,53 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - politique</title>
-	<link href="https://meven.github.io/tags/politique/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2012-01-15T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/politique/atom.xml</id>
-	<entry xml:lang="en">
-		<title>28c3</title>
-		<published>2012-01-15T00:00:00+00:00</published>
-		<updated>2012-01-15T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/" type="text/html"/>
-		<id>https://meven.github.io/28c3-j-aurais-voulu-y-etre/</id>
-		<content type="html">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
+    <title>meven&#x27;s blog - politique</title>
+    <link href="https://meven.github.io/tags/politique/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2012-01-15T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/politique/atom.xml</id>
+    <entry xml:lang="en">
+        <title>28c3</title>
+        <published>2012-01-15T00:00:00+00:00</published>
+        <updated>2012-01-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/" type="text/html"/>
+        <id>https://meven.github.io/28c3-j-aurais-voulu-y-etre/</id>
+        
+        <content type="html">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;Je vous recommande vivement de les regarder.
 Si vous aimez internet davantage que la censure, ou la distribution des savoirs plus que le contrôle.&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;external-media&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;style&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;auto; text-align: center;&amp;quot;&amp;gt;
-&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;application&#x2F;x-shockwave-flash&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;data&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;HUEvRyemKSg&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;width&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;425&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;350&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;
-  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;movie&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;HUEvRyemKSg&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &#x2F;&amp;gt;
-  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;wmode&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;transparent&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &#x2F;&amp;gt;
-&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
-&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;br &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&#x2F;&amp;gt;28c3: The coming war on general computation 
-&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
+&amp;lt;object type=&amp;quot;application&amp;#x2F;x-shockwave-flash&amp;quot; data=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;HUEvRyemKSg&amp;quot; width=&amp;quot;425&amp;quot; height=&amp;quot;350&amp;quot;&amp;gt;
+  &amp;lt;param name=&amp;quot;movie&amp;quot; value=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;HUEvRyemKSg&amp;quot; &amp;#x2F;&amp;gt;
+  &amp;lt;param name=&amp;quot;wmode&amp;quot; value=&amp;quot;transparent&amp;quot; &amp;#x2F;&amp;gt;
+&amp;lt;&amp;#x2F;object&amp;gt;
+&amp;lt;br &amp;#x2F;&amp;gt;28c3: The coming war on general computation 
+&amp;lt;&amp;#x2F;div&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Il y a en relation un article sur linuxfr ( &lt;a href=&quot;http:&#x2F;&#x2F;linuxfr.org&#x2F;news&#x2F;%C2%A0guerre-et-paix%C2%A0%C2%A0-tolsto%C3%AF-au-21e-si%C3%A8cle-par-cory-doctorow-au-28c3&quot;&gt;Guerre et paix : Tolstoï au 21e siècle, par Cory Doctorow au 28C3&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.torproject.org&#x2F;&quot;&gt;Tor&lt;&#x2F;a&gt; est le plus connu des outils d&#x27;anonymisation sur internet.
 Il est combattu par les gouvernements, les même qui privent à leur citoyen certaines libertés élémentaires.
 Son actualité est très animée.&lt;&#x2F;p&gt;
-&lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
-&lt;code&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;external-media&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;style&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1em &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;auto; text-align: center;&amp;quot;&amp;gt;
-&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;application&#x2F;x-shockwave-flash&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;data&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;DX46Qv_b7F4&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hl=en&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;width&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;425&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;350&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;&amp;gt;
-  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;movie&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;DX46Qv_b7F4&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &#x2F;&amp;gt;
-  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;wmode&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;transparent&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot; &#x2F;&amp;gt;
-&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
-&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;br &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&#x2F;&amp;gt;28c3: How governments have tried to block Tor 
-&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
+&amp;lt;object type=&amp;quot;application&amp;#x2F;x-shockwave-flash&amp;quot; data=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;DX46Qv_b7F4&amp;amp;amp;hl=en&amp;quot; width=&amp;quot;425&amp;quot; height=&amp;quot;350&amp;quot;&amp;gt;
+  &amp;lt;param name=&amp;quot;movie&amp;quot; value=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;DX46Qv_b7F4&amp;quot; &amp;#x2F;&amp;gt;
+  &amp;lt;param name=&amp;quot;wmode&amp;quot; value=&amp;quot;transparent&amp;quot; &amp;#x2F;&amp;gt;
+&amp;lt;&amp;#x2F;object&amp;gt;
+&amp;lt;br &amp;#x2F;&amp;gt;28c3: How governments have tried to block Tor 
+&amp;lt;&amp;#x2F;div&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Je qualifie ce billet de politique car il en traite.
 Les questions soulevées sont des choix de société, d&#x27;éthique, rien de moi.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Table ronde politique</title>
-		<published>2009-07-09T00:00:00+00:00</published>
-		<updated>2009-07-09T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/table-ronde-politique/" type="text/html"/>
-		<id>https://meven.github.io/table-ronde-politique/</id>
-		<content type="html">&lt;p&gt;Je participe cette année aux &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;&#x2F;a&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Table ronde politique</title>
+        <published>2009-07-09T00:00:00+00:00</published>
+        <updated>2009-07-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/table-ronde-politique/" type="text/html"/>
+        <id>https://meven.github.io/table-ronde-politique/</id>
+        
+        <content type="html">&lt;p&gt;Je participe cette année aux &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;&#x2F;a&gt;
 J&#x27;ai eu l&#x27;occasion d&#x27;assister à la table ronde politique qui s&#x27;y tient.
 Cette année, elle n&#x27;accueille pas de politiques :&#x2F;.&lt;&#x2F;p&gt;
 &lt;p&gt;Ce n&#x27;est pas les bonnes volontés qui ont manqué, semble-t-il. Il faut croire que l&#x27;actualité des parlementaires ne permet pas à nos députés de participer au débat public, hors-hémicycle.&lt;&#x2F;p&gt;
@@ -80,23 +87,33 @@ Au choix :&lt;&#x2F;p&gt;
 &lt;p&gt;{{J&#x27;attends les tweets de Martine depuis l&#x27;hémicycle.}} Benjamin Bayart&lt;&#x2F;p&gt;
 &lt;p&gt;La vidéo de la table ronde sera bientôt mise en ligne des formats ouverts et des licences ouvertes sur le site des &lt;strong&gt;&lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;RMLL&lt;&#x2F;a&gt;&lt;&#x2F;strong&gt;.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Black out</title>
-		<published>2009-02-26T00:00:00+00:00</published>
-		<updated>2009-02-26T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/black-out/" type="text/html"/>
-		<id>https://meven.github.io/black-out/</id>
-		<content type="html">&lt;p&gt;[((http:&#x2F;&#x2F;media.laquadrature.net&#x2F;Quadrature_black-out_HADOPI_425x600px.gif|HADOPI - Le Net en France : black-out|C))|http:&#x2F;&#x2F;www.laquadrature.net&#x2F;HADOPI|fr|HADOPI - Le Net en France : black-out]&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Black out</title>
+        <published>2009-02-26T00:00:00+00:00</published>
+        <updated>2009-02-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/black-out/" type="text/html"/>
+        <id>https://meven.github.io/black-out/</id>
+        
+        <content type="html">&lt;p&gt;[((http:&#x2F;&#x2F;media.laquadrature.net&#x2F;Quadrature_black-out_HADOPI_425x600px.gif|HADOPI - Le Net en France : black-out|C))|http:&#x2F;&#x2F;www.laquadrature.net&#x2F;HADOPI|fr|HADOPI - Le Net en France : black-out]&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>April needs You !</title>
-		<published>2008-12-15T00:00:00+00:00</published>
-		<updated>2008-12-15T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/april-needs-you/" type="text/html"/>
-		<id>https://meven.github.io/april-needs-you/</id>
-		<content type="html">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>April needs You !</title>
+        <published>2008-12-15T00:00:00+00:00</published>
+        <updated>2008-12-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/april-needs-you/" type="text/html"/>
+        <id>https://meven.github.io/april-needs-you/</id>
+        
+        <content type="html">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Si vous ne connaissez pas l&#x27;april déjà, je vous invite à découvrir &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;association&#x2F;&quot;&gt;cette association&lt;&#x2F;a&gt;, pilier de la promotion et de la défense du logiciel libre en France.
 Et vous connaissez sans doute déjà certaines personnes qui la soutienne : &lt;a href=&quot;http:&#x2F;&#x2F;www.standblog.org&quot;&gt;Tristan Nitot&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;www.framasoft.net&#x2F;&quot;&gt;framasoft&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;ubuntu-fr.org&#x2F;&quot;&gt;ubuntu-fr&lt;&#x2F;a&gt;...&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;april s&#x27;était fixé comme objectif 5000 adhérent pour fin 2008.
@@ -110,14 +127,19 @@ Bien que ce nombre n&#x27;a pas été atteint, c&#x27;est tout de même plus de 
 &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-pourquoi-adherer-a-lapril&quot;&gt;Pourquoi adhérer à l&#x27;April ?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
-		<published>2007-07-04T00:00:00+00:00</published>
-		<updated>2007-07-04T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
-		<id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
-		<content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
+        <published>2007-07-04T00:00:00+00:00</published>
+        <updated>2007-07-04T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
+        <id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
+        
+        <content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
 &lt;p&gt;Il rappelle pourquoi le logiciel libre dans les collectivités et les secteurs publics est si évident :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;développement libre = intérêt collectif&lt;&#x2F;li&gt;
@@ -134,5 +156,6 @@ Et si les lois, les décisions étaient conçues, débattues avec une forme de w
 &lt;p&gt;Je suis d&#x27;accord avec son point de vue. Il faudrait que nos élus en prennent de la graine. Surtout un sujet, qu&#x27;en France, ils sont peux à connaitre et encore moins à maitriser.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;EDIT&lt;&#x2F;strong&gt; : le &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;&quot;&gt;dot&lt;&#x2F;a&gt; en &lt;a href=&quot;http:&#x2F;&#x2F;dot.kde.org&#x2F;1184072113&#x2F;&quot;&gt;parle&lt;&#x2F;a&gt; aussi&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

@@ -1,29 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - kde</title>
-	<link href="https://meven.github.io/tags/kde/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2021-01-10T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/kde/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Wayland Goal Virtual Sprint 2021</title>
-		<published>2021-01-10T00:00:00+00:00</published>
-		<updated>2021-01-10T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/wayland-goal-virtual-sprint-2021/" type="text/html"/>
-		<id>https://meven.github.io/wayland-goal-virtual-sprint-2021/</id>
-		<content type="html">&lt;p&gt;Happy new year everyone !&lt;&#x2F;p&gt;
+    <title>meven&#x27;s blog - kde</title>
+    <link href="https://meven.github.io/tags/kde/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-05-12T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/kde/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Plasma 6 Sprint 2023</title>
+        <published>2023-05-12T00:00:00+00:00</published>
+        <updated>2023-05-12T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/plasma6-sprint-2023/" type="text/html"/>
+        <id>https://meven.github.io/plasma6-sprint-2023/</id>
+        
+        <content type="html">&lt;h1 id=&quot;plasma-6-sprint&quot;&gt;Plasma 6 Sprint&lt;&#x2F;h1&gt;
+&lt;p&gt;I was at the Plasma 6 sprint. It took place in Augsburg at &lt;a href=&quot;https:&#x2F;&#x2F;www.tuxedocomputers.com&#x2F;&quot;&gt;Tuxedo&lt;&#x2F;a&gt; office, a well-known german company selling computers that offers preinstalled with Gnu&#x2F;Linux and KDE Plasma. They also are a KDE e.v (i.e foundation) sponsor. I will certainly consider their offers when buying hardware.
+Their office were great and very nice people welcomed us.&lt;&#x2F;p&gt;
+&lt;p&gt;It was great to get to work in person again with KDE community members, since I wasn&#x27;t in person at last Akademy in Barcelona.&lt;&#x2F;p&gt;
+&lt;p&gt;I am very happy to have met the new contributors that I hadn&#x27;t met before.&lt;&#x2F;p&gt;
+&lt;p&gt;Meetings and discussions were incredibly valuable and galvanizing.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;plasma-6&quot;&gt;Plasma 6&lt;&#x2F;h2&gt;
+&lt;p&gt;After some detour building plasma 6, I am now using Plasma 6 Wayland.
+It turns out only Qt 6.5.1 and 6.5.0 are compatible with Plasma 6, not even dev branch (6.6) are compatible with current plasma dev.&lt;&#x2F;p&gt;
+&lt;p&gt;The stability is decent but it made a few issues glaring that we can take care of head-on, both visualy and with our development environment.
+Qt6 is now 5 years and we never really used it, so a few paper cuts were to-be expected.&lt;&#x2F;p&gt;
+&lt;p&gt;Still all in all, everything runs well enough.
+Don&#x27;t do that at home ;)&lt;&#x2F;p&gt;
+&lt;p&gt;This relative stability won&#x27;t last very long as important refactoring is taking place and has not yet reached our main branches.&lt;&#x2F;p&gt;
+&lt;p&gt;It seems Qt dev branch currently (to be 6.6) should be preferable to use, because it is expected to be the version Plasma 6.0 will use and it can be contributed to contrary to Qt 6.5 that is in maintenance mode.
+An important area for this is Wayland support.&lt;&#x2F;p&gt;
+&lt;p&gt;Plasma 6 uses now &lt;a href=&quot;https:&#x2F;&#x2F;en.cppreference.com&#x2F;w&#x2F;cpp&#x2F;20&quot;&gt;C++20&lt;&#x2F;a&gt; which solves a few shortcomings.
+I am especially happy about &lt;a href=&quot;https:&#x2F;&#x2F;en.cppreference.com&#x2F;w&#x2F;cpp&#x2F;header&#x2F;ranges&quot;&gt;ranges&lt;&#x2F;a&gt; that is going to make let boiler-plate-y to loop over collections, and c++ modules.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;dolphin-kf6&quot;&gt;dolphin + kf6&lt;&#x2F;h2&gt;
+&lt;p&gt;As dolphin co-maintainer and a KIO framework contributor, I felt the need to have a Dolphin kf6 version to be able to test our work, this is now done.
+I made a &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;tree&#x2F;kf6&quot;&gt;kf6 branch&lt;&#x2F;a&gt; and it can be installed using &lt;a href=&quot;https:&#x2F;&#x2F;nicolasfella.de&#x2F;posts&#x2F;building-plasma-against-qt6&#x2F;&quot;&gt;kdesrc-build6&lt;&#x2F;a&gt; dolphin.
+I took care first of &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;libraries&#x2F;baloo-widgets&#x2F;-&#x2F;merge_requests&#x2F;52&quot;&gt;baloo-widgets&lt;&#x2F;a&gt; and then of &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;sdk&#x2F;dolphin-plugins&#x2F;-&#x2F;merge_requests&#x2F;39&quot;&gt;dolphin-plugins&lt;&#x2F;a&gt; along the way.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;network&#x2F;kio-extras&#x2F;&quot;&gt;kio-extras&lt;&#x2F;a&gt;, the library that provides &lt;code&gt;recentlyused:&#x2F;&lt;&#x2F;code&gt; protocol and thumbnail generators should soon have a kf6 branck too.&lt;&#x2F;p&gt;
+&lt;p&gt;This work took me longer that I would have expected, having to learn the many ways CI tools and cmake can trick you.
+Fortunately I had great people around to help me getting through it and iterate faster.
+Thank you Nicolas and even more Alexander.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;plasma-contributions&quot;&gt;Plasma contributions&lt;&#x2F;h2&gt;
+&lt;p&gt;Apart from that, I did some work improving plasma dependency declaration so that developers wouldn&#x27;t miss important runtime dependencies and some warning fix.&lt;&#x2F;p&gt;
+&lt;p&gt;I started my self-assigned task for Plasma 6, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T12622&quot;&gt;the wallpaper Kcm in systemsettings&lt;&#x2F;a&gt;.
+Discussing with &lt;a href=&quot;https:&#x2F;&#x2F;notmart.org&#x2F;blog&#x2F;author&#x2F;mart&#x2F;&quot;&gt;Marco&lt;&#x2F;a&gt; gave me the direction to follow it through.&lt;&#x2F;p&gt;
+&lt;p&gt;I finished the work initiated by Jonathan Haney to fix &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=348529&quot;&gt;bug 348529&lt;&#x2F;a&gt;, that was his first contribution !&lt;&#x2F;p&gt;
+&lt;p&gt;In plasma 6 when your screen is locked by default it will turn off the screen after 60 seconds by default.&lt;&#x2F;p&gt;
+&lt;p&gt;A question I am asking myself is do we want backport to plasma 5.27 ?&lt;&#x2F;p&gt;
+&lt;p&gt;Knowing that if we did, we wouldn&#x27;t have the UI to change the 60 seconds threshold or turn off the feature, we&#x27;d have to edit by hand a tricky config file.
+It is a high priority feature request that can be considered a bug as without this you might waste energy consumption.
+And with Plasma 6 very far off this seems to me reasonable. &lt;&#x2F;p&gt;
+&lt;p&gt;Do you think that would be acceptable ?&lt;&#x2F;p&gt;
+&lt;p&gt;I should be at &lt;a href=&quot;https:&#x2F;&#x2F;akademy.kde.org&#x2F;2023&#x2F;&quot;&gt;Akademy 2023&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Wayland Goal Virtual Sprint 2021</title>
+        <published>2021-01-10T00:00:00+00:00</published>
+        <updated>2021-01-10T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/wayland-goal-virtual-sprint-2021/" type="text/html"/>
+        <id>https://meven.github.io/wayland-goal-virtual-sprint-2021/</id>
+        
+        <content type="html">&lt;p&gt;Happy new year everyone !&lt;&#x2F;p&gt;
 &lt;p&gt;We will be having a Virtual Sprint for the &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal&lt;&#x2F;a&gt; between Saturday 23rd and Sunday 24th January 2021.&lt;&#x2F;p&gt;
 &lt;p&gt;This is open to contributors, you can have a look at the current program and more details at &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Sprints&#x2F;Wayland&#x2F;2020Virtual&quot;&gt;Wayland Virtual Sprint&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Wayland Status for Plasma 5.20</title>
-		<published>2020-11-15T00:00:00+00:00</published>
-		<updated>2020-11-15T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/wayland-status-plasma-5-20/" type="text/html"/>
-		<id>https://meven.github.io/wayland-status-plasma-5-20/</id>
-		<content type="html">&lt;p&gt;The KDE community has made some great progress on Plasma Wayland support during this release cycle.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Wayland Status for Plasma 5.20</title>
+        <published>2020-11-15T00:00:00+00:00</published>
+        <updated>2020-11-15T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/wayland-status-plasma-5-20/" type="text/html"/>
+        <id>https://meven.github.io/wayland-status-plasma-5-20/</id>
+        
+        <content type="html">&lt;p&gt;The KDE community has made some great progress on Plasma Wayland support during this release cycle.
 Some people on the Internet have qualified Plasma Wayland session as stable, but I wouldn&#x27;t go that far yet.
 I would qualify Plasma sessions as beta preview, we still have a long way to go.
 In some configurations and workflow It might suit you but certainly not all users for now.&lt;&#x2F;p&gt;
@@ -181,14 +241,19 @@ Those cause crashes, misbehaviour or feature missing.&lt;&#x2F;p&gt;
 &lt;p&gt;We are on &lt;a href=&quot;https:&#x2F;&#x2F;t.me&#x2F;waylandkdegoal&quot;&gt;telegram&lt;&#x2F;a&gt; and IRC &lt;em&gt;#kde-wayland-goal&lt;&#x2F;em&gt; on freenode.
 More on the community wiki &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Wayland Status update for Plasma 5.19</title>
-		<published>2020-06-02T00:00:00+00:00</published>
-		<updated>2020-06-02T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/wayland-status-update-plasma-5-19/" type="text/html"/>
-		<id>https://meven.github.io/wayland-status-update-plasma-5-19/</id>
-		<content type="html">&lt;p&gt;We have been busy recently on the Wayland Goal.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Wayland Status update for Plasma 5.19</title>
+        <published>2020-06-02T00:00:00+00:00</published>
+        <updated>2020-06-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/wayland-status-update-plasma-5-19/" type="text/html"/>
+        <id>https://meven.github.io/wayland-status-update-plasma-5-19/</id>
+        
+        <content type="html">&lt;p&gt;We have been busy recently on the Wayland Goal.&lt;&#x2F;p&gt;
 &lt;p&gt;A few of those points were already highlight on &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate&#x27;s excellent blog&lt;&#x2F;a&gt;.
 But some were missing, and I wanted to highlight those dedicated to Wayland with more context.&lt;&#x2F;p&gt;
 &lt;p&gt;The changes I mention here will be present in Plasma 5.19, but they are not exhaustive.&lt;&#x2F;p&gt;
@@ -229,14 +294,19 @@ So we need as much people to help whether it is for testing, hacking code or rep
 I invite you to join-in : &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Sprints&#x2F;Plasma&#x2F;2020Virtual&quot;&gt;Plasma virtual sprint 2020&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Also Drew DeVault released a great book about Wayland you can read at &lt;a href=&quot;https:&#x2F;&#x2F;wayland-book.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;wayland-book.com&#x2F;&lt;&#x2F;a&gt; to better understand Wayland inner-workings.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Wayland goal - Call for Action</title>
-		<published>2019-10-10T00:00:00+00:00</published>
-		<updated>2019-10-10T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/wayland-goal/" type="text/html"/>
-		<id>https://meven.github.io/wayland-goal/</id>
-		<content type="html">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Wayland goal - Call for Action</title>
+        <published>2019-10-10T00:00:00+00:00</published>
+        <updated>2019-10-10T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/wayland-goal/" type="text/html"/>
+        <id>https://meven.github.io/wayland-goal/</id>
+        
+        <content type="html">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
 &lt;p&gt;This entails making Plasma running smoothly under Wayland, but also making sure KDE Apps can run without bugs and missing features.
 It also means that we want to help the wider Wayland community to fill missing features and fix bugs.&lt;&#x2F;p&gt;
 &lt;p&gt;I call App users and developers to try out their favorite app in Wayland and report the issue that may arise. and add wayland as keyword to the bug to keep track on those bugs.&lt;&#x2F;p&gt;
@@ -252,14 +322,19 @@ It also means that we want to help the wider Wayland community to fill missing f
 &lt;p&gt;You can reach us at #kde-devel or #plasma in &lt;a href=&quot;https:&#x2F;&#x2F;webchat.kde.org&quot;&gt;webchat.kde.org&lt;&#x2F;a&gt; or freenode.&lt;&#x2F;p&gt;
 &lt;p&gt;More information on the &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal page&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Recently Used ioslave</title>
-		<published>2019-10-05T00:00:00+00:00</published>
-		<updated>2019-10-05T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/recently-used-ioslave/" type="text/html"/>
-		<id>https://meven.github.io/recently-used-ioslave/</id>
-		<content type="html">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Recently Used ioslave</title>
+        <published>2019-10-05T00:00:00+00:00</published>
+        <updated>2019-10-05T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/recently-used-ioslave/" type="text/html"/>
+        <id>https://meven.github.io/recently-used-ioslave/</id>
+        
+        <content type="html">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
 This differential revision adds two entries &amp;quot;Recent Files&amp;quot; and &amp;quot;Recent Locations&amp;quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
 &lt;img src=&quot;&#x2F;captures&#x2F;recently-used.png&quot; alt=&quot;Recent screenshot&quot; &#x2F;&gt;
 &lt;p&gt;It leverages the ioslave recentlyused:&#x2F; introduced in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;D22144&lt;&#x2F;a&gt;, allowing to access KActivity data.
@@ -286,14 +361,19 @@ So I allowed KActivity to ingest data from gtk applications in &lt;a href=&quot;
 &lt;p&gt;I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work. 
 And I want to thank all the other reviewers involved.&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>KDE First Contributions and first sprint</title>
-		<published>2019-07-26T00:00:00+00:00</published>
-		<updated>2019-07-26T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/first-contributions-and-first-sprint/" type="text/html"/>
-		<id>https://meven.github.io/first-contributions-and-first-sprint/</id>
-		<content type="html">&lt;p&gt;I have been a KDE User for more than 10 years.
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>KDE First Contributions and first sprint</title>
+        <published>2019-07-26T00:00:00+00:00</published>
+        <updated>2019-07-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/first-contributions-and-first-sprint/" type="text/html"/>
+        <id>https://meven.github.io/first-contributions-and-first-sprint/</id>
+        
+        <content type="html">&lt;p&gt;I have been a KDE User for more than 10 years.
 I really love KDE community, Plasma and its apps.
 I have been reading eagerly &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate Graham&#x27;s blog&lt;&#x2F;a&gt;
 He gave me the inspiration to start contributing.&lt;&#x2F;p&gt;
@@ -320,5 +400,6 @@ And I had great discussions with the people there.&lt;&#x2F;p&gt;
 &lt;p&gt;And since I am a big fan of &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust-lang&lt;&#x2F;a&gt;, this will be a nice opportunity to debate on the matter and on the future of KDE.
 &lt;a href=&quot;https:&#x2F;&#x2F;akademy.kde.org&#x2F;2019&quot;&gt;((https:&#x2F;&#x2F;cdn.kde.org&#x2F;akademy&#x2F;2019&#x2F;imgoing&#x2F;Akademy2019BannerDuomo-wee.png))&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

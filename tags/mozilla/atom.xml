@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - mozilla</title>
-	<link href="https://meven.github.io/tags/mozilla/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2009-12-11T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/mozilla/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Weave par Mozilla la sauvegarde de profil fait maison</title>
-		<published>2009-12-11T00:00:00+00:00</published>
-		<updated>2009-12-11T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/" type="text/html"/>
-		<id>https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/</id>
-		<content type="html">&lt;p&gt;Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
+    <title>meven&#x27;s blog - mozilla</title>
+    <link href="https://meven.github.io/tags/mozilla/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2009-12-11T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/mozilla/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Weave par Mozilla la sauvegarde de profil fait maison</title>
+        <published>2009-12-11T00:00:00+00:00</published>
+        <updated>2009-12-11T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/" type="text/html"/>
+        <id>https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/</id>
+        
+        <content type="html">&lt;p&gt;Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
 Et si pour synchroniser mes marques-pages je pouvais me passer des serveurs de google pour changer.
 Et mieux encore, et si, je pouvais synchroniser les deux meilleurs navigateurs du moment chrome et firefox.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;en rếvais, Mozilla l&#x27;a déjà fait.
@@ -31,5 +35,6 @@ C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F
 &lt;p&gt;Dans ces conditions, à quand une synchronisation des marques-pages et paramètres de chrome avec weave et mieux encore avec firefox. Le tout totalement &lt;strong&gt;indépendamment de google !&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Je pense que ce n&#x27;est qu&#x27;une question de temps, sinon je m&#x27;intéresserais bien à l&#x27;écriture d&#x27;une extension pour chrome ;).&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

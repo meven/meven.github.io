@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - wave</title>
-	<link href="https://meven.github.io/tags/wave/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2009-07-25T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/wave/atom.xml</id>
-	<entry xml:lang="en">
-		<title>Google Wave s&#x27;ouvre un peu</title>
-		<published>2009-07-25T00:00:00+00:00</published>
-		<updated>2009-07-25T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/google-wave-s-ouvre-un-peu/" type="text/html"/>
-		<id>https://meven.github.io/google-wave-s-ouvre-un-peu/</id>
-		<content type="html">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
+    <title>meven&#x27;s blog - wave</title>
+    <link href="https://meven.github.io/tags/wave/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2009-07-25T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/wave/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Google Wave s&#x27;ouvre un peu</title>
+        <published>2009-07-25T00:00:00+00:00</published>
+        <updated>2009-07-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/google-wave-s-ouvre-un-peu/" type="text/html"/>
+        <id>https://meven.github.io/google-wave-s-ouvre-un-peu/</id>
+        
+        <content type="html">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
 Cela représente au total 40 000 lignes de code de java disponible via &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Mercurial&quot;&gt;mercurial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;le-operational-transform-ot-c-est-en-fait-l-api-de-base-pour-le-protocole-wave-et-son-modele&quot;&gt;le &amp;quot;Operational Transform&amp;quot; (OT), c&#x27;est en fait l&#x27;API de base pour le protocole Wave et son modèle.&lt;&#x2F;h1&gt;
 &lt;h1 id=&quot;un-prototype-de-client-serveur-implementant-le-protocole-wave&quot;&gt;un prototype de client&#x2F;serveur implémentant le protocole Wave.&lt;&#x2F;h1&gt;
@@ -25,14 +29,19 @@ Une procédure d&#x27;installation est disponible, que j&#x27;ai testé.&lt;&#x2
 &lt;p&gt;Le client n&#x27;a pas encore qu&#x27;une fraction des fonctionnalités du client GWT, mais avec une base de code pour travailler, qui sait ce que l&#x27;on peut obtenir.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour le serveur, d&#x27;après le billet de google, il implémente une version plus récente du protocole que le serveur de preview wavesandbox...&lt;&#x2F;p&gt;
 </content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Premières impressions sur Google Wave</title>
-		<published>2009-07-20T00:00:00+00:00</published>
-		<updated>2009-07-20T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/premieres-impressions-sur-google-wave/" type="text/html"/>
-		<id>https://meven.github.io/premieres-impressions-sur-google-wave/</id>
-		<content type="html">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Premières impressions sur Google Wave</title>
+        <published>2009-07-20T00:00:00+00:00</published>
+        <updated>2009-07-20T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/premieres-impressions-sur-google-wave/" type="text/html"/>
+        <id>https://meven.github.io/premieres-impressions-sur-google-wave/</id>
+        
+        <content type="html">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;avais été assez enthousiasmé en juin quand le projet avait été dévoilé.&lt;&#x2F;p&gt;
 &lt;p&gt;Comme vous le savez sans doute, les wave sont des mixs de mail, messagerie instantanée, wiki et plus combiné dans une une même web-app.
 L&#x27;application est à la fois synchrone et asynchrone, extensible via des bots (traduction, publication...), des gadgets (carte, sondage etc..) qui permette d&#x27;enrichir l&#x27;utilisation.&lt;&#x2F;p&gt;
@@ -45,5 +54,6 @@ L&#x27;application est à la fois synchrone et asynchrone, extensible via des bo
 &lt;p&gt;J&#x27;ai hâte d&#x27;en avoir une utilisation dans un cadre réel et davantage décentralisé.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour l&#x27;heure, il me reste plus qu&#x27;à découvrir le nouveau joujou du point de vue d&#x27;un développeur ;)&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

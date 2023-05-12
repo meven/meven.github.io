@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - New south wales</title>
-	<link href="https://meven.github.io/tags/new-south-wales/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2012-10-30T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/new-south-wales/atom.xml</id>
-	<entry xml:lang="en">
-		<title>NSW côte Sud et animaux sauvages</title>
-		<published>2012-10-30T00:00:00+00:00</published>
-		<updated>2012-10-30T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/nsw-cote-et-animaux-sauvages/" type="text/html"/>
-		<id>https://meven.github.io/nsw-cote-et-animaux-sauvages/</id>
-		<content type="html">&lt;p&gt;Je suis descendu la semaine passée dans le sud du New South Wales, à Berara, puis près de Narooma dans le parc national d&#x27;Eurodalla.
+    <title>meven&#x27;s blog - New south wales</title>
+    <link href="https://meven.github.io/tags/new-south-wales/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2012-10-30T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/new-south-wales/atom.xml</id>
+    <entry xml:lang="en">
+        <title>NSW côte Sud et animaux sauvages</title>
+        <published>2012-10-30T00:00:00+00:00</published>
+        <updated>2012-10-30T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/nsw-cote-et-animaux-sauvages/" type="text/html"/>
+        <id>https://meven.github.io/nsw-cote-et-animaux-sauvages/</id>
+        
+        <content type="html">&lt;p&gt;Je suis descendu la semaine passée dans le sud du New South Wales, à Berara, puis près de Narooma dans le parc national d&#x27;Eurodalla.
 Cela a été l&#x27;occasion de voir mes premiers kangooroos et wallabies en plein jour.
 J&#x27;ai pu voir aussi de nombreux autres animaux, baleines, dauphins, échidnées, oiseaux en tout genre...&lt;&#x2F;p&gt;
 &lt;p&gt;Les échidnés ressemblent à de gros hérissons. J&#x27;ai eu la chance de tomber dessus deux fois en une semaine, alors que ce n&#x27;est pas un animal facile à trouver.
@@ -30,5 +34,6 @@ Et le voyage n&#x27;en valait pas tellement la peine.&lt;&#x2F;p&gt;
 &lt;a href=&quot;&#x2F;Australie&#x2F;IMG_0352.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_0352.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Je suis de retour à Sydney avant de repartir dans quelques jours vers une destination pour l&#x27;instant incertaine.&lt;&#x2F;p&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>

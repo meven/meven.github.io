@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>meven&#x27;s blog - crise</title>
-	<link href="https://meven.github.io/tags/crise/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://meven.github.io"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2008-11-19T00:00:00+00:00</updated>
-	<id>https://meven.github.io/tags/crise/atom.xml</id>
-	<entry xml:lang="en">
-		<title>La main Visible par Dale Dougherty</title>
-		<published>2008-11-19T00:00:00+00:00</published>
-		<updated>2008-11-19T00:00:00+00:00</updated>
-		<link href="https://meven.github.io/la-main-visible/" type="text/html"/>
-		<id>https://meven.github.io/la-main-visible/</id>
-		<content type="html">&lt;p&gt;Je suis tombé sur cette article 
+    <title>meven&#x27;s blog - crise</title>
+    <link href="https://meven.github.io/tags/crise/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://meven.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2008-11-19T00:00:00+00:00</updated>
+    <id>https://meven.github.io/tags/crise/atom.xml</id>
+    <entry xml:lang="en">
+        <title>La main Visible par Dale Dougherty</title>
+        <published>2008-11-19T00:00:00+00:00</published>
+        <updated>2008-11-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/la-main-visible/" type="text/html"/>
+        <id>https://meven.github.io/la-main-visible/</id>
+        
+        <content type="html">&lt;p&gt;Je suis tombé sur cette article 
 [http:&#x2F;&#x2F;radar.oreilly.com&#x2F;2008&#x2F;11&#x2F;the-visible-hand.html] via [http:&#x2F;&#x2F;standblog.org&#x2F;blog&#x2F;post&#x2F;2008&#x2F;11&#x2F;17&#x2F;En-vrac-de-retour-de-Californie].&lt;&#x2F;p&gt;
 &lt;p&gt;Je le trouve assez intéressant pour avoir envie de le traduire en partie.
 Morceau choisit traduit par mes soins. Je vous recommande la lecture de l&#x27;article original pour éviter les contre sens qui m&#x27;ont certainement échappés, mais en substance l&#x27;idée devrait être là.
@@ -30,5 +34,6 @@ Ces évènements secouent notre croyance que les marchés libres fonctionne pour
 &lt;p&gt;Un défi aussi grand peut faire ressortir le meilleur de nous. On a besoin de tout le monde, parce que tout le monde a une sa contribution à apporter. Nous avons besoin de toutes les bonnes volontés.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 </content>
-	</entry>
+        
+    </entry>
 </feed>
