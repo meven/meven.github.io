@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https://meven.github.io/darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https://meven.github.io/elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https://meven.github.io/search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/dolphin-at-akademy-2023/">
+            <p class="title article-title">Dolphin at Akademy 2023
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2023-07-22</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;4 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <p>I am returning from akademy and I had a great time, meeting new people or people I had already worked with online.</p>
+<p>In particular I was very happy to meet Felix, my fellow dolphin co-maintainer.
+We get along very well together, this will only make our dolphin work more pleasant and efficient.</p>
+<h1 id="dolphin">Dolphin</h1>
+<p>We had a <a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force#Organization">Bof</a> about dolphin on Tuesday.</p>
+<p>You can have a look at the <a href="https://invent.kde.org/system/dolphin/-/issues/45#note_720629">notes</a> taken by Felix.
+Unfortunately we didn't manage to have sufficient audio quality so that people online could properly participate.</p>
+<p>Still with the amazing people present, we made some plans to improve dolphin search feature, the possibility of publishing dolphin on Windows Store and more.</p>
+<p>I shared my interest in fixing <a href="https://bugs.kde.org/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=CONFIRMED&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Cdupecount%2Cvotes%2Ckeywords&amp;list_id=2409564&amp;product=dolphin&amp;query_format=advanced&amp;resolution=---&amp;resolution=FIXED&amp;resolution=LATER&amp;resolution=REMIND&amp;resolution=DUPLICATE&amp;resolution=WAITINGFORINFO&amp;resolution=BACKTRACE&amp;resolution=UNMAINTAINED">the most popular bugs, by votes or duplicate count</a>.
+Those are usually hard but very rewarding to fix.</p>
+<p>A perfect area for interested people willing to contribute to dolphin, would be to help on our <a href="https://invent.kde.org/system/dolphin/-/issues/36">setting redesign plans</a>.
+If you are interested, you can pick some part of the changes and try to implement them as I did in <a href="https://invent.kde.org/system/dolphin/-/merge_requests/553">this MR</a> and join the <a href="https://go.kde.org/matrix/#/#kde-fm:matrix.org">KDE file management channel</a> to get some help and advice.</p>
+<p>With the current KDE goals being Accessibility, Sustainability and Automation, it has made apparent that the <a href="https://invent.kde.org/sdk/selenium-webdriver-at-spi/">selenium-appium-at-spy</a> testing tool can greatly help dolphin in those three regards.
+It allows to automate UI tests, by using the accessibility API present in applications (in Qt for instance). So for it to work we need dolphin to have good accessibility support. In turn this allows to automate test scenarios to measure energy consumption and ensure dolphin of its energy-efficiency.
+The good news is that it is already in the pipe thanks to the work of <a href="https://notmart.org/blog/">Marco</a>.</p>
+<p>Finally, Dolphin 23.08 is close to release, it will feature some bug fix and some small features:</p>
+<ul>
+<li>when hiding hidden files dolphin will also hide files files whose name ends with &quot;~&quot;, &quot;.bak&quot; or &quot;%&quot;. Technically files having the &quot;application/x-trash&quot; mimetype. This is configurable by editing mime type either in file association kcm or using the utility command <code>keditfiletype application/x-trash</code>.</li>
+<li>Double clicking on a tab will dupicate the tab.</li>
+</ul>
+<h1 id="akademy">Akademy</h1>
+<p>This my fourth akademy, and my second in-person, it has been great.</p>
+<p>Conferences were very nice, I learned many new things. The goals are making nice progress and getting traction.</p>
+<p>I attended the qml-c++-integration training by Kevin Krammer of <a href="http://kdab.com/">KDAB</a>.
+It was an occasion to complete my Qml+C++ knowlegde, now I have a better understanding of <a href="https://doc.qt.io/qt-6/qtqml-syntax-objectattributes.html#attached-properties-and-attached-signal-handlers">attached properties</a>. Kevin told us about use cases for qml without QtQuick, as a scripting language or a to build QWidget interfaces using <a href="https://www.kdab.com/declarative-widgets/">Declarative Widgets</a> for instance.
+I was reminded about KDAB's <a href="https://github.com/KDAB/KDToolBox/">KDToolbox</a> a very nice collection of C++ utilities and learned about the nifty NotifyGuard that can help reduce boiler code for instance in KCM when writing c++ objects having many properties. Since it is MIT licensed, it is very easy to reuse.</p>
+<p>Now it is time to finish my own planned work for Plasma 6 because it is coming !</p>
+<p>Many thanks to every one who made the event possible, the local team, the akademy team, the sponsors and the donators to KDE e.v .</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2023-07-22">
+    2023-07-22
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/monde-libre/">
+    <span class="tag is-success">
+        Monde libre
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/kde/">
+    <span class="tag is-link">kde </span>
+</a>
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>

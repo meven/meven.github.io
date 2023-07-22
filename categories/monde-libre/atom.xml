@@ -4,8 +4,49 @@
     <link href="https://meven.github.io/categories/monde-libre/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-05-12T00:00:00+00:00</updated>
+    <updated>2023-07-22T00:00:00+00:00</updated>
     <id>https://meven.github.io/categories/monde-libre/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dolphin at Akademy 2023</title>
+        <published>2023-07-22T00:00:00+00:00</published>
+        <updated>2023-07-22T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://meven.github.io/dolphin-at-akademy-2023/" type="text/html"/>
+        <id>https://meven.github.io/dolphin-at-akademy-2023/</id>
+        
+        <content type="html">&lt;p&gt;I am returning from akademy and I had a great time, meeting new people or people I had already worked with online.&lt;&#x2F;p&gt;
+&lt;p&gt;In particular I was very happy to meet Felix, my fellow dolphin co-maintainer.
+We get along very well together, this will only make our dolphin work more pleasant and efficient.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;dolphin&quot;&gt;Dolphin&lt;&#x2F;h1&gt;
+&lt;p&gt;We had a &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Internet_Engineering_Task_Force#Organization&quot;&gt;Bof&lt;&#x2F;a&gt; about dolphin on Tuesday.&lt;&#x2F;p&gt;
+&lt;p&gt;You can have a look at the &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;issues&#x2F;45#note_720629&quot;&gt;notes&lt;&#x2F;a&gt; taken by Felix.
+Unfortunately we didn&#x27;t manage to have sufficient audio quality so that people online could properly participate.&lt;&#x2F;p&gt;
+&lt;p&gt;Still with the amazing people present, we made some plans to improve dolphin search feature, the possibility of publishing dolphin on Windows Store and more.&lt;&#x2F;p&gt;
+&lt;p&gt;I shared my interest in fixing &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;buglist.cgi?bug_status=UNCONFIRMED&amp;amp;bug_status=CONFIRMED&amp;amp;bug_status=ASSIGNED&amp;amp;bug_status=REOPENED&amp;amp;columnlist=product%2Ccomponent%2Cassigned_to%2Cbug_status%2Cresolution%2Cshort_desc%2Cchangeddate%2Cdupecount%2Cvotes%2Ckeywords&amp;amp;list_id=2409564&amp;amp;product=dolphin&amp;amp;query_format=advanced&amp;amp;resolution=---&amp;amp;resolution=FIXED&amp;amp;resolution=LATER&amp;amp;resolution=REMIND&amp;amp;resolution=DUPLICATE&amp;amp;resolution=WAITINGFORINFO&amp;amp;resolution=BACKTRACE&amp;amp;resolution=UNMAINTAINED&quot;&gt;the most popular bugs, by votes or duplicate count&lt;&#x2F;a&gt;.
+Those are usually hard but very rewarding to fix.&lt;&#x2F;p&gt;
+&lt;p&gt;A perfect area for interested people willing to contribute to dolphin, would be to help on our &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;issues&#x2F;36&quot;&gt;setting redesign plans&lt;&#x2F;a&gt;.
+If you are interested, you can pick some part of the changes and try to implement them as I did in &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;merge_requests&#x2F;553&quot;&gt;this MR&lt;&#x2F;a&gt; and join the &lt;a href=&quot;https:&#x2F;&#x2F;go.kde.org&#x2F;matrix&#x2F;#&#x2F;#kde-fm:matrix.org&quot;&gt;KDE file management channel&lt;&#x2F;a&gt; to get some help and advice.&lt;&#x2F;p&gt;
+&lt;p&gt;With the current KDE goals being Accessibility, Sustainability and Automation, it has made apparent that the &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;sdk&#x2F;selenium-webdriver-at-spi&#x2F;&quot;&gt;selenium-appium-at-spy&lt;&#x2F;a&gt; testing tool can greatly help dolphin in those three regards.
+It allows to automate UI tests, by using the accessibility API present in applications (in Qt for instance). So for it to work we need dolphin to have good accessibility support. In turn this allows to automate test scenarios to measure energy consumption and ensure dolphin of its energy-efficiency.
+The good news is that it is already in the pipe thanks to the work of &lt;a href=&quot;https:&#x2F;&#x2F;notmart.org&#x2F;blog&#x2F;&quot;&gt;Marco&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Finally, Dolphin 23.08 is close to release, it will feature some bug fix and some small features:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;when hiding hidden files dolphin will also hide files files whose name ends with &amp;quot;~&amp;quot;, &amp;quot;.bak&amp;quot; or &amp;quot;%&amp;quot;. Technically files having the &amp;quot;application&#x2F;x-trash&amp;quot; mimetype. This is configurable by editing mime type either in file association kcm or using the utility command &lt;code&gt;keditfiletype application&#x2F;x-trash&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;Double clicking on a tab will dupicate the tab.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;akademy&quot;&gt;Akademy&lt;&#x2F;h1&gt;
+&lt;p&gt;This my fourth akademy, and my second in-person, it has been great.&lt;&#x2F;p&gt;
+&lt;p&gt;Conferences were very nice, I learned many new things. The goals are making nice progress and getting traction.&lt;&#x2F;p&gt;
+&lt;p&gt;I attended the qml-c++-integration training by Kevin Krammer of &lt;a href=&quot;http:&#x2F;&#x2F;kdab.com&#x2F;&quot;&gt;KDAB&lt;&#x2F;a&gt;.
+It was an occasion to complete my Qml+C++ knowlegde, now I have a better understanding of &lt;a href=&quot;https:&#x2F;&#x2F;doc.qt.io&#x2F;qt-6&#x2F;qtqml-syntax-objectattributes.html#attached-properties-and-attached-signal-handlers&quot;&gt;attached properties&lt;&#x2F;a&gt;. Kevin told us about use cases for qml without QtQuick, as a scripting language or a to build QWidget interfaces using &lt;a href=&quot;https:&#x2F;&#x2F;www.kdab.com&#x2F;declarative-widgets&#x2F;&quot;&gt;Declarative Widgets&lt;&#x2F;a&gt; for instance.
+I was reminded about KDAB&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;KDAB&#x2F;KDToolBox&#x2F;&quot;&gt;KDToolbox&lt;&#x2F;a&gt; a very nice collection of C++ utilities and learned about the nifty NotifyGuard that can help reduce boiler code for instance in KCM when writing c++ objects having many properties. Since it is MIT licensed, it is very easy to reuse.&lt;&#x2F;p&gt;
+&lt;p&gt;Now it is time to finish my own planned work for Plasma 6 because it is coming !&lt;&#x2F;p&gt;
+&lt;p&gt;Many thanks to every one who made the event possible, the local team, the akademy team, the sponsors and the donators to KDE e.v .&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Plasma 6 Sprint 2023</title>
         <published>2023-05-12T00:00:00+00:00</published>
