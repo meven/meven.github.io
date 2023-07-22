@@ -1,6 +1,6 @@
 # The URL the site will be built for
-base_url = "http://bivouak.fr"
-#base_url= "https://meven.github.io"
+#base_url = "http://bivouak.fr"
+base_url= "https://meven.github.io"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
