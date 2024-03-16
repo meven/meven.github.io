@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - politique</title>
-    <link href="https://meven.github.io/tags/politique/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/politique/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2012-01-15T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/politique/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>28c3</title>
         <published>2012-01-15T00:00:00+00:00</published>
         <updated>2012-01-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/"/>
         <id>https://meven.github.io/28c3-j-aurais-voulu-y-etre/</id>
         
-        <content type="html">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/28c3-j-aurais-voulu-y-etre/">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;Je vous recommande vivement de les regarder.
 Si vous aimez internet davantage que la censure, ou la distribution des savoirs plus que le contrôle.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
@@ -48,13 +54,19 @@ Les questions soulevées sont des choix de société, d&#x27;éthique, rien de m
         <title>Table ronde politique</title>
         <published>2009-07-09T00:00:00+00:00</published>
         <updated>2009-07-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/table-ronde-politique/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/table-ronde-politique/"/>
         <id>https://meven.github.io/table-ronde-politique/</id>
         
-        <content type="html">&lt;p&gt;Je participe cette année aux &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;&#x2F;a&gt;
+        <content type="html" xml:base="https://meven.github.io/table-ronde-politique/">&lt;p&gt;Je participe cette année aux &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;&#x2F;a&gt;
 J&#x27;ai eu l&#x27;occasion d&#x27;assister à la table ronde politique qui s&#x27;y tient.
 Cette année, elle n&#x27;accueille pas de politiques :&#x2F;.&lt;&#x2F;p&gt;
 &lt;p&gt;Ce n&#x27;est pas les bonnes volontés qui ont manqué, semble-t-il. Il faut croire que l&#x27;actualité des parlementaires ne permet pas à nos députés de participer au débat public, hors-hémicycle.&lt;&#x2F;p&gt;
@@ -93,13 +105,19 @@ Au choix :&lt;&#x2F;p&gt;
         <title>Black out</title>
         <published>2009-02-26T00:00:00+00:00</published>
         <updated>2009-02-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/black-out/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/black-out/"/>
         <id>https://meven.github.io/black-out/</id>
         
-        <content type="html">&lt;p&gt;[((http:&#x2F;&#x2F;media.laquadrature.net&#x2F;Quadrature_black-out_HADOPI_425x600px.gif|HADOPI - Le Net en France : black-out|C))|http:&#x2F;&#x2F;www.laquadrature.net&#x2F;HADOPI|fr|HADOPI - Le Net en France : black-out]&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/black-out/">&lt;p&gt;[((http:&#x2F;&#x2F;media.laquadrature.net&#x2F;Quadrature_black-out_HADOPI_425x600px.gif|HADOPI - Le Net en France : black-out|C))|http:&#x2F;&#x2F;www.laquadrature.net&#x2F;HADOPI|fr|HADOPI - Le Net en France : black-out]&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -107,13 +125,19 @@ Au choix :&lt;&#x2F;p&gt;
         <title>April needs You !</title>
         <published>2008-12-15T00:00:00+00:00</published>
         <updated>2008-12-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/april-needs-you/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/april-needs-you/"/>
         <id>https://meven.github.io/april-needs-you/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/april-needs-you/">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Si vous ne connaissez pas l&#x27;april déjà, je vous invite à découvrir &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;association&#x2F;&quot;&gt;cette association&lt;&#x2F;a&gt;, pilier de la promotion et de la défense du logiciel libre en France.
 Et vous connaissez sans doute déjà certaines personnes qui la soutienne : &lt;a href=&quot;http:&#x2F;&#x2F;www.standblog.org&quot;&gt;Tristan Nitot&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;www.framasoft.net&#x2F;&quot;&gt;framasoft&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;ubuntu-fr.org&#x2F;&quot;&gt;ubuntu-fr&lt;&#x2F;a&gt;...&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;april s&#x27;était fixé comme objectif 5000 adhérent pour fin 2008.
@@ -133,13 +157,19 @@ Bien que ce nombre n&#x27;a pas été atteint, c&#x27;est tout de même plus de 
         <title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
         <published>2007-07-04T00:00:00+00:00</published>
         <updated>2007-07-04T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/"/>
         <id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
         
-        <content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
 &lt;p&gt;Il rappelle pourquoi le logiciel libre dans les collectivités et les secteurs publics est si évident :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;développement libre = intérêt collectif&lt;&#x2F;li&gt;

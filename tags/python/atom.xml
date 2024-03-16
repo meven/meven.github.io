@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - python</title>
-    <link href="https://meven.github.io/tags/python/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/python/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2009-01-16T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/python/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>musicimporter, nouvelle version</title>
         <published>2009-01-16T00:00:00+00:00</published>
         <updated>2009-01-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/musicimporter-nouvelle-version/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/musicimporter-nouvelle-version/"/>
         <id>https://meven.github.io/musicimporter-nouvelle-version/</id>
         
-        <content type="html">&lt;p&gt;Voici une nouvelle version de mon script &lt;a href=&quot;&#x2F;post&#x2F;2008&#x2F;09&#x2F;07&#x2F;MusiImporter-importer-proprement-ses-fichiers-audio-dans-sa-collection&quot;&gt;musicimporter&lt;&#x2F;a&gt; qui permet de déplacer, renommer et nettoyer des fichiers musicaux. Par nettoyer, j&#x27;entends supprimer les tags inutiles dans les fichiers mp3 (commentaires,...).&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/musicimporter-nouvelle-version/">&lt;p&gt;Voici une nouvelle version de mon script &lt;a href=&quot;&#x2F;post&#x2F;2008&#x2F;09&#x2F;07&#x2F;MusiImporter-importer-proprement-ses-fichiers-audio-dans-sa-collection&quot;&gt;musicimporter&lt;&#x2F;a&gt; qui permet de déplacer, renommer et nettoyer des fichiers musicaux. Par nettoyer, j&#x27;entends supprimer les tags inutiles dans les fichiers mp3 (commentaires,...).&lt;&#x2F;p&gt;
 &lt;p&gt;Le script permet désormais également de supprimer les dossiers qui contenaient les fichiers musicaux lorsqu&#x27;ils sont devenus inutiles pour encore davantage automatiser l&#x27;import de fichier de musique.&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;les-nouveautes&quot;&gt;Les nouveautés&lt;&#x2F;h4&gt;
 &lt;ul&gt;
@@ -42,13 +48,19 @@
         <title>MusicImporter, importer proprement ses fichiers audio dans sa collection.</title>
         <published>2008-09-07T00:00:00+00:00</published>
         <updated>2008-09-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/"/>
         <id>https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/</id>
         
-        <content type="html">&lt;p&gt;Je viens d&#x27;écrire un script en python pour se simplifier la vie dans le classement&#x2F;rangement de fichier audio récupéré.
+        <content type="html" xml:base="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/">&lt;p&gt;Je viens d&#x27;écrire un script en python pour se simplifier la vie dans le classement&#x2F;rangement de fichier audio récupéré.
 Il s&#x27;appelle simplement musicimporter.&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;utilisation&quot;&gt;Utilisation&lt;&#x2F;h4&gt;
 &lt;p&gt;Le script prend en entrée un nombre quelconque de dossiers et un dossier de sortie.
@@ -85,13 +97,19 @@ Disponible dans Debian&#x2F;ubuntu dans le paquet python-mutagen .&lt;&#x2F;p&gt
         <title>afpyro le mardi 24 juin, 19h30 : Apéro Rennais des utilisateurs de python</title>
         <published>2008-06-19T00:00:00+00:00</published>
         <updated>2008-06-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/"/>
         <id>https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
 L&#x27;idée est très simple: tu utilises python, ou des projets gravitant autour comme django ou zope, tu aimes bien causer et boire un verre, alors cette apéro est faite pour toi!&lt;&#x2F;p&gt;
 &lt;p&gt;Cela se passe au O&#x27;Connels Pub &lt;a href=&quot;http:&#x2F;&#x2F;maps.google.fr&#x2F;maps?f=l&amp;amp;hl=fr&amp;amp;geocode=&amp;amp;q=o%27connels&amp;amp;near=rennes&amp;amp;ie=UTF8&amp;amp;ll=48.111944,-1.680264&amp;amp;spn=0.008138,0.023389&amp;amp;t=h&amp;amp;z=16&amp;amp;iwloc=A&quot;&gt;itinéraire&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;gulliver.eu.org&#x2F;wiki&#x2F;Python&#x2F;&quot;&gt;Plus d&#x27;info sur le site de Gulliver&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -102,13 +120,19 @@ L&#x27;idée est très simple: tu utilises python, ou des projets gravitant auto
         <title>Storm le sqlobject de canonical</title>
         <published>2007-07-16T00:00:00+00:00</published>
         <updated>2007-07-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/storm-le-sqlobject-de-canonical/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/storm-le-sqlobject-de-canonical/"/>
         <id>https://meven.github.io/storm-le-sqlobject-de-canonical/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;caninical.png&quot; alt=&quot;caninica&quot; &#x2F;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.canonical.com&#x2F;&quot;&gt;Canonical&lt;&#x2F;a&gt; vient de libérer un composant de leur site &lt;a href=&quot;https:&#x2F;&#x2F;launchpad.net&quot;&gt;launchpad&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/storm-le-sqlobject-de-canonical/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;caninical.png&quot; alt=&quot;caninica&quot; &#x2F;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.canonical.com&#x2F;&quot;&gt;Canonical&lt;&#x2F;a&gt; vient de libérer un composant de leur site &lt;a href=&quot;https:&#x2F;&#x2F;launchpad.net&quot;&gt;launchpad&lt;&#x2F;a&gt;.
 Ils ont libérer Storm, un Object-relational mapping en python, autrement dit un composant qui permet de simplifier les relations entre les données d&#x27;une base de données et les instances des objets instanciés.
 Étant un utilisateur de &lt;a href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;django&lt;&#x2F;a&gt;, je suis déjà familier avec ce genre de concept.
 Leur implémentation est un peu différente de celle de django, mais elle permet les mêmes possibilités et même plus.
@@ -125,13 +149,19 @@ Un projet à surveiller.&lt;&#x2F;p&gt;
         <title>Django-fr ouvre ses portes</title>
         <published>2007-06-29T00:00:00+00:00</published>
         <updated>2007-06-29T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/djangofr-ouvre-ses-portes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/djangofr-ouvre-ses-portes/"/>
         <id>https://meven.github.io/djangofr-ouvre-ses-portes/</id>
         
-        <content type="html">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/djangofr-ouvre-ses-portes/">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.
 Je suis très content de cette création étant moi même un utilisateur de djangonet un supporteur.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour rappel django est un framework de développement web en python. Sanphilosophie est simplicité et efficacité.
 Je vous le conseille. Il est facile à prendre en main grâce à landocumentation(ce sera plus long si vous découvrez aussi python :)).&lt;&#x2F;p&gt;
@@ -142,13 +172,19 @@ Je vous le conseille. Il est facile à prendre en main grâce à landocumentatio
         <title>Helloworld série : faire une fenêtre helloworld en Python et Gtk</title>
         <published>2007-05-26T00:00:00+00:00</published>
         <updated>2007-05-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/helloworld-serie-1-python-et-gtk/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/helloworld-serie-1-python-et-gtk/"/>
         <id>https://meven.github.io/helloworld-serie-1-python-et-gtk/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;entame une série de billet avec pour thème la comparaison de différents langages de programmation moderne et de différentes bibliothèques graphiques.
+        <content type="html" xml:base="https://meven.github.io/helloworld-serie-1-python-et-gtk/">&lt;p&gt;J&#x27;entame une série de billet avec pour thème la comparaison de différents langages de programmation moderne et de différentes bibliothèques graphiques.
 J&#x27;ai choisi de faire simple et, pour être un tant soit peu comparable, j&#x27;ai choisi de créer une fenêtre helloworld standard dans chacune des paires langage&#x2F;librairie graphique. Juste une fenêtre et un bouton qui ferme la fenêtre.
 Le but étant de faire découvrir les B-A-Ba de la programmation d&#x27;une interface graphique avec les différentes approches à la fois des langages et des librairies.
 Au menu :&lt;&#x2F;p&gt;

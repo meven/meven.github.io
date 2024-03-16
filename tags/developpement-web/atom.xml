@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - développement web</title>
-    <link href="https://meven.github.io/tags/developpement-web/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/developpement-web/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2009-07-25T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/developpement-web/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Google Wave s&#x27;ouvre un peu</title>
         <published>2009-07-25T00:00:00+00:00</published>
         <updated>2009-07-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/google-wave-s-ouvre-un-peu/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/google-wave-s-ouvre-un-peu/"/>
         <id>https://meven.github.io/google-wave-s-ouvre-un-peu/</id>
         
-        <content type="html">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
+        <content type="html" xml:base="https://meven.github.io/google-wave-s-ouvre-un-peu/">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
 Cela représente au total 40 000 lignes de code de java disponible via &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Mercurial&quot;&gt;mercurial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;le-operational-transform-ot-c-est-en-fait-l-api-de-base-pour-le-protocole-wave-et-son-modele&quot;&gt;le &amp;quot;Operational Transform&amp;quot; (OT), c&#x27;est en fait l&#x27;API de base pour le protocole Wave et son modèle.&lt;&#x2F;h1&gt;
 &lt;h1 id=&quot;un-prototype-de-client-serveur-implementant-le-protocole-wave&quot;&gt;un prototype de client&#x2F;serveur implémentant le protocole Wave.&lt;&#x2F;h1&gt;
@@ -35,13 +41,19 @@ Une procédure d&#x27;installation est disponible, que j&#x27;ai testé.&lt;&#x2
         <title>Premières impressions sur Google Wave</title>
         <published>2009-07-20T00:00:00+00:00</published>
         <updated>2009-07-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/premieres-impressions-sur-google-wave/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/premieres-impressions-sur-google-wave/"/>
         <id>https://meven.github.io/premieres-impressions-sur-google-wave/</id>
         
-        <content type="html">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/premieres-impressions-sur-google-wave/">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;avais été assez enthousiasmé en juin quand le projet avait été dévoilé.&lt;&#x2F;p&gt;
 &lt;p&gt;Comme vous le savez sans doute, les wave sont des mixs de mail, messagerie instantanée, wiki et plus combiné dans une une même web-app.
 L&#x27;application est à la fois synchrone et asynchrone, extensible via des bots (traduction, publication...), des gadgets (carte, sondage etc..) qui permette d&#x27;enrichir l&#x27;utilisation.&lt;&#x2F;p&gt;
@@ -60,13 +72,19 @@ L&#x27;application est à la fois synchrone et asynchrone, extensible via des bo
         <title>afpyro le mardi 24 juin, 19h30 : Apéro Rennais des utilisateurs de python</title>
         <published>2008-06-19T00:00:00+00:00</published>
         <updated>2008-06-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/"/>
         <id>https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
 L&#x27;idée est très simple: tu utilises python, ou des projets gravitant autour comme django ou zope, tu aimes bien causer et boire un verre, alors cette apéro est faite pour toi!&lt;&#x2F;p&gt;
 &lt;p&gt;Cela se passe au O&#x27;Connels Pub &lt;a href=&quot;http:&#x2F;&#x2F;maps.google.fr&#x2F;maps?f=l&amp;amp;hl=fr&amp;amp;geocode=&amp;amp;q=o%27connels&amp;amp;near=rennes&amp;amp;ie=UTF8&amp;amp;ll=48.111944,-1.680264&amp;amp;spn=0.008138,0.023389&amp;amp;t=h&amp;amp;z=16&amp;amp;iwloc=A&quot;&gt;itinéraire&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;gulliver.eu.org&#x2F;wiki&#x2F;Python&#x2F;&quot;&gt;Plus d&#x27;info sur le site de Gulliver&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -77,13 +95,19 @@ L&#x27;idée est très simple: tu utilises python, ou des projets gravitant auto
         <title>Changement de thème pour Meven&#x27;s blog, Enfin !</title>
         <published>2008-03-23T00:00:00+00:00</published>
         <updated>2008-03-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/"/>
         <id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
         
-        <content type="html">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+        <content type="html" xml:base="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
 Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
 On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
 Pour mémoire, mon blog ressemblait à cela avant :
@@ -96,13 +120,19 @@ Un thème créé par mes soins mais n&#x27;ayant pas rencontré son public mais 
         <title>Django-fr ouvre ses portes</title>
         <published>2007-06-29T00:00:00+00:00</published>
         <updated>2007-06-29T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/djangofr-ouvre-ses-portes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/djangofr-ouvre-ses-portes/"/>
         <id>https://meven.github.io/djangofr-ouvre-ses-portes/</id>
         
-        <content type="html">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/djangofr-ouvre-ses-portes/">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.
 Je suis très content de cette création étant moi même un utilisateur de djangonet un supporteur.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour rappel django est un framework de développement web en python. Sanphilosophie est simplicité et efficacité.
 Je vous le conseille. Il est facile à prendre en main grâce à landocumentation(ce sera plus long si vous découvrez aussi python :)).&lt;&#x2F;p&gt;

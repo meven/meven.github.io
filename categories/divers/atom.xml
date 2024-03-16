@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - Divers</title>
-    <link href="https://meven.github.io/categories/divers/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/categories/divers/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2017-01-08T00:00:00+00:00</updated>
     <id>https://meven.github.io/categories/divers/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Yet another sudoku solver, in rust</title>
         <published>2017-01-08T00:00:00+00:00</published>
         <updated>2017-01-08T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/"/>
         <id>https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/</id>
         
-        <content type="html">&lt;p&gt;I have been quite interested recently with the new languages &lt;a href=&quot;https:&#x2F;&#x2F;golang.org&#x2F;&quot;&gt;Go&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/">&lt;p&gt;I have been quite interested recently with the new languages &lt;a href=&quot;https:&#x2F;&#x2F;golang.org&#x2F;&quot;&gt;Go&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.
 Go and rust have some very nice new features and their design and tooling reflects the standards of this days.
 So I have been hacking with go and rust.&lt;&#x2F;p&gt;
 &lt;p&gt;I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
@@ -246,13 +252,19 @@ fn main() {
         <title>La main Visible par Dale Dougherty</title>
         <published>2008-11-19T00:00:00+00:00</published>
         <updated>2008-11-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/la-main-visible/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/la-main-visible/"/>
         <id>https://meven.github.io/la-main-visible/</id>
         
-        <content type="html">&lt;p&gt;Je suis tombé sur cette article 
+        <content type="html" xml:base="https://meven.github.io/la-main-visible/">&lt;p&gt;Je suis tombé sur cette article 
 [http:&#x2F;&#x2F;radar.oreilly.com&#x2F;2008&#x2F;11&#x2F;the-visible-hand.html] via [http:&#x2F;&#x2F;standblog.org&#x2F;blog&#x2F;post&#x2F;2008&#x2F;11&#x2F;17&#x2F;En-vrac-de-retour-de-Californie].&lt;&#x2F;p&gt;
 &lt;p&gt;Je le trouve assez intéressant pour avoir envie de le traduire en partie.
 Morceau choisit traduit par mes soins. Je vous recommande la lecture de l&#x27;article original pour éviter les contre sens qui m&#x27;ont certainement échappés, mais en substance l&#x27;idée devrait être là.
@@ -276,13 +288,19 @@ Ces évènements secouent notre croyance que les marchés libres fonctionne pour
         <title>Meizu M6 par Danelec : avec la radio FM s&#x27;il vous plaît</title>
         <published>2008-08-24T00:00:00+00:00</published>
         <updated>2008-08-24T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/"/>
         <id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
 &lt;p&gt;Si comme moi, vous possédez un &amp;quot;meizu by Danelec&amp;quot;, voici un truc qui pourrait vous servir.
 Le meizu m6 (de son vrai nom) ne possède pas de tuner FM.
 Et bien Si en réalité !
@@ -295,13 +313,19 @@ Pour s&#x27;en convaincre il suffit d&#x27;installer le firmware original, de la
         <title>L&#x27;ipod est mort, vive le miniPlayer</title>
         <published>2008-07-09T00:00:00+00:00</published>
         <updated>2008-07-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/"/>
         <id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;mort-de-mon-ipod&quot;&gt;Mort de mon ipod&lt;&#x2F;h2&gt;
 &lt;p&gt;A bout de 2 dans de bons et loyaux services mon ipod 4G 40Go est mort.
 Cela faisait en réalité presque 4 ans que j&#x27;avais un ipod 4G, grâce à une extension de garantie, J&#x27;avais pu l&#x27;échanger quand j&#x27;ai eu des pépins.
@@ -329,13 +353,19 @@ Rockbox est un firmware alternatif libre, qui supporte une trentaine de modèles
         <title>Changement de thème pour Meven&#x27;s blog, Enfin !</title>
         <published>2008-03-23T00:00:00+00:00</published>
         <updated>2008-03-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/"/>
         <id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
         
-        <content type="html">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+        <content type="html" xml:base="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
 Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
 On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
 Pour mémoire, mon blog ressemblait à cela avant :
@@ -348,13 +378,19 @@ Un thème créé par mes soins mais n&#x27;ayant pas rencontré son public mais 
         <title>La difficulté de choisir un ultra-portable</title>
         <published>2007-08-27T00:00:00+00:00</published>
         <updated>2007-08-27T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/"/>
         <id>https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/</id>
         
-        <content type="html">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
+        <content type="html" xml:base="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
 Je privilégie la mobilité et l&#x27;autonomie avant tout. Je me tourne donc vers la catégorie dite des ultra-portable.
 Ca tombe bien, ils sont devenus abordables, l&#x27;entrée de gamme est devenue moins chère, 1000€ environ pour mon plus grand bonheur.
 Etant étudiant je ne peut pas me permettre d&#x27;investir plus de toute façon.
@@ -386,13 +422,19 @@ SI quelqu&#x27;un a vu une offre qui m&#x27;a échappé et remplissant mes crit�
         <title>Chronique d&#x27;un sauvetage d&#x27;ipod</title>
         <published>2007-07-26T00:00:00+00:00</published>
         <updated>2007-07-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/chronique-dun-sauvetage-dipod/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/chronique-dun-sauvetage-dipod/"/>
         <id>https://meven.github.io/chronique-dun-sauvetage-dipod/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
+        <content type="html" xml:base="https://meven.github.io/chronique-dun-sauvetage-dipod/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
 Mon bon vieux ipod 4G me faisait drolement peur depuis que l&#x27;icône de l&#x27;ipod triste apparaissait à l&#x27;écran. Surtout que je savais qu&#x27;il avait pris un joli coup après une chute très récemment. J&#x27;ai bien cru que c&#x27;était la fin (à nouveau).
 Je me retrouvais au pied du mur, complètement addicte au meilleur des balladeurs mp3. Il allait falloir m&#x27;en acheter un nouveau.
 J&#x27;aurais opté pour un nano 8Go plus petit et plus costaud que mon 4G avec son gros disque dur si fragile. Mais à 259€, je le trouve vraiment trop cher, franchement apple abuse. Mais avec &lt;a href=&quot;http:&#x2F;&#x2F;hideapod.com&#x2F;&quot;&gt;une concurrence aussi impuissante&lt;&#x2F;a&gt; à proposer un produit qui tienne la route, rien ne pousse apple à réduire ses marges.
@@ -411,13 +453,19 @@ Conclusion: encore un happy ending à l&#x27;américaine ;)&lt;&#x2F;p&gt;
         <title>L&#x27;ujap Quimper en final de pro B à Bercy</title>
         <published>2007-06-03T00:00:00+00:00</published>
         <updated>2007-06-03T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/"/>
         <id>https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/</id>
         
-        <content type="html">&lt;p&gt;Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.
+        <content type="html" xml:base="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/">&lt;p&gt;Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.
 Premiere fois à Bercy, je découvre le métro Parisien, le RER. C&#x27;est pas aussinterrible que je pensais, enfin que l&#x27;image que je pouvais m&#x27;en avoirnfaite.
 &lt;a href=&quot;&#x2F;photos&#x2F;IMG_3429.JPG&quot;&gt;&lt;img style=&quot;margin: 0 auto; display: block;&quot; alt=&quot;&quot; src=&quot;&#x2F;photos&#x2F;.IMG_3429_m.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 On a eu le droit à un belle finale de play-off en PRO A entre Roanne et Nancy,nbien disputée si bien que Nancy qui avait eu l&#x27;avantage du score au long dunmatch, a finalement laissé filer 7 points d&#x27;avance pour Roanne juste dans lendernier quart temps. Nancy devient du même coup le poulidor de PRO A aprèsntrois finales consécutive perdues. Roanne l&#x27;emporte 81-74.&lt;&#x2F;p&gt;

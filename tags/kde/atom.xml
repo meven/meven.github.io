@@ -1,22 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - kde</title>
-    <link href="https://meven.github.io/tags/kde/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/kde/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-07-22T00:00:00+00:00</updated>
+    <updated>2024-03-16T10:30:00+00:00</updated>
     <id>https://meven.github.io/tags/kde/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dolphin 24.02</title>
+        <published>2024-03-16T10:30:00+00:00</published>
+        <updated>2024-03-16T10:30:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/dolphin-24-02/"/>
+        <id>https://meven.github.io/dolphin-24-02/</id>
+        
+        <content type="html" xml:base="https://meven.github.io/dolphin-24-02/">&lt;p&gt;Since last &lt;a href=&quot;https:&#x2F;&#x2F;apps.kde.org&#x2F;dolphin&#x2F;&quot;&gt;Dolphin&lt;&#x2F;a&gt; version 23.08, I spent a lot of my time making sure the transition to KF6&#x2F;Qt6 went smoothly for dolphin and its dependencies and plugins and thanks to many others contributions, in particular &lt;a href=&quot;https:&#x2F;&#x2F;write.as&#x2F;alexander-lohnau&#x2F;&quot;&gt;Alexander&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;nicolasfella.de&#x2F;&quot;&gt;Nicolas&lt;&#x2F;a&gt;, this went well.
+The objective being no-one would notice despite much code has changed and this mostly worked out.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;changes&quot;&gt;Changes&lt;&#x2F;h1&gt;
+&lt;p&gt;A few behaviors and default have changed.&lt;&#x2F;p&gt;
+&lt;p&gt;Files and folders are now selected with a single-click and opened with a double-click.
+This will mainly affect Neon Users, since most distros already had this behavior default.
+You can select the single-click-open mode on the first page of systemsettings, as it concerns also Plasma, file&#x2F;open dialog and other applications.&lt;&#x2F;p&gt;
+&lt;p&gt;The extract here option in the menu now has the behavior of the old &amp;quot;extract here and detect subfolders&amp;quot;.
+This makes the menu less heavy on text while making the action more accessible.&lt;&#x2F;p&gt;
+&lt;p&gt;Service menus will need some adaptation unfortunately, you will need to Moving them to a new location.
+Usually &lt;code&gt;mv ~&#x2F;.local&#x2F;share&#x2F;kservices5&#x2F;ServiceMenus&#x2F;* ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;. (Ensure to have destination directory created: &lt;code&gt;mkdir -p ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;)
+You can read the &lt;a href=&quot;https:&#x2F;&#x2F;develop.kde.org&#x2F;docs&#x2F;apps&#x2F;dolphin&#x2F;service-menus&#x2F;&quot;&gt;updated documentation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;code&gt;F10&lt;&#x2F;code&gt; shortcut now opens the menu, instead of creating a directory. That&#x27;s an important change to improve accessibility by providing standard shortcuts. You can change it back if you want, and you can also use the the standard shortcut for this action &lt;code&gt;Ctrl+Shift+N&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;new-features&quot;&gt;New features&lt;&#x2F;h1&gt;
+&lt;p&gt;The settings have been reorganized making it easier to find what you are looking for.
+The Interface section regroups setitings regarding the UI elements of dolphin, and the view those that influences how the main view will display your files and folders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; with=&quot;400px&quot;&#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Shoutout to Dimosthenis Krallis for pulling it off, this wasn&#x27;t an easy task especially for a not yet regular contributor.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https:&#x2F;&#x2F;blogs.kde.org&#x2F;authors&#x2F;carlschwan&#x2F;&quot;&gt;Carl&lt;&#x2F;a&gt;, we got a very nice visual improvement to KDE application with breeze. I really enjoy the change to Dolphin.
+Looking back at dolphin in plasma5 makes it glaring.&lt;&#x2F;p&gt;
+&lt;p&gt;A small new feature, I added, is you can now middle click on a file to open it in the second application associated with its type.
+Let&#x27;s say you have an html file you normally open with your browser, but sometimes you want to edit it. Now instead of going to the open-with menu you can middle-click it. This works for scripts as well, opening them in your default editor instead of the second application assoctiated with their type.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This was inspired by the fact that folders benefit from middle-click activations to open new tabs.
+Making this behavior configurable might make sense, suggestions welcome, but this seems like a sensible default at least.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wordsmith.social&#x2F;felix-ernst&#x2F;&quot;&gt;Felix&lt;&#x2F;a&gt;, my fellow dolphin co-maintainer, did a bunch of ui-refinement, like the free space label in the status bar and some very nice &lt;a href=&quot;https:&#x2F;&#x2F;wordsmith.social&#x2F;felix-ernst&#x2F;f10-for-accessibility-in-kf6&quot;&gt;accessibility improvements&lt;&#x2F;a&gt;, including the &lt;code&gt;F10&lt;&#x2F;code&gt; shorcut change that now triggers the app menu by default.&lt;&#x2F;p&gt;
+&lt;p&gt;You can open now open containing folders for &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;merge_requests&#x2F;616&quot;&gt;files in the Recent Files&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;bug-fixed&quot;&gt;Bug fixed&lt;&#x2F;h1&gt;
+&lt;p&gt;Akseli Lahtinen made sure to &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;merge_requests&#x2F;675&quot;&gt;Resort directory size count after refreshing&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;And in total 32 were fixed between Dolphin 23.08.05 and Dolphin 24.02.0.
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=480098&quot;&gt;480098&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=441070&quot;&gt;441070&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=477897&quot;&gt;477897&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=479596&quot;&gt;479596&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=478724&quot;&gt;478724&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=476670&quot;&gt;476670&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473999&quot;&gt;473999&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=478117&quot;&gt;478117&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=477607&quot;&gt;477607&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=477288&quot;&gt;477288&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=476742&quot;&gt;476742&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=172967&quot;&gt;172967&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=452587&quot;&gt;452587&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=475547&quot;&gt;475547&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=422998&quot;&gt;422998&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=423884&quot;&gt;423884&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=440366&quot;&gt;440366&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=474951&quot;&gt;474951&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=474999&quot;&gt;474999&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=393152&quot;&gt;393152&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473775&quot;&gt;473775&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473377&quot;&gt;473377&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473513&quot;&gt;473513&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=420870&quot;&gt;420870&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=472912&quot;&gt;472912&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=468445&quot;&gt;468445&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=469354&quot;&gt;469354&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=462778&quot;&gt;462778&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=417930&quot;&gt;417930&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=464594&quot;&gt;464594&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=471999&quot;&gt;471999&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=47197&quot;&gt;47197&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;new-code-new-bugs&quot;&gt;New code, new bugs&lt;&#x2F;h1&gt;
+&lt;p&gt;Unfortunately whenever you ship new code, you risk introducing new bugs, and even months of testing didn&#x27;t iron them all.&lt;&#x2F;p&gt;
+&lt;p&gt;One I think you could have spotted earlier, was that on X11, &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=481952&quot;&gt;panels are hidden after minimizing Dolphin window&lt;&#x2F;a&gt;.
+Thanks to Nicolas fella, this was swiftly fixed and will reach users in next Dolphin release.
+In the meantime, this is a good time to learn about the shortcuts for panels:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;F9&lt;&#x2F;code&gt;: toggle places panel&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;F11&lt;&#x2F;code&gt;: toggle information panel&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;We now have a need process to build packages for Windows and Mac OS, Dolphin has not made the transition though.
+I am working on it to bring latest dolphin to its Window and MacOS users.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Dolphin at Akademy 2023</title>
         <published>2023-07-22T00:00:00+00:00</published>
         <updated>2023-07-22T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/dolphin-at-akademy-2023/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/dolphin-at-akademy-2023/"/>
         <id>https://meven.github.io/dolphin-at-akademy-2023/</id>
         
-        <content type="html">&lt;p&gt;I am returning from akademy and I had a great time, meeting new people or people I had already worked with online.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/dolphin-at-akademy-2023/">&lt;p&gt;I am returning from akademy and I had a great time, meeting new people or people I had already worked with online.&lt;&#x2F;p&gt;
 &lt;p&gt;In particular I was very happy to meet Felix, my fellow dolphin co-maintainer.
 We get along very well together, this will only make our dolphin work more pleasant and efficient.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;dolphin&quot;&gt;Dolphin&lt;&#x2F;h1&gt;
@@ -51,13 +149,19 @@ I was reminded about KDAB&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#
         <title>Plasma 6 Sprint 2023</title>
         <published>2023-05-12T00:00:00+00:00</published>
         <updated>2023-05-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/plasma6-sprint-2023/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/plasma6-sprint-2023/"/>
         <id>https://meven.github.io/plasma6-sprint-2023/</id>
         
-        <content type="html">&lt;h1 id=&quot;plasma-6-sprint&quot;&gt;Plasma 6 Sprint&lt;&#x2F;h1&gt;
+        <content type="html" xml:base="https://meven.github.io/plasma6-sprint-2023/">&lt;h1 id=&quot;plasma-6-sprint&quot;&gt;Plasma 6 Sprint&lt;&#x2F;h1&gt;
 &lt;p&gt;I was at the Plasma 6 sprint. It took place in Augsburg at &lt;a href=&quot;https:&#x2F;&#x2F;www.tuxedocomputers.com&#x2F;&quot;&gt;Tuxedo&lt;&#x2F;a&gt; office, a well-known german company selling computers that offers preinstalled with Gnu&#x2F;Linux and KDE Plasma. They also are a KDE e.v (i.e foundation) sponsor. I will certainly consider their offers when buying hardware.
 Their office were great and very nice people welcomed us.&lt;&#x2F;p&gt;
 &lt;p&gt;It was great to get to work in person again with KDE community members, since I wasn&#x27;t in person at last Akademy in Barcelona.&lt;&#x2F;p&gt;
@@ -102,13 +206,19 @@ And with Plasma 6 very far off this seems to me reasonable. &lt;&#x2F;p&gt;
         <title>Wayland Goal Virtual Sprint 2021</title>
         <published>2021-01-10T00:00:00+00:00</published>
         <updated>2021-01-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-goal-virtual-sprint-2021/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-goal-virtual-sprint-2021/"/>
         <id>https://meven.github.io/wayland-goal-virtual-sprint-2021/</id>
         
-        <content type="html">&lt;p&gt;Happy new year everyone !&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/wayland-goal-virtual-sprint-2021/">&lt;p&gt;Happy new year everyone !&lt;&#x2F;p&gt;
 &lt;p&gt;We will be having a Virtual Sprint for the &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal&lt;&#x2F;a&gt; between Saturday 23rd and Sunday 24th January 2021.&lt;&#x2F;p&gt;
 &lt;p&gt;This is open to contributors, you can have a look at the current program and more details at &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Sprints&#x2F;Wayland&#x2F;2020Virtual&quot;&gt;Wayland Virtual Sprint&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
@@ -118,13 +228,19 @@ And with Plasma 6 very far off this seems to me reasonable. &lt;&#x2F;p&gt;
         <title>Wayland Status for Plasma 5.20</title>
         <published>2020-11-15T00:00:00+00:00</published>
         <updated>2020-11-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-status-plasma-5-20/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-status-plasma-5-20/"/>
         <id>https://meven.github.io/wayland-status-plasma-5-20/</id>
         
-        <content type="html">&lt;p&gt;The KDE community has made some great progress on Plasma Wayland support during this release cycle.
+        <content type="html" xml:base="https://meven.github.io/wayland-status-plasma-5-20/">&lt;p&gt;The KDE community has made some great progress on Plasma Wayland support during this release cycle.
 Some people on the Internet have qualified Plasma Wayland session as stable, but I wouldn&#x27;t go that far yet.
 I would qualify Plasma sessions as beta preview, we still have a long way to go.
 In some configurations and workflow It might suit you but certainly not all users for now.&lt;&#x2F;p&gt;
@@ -288,13 +404,19 @@ More on the community wiki &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&
         <title>Wayland Status update for Plasma 5.19</title>
         <published>2020-06-02T00:00:00+00:00</published>
         <updated>2020-06-02T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-status-update-plasma-5-19/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-status-update-plasma-5-19/"/>
         <id>https://meven.github.io/wayland-status-update-plasma-5-19/</id>
         
-        <content type="html">&lt;p&gt;We have been busy recently on the Wayland Goal.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/wayland-status-update-plasma-5-19/">&lt;p&gt;We have been busy recently on the Wayland Goal.&lt;&#x2F;p&gt;
 &lt;p&gt;A few of those points were already highlight on &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate&#x27;s excellent blog&lt;&#x2F;a&gt;.
 But some were missing, and I wanted to highlight those dedicated to Wayland with more context.&lt;&#x2F;p&gt;
 &lt;p&gt;The changes I mention here will be present in Plasma 5.19, but they are not exhaustive.&lt;&#x2F;p&gt;
@@ -341,13 +463,19 @@ I invite you to join-in : &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#
         <title>Wayland goal - Call for Action</title>
         <published>2019-10-10T00:00:00+00:00</published>
         <updated>2019-10-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-goal/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-goal/"/>
         <id>https://meven.github.io/wayland-goal/</id>
         
-        <content type="html">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/wayland-goal/">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
 &lt;p&gt;This entails making Plasma running smoothly under Wayland, but also making sure KDE Apps can run without bugs and missing features.
 It also means that we want to help the wider Wayland community to fill missing features and fix bugs.&lt;&#x2F;p&gt;
 &lt;p&gt;I call App users and developers to try out their favorite app in Wayland and report the issue that may arise. and add wayland as keyword to the bug to keep track on those bugs.&lt;&#x2F;p&gt;
@@ -369,13 +497,19 @@ It also means that we want to help the wider Wayland community to fill missing f
         <title>Recently Used ioslave</title>
         <published>2019-10-05T00:00:00+00:00</published>
         <updated>2019-10-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/recently-used-ioslave/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/recently-used-ioslave/"/>
         <id>https://meven.github.io/recently-used-ioslave/</id>
         
-        <content type="html">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
+        <content type="html" xml:base="https://meven.github.io/recently-used-ioslave/">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
 This differential revision adds two entries &amp;quot;Recent Files&amp;quot; and &amp;quot;Recent Locations&amp;quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
 &lt;img src=&quot;&#x2F;captures&#x2F;recently-used.png&quot; alt=&quot;Recent screenshot&quot; &#x2F;&gt;
 &lt;p&gt;It leverages the ioslave recentlyused:&#x2F; introduced in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;D22144&lt;&#x2F;a&gt;, allowing to access KActivity data.
@@ -408,13 +542,19 @@ And I want to thank all the other reviewers involved.&lt;&#x2F;p&gt;
         <title>KDE First Contributions and first sprint</title>
         <published>2019-07-26T00:00:00+00:00</published>
         <updated>2019-07-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/first-contributions-and-first-sprint/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/first-contributions-and-first-sprint/"/>
         <id>https://meven.github.io/first-contributions-and-first-sprint/</id>
         
-        <content type="html">&lt;p&gt;I have been a KDE User for more than 10 years.
+        <content type="html" xml:base="https://meven.github.io/first-contributions-and-first-sprint/">&lt;p&gt;I have been a KDE User for more than 10 years.
 I really love KDE community, Plasma and its apps.
 I have been reading eagerly &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate Graham&#x27;s blog&lt;&#x2F;a&gt;
 He gave me the inspiration to start contributing.&lt;&#x2F;p&gt;

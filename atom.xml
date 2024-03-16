@@ -1,22 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog</title>
-    <link href="https://meven.github.io/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-07-22T00:00:00+00:00</updated>
+    <updated>2024-03-16T10:30:00+00:00</updated>
     <id>https://meven.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dolphin 24.02</title>
+        <published>2024-03-16T10:30:00+00:00</published>
+        <updated>2024-03-16T10:30:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/dolphin-24-02/"/>
+        <id>https://meven.github.io/dolphin-24-02/</id>
+        
+        <content type="html" xml:base="https://meven.github.io/dolphin-24-02/">&lt;p&gt;Since last &lt;a href=&quot;https:&#x2F;&#x2F;apps.kde.org&#x2F;dolphin&#x2F;&quot;&gt;Dolphin&lt;&#x2F;a&gt; version 23.08, I spent a lot of my time making sure the transition to KF6&#x2F;Qt6 went smoothly for dolphin and its dependencies and plugins and thanks to many others contributions, in particular &lt;a href=&quot;https:&#x2F;&#x2F;write.as&#x2F;alexander-lohnau&#x2F;&quot;&gt;Alexander&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;nicolasfella.de&#x2F;&quot;&gt;Nicolas&lt;&#x2F;a&gt;, this went well.
+The objective being no-one would notice despite much code has changed and this mostly worked out.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;changes&quot;&gt;Changes&lt;&#x2F;h1&gt;
+&lt;p&gt;A few behaviors and default have changed.&lt;&#x2F;p&gt;
+&lt;p&gt;Files and folders are now selected with a single-click and opened with a double-click.
+This will mainly affect Neon Users, since most distros already had this behavior default.
+You can select the single-click-open mode on the first page of systemsettings, as it concerns also Plasma, file&#x2F;open dialog and other applications.&lt;&#x2F;p&gt;
+&lt;p&gt;The extract here option in the menu now has the behavior of the old &amp;quot;extract here and detect subfolders&amp;quot;.
+This makes the menu less heavy on text while making the action more accessible.&lt;&#x2F;p&gt;
+&lt;p&gt;Service menus will need some adaptation unfortunately, you will need to Moving them to a new location.
+Usually &lt;code&gt;mv ~&#x2F;.local&#x2F;share&#x2F;kservices5&#x2F;ServiceMenus&#x2F;* ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;. (Ensure to have destination directory created: &lt;code&gt;mkdir -p ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;)
+You can read the &lt;a href=&quot;https:&#x2F;&#x2F;develop.kde.org&#x2F;docs&#x2F;apps&#x2F;dolphin&#x2F;service-menus&#x2F;&quot;&gt;updated documentation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The &lt;code&gt;F10&lt;&#x2F;code&gt; shortcut now opens the menu, instead of creating a directory. That&#x27;s an important change to improve accessibility by providing standard shortcuts. You can change it back if you want, and you can also use the the standard shortcut for this action &lt;code&gt;Ctrl+Shift+N&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;new-features&quot;&gt;New features&lt;&#x2F;h1&gt;
+&lt;p&gt;The settings have been reorganized making it easier to find what you are looking for.
+The Interface section regroups setitings regarding the UI elements of dolphin, and the view those that influences how the main view will display your files and folders.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; with=&quot;400px&quot;&#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Shoutout to Dimosthenis Krallis for pulling it off, this wasn&#x27;t an easy task especially for a not yet regular contributor.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https:&#x2F;&#x2F;blogs.kde.org&#x2F;authors&#x2F;carlschwan&#x2F;&quot;&gt;Carl&lt;&#x2F;a&gt;, we got a very nice visual improvement to KDE application with breeze. I really enjoy the change to Dolphin.
+Looking back at dolphin in plasma5 makes it glaring.&lt;&#x2F;p&gt;
+&lt;p&gt;A small new feature, I added, is you can now middle click on a file to open it in the second application associated with its type.
+Let&#x27;s say you have an html file you normally open with your browser, but sometimes you want to edit it. Now instead of going to the open-with menu you can middle-click it. This works for scripts as well, opening them in your default editor instead of the second application assoctiated with their type.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This was inspired by the fact that folders benefit from middle-click activations to open new tabs.
+Making this behavior configurable might make sense, suggestions welcome, but this seems like a sensible default at least.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wordsmith.social&#x2F;felix-ernst&#x2F;&quot;&gt;Felix&lt;&#x2F;a&gt;, my fellow dolphin co-maintainer, did a bunch of ui-refinement, like the free space label in the status bar and some very nice &lt;a href=&quot;https:&#x2F;&#x2F;wordsmith.social&#x2F;felix-ernst&#x2F;f10-for-accessibility-in-kf6&quot;&gt;accessibility improvements&lt;&#x2F;a&gt;, including the &lt;code&gt;F10&lt;&#x2F;code&gt; shorcut change that now triggers the app menu by default.&lt;&#x2F;p&gt;
+&lt;p&gt;You can open now open containing folders for &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;merge_requests&#x2F;616&quot;&gt;files in the Recent Files&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;bug-fixed&quot;&gt;Bug fixed&lt;&#x2F;h1&gt;
+&lt;p&gt;Akseli Lahtinen made sure to &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;merge_requests&#x2F;675&quot;&gt;Resort directory size count after refreshing&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;And in total 32 were fixed between Dolphin 23.08.05 and Dolphin 24.02.0.
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=480098&quot;&gt;480098&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=441070&quot;&gt;441070&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=477897&quot;&gt;477897&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=479596&quot;&gt;479596&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=478724&quot;&gt;478724&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=476670&quot;&gt;476670&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473999&quot;&gt;473999&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=478117&quot;&gt;478117&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=477607&quot;&gt;477607&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=477288&quot;&gt;477288&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=476742&quot;&gt;476742&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=172967&quot;&gt;172967&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=452587&quot;&gt;452587&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=475547&quot;&gt;475547&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=422998&quot;&gt;422998&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=423884&quot;&gt;423884&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=440366&quot;&gt;440366&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=474951&quot;&gt;474951&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=474999&quot;&gt;474999&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=393152&quot;&gt;393152&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473775&quot;&gt;473775&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473377&quot;&gt;473377&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=473513&quot;&gt;473513&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=420870&quot;&gt;420870&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=472912&quot;&gt;472912&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=468445&quot;&gt;468445&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=469354&quot;&gt;469354&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=462778&quot;&gt;462778&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=417930&quot;&gt;417930&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=464594&quot;&gt;464594&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=471999&quot;&gt;471999&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=47197&quot;&gt;47197&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;new-code-new-bugs&quot;&gt;New code, new bugs&lt;&#x2F;h1&gt;
+&lt;p&gt;Unfortunately whenever you ship new code, you risk introducing new bugs, and even months of testing didn&#x27;t iron them all.&lt;&#x2F;p&gt;
+&lt;p&gt;One I think you could have spotted earlier, was that on X11, &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=481952&quot;&gt;panels are hidden after minimizing Dolphin window&lt;&#x2F;a&gt;.
+Thanks to Nicolas fella, this was swiftly fixed and will reach users in next Dolphin release.
+In the meantime, this is a good time to learn about the shortcuts for panels:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;F9&lt;&#x2F;code&gt;: toggle places panel&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;F11&lt;&#x2F;code&gt;: toggle information panel&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;We now have a need process to build packages for Windows and Mac OS, Dolphin has not made the transition though.
+I am working on it to bring latest dolphin to its Window and MacOS users.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Dolphin at Akademy 2023</title>
         <published>2023-07-22T00:00:00+00:00</published>
         <updated>2023-07-22T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/dolphin-at-akademy-2023/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/dolphin-at-akademy-2023/"/>
         <id>https://meven.github.io/dolphin-at-akademy-2023/</id>
         
-        <content type="html">&lt;p&gt;I am returning from akademy and I had a great time, meeting new people or people I had already worked with online.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/dolphin-at-akademy-2023/">&lt;p&gt;I am returning from akademy and I had a great time, meeting new people or people I had already worked with online.&lt;&#x2F;p&gt;
 &lt;p&gt;In particular I was very happy to meet Felix, my fellow dolphin co-maintainer.
 We get along very well together, this will only make our dolphin work more pleasant and efficient.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;dolphin&quot;&gt;Dolphin&lt;&#x2F;h1&gt;
@@ -51,13 +149,19 @@ I was reminded about KDAB&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#
         <title>Plasma 6 Sprint 2023</title>
         <published>2023-05-12T00:00:00+00:00</published>
         <updated>2023-05-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/plasma6-sprint-2023/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/plasma6-sprint-2023/"/>
         <id>https://meven.github.io/plasma6-sprint-2023/</id>
         
-        <content type="html">&lt;h1 id=&quot;plasma-6-sprint&quot;&gt;Plasma 6 Sprint&lt;&#x2F;h1&gt;
+        <content type="html" xml:base="https://meven.github.io/plasma6-sprint-2023/">&lt;h1 id=&quot;plasma-6-sprint&quot;&gt;Plasma 6 Sprint&lt;&#x2F;h1&gt;
 &lt;p&gt;I was at the Plasma 6 sprint. It took place in Augsburg at &lt;a href=&quot;https:&#x2F;&#x2F;www.tuxedocomputers.com&#x2F;&quot;&gt;Tuxedo&lt;&#x2F;a&gt; office, a well-known german company selling computers that offers preinstalled with Gnu&#x2F;Linux and KDE Plasma. They also are a KDE e.v (i.e foundation) sponsor. I will certainly consider their offers when buying hardware.
 Their office were great and very nice people welcomed us.&lt;&#x2F;p&gt;
 &lt;p&gt;It was great to get to work in person again with KDE community members, since I wasn&#x27;t in person at last Akademy in Barcelona.&lt;&#x2F;p&gt;
@@ -102,13 +206,19 @@ And with Plasma 6 very far off this seems to me reasonable. &lt;&#x2F;p&gt;
         <title>Wayland Goal Virtual Sprint 2021</title>
         <published>2021-01-10T00:00:00+00:00</published>
         <updated>2021-01-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-goal-virtual-sprint-2021/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-goal-virtual-sprint-2021/"/>
         <id>https://meven.github.io/wayland-goal-virtual-sprint-2021/</id>
         
-        <content type="html">&lt;p&gt;Happy new year everyone !&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/wayland-goal-virtual-sprint-2021/">&lt;p&gt;Happy new year everyone !&lt;&#x2F;p&gt;
 &lt;p&gt;We will be having a Virtual Sprint for the &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Goals&#x2F;Wayland&quot;&gt;Wayland Goal&lt;&#x2F;a&gt; between Saturday 23rd and Sunday 24th January 2021.&lt;&#x2F;p&gt;
 &lt;p&gt;This is open to contributors, you can have a look at the current program and more details at &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#x2F;Sprints&#x2F;Wayland&#x2F;2020Virtual&quot;&gt;Wayland Virtual Sprint&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
@@ -118,13 +228,19 @@ And with Plasma 6 very far off this seems to me reasonable. &lt;&#x2F;p&gt;
         <title>Wayland Status for Plasma 5.20</title>
         <published>2020-11-15T00:00:00+00:00</published>
         <updated>2020-11-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-status-plasma-5-20/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-status-plasma-5-20/"/>
         <id>https://meven.github.io/wayland-status-plasma-5-20/</id>
         
-        <content type="html">&lt;p&gt;The KDE community has made some great progress on Plasma Wayland support during this release cycle.
+        <content type="html" xml:base="https://meven.github.io/wayland-status-plasma-5-20/">&lt;p&gt;The KDE community has made some great progress on Plasma Wayland support during this release cycle.
 Some people on the Internet have qualified Plasma Wayland session as stable, but I wouldn&#x27;t go that far yet.
 I would qualify Plasma sessions as beta preview, we still have a long way to go.
 In some configurations and workflow It might suit you but certainly not all users for now.&lt;&#x2F;p&gt;
@@ -288,13 +404,19 @@ More on the community wiki &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&
         <title>New Static blog</title>
         <published>2020-06-30T00:00:00+00:00</published>
         <updated>2020-06-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/new-static-blog/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/new-static-blog/"/>
         <id>https://meven.github.io/new-static-blog/</id>
         
-        <content type="html">&lt;p&gt;My blog hosting platform was maintained by my domain name provider &lt;a href=&quot;https:&#x2F;&#x2F;www.gandi.net&#x2F;&quot;&gt;gandi&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/new-static-blog/">&lt;p&gt;My blog hosting platform was maintained by my domain name provider &lt;a href=&quot;https:&#x2F;&#x2F;www.gandi.net&#x2F;&quot;&gt;gandi&lt;&#x2F;a&gt;.
 It used the &lt;a href=&quot;https:&#x2F;&#x2F;dotclear.org&#x2F;&quot;&gt;dotclear&lt;&#x2F;a&gt; blog CMS.
 But gandi has decided to stop maintaining this service at the end of June 2020.&lt;&#x2F;p&gt;
 &lt;p&gt;It has served me well over the years but the lack of proper maintenance and support was showing.&lt;&#x2F;p&gt;
@@ -311,13 +433,19 @@ The good thing is now my blog posts are written in markdown, and I gained a sear
         <title>Wayland Status update for Plasma 5.19</title>
         <published>2020-06-02T00:00:00+00:00</published>
         <updated>2020-06-02T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-status-update-plasma-5-19/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-status-update-plasma-5-19/"/>
         <id>https://meven.github.io/wayland-status-update-plasma-5-19/</id>
         
-        <content type="html">&lt;p&gt;We have been busy recently on the Wayland Goal.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/wayland-status-update-plasma-5-19/">&lt;p&gt;We have been busy recently on the Wayland Goal.&lt;&#x2F;p&gt;
 &lt;p&gt;A few of those points were already highlight on &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate&#x27;s excellent blog&lt;&#x2F;a&gt;.
 But some were missing, and I wanted to highlight those dedicated to Wayland with more context.&lt;&#x2F;p&gt;
 &lt;p&gt;The changes I mention here will be present in Plasma 5.19, but they are not exhaustive.&lt;&#x2F;p&gt;
@@ -364,13 +492,19 @@ I invite you to join-in : &lt;a href=&quot;https:&#x2F;&#x2F;community.kde.org&#
         <title>Wayland goal - Call for Action</title>
         <published>2019-10-10T00:00:00+00:00</published>
         <updated>2019-10-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/wayland-goal/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/wayland-goal/"/>
         <id>https://meven.github.io/wayland-goal/</id>
         
-        <content type="html">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/wayland-goal/">&lt;p&gt;KDE community has &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;T11081&quot;&gt;elected&lt;&#x2F;a&gt; to finalize the transition to Wayland and embrace the future of desktop.&lt;&#x2F;p&gt;
 &lt;p&gt;This entails making Plasma running smoothly under Wayland, but also making sure KDE Apps can run without bugs and missing features.
 It also means that we want to help the wider Wayland community to fill missing features and fix bugs.&lt;&#x2F;p&gt;
 &lt;p&gt;I call App users and developers to try out their favorite app in Wayland and report the issue that may arise. and add wayland as keyword to the bug to keep track on those bugs.&lt;&#x2F;p&gt;
@@ -392,13 +526,19 @@ It also means that we want to help the wider Wayland community to fill missing f
         <title>Recently Used ioslave</title>
         <published>2019-10-05T00:00:00+00:00</published>
         <updated>2019-10-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/recently-used-ioslave/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/recently-used-ioslave/"/>
         <id>https://meven.github.io/recently-used-ioslave/</id>
         
-        <content type="html">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
+        <content type="html" xml:base="https://meven.github.io/recently-used-ioslave/">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
 This differential revision adds two entries &amp;quot;Recent Files&amp;quot; and &amp;quot;Recent Locations&amp;quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
 &lt;img src=&quot;&#x2F;captures&#x2F;recently-used.png&quot; alt=&quot;Recent screenshot&quot; &#x2F;&gt;
 &lt;p&gt;It leverages the ioslave recentlyused:&#x2F; introduced in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;D22144&lt;&#x2F;a&gt;, allowing to access KActivity data.
@@ -431,13 +571,19 @@ And I want to thank all the other reviewers involved.&lt;&#x2F;p&gt;
         <title>KDE First Contributions and first sprint</title>
         <published>2019-07-26T00:00:00+00:00</published>
         <updated>2019-07-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/first-contributions-and-first-sprint/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/first-contributions-and-first-sprint/"/>
         <id>https://meven.github.io/first-contributions-and-first-sprint/</id>
         
-        <content type="html">&lt;p&gt;I have been a KDE User for more than 10 years.
+        <content type="html" xml:base="https://meven.github.io/first-contributions-and-first-sprint/">&lt;p&gt;I have been a KDE User for more than 10 years.
 I really love KDE community, Plasma and its apps.
 I have been reading eagerly &lt;a href=&quot;https:&#x2F;&#x2F;pointieststick.com&#x2F;&quot;&gt;Nate Graham&#x27;s blog&lt;&#x2F;a&gt;
 He gave me the inspiration to start contributing.&lt;&#x2F;p&gt;
@@ -470,13 +616,19 @@ And I had great discussions with the people there.&lt;&#x2F;p&gt;
         <title>Appending your website name at the end of its pages titles with middleman and slim</title>
         <published>2018-06-27T00:00:00+00:00</published>
         <updated>2018-06-27T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/appending-your-website-name-at-the-end-of-its-pages-title-with-middleman-and-slim/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/appending-your-website-name-at-the-end-of-its-pages-title-with-middleman-and-slim/"/>
         <id>https://meven.github.io/appending-your-website-name-at-the-end-of-its-pages-title-with-middleman-and-slim/</id>
         
-        <content type="html">&lt;p&gt;If you use &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;middleman&#x2F;middleman&quot;&gt;middleman&lt;&#x2F;a&gt;  and the nice template solution &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;slim-template&#x2F;slim&quot;&gt;slim&lt;&#x2F;a&gt; you might encounter the same need as I did: appending your site name at the end of your page titles without hardcoding it everywhere.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/appending-your-website-name-at-the-end-of-its-pages-title-with-middleman-and-slim/">&lt;p&gt;If you use &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;middleman&#x2F;middleman&quot;&gt;middleman&lt;&#x2F;a&gt;  and the nice template solution &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;slim-template&#x2F;slim&quot;&gt;slim&lt;&#x2F;a&gt; you might encounter the same need as I did: appending your site name at the end of your page titles without hardcoding it everywhere.&lt;&#x2F;p&gt;
 &lt;p&gt;I found a simple solution, in my layout I added:&lt;&#x2F;p&gt;
 &lt;pre&gt;&lt;code&gt;    - if current_page.data.title?
         title= current_page.data.title + &amp;quot; | My Website&amp;quot;
@@ -504,13 +656,19 @@ title: My page title
         <title>Yet another sudoku solver, in rust</title>
         <published>2017-01-08T00:00:00+00:00</published>
         <updated>2017-01-08T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/"/>
         <id>https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/</id>
         
-        <content type="html">&lt;p&gt;I have been quite interested recently with the new languages &lt;a href=&quot;https:&#x2F;&#x2F;golang.org&#x2F;&quot;&gt;Go&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/yet-another-sudoku-solver-this-time-in-rust/">&lt;p&gt;I have been quite interested recently with the new languages &lt;a href=&quot;https:&#x2F;&#x2F;golang.org&#x2F;&quot;&gt;Go&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;www.rust-lang.org&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.
 Go and rust have some very nice new features and their design and tooling reflects the standards of this days.
 So I have been hacking with go and rust.&lt;&#x2F;p&gt;
 &lt;p&gt;I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
@@ -740,13 +898,19 @@ fn main() {
         <title>Uluru, Kata Tjula et Kings Canyon</title>
         <published>2013-06-30T00:00:00+00:00</published>
         <updated>2013-06-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/"/>
         <id>https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/</id>
         
-        <content type="html">&lt;p&gt;Je suis parti avec un américain et un hong kongais en road trip à la découverte des sites d&#x27;intérêt du centre rouge : Uluru, Kata Tjula et Kings canyon.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/">&lt;p&gt;Je suis parti avec un américain et un hong kongais en road trip à la découverte des sites d&#x27;intérêt du centre rouge : Uluru, Kata Tjula et Kings canyon.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0755.JPG&quot; title=&quot;Feu en face de Uluru&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0755.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Notre trip a duré 3 nuits et 4 jours.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0616.JPG&quot; title=&quot;Arbre en face de Uluru&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0616.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -772,13 +936,19 @@ Mais j&#x27;ai eu davantage l&#x27;occasion de voir dingos, chevaux et chameau.&
         <title>Kakadu &amp; Litchfield</title>
         <published>2013-06-17T00:00:00+00:00</published>
         <updated>2013-06-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/kakadu-litchfield/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/kakadu-litchfield/"/>
         <id>https://meven.github.io/kakadu-litchfield/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; title=&quot;Entrée du parc&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/kakadu-litchfield/">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; title=&quot;Entrée du parc&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Après avoir passé quatre jour à Darwin, j&#x27;ai loué avec un danois, un allemand et un néerlandais un 4x4 pour passer 5 jours dans les parcs nationaux de Kakadu et Litchfield.
 J&#x27;ai pas été déçu.&lt;&#x2F;p&gt;
 &lt;p&gt;Kakadu était un parc que je tenais particulièrement à visiter. Et bien que l&#x27;on y est passé plus de trois jours, cela ne m&#x27;a pas paru suffisamment long pour apprécier la dimension de ce parc. Il est plus grand qu&#x27;un département français.&lt;&#x2F;p&gt;
@@ -809,13 +979,19 @@ C&#x27;est aussi un bon endroit pour pratiquer du off-road en 4x4 sur des pistes
         <title>Cairns et vers Darwin</title>
         <published>2013-06-09T00:00:00+00:00</published>
         <updated>2013-06-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/cairns-et-vers-darwin/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/cairns-et-vers-darwin/"/>
         <id>https://meven.github.io/cairns-et-vers-darwin/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;ai passé un mois à Cairns.
+        <content type="html" xml:base="https://meven.github.io/cairns-et-vers-darwin/">&lt;p&gt;J&#x27;ai passé un mois à Cairns.
 J&#x27;y ai fait pas mal la fête. J&#x27;y ai trouvé un boulot mais pas génial et qui n&#x27;a pas duré.
 J&#x27;ai pu profité du lagoon et du beau temps. Mais il s&#x27;est dégradé au fil du temps où j&#x27;y suis resté.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Cairns&#x2F;IMG_0709.JPG&quot; title=&quot;Le lagon de Cairns&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Cairns&#x2F;IMG_0709.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -847,13 +1023,19 @@ On s&#x27;est très peu arrêté sauf pendant les deux derniers jours.&lt;&#x2F;
         <title>Lemon picking</title>
         <published>2013-04-16T00:00:00+00:00</published>
         <updated>2013-04-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/lemon-picking/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/lemon-picking/"/>
         <id>https://meven.github.io/lemon-picking/</id>
         
-        <content type="html">&lt;p&gt;Le thining s&#x27;est terminé le 22 février.
+        <content type="html" xml:base="https://meven.github.io/lemon-picking/">&lt;p&gt;Le thining s&#x27;est terminé le 22 février.
 Ensuite, je suis parti à Childers pour attendre la reprise du ramassage de citron.
 J&#x27;ai du patienter deux semaines à cause du temps.&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;hôtel backpacker dans lequel je suis resté était plein de différentes nationalités, l&#x27;ambiance était très bonne.&lt;&#x2F;p&gt;
@@ -879,13 +1061,19 @@ De plus on ramasse non seulement par rapport à la taille du fruit mais aussi pa
         <title>Inondations et thining à Gayndah</title>
         <published>2013-02-12T00:00:00+00:00</published>
         <updated>2013-02-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/inondations-et-thining-a-gayndah/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/inondations-et-thining-a-gayndah/"/>
         <id>https://meven.github.io/inondations-et-thining-a-gayndah/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;IMG_20130127_112619.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_20130127_112619.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/inondations-et-thining-a-gayndah/">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;IMG_20130127_112619.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_20130127_112619.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Fin janvier s&#x27;est pas passé une terrible tempête tropicale.
 Elle était prénommée Oswald et a parcouru quasiment toute la côte est de l&#x27;Australie du Nord au Sud.
 Il a plus ici en 3 jours plus que ce qu&#x27;il pleut d&#x27;habitude en une année.
@@ -917,13 +1105,19 @@ L&#x27;équipe de dix personnes à quinze personnes est composé de gallois, all
         <title>Suite du périple, Queensland</title>
         <published>2012-12-18T00:00:00+00:00</published>
         <updated>2012-12-18T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/suite-du-periple-flash-forward-queensland/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/suite-du-periple-flash-forward-queensland/"/>
         <id>https://meven.github.io/suite-du-periple-flash-forward-queensland/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/suite-du-periple-flash-forward-queensland/">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Python dans le parc de Bundjalung&lt;&#x2F;p&gt;
 &lt;p&gt;Après un périple de 1100 km environ et de près d&#x27;un mois sans se fouler, nous sommes à Bundaberg, première grande étape du voyage.
 C&#x27;est une ville entourée de champs où les backpackers sont légions.
@@ -952,13 +1146,19 @@ Nous allons y rester pour les fêtes.&lt;&#x2F;p&gt;
         <title>Les oiseaux australiens</title>
         <published>2012-11-16T00:00:00+00:00</published>
         <updated>2012-11-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/les-oiseaux-australiens/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/les-oiseaux-australiens/"/>
         <id>https://meven.github.io/les-oiseaux-australiens/</id>
         
-        <content type="html">&lt;p&gt;15 jours plus tard je suis toujours à Sydney mais plus pour très longtemps.
+        <content type="html" xml:base="https://meven.github.io/les-oiseaux-australiens/">&lt;p&gt;15 jours plus tard je suis toujours à Sydney mais plus pour très longtemps.
 Je suis sur le point d&#x27;acheter une voiture avec deux autres français et partir ensuite vers le Nord en roadtrip.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour frimer un peu je vais montrer quelque photos d&#x27;oiseaux australiens.
 C&#x27;est quelque chose que l&#x27;on remarque assez vite, il y en a beaucoup, n&#x27;importe où.
@@ -988,13 +1188,19 @@ Il manque notamment le &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;w
         <title>NSW côte Sud et animaux sauvages</title>
         <published>2012-10-30T00:00:00+00:00</published>
         <updated>2012-10-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/nsw-cote-et-animaux-sauvages/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/nsw-cote-et-animaux-sauvages/"/>
         <id>https://meven.github.io/nsw-cote-et-animaux-sauvages/</id>
         
-        <content type="html">&lt;p&gt;Je suis descendu la semaine passée dans le sud du New South Wales, à Berara, puis près de Narooma dans le parc national d&#x27;Eurodalla.
+        <content type="html" xml:base="https://meven.github.io/nsw-cote-et-animaux-sauvages/">&lt;p&gt;Je suis descendu la semaine passée dans le sud du New South Wales, à Berara, puis près de Narooma dans le parc national d&#x27;Eurodalla.
 Cela a été l&#x27;occasion de voir mes premiers kangooroos et wallabies en plein jour.
 J&#x27;ai pu voir aussi de nombreux autres animaux, baleines, dauphins, échidnées, oiseaux en tout genre...&lt;&#x2F;p&gt;
 &lt;p&gt;Les échidnés ressemblent à de gros hérissons. J&#x27;ai eu la chance de tomber dessus deux fois en une semaine, alors que ce n&#x27;est pas un animal facile à trouver.
@@ -1018,13 +1224,19 @@ Et le voyage n&#x27;en valait pas tellement la peine.&lt;&#x2F;p&gt;
         <title>Les plages de Sydney</title>
         <published>2012-10-17T00:00:00+00:00</published>
         <updated>2012-10-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/les-plages-de-sydney/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/les-plages-de-sydney/"/>
         <id>https://meven.github.io/les-plages-de-sydney/</id>
         
-        <content type="html">&lt;p&gt;Ces derniers jours j&#x27;ai pu visiter deux plages de Sydney.
+        <content type="html" xml:base="https://meven.github.io/les-plages-de-sydney/">&lt;p&gt;Ces derniers jours j&#x27;ai pu visiter deux plages de Sydney.
 L&#x27;une près de Cronulla, n&#x27;est accessible qu&#x27;en 4x4.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;IMG_0112_2.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_0112_2.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;autre, celle de Manly est une plage de surfer.&lt;&#x2F;p&gt;
@@ -1039,13 +1251,19 @@ L&#x27;une près de Cronulla, n&#x27;est accessible qu&#x27;en 4x4.&lt;&#x2F;p&g
         <title>De Kuala Lumpur à Sydney</title>
         <published>2012-10-14T00:00:00+00:00</published>
         <updated>2012-10-14T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/de-kuala-lumpur-a-sydney/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/de-kuala-lumpur-a-sydney/"/>
         <id>https://meven.github.io/de-kuala-lumpur-a-sydney/</id>
         
-        <content type="html">&lt;p&gt;Atterrissage à Kuaka Lumpur à 6h10, 00h10 heure française.
+        <content type="html" xml:base="https://meven.github.io/de-kuala-lumpur-a-sydney/">&lt;p&gt;Atterrissage à Kuaka Lumpur à 6h10, 00h10 heure française.
 J&#x27;ai 14h à passer sur place, la visite de la ville s&#x27;impose donc.
 En dehors des bâtiments, on ressent très vite la chaleur (aux alentours de 30°C) et l&#x27;humidité.
 Le temps est beau mais instable, d&#x27;ailleurs c&#x27;est parti à l&#x27;orage à un moment.&lt;&#x2F;p&gt;
@@ -1062,13 +1280,19 @@ Premier tour dans le port de Sydney l&#x27;après-midi. Mais avec la fatigue cum
         <title>Départ en Australie</title>
         <published>2012-10-10T00:00:00+00:00</published>
         <updated>2012-10-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/depart-en-australie/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/depart-en-australie/"/>
         <id>https://meven.github.io/depart-en-australie/</id>
         
-        <content type="html">&lt;p&gt;Demain départ pour l&#x27;Australie.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/depart-en-australie/">&lt;p&gt;Demain départ pour l&#x27;Australie.&lt;&#x2F;p&gt;
 &lt;p&gt;Je suis à 18 heures du décollage à l&#x27;heure ou j&#x27;écris ces lignes.&lt;&#x2F;p&gt;
 &lt;p&gt;Petite escale à Kuala Lumpur et c&#x27;est parti pour l&#x27;aventure.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour l&#x27;instant j&#x27;apprécie la grisaille de Paris en comptant les heures.&lt;&#x2F;p&gt;
@@ -1080,13 +1304,19 @@ Premier tour dans le port de Sydney l&#x27;après-midi. Mais avec la fatigue cum
         <title>28c3</title>
         <published>2012-01-15T00:00:00+00:00</published>
         <updated>2012-01-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/"/>
         <id>https://meven.github.io/28c3-j-aurais-voulu-y-etre/</id>
         
-        <content type="html">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/28c3-j-aurais-voulu-y-etre/">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;Je vous recommande vivement de les regarder.
 Si vous aimez internet davantage que la censure, ou la distribution des savoirs plus que le contrôle.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
@@ -1118,13 +1348,19 @@ Les questions soulevées sont des choix de société, d&#x27;éthique, rien de m
         <title>Fosdem 2010</title>
         <published>2010-02-11T00:00:00+00:00</published>
         <updated>2010-02-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2010/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2010/"/>
         <id>https://meven.github.io/fosdem-2010/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;étais de passage au fosdem 2010.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2010/">&lt;p&gt;J&#x27;étais de passage au fosdem 2010.&lt;&#x2F;p&gt;
 &lt;p&gt;[((http:&#x2F;&#x2F;farm5.static.flickr.com&#x2F;4067&#x2F;4337980924_a7c77ee92c_m.jpg||R))|http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;itkovian&#x2F;4337980924&#x2F;]&lt;&#x2F;p&gt;
 &lt;p&gt;On pouvait croiser des machines bizarres tels que &lt;a href=&quot;http:&#x2F;&#x2F;reprap.org&#x2F;&quot;&gt;Reprap&lt;&#x2F;a&gt; et autre makerbot dans les stands.&lt;&#x2F;p&gt;
 &lt;p&gt;Cette année je n&#x27;ai assisté que à deux conférences, mais pas des moindre.&lt;&#x2F;p&gt;
@@ -1162,13 +1398,19 @@ Il faut se rendre que la masse de travail à fournir pour supporter un seul bala
         <title>Weave par Mozilla la sauvegarde de profil fait maison</title>
         <published>2009-12-11T00:00:00+00:00</published>
         <updated>2009-12-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/"/>
         <id>https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/</id>
         
-        <content type="html">&lt;p&gt;Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
+        <content type="html" xml:base="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/">&lt;p&gt;Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
 Et si pour synchroniser mes marques-pages je pouvais me passer des serveurs de google pour changer.
 Et mieux encore, et si, je pouvais synchroniser les deux meilleurs navigateurs du moment chrome et firefox.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;en rếvais, Mozilla l&#x27;a déjà fait.
@@ -1193,13 +1435,19 @@ C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F
         <title>Google Wave s&#x27;ouvre un peu</title>
         <published>2009-07-25T00:00:00+00:00</published>
         <updated>2009-07-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/google-wave-s-ouvre-un-peu/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/google-wave-s-ouvre-un-peu/"/>
         <id>https://meven.github.io/google-wave-s-ouvre-un-peu/</id>
         
-        <content type="html">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
+        <content type="html" xml:base="https://meven.github.io/google-wave-s-ouvre-un-peu/">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
 Cela représente au total 40 000 lignes de code de java disponible via &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Mercurial&quot;&gt;mercurial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;le-operational-transform-ot-c-est-en-fait-l-api-de-base-pour-le-protocole-wave-et-son-modele&quot;&gt;le &amp;quot;Operational Transform&amp;quot; (OT), c&#x27;est en fait l&#x27;API de base pour le protocole Wave et son modèle.&lt;&#x2F;h1&gt;
 &lt;h1 id=&quot;un-prototype-de-client-serveur-implementant-le-protocole-wave&quot;&gt;un prototype de client&#x2F;serveur implémentant le protocole Wave.&lt;&#x2F;h1&gt;
@@ -1218,13 +1466,19 @@ Une procédure d&#x27;installation est disponible, que j&#x27;ai testé.&lt;&#x2
         <title>Premières impressions sur Google Wave</title>
         <published>2009-07-20T00:00:00+00:00</published>
         <updated>2009-07-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/premieres-impressions-sur-google-wave/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/premieres-impressions-sur-google-wave/"/>
         <id>https://meven.github.io/premieres-impressions-sur-google-wave/</id>
         
-        <content type="html">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/premieres-impressions-sur-google-wave/">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;avais été assez enthousiasmé en juin quand le projet avait été dévoilé.&lt;&#x2F;p&gt;
 &lt;p&gt;Comme vous le savez sans doute, les wave sont des mixs de mail, messagerie instantanée, wiki et plus combiné dans une une même web-app.
 L&#x27;application est à la fois synchrone et asynchrone, extensible via des bots (traduction, publication...), des gadgets (carte, sondage etc..) qui permette d&#x27;enrichir l&#x27;utilisation.&lt;&#x2F;p&gt;
@@ -1243,13 +1497,19 @@ L&#x27;application est à la fois synchrone et asynchrone, extensible via des bo
         <title>Table ronde politique</title>
         <published>2009-07-09T00:00:00+00:00</published>
         <updated>2009-07-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/table-ronde-politique/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/table-ronde-politique/"/>
         <id>https://meven.github.io/table-ronde-politique/</id>
         
-        <content type="html">&lt;p&gt;Je participe cette année aux &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;&#x2F;a&gt;
+        <content type="html" xml:base="https://meven.github.io/table-ronde-politique/">&lt;p&gt;Je participe cette année aux &lt;a href=&quot;http:&#x2F;&#x2F;2009.rmll.info&quot;&gt;Rencontres Mondiales du Logiciel Libre&lt;&#x2F;a&gt;
 J&#x27;ai eu l&#x27;occasion d&#x27;assister à la table ronde politique qui s&#x27;y tient.
 Cette année, elle n&#x27;accueille pas de politiques :&#x2F;.&lt;&#x2F;p&gt;
 &lt;p&gt;Ce n&#x27;est pas les bonnes volontés qui ont manqué, semble-t-il. Il faut croire que l&#x27;actualité des parlementaires ne permet pas à nos députés de participer au débat public, hors-hémicycle.&lt;&#x2F;p&gt;
@@ -1288,13 +1548,19 @@ Au choix :&lt;&#x2F;p&gt;
         <title>La Création, c&#x27;est la taxe - internet c&#x27;est le contrôle</title>
         <published>2009-03-11T00:00:00+00:00</published>
         <updated>2009-03-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/creation-et-liberte-taxe-et-flicage/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/creation-et-liberte-taxe-et-flicage/"/>
         <id>https://meven.github.io/creation-et-liberte-taxe-et-flicage/</id>
         
-        <content type="html">&lt;p&gt;Avec la loi dite &amp;quot;Internet et création&amp;quot;, dite HADOPI, nos ministres sont de dignes de &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;George_Orwell&quot;&gt;Georges Orwell&lt;&#x2F;a&gt; qui avait imaginé un système politique dans lequel le pouvoir se projetait dans un anti-thèse &amp;quot;La guerre c’est la paix - La liberté, c’est l’esclavage - L’ignorance, c’est la force&amp;quot;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/creation-et-liberte-taxe-et-flicage/">&lt;p&gt;Avec la loi dite &amp;quot;Internet et création&amp;quot;, dite HADOPI, nos ministres sont de dignes de &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;George_Orwell&quot;&gt;Georges Orwell&lt;&#x2F;a&gt; qui avait imaginé un système politique dans lequel le pouvoir se projetait dans un anti-thèse &amp;quot;La guerre c’est la paix - La liberté, c’est l’esclavage - L’ignorance, c’est la force&amp;quot;.&lt;&#x2F;p&gt;
 &lt;p&gt;Il n&#x27;y a pas de quoi rougir de la comparaison. Ce texte de loi n&#x27;est tout simplement pas ce qu&#x27;il prétend être mais son exact opposé - tout comme Orwell l&#x27;avait imaginé.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Cette loi affirme soutenir la création&lt;&#x2F;strong&gt; - hors elle ne prévoit nullement de soutien à la création, pas de financement, ni aucun autre forme de soutien.
 Tout ce qu&#x27;elle érige, c&#x27;est une rustine pour faire peur aux internautes et les rediriger vers les distributeurs autorisés tels que deezer, itunes ou si ils ont les moyens vers un supermarché de la musique.&lt;&#x2F;p&gt;
@@ -1343,13 +1609,19 @@ Le premier pas serait d&#x27;adopté des principes qui garantiraient nos libert�
         <title>Fosdem 2009 troisième partie</title>
         <published>2009-03-07T00:00:00+00:00</published>
         <updated>2009-03-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2009-troisieme-partie/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2009-troisieme-partie/"/>
         <id>https://meven.github.io/fosdem-2009-troisieme-partie/</id>
         
-        <content type="html">&lt;h4 id=&quot;upstart-par-scott-james-remnant&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;upstart.ubuntu.com&#x2F;&quot;&gt;Upstart&lt;&#x2F;a&gt; par Scott James Remnant&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2009-troisieme-partie/">&lt;h4 id=&quot;upstart-par-scott-james-remnant&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;upstart.ubuntu.com&#x2F;&quot;&gt;Upstart&lt;&#x2F;a&gt; par Scott James Remnant&lt;&#x2F;h4&gt;
 &lt;p&gt;L&#x27;objectif de Upstart est de fournir un gestionnaire de démarrage remplaçant des scripts init et un système de gestion de services, leur démarrage, arrêt et status.&lt;&#x2F;p&gt;
 &lt;p&gt;Les avancés promises par Upstart sont nombreuses.
 On oublie les &amp;quot;sleep&amp;quot; dans les scripts init qui faisait perdre beaucoup de temps au démarrage.
@@ -1377,13 +1649,19 @@ La conférence parle du point de vue technique, on parle donc de mediawiki, le w
         <title>Black out</title>
         <published>2009-02-26T00:00:00+00:00</published>
         <updated>2009-02-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/black-out/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/black-out/"/>
         <id>https://meven.github.io/black-out/</id>
         
-        <content type="html">&lt;p&gt;[((http:&#x2F;&#x2F;media.laquadrature.net&#x2F;Quadrature_black-out_HADOPI_425x600px.gif|HADOPI - Le Net en France : black-out|C))|http:&#x2F;&#x2F;www.laquadrature.net&#x2F;HADOPI|fr|HADOPI - Le Net en France : black-out]&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/black-out/">&lt;p&gt;[((http:&#x2F;&#x2F;media.laquadrature.net&#x2F;Quadrature_black-out_HADOPI_425x600px.gif|HADOPI - Le Net en France : black-out|C))|http:&#x2F;&#x2F;www.laquadrature.net&#x2F;HADOPI|fr|HADOPI - Le Net en France : black-out]&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -1391,13 +1669,19 @@ La conférence parle du point de vue technique, on parle donc de mediawiki, le w
         <title>Fosdem 2009 deuxième partie</title>
         <published>2009-02-20T00:00:00+00:00</published>
         <updated>2009-02-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2009-partie-2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2009-partie-2/"/>
         <id>https://meven.github.io/fosdem-2009-partie-2/</id>
         
-        <content type="html">&lt;h2 id=&quot;the-debian-status-quo-on-the-openmoko-neo-freerunner&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;fosdem.org&#x2F;2009&#x2F;schedule&#x2F;events&#x2F;debian_openmoko&quot;&gt;The Debian status quo on the Openmoko Neo Freerunner&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2009-partie-2/">&lt;h2 id=&quot;the-debian-status-quo-on-the-openmoko-neo-freerunner&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;fosdem.org&#x2F;2009&#x2F;schedule&#x2F;events&#x2F;debian_openmoko&quot;&gt;The Debian status quo on the Openmoko Neo Freerunner&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Debian est porté sur &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Openmoko&quot;&gt;OpenMoko&lt;&#x2F;a&gt;, le smartphone libre.
 Le port avance assez bien.
 Il se repose au maximum sur l&#x27;upstream de debian : le projet openmoko lui même, qtopia, freesmartphone.org...&lt;&#x2F;p&gt;
@@ -1416,13 +1700,19 @@ L&#x27;interface graphique est également amené à changer en profondeur dans l
         <title>Fosdem 2009 première partie</title>
         <published>2009-02-08T00:00:00+00:00</published>
         <updated>2009-02-08T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2009/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2009/"/>
         <id>https://meven.github.io/fosdem-2009/</id>
         
-        <content type="html">&lt;h4 id=&quot;fosdem-2009&quot;&gt;Fosdem 2009&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2009/">&lt;h4 id=&quot;fosdem-2009&quot;&gt;Fosdem 2009&lt;&#x2F;h4&gt;
 &lt;p&gt;J&#x27;ai assisté au &lt;a href=&quot;http:&#x2F;&#x2F;www.fosdem.org&quot;&gt;Fosdem, (Free and Opensource Software Developper European Meeting)&lt;&#x2F;a&gt; 2009 et &lt;a href=&quot;tag:fosdem&quot;&gt;comme l&#x27;année dernière&lt;&#x2F;a&gt;, je vais partager mon expérience, agrémentée d&#x27;anecdotes.
 C&#x27;est le premier des articles sur le fosdem, je devrais en écrire entre 2 et 3.&lt;&#x2F;p&gt;
 &lt;p&gt;[((http:&#x2F;&#x2F;farm1.static.flickr.com&#x2F;190&#x2F;3264893970_6dfa4875c4_m.jpg|photo du fosdem (licence CC)|C))|http:&#x2F;&#x2F;flickr.com&#x2F;photos&#x2F;lucbyhet&#x2F;3264893970&#x2F;sizes&#x2F;o&#x2F;|en]&lt;&#x2F;p&gt;
@@ -1476,13 +1766,19 @@ D&#x27;ailleurs, c&#x27;est la façon qui ait jamais fonctionnée.&lt;&#x2F;p&gt
         <title>musicimporter, nouvelle version</title>
         <published>2009-01-16T00:00:00+00:00</published>
         <updated>2009-01-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/musicimporter-nouvelle-version/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/musicimporter-nouvelle-version/"/>
         <id>https://meven.github.io/musicimporter-nouvelle-version/</id>
         
-        <content type="html">&lt;p&gt;Voici une nouvelle version de mon script &lt;a href=&quot;&#x2F;post&#x2F;2008&#x2F;09&#x2F;07&#x2F;MusiImporter-importer-proprement-ses-fichiers-audio-dans-sa-collection&quot;&gt;musicimporter&lt;&#x2F;a&gt; qui permet de déplacer, renommer et nettoyer des fichiers musicaux. Par nettoyer, j&#x27;entends supprimer les tags inutiles dans les fichiers mp3 (commentaires,...).&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/musicimporter-nouvelle-version/">&lt;p&gt;Voici une nouvelle version de mon script &lt;a href=&quot;&#x2F;post&#x2F;2008&#x2F;09&#x2F;07&#x2F;MusiImporter-importer-proprement-ses-fichiers-audio-dans-sa-collection&quot;&gt;musicimporter&lt;&#x2F;a&gt; qui permet de déplacer, renommer et nettoyer des fichiers musicaux. Par nettoyer, j&#x27;entends supprimer les tags inutiles dans les fichiers mp3 (commentaires,...).&lt;&#x2F;p&gt;
 &lt;p&gt;Le script permet désormais également de supprimer les dossiers qui contenaient les fichiers musicaux lorsqu&#x27;ils sont devenus inutiles pour encore davantage automatiser l&#x27;import de fichier de musique.&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;les-nouveautes&quot;&gt;Les nouveautés&lt;&#x2F;h4&gt;
 &lt;ul&gt;
@@ -1508,13 +1804,19 @@ D&#x27;ailleurs, c&#x27;est la façon qui ait jamais fonctionnée.&lt;&#x2F;p&gt
         <title>April needs You !</title>
         <published>2008-12-15T00:00:00+00:00</published>
         <updated>2008-12-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/april-needs-you/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/april-needs-you/"/>
         <id>https://meven.github.io/april-needs-you/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/april-needs-you/">&lt;p&gt;J&#x27;arbore depuis quelques temps sur ce blog un message d&#x27;appel à l&#x27;adhésion à l&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&quot;&gt;april&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Si vous ne connaissez pas l&#x27;april déjà, je vous invite à découvrir &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;association&#x2F;&quot;&gt;cette association&lt;&#x2F;a&gt;, pilier de la promotion et de la défense du logiciel libre en France.
 Et vous connaissez sans doute déjà certaines personnes qui la soutienne : &lt;a href=&quot;http:&#x2F;&#x2F;www.standblog.org&quot;&gt;Tristan Nitot&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;www.framasoft.net&#x2F;&quot;&gt;framasoft&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;ubuntu-fr.org&#x2F;&quot;&gt;ubuntu-fr&lt;&#x2F;a&gt;...&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;april s&#x27;était fixé comme objectif 5000 adhérent pour fin 2008.
@@ -1534,13 +1836,19 @@ Bien que ce nombre n&#x27;a pas été atteint, c&#x27;est tout de même plus de 
         <title>Quel lecteur audio choisir ?</title>
         <published>2008-12-11T00:00:00+00:00</published>
         <updated>2008-12-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/quel-lecteur-audio/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/quel-lecteur-audio/"/>
         <id>https://meven.github.io/quel-lecteur-audio/</id>
         
-        <content type="html">&lt;p&gt;Il y a quelques temps le choix des lecteurs audio (sous linux je précise) était assez simple pour moi :&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/quel-lecteur-audio/">&lt;p&gt;Il y a quelques temps le choix des lecteurs audio (sous linux je précise) était assez simple pour moi :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Supporte il last.fm ?&lt;&#x2F;li&gt;
 &lt;li&gt;Supporte-il les ipods ?&lt;&#x2F;li&gt;
@@ -1575,13 +1883,19 @@ Les versions se succèdent mais ne se ressemblent pas.&lt;&#x2F;p&gt;
         <title>La main Visible par Dale Dougherty</title>
         <published>2008-11-19T00:00:00+00:00</published>
         <updated>2008-11-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/la-main-visible/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/la-main-visible/"/>
         <id>https://meven.github.io/la-main-visible/</id>
         
-        <content type="html">&lt;p&gt;Je suis tombé sur cette article 
+        <content type="html" xml:base="https://meven.github.io/la-main-visible/">&lt;p&gt;Je suis tombé sur cette article 
 [http:&#x2F;&#x2F;radar.oreilly.com&#x2F;2008&#x2F;11&#x2F;the-visible-hand.html] via [http:&#x2F;&#x2F;standblog.org&#x2F;blog&#x2F;post&#x2F;2008&#x2F;11&#x2F;17&#x2F;En-vrac-de-retour-de-Californie].&lt;&#x2F;p&gt;
 &lt;p&gt;Je le trouve assez intéressant pour avoir envie de le traduire en partie.
 Morceau choisit traduit par mes soins. Je vous recommande la lecture de l&#x27;article original pour éviter les contre sens qui m&#x27;ont certainement échappés, mais en substance l&#x27;idée devrait être là.
@@ -1605,13 +1919,19 @@ Ces évènements secouent notre croyance que les marchés libres fonctionne pour
         <title>MusicImporter, importer proprement ses fichiers audio dans sa collection.</title>
         <published>2008-09-07T00:00:00+00:00</published>
         <updated>2008-09-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/"/>
         <id>https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/</id>
         
-        <content type="html">&lt;p&gt;Je viens d&#x27;écrire un script en python pour se simplifier la vie dans le classement&#x2F;rangement de fichier audio récupéré.
+        <content type="html" xml:base="https://meven.github.io/musiimporter-importer-proprement-ses-fichiers-audio-dans-sa-collection/">&lt;p&gt;Je viens d&#x27;écrire un script en python pour se simplifier la vie dans le classement&#x2F;rangement de fichier audio récupéré.
 Il s&#x27;appelle simplement musicimporter.&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;utilisation&quot;&gt;Utilisation&lt;&#x2F;h4&gt;
 &lt;p&gt;Le script prend en entrée un nombre quelconque de dossiers et un dossier de sortie.
@@ -1648,13 +1968,19 @@ Disponible dans Debian&#x2F;ubuntu dans le paquet python-mutagen .&lt;&#x2F;p&gt
         <title>Meizu M6 par Danelec : avec la radio FM s&#x27;il vous plaît</title>
         <published>2008-08-24T00:00:00+00:00</published>
         <updated>2008-08-24T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/"/>
         <id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
 &lt;p&gt;Si comme moi, vous possédez un &amp;quot;meizu by Danelec&amp;quot;, voici un truc qui pourrait vous servir.
 Le meizu m6 (de son vrai nom) ne possède pas de tuner FM.
 Et bien Si en réalité !
@@ -1667,13 +1993,19 @@ Pour s&#x27;en convaincre il suffit d&#x27;installer le firmware original, de la
         <title>Retour de Budapest Sziget ça a le feu</title>
         <published>2008-08-21T00:00:00+00:00</published>
         <updated>2008-08-21T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/"/>
         <id>https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/</id>
         
-        <content type="html">&lt;p&gt;Je suis rentré mardi de Sziget.
+        <content type="html" xml:base="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/">&lt;p&gt;Je suis rentré mardi de Sziget.
 C&#x27;est un festival pour le moins impressionnant.
 La taille d&#x27;abord, 6 jours 385 000 visiteurs.
 Un festival bien plus international que ceux de Bretagne.
@@ -1691,13 +2023,19 @@ Je retiendrais la très bonne prestation de R.E.M; les bons concerts de l&#x27;a
         <title>Sziget J -7</title>
         <published>2008-08-05T00:00:00+00:00</published>
         <updated>2008-08-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/sziget-j-7/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/sziget-j-7/"/>
         <id>https://meven.github.io/sziget-j-7/</id>
         
-        <content type="html">&lt;p&gt;&lt;img title=&quot;sziget 2008, juin 2008&quot; style=&quot;margin: 0 0 1em 1em; float: right;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;sziget-2008-affiche.jpg&quot; &#x2F;&gt;Dans 7 jours démarre Sziget, le plusngrand festival d&#x27;Europe environ 400 000 personnes sur 6 jours... Dont moi!&lt;&#x2F;p&gt;n&lt;p&gt;J&#x27;arrête avec les chiffres.&lt;&#x2F;p&gt;n&lt;p&gt;La programmation est pour la moins sympathique. Pour donner une idée de lanprogrammation :&lt;&#x2F;p&gt;n&lt;ul&gt;n&lt;li&gt;mardi 12: Iron Maïden&lt;&#x2F;li&gt;n&lt;li&gt;mercredi 13 : THe kooks, Alanis Morissette&lt;&#x2F;li&gt;n&lt;li&gt;jeudi 14 : Kaiser Chiefs, Jamiroquai&lt;&#x2F;li&gt;n&lt;li&gt;vendredi 15 : Sex Pistols&lt;&#x2F;li&gt;n&lt;li&gt;samedi 16 : REM, Serj Talkian, Mademoiselle K&lt;&#x2F;li&gt;n&lt;li&gt;dimanche 17: The killers, The Wombats, Babyshambles&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nEt ça ce ne sont que quelques têtes d&#x27;affiche, après il y a la scène jazz,nWorld, Métal...
+        <content type="html" xml:base="https://meven.github.io/sziget-j-7/">&lt;p&gt;&lt;img title=&quot;sziget 2008, juin 2008&quot; style=&quot;margin: 0 0 1em 1em; float: right;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;sziget-2008-affiche.jpg&quot; &#x2F;&gt;Dans 7 jours démarre Sziget, le plusngrand festival d&#x27;Europe environ 400 000 personnes sur 6 jours... Dont moi!&lt;&#x2F;p&gt;n&lt;p&gt;J&#x27;arrête avec les chiffres.&lt;&#x2F;p&gt;n&lt;p&gt;La programmation est pour la moins sympathique. Pour donner une idée de lanprogrammation :&lt;&#x2F;p&gt;n&lt;ul&gt;n&lt;li&gt;mardi 12: Iron Maïden&lt;&#x2F;li&gt;n&lt;li&gt;mercredi 13 : THe kooks, Alanis Morissette&lt;&#x2F;li&gt;n&lt;li&gt;jeudi 14 : Kaiser Chiefs, Jamiroquai&lt;&#x2F;li&gt;n&lt;li&gt;vendredi 15 : Sex Pistols&lt;&#x2F;li&gt;n&lt;li&gt;samedi 16 : REM, Serj Talkian, Mademoiselle K&lt;&#x2F;li&gt;n&lt;li&gt;dimanche 17: The killers, The Wombats, Babyshambles&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nEt ça ce ne sont que quelques têtes d&#x27;affiche, après il y a la scène jazz,nWorld, Métal...
 &lt;p&gt;Du bon temps en perspective.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela se passe sur cette île en plein milieu de Budapest (merci &lt;a hreflang=&quot;en&quot; href=&quot;http:&#x2F;&#x2F;www.openstreetmap.org&#x2F;&quot;&gt;openstreetmap&lt;&#x2F;a&gt;) :
 &lt;a href=&quot;&#x2F;captures&#x2F;map.png&quot;&gt;&lt;img title=&quot;île de sziget, aoû 2008&quot; style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;captures&#x2F;.map_m.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1708,13 +2046,19 @@ Je retiendrais la très bonne prestation de R.E.M; les bons concerts de l&#x27;a
         <title>L&#x27;ipod est mort, vive le miniPlayer</title>
         <published>2008-07-09T00:00:00+00:00</published>
         <updated>2008-07-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/"/>
         <id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;mort-de-mon-ipod&quot;&gt;Mort de mon ipod&lt;&#x2F;h2&gt;
 &lt;p&gt;A bout de 2 dans de bons et loyaux services mon ipod 4G 40Go est mort.
 Cela faisait en réalité presque 4 ans que j&#x27;avais un ipod 4G, grâce à une extension de garantie, J&#x27;avais pu l&#x27;échanger quand j&#x27;ai eu des pépins.
@@ -1742,13 +2086,19 @@ Rockbox est un firmware alternatif libre, qui supporte une trentaine de modèles
         <title>afpyro le mardi 24 juin, 19h30 : Apéro Rennais des utilisateurs de python</title>
         <published>2008-06-19T00:00:00+00:00</published>
         <updated>2008-06-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/"/>
         <id>https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/afpyro-le-mardi-24-juin-19h30-apero-rennais-des-utilisateurs-de-python/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;afpy_logo.png&quot; alt=&quot;afpy logo&quot; &#x2F;&gt;Gulliver organise un apéro sur le modèle de ceux organiser par &lt;a href=&quot;http:&#x2F;&#x2F;afpy.org&#x2F;&quot;&gt;l&#x27;association francophone Python&lt;&#x2F;a&gt;.
 L&#x27;idée est très simple: tu utilises python, ou des projets gravitant autour comme django ou zope, tu aimes bien causer et boire un verre, alors cette apéro est faite pour toi!&lt;&#x2F;p&gt;
 &lt;p&gt;Cela se passe au O&#x27;Connels Pub &lt;a href=&quot;http:&#x2F;&#x2F;maps.google.fr&#x2F;maps?f=l&amp;amp;hl=fr&amp;amp;geocode=&amp;amp;q=o%27connels&amp;amp;near=rennes&amp;amp;ie=UTF8&amp;amp;ll=48.111944,-1.680264&amp;amp;spn=0.008138,0.023389&amp;amp;t=h&amp;amp;z=16&amp;amp;iwloc=A&quot;&gt;itinéraire&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;gulliver.eu.org&#x2F;wiki&#x2F;Python&#x2F;&quot;&gt;Plus d&#x27;info sur le site de Gulliver&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -1759,13 +2109,19 @@ L&#x27;idée est très simple: tu utilises python, ou des projets gravitant auto
         <title>Un été, des festivals</title>
         <published>2008-06-19T00:00:00+00:00</published>
         <updated>2008-06-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/un-ete-des-festivals/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/un-ete-des-festivals/"/>
         <id>https://meven.github.io/un-ete-des-festivals/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;sziget-2008-affiche.jpg|sziget 2008|R))&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/un-ete-des-festivals/">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;sziget-2008-affiche.jpg|sziget 2008|R))&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;sziget-a-budapest-hongrie&quot;&gt;Sziget à Budapest, Hongrie.&lt;&#x2F;h4&gt;
 &lt;p&gt;J&#x27;y serais en découverte. J&#x27;en ai déjà entendu beaucoup de bien.
 C&#x27;est un gros festival. Une catégorie au dessus du plus grand festival français.
@@ -1801,13 +2157,19 @@ Surtout qu&#x27;en ce moment, ils sont plutôt en forme même encagoulé façon 
         <title>Changement de thème pour Meven&#x27;s blog, Enfin !</title>
         <published>2008-03-23T00:00:00+00:00</published>
         <updated>2008-03-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/"/>
         <id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
         
-        <content type="html">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+        <content type="html" xml:base="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
 Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
 On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
 Pour mémoire, mon blog ressemblait à cela avant :
@@ -1820,13 +2182,19 @@ Un thème créé par mes soins mais n&#x27;ayant pas rencontré son public mais 
         <title>FOSDEM Part 3</title>
         <published>2008-02-26T00:00:00+00:00</published>
         <updated>2008-02-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-part-3/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-part-3/"/>
         <id>https://meven.github.io/fosdem-part-3/</id>
         
-        <content type="html">&lt;p&gt;Le troisième est moins à chaud mais e vous promet encore un bon divertissement.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-part-3/">&lt;p&gt;Le troisième est moins à chaud mais e vous promet encore un bon divertissement.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai malheureusement raté les premières conférences de la journée du dimanche :(.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai commencé les conférences avec une étude de cas d&#x27;un site en ruby en rails par ses dévellopeurs.
 Le site s&#x27;appelle [http:&#x2F;&#x2F;allejobsinleuven.be|http:&#x2F;&#x2F;allejobsinleuven.be|dutch]. C&#x27;est un site d&#x27;offre d&#x27;emploi mais avec une bien meilleur éthique que ceux du secteur (anonymat des chercheurs d&#x27;emploi gratuité de dépôt de l&#x27;offre...).
@@ -1847,13 +2215,19 @@ Le fosdem, j&#x27;y retournerais c&#x27;est définitif.&lt;&#x2F;p&gt;
         <title>FOSDEM Part 1</title>
         <published>2008-02-23T00:00:00+00:00</published>
         <updated>2008-02-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-part-1/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-part-1/"/>
         <id>https://meven.github.io/fosdem-part-1/</id>
         
-        <content type="html">&lt;p&gt;Je suis de visite ce week end à Bruxelles à l&#x27;occasion du FOSDEM.
+        <content type="html" xml:base="https://meven.github.io/fosdem-part-1/">&lt;p&gt;Je suis de visite ce week end à Bruxelles à l&#x27;occasion du FOSDEM.
 Le but de ce post est de montrer à chaud ce qui se passe ici.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela a commencé vendredi avec le beer event ou comment les geeks apprécient la bière belge.
 Je vous recommande la lecture de l&#x27;algorithme en version 3.0.&lt;&#x2F;p&gt;
@@ -1874,13 +2248,19 @@ On peut y croiser des gens comme , bière à la main.&lt;&#x2F;p&gt;
         <title>FOSDEM Part 2</title>
         <published>2008-02-23T00:00:00+00:00</published>
         <updated>2008-02-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-part-2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-part-2/"/>
         <id>https://meven.github.io/fosdem-part-2/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;ai pu assisté à la présentation de mozilla europe.
+        <content type="html" xml:base="https://meven.github.io/fosdem-part-2/">&lt;p&gt;J&#x27;ai pu assisté à la présentation de mozilla europe.
 Cette conférence a parlé :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;des parts de marché de Mozilla Firefox, aujourd&#x27;hui à &lt;strong&gt;20 %&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;
@@ -1906,13 +2286,19 @@ Le projet est maintenant âgé de 2 ans et demi et cela a bien avancé. Beaucoup
         <title>HowTo gutsy et le chipset wifi 3945ABG</title>
         <published>2007-12-02T00:00:00+00:00</published>
         <updated>2007-12-02T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/"/>
         <id>https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/</id>
         
-        <content type="html">&lt;p&gt;Je possède un dell xps m1330 avec une kubuntu gutsy comme système. J&#x27;ainremarqué comme d&#x27;autre que le pilote wifi plantait parfois en particuliernlorsque l&#x27;on téléchargeait de gros fichier. J&#x27;ai trouvé grâce au forum US denubuntu une solution efficace : Utiliser le pilote libre iwl3945 plutôt que lennon libre ipw3945.
+        <content type="html" xml:base="https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/">&lt;p&gt;Je possède un dell xps m1330 avec une kubuntu gutsy comme système. J&#x27;ainremarqué comme d&#x27;autre que le pilote wifi plantait parfois en particuliernlorsque l&#x27;on téléchargeait de gros fichier. J&#x27;ai trouvé grâce au forum US denubuntu une solution efficace : Utiliser le pilote libre iwl3945 plutôt que lennon libre ipw3945.
 &lt;strong&gt;Disclaimer&lt;&#x2F;strong&gt; : &lt;strong&gt;attention ce que vous faites&lt;&#x2F;strong&gt;, jenne peux être tenu des conséquences éventuelles.&lt;&#x2F;p&gt;
 &lt;h2&gt;tester afin d&#x27;installer&lt;&#x2F;h2&gt;nIl est possible de tester si votre matériel supportera bien l&#x27;opération ennremplaçant dynamiquement le module du noyau incriminé. Les changements ne sontndonc pas permanents, après un redémarrage tout sera configurer commenoriginalement.n&lt;ul&gt;n&lt;li&gt;d&#x27;abord arrêter le réseau &lt;code&gt;# remplacé eth1 par l&#x27;interface réseau quincorrespond au wifi par exemple wlan0 si nécessaire
 sudo ifdown eth1&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On décharge le module défaillant &lt;code&gt;sudo modprobe -r ipw3945&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On met à plat les dépendances du module &lt;code&gt;sudo depmod -a&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On charge l&#x27;autre module &lt;code&gt;sudo modprobe iwl3945&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;n&lt;h2&gt;Installation permanente&lt;&#x2F;h2&gt;nCe qui suit permet de se passer de ipw3945 de façon permanente (mais pasnirréversible)n&lt;ul&gt;n&lt;li&gt;blacklister le module ipw3945 pour empêcher le noyau de le chargern&lt;code&gt;sudo bash -c &#x27;echo &amp;quot;blacklist ipw3945&amp;quot; &amp;gt;n&#x2F;etc&#x2F;modprobe.d&#x2F;blacklist-ipw3945&#x27;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;Ajouter iwl3945 aux modules charger au démarrage &lt;code&gt;sudo bash -c &#x27;echon&amp;quot;iwl3945&amp;quot; &amp;gt;&amp;gt; &#x2F;etc&#x2F;modules&#x27;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;Il faut ensuite modifier le fichiern&#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;70-persistent-net.rules pour corriger un problème vis à visndu nommage de l&#x27;interface réseau. Il faut commenter la ligne de votre ancienneninterface réseau (pour moi eth1). Vous pouvez le faire avec gedit ou bien avecnla commande : &lt;code&gt;sudo sed -i &amp;quot;s&#x2F;(.*eth1)&#x2F;#1&#x2F;&amp;quot;n&#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;70-persistent-net.rules&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;redémarrer et profiter d&#x27;une connection wifi bien plus stable !&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;n&lt;p&gt;Rapportez les problèmes éventuels je mettrais à jour le howto.&lt;&#x2F;p&gt;n&lt;h2&gt;Sources&lt;&#x2F;h2&gt;n&lt;ul&gt;n&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=595060&quot;&gt;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=595060&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;n&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=593728&quot;&gt;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=593728&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;</content>
@@ -1922,13 +2308,19 @@ sudo ifdown eth1&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On décharge le mod
         <title>48h du libre à Rennes</title>
         <published>2007-11-27T00:00:00+00:00</published>
         <updated>2007-11-27T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/48h-du-libre-a-rennes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/48h-du-libre-a-rennes/"/>
         <id>https://meven.github.io/48h-du-libre-a-rennes/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;&quot;&gt;&lt;strong&gt;Actux&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; organise ànpartir de demain deux jours d&#x27;animation et de conférence autour du logicielnlibre. Au menun&lt;ul&gt;n&lt;li&gt;démonstration de ubuntu essentiellement et de ses différentesndéclinaisons,&lt;&#x2F;li&gt;n&lt;li&gt;troll à volonté ,&lt;&#x2F;li&gt;n&lt;li&gt;conférences grand public&lt;&#x2F;li&gt;n&lt;li&gt;et vulgarisation du Logiciel libre auprès des étudiants de la fac.&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nCela se passe sur le campus de Rennes 1. Plus d&#x27;info sur le &lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;?n=Les48HDuLibre.Les48HDuLibre&quot;&gt;site d&#x27;actux&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/48h-du-libre-a-rennes/">&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;&quot;&gt;&lt;strong&gt;Actux&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; organise ànpartir de demain deux jours d&#x27;animation et de conférence autour du logicielnlibre. Au menun&lt;ul&gt;n&lt;li&gt;démonstration de ubuntu essentiellement et de ses différentesndéclinaisons,&lt;&#x2F;li&gt;n&lt;li&gt;troll à volonté ,&lt;&#x2F;li&gt;n&lt;li&gt;conférences grand public&lt;&#x2F;li&gt;n&lt;li&gt;et vulgarisation du Logiciel libre auprès des étudiants de la fac.&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nCela se passe sur le campus de Rennes 1. Plus d&#x27;info sur le &lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;?n=Les48HDuLibre.Les48HDuLibre&quot;&gt;site d&#x27;actux&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -1936,13 +2328,19 @@ sudo ifdown eth1&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On décharge le mod
         <title>Scroogled de Cory Doctorow, nouvelle des temps présents, vous ne regarderez plus google comme avant</title>
         <published>2007-10-02T00:00:00+00:00</published>
         <updated>2007-10-02T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/"/>
         <id>https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/</id>
         
-        <content type="html">&lt;p&gt;Je vous recommande la lecture de la nouvelle &lt;a href=&quot;http:&#x2F;&#x2F;cfeditions.com&#x2F;scroogled&#x2F;&quot; hreflang=&quot;fr&quot;&gt;&#x27;&#x27;Scroogled&#x27;&#x27; ou enGooglisénen
+        <content type="html" xml:base="https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/">&lt;p&gt;Je vous recommande la lecture de la nouvelle &lt;a href=&quot;http:&#x2F;&#x2F;cfeditions.com&#x2F;scroogled&#x2F;&quot; hreflang=&quot;fr&quot;&gt;&#x27;&#x27;Scroogled&#x27;&#x27; ou enGooglisénen
 français&lt;&#x2F;a&gt; de Cory Doctorow.
 &lt;p&gt;Cory Doctorow est un auteur libertaire, geek à ses heures et l&#x27;un desnauteurs
 d&#x27;un des plus gros blogs au monde &lt;a href=&quot;http:&#x2F;&#x2F;www.boingboing.net&quot; hreflang=&quot;en&quot;&gt;boingboing.net&lt;&#x2F;a&gt;. Il publie ses textes sous licence librenexactement
@@ -1969,13 +2367,19 @@ non, ce qu&#x27;a créé Google n&#x27;est pas très différent. »&lt;&#x2F;q&g
         <title>Arrêt sur image sur le net</title>
         <published>2007-09-25T00:00:00+00:00</published>
         <updated>2007-09-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/arret-sur-image-sur-le-net/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/arret-sur-image-sur-le-net/"/>
         <id>https://meven.github.io/arret-sur-image-sur-le-net/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;logo.gif|logo.gif))
+        <content type="html" xml:base="https://meven.github.io/arret-sur-image-sur-le-net/">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;logo.gif|logo.gif))
 Après la fin de diffusion de l&#x27;excellente émission arrêt sur image,
 Elle revient sur le &lt;a href=&quot;http:&#x2F;&#x2F;arretsurimages.net&#x2F;&quot;&gt;net&lt;&#x2F;a&gt; de plus belle, plus indépendante et plus grinçante que jamais.
 J&#x27;en retiens deux choses :&lt;&#x2F;p&gt;
@@ -1995,13 +2399,19 @@ J&#x27;en retiens deux choses :&lt;&#x2F;p&gt;
         <title>&quot;Nouvelle Origine&quot; de Philippe Lemoine</title>
         <published>2007-09-11T00:00:00+00:00</published>
         <updated>2007-09-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/internet/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/internet/"/>
         <id>https://meven.github.io/internet/</id>
         
-        <content type="html">&lt;p&gt;Je vous recommande la lecture de cette &lt;a href=&quot;http:&#x2F;&#x2F;www.ecrans.fr&#x2F;La-pensee-est-le-seul-moyen-de,2070.html&quot;&gt;interview&lt;&#x2F;a&gt; de Philippe Lemoine.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/internet/">&lt;p&gt;Je vous recommande la lecture de cette &lt;a href=&quot;http:&#x2F;&#x2F;www.ecrans.fr&#x2F;La-pensee-est-le-seul-moyen-de,2070.html&quot;&gt;interview&lt;&#x2F;a&gt; de Philippe Lemoine.&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;interview est très intéressante. Philipe Lemoine, membre de la Cnil y mêle internet, liberté individuelle, philosophie et culture...&lt;&#x2F;p&gt;
 &lt;p&gt;Morceau choisis,
 {{Un véritable combat s’est ouvert, qui explique le malentendu autour du copyright, des droits d’auteur. Les forces d’argent essayent d’agréger autour d’elles les artistes en prétendant que l’on veut les empêcher de vivre, d’être rémunérés. Ce qui est aux antipodes de la volonté des internautes. Au contraire, les artistes ont probablement tout à gagner d’une certaine désintermédiation.}}&lt;&#x2F;p&gt;
@@ -2016,13 +2426,19 @@ J&#x27;en retiens deux choses :&lt;&#x2F;p&gt;
         <title>La difficulté de choisir un ultra-portable</title>
         <published>2007-08-27T00:00:00+00:00</published>
         <updated>2007-08-27T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/"/>
         <id>https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/</id>
         
-        <content type="html">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
+        <content type="html" xml:base="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
 Je privilégie la mobilité et l&#x27;autonomie avant tout. Je me tourne donc vers la catégorie dite des ultra-portable.
 Ca tombe bien, ils sont devenus abordables, l&#x27;entrée de gamme est devenue moins chère, 1000€ environ pour mon plus grand bonheur.
 Etant étudiant je ne peut pas me permettre d&#x27;investir plus de toute façon.
@@ -2054,13 +2470,19 @@ SI quelqu&#x27;un a vu une offre qui m&#x27;a échappé et remplissant mes crit�
         <title>Internet libre, ou Minitel 2.0 ? par fdn</title>
         <published>2007-08-14T00:00:00+00:00</published>
         <updated>2007-08-14T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/internet-libre-ou-minitel-20-fdn/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/internet-libre-ou-minitel-20-fdn/"/>
         <id>https://meven.github.io/internet-libre-ou-minitel-20-fdn/</id>
         
-        <content type="html">&lt;p&gt;Je viens de voir à partir de &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;Internet-libre-ou-Minitel-2.html&quot;&gt;cette page&lt;&#x2F;a&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;minitel.avi&quot;&gt;cette vidéo&lt;&#x2F;a&gt; sur &lt;a href=&quot;http:&#x2F;&#x2F;fdn.fr&#x2F;&quot;&gt;fdn.fr&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/internet-libre-ou-minitel-20-fdn/">&lt;p&gt;Je viens de voir à partir de &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;Internet-libre-ou-Minitel-2.html&quot;&gt;cette page&lt;&#x2F;a&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;minitel.avi&quot;&gt;cette vidéo&lt;&#x2F;a&gt; sur &lt;a href=&quot;http:&#x2F;&#x2F;fdn.fr&#x2F;&quot;&gt;fdn.fr&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Je blog pas mal sur le logiciel libre, mais qu&#x27;en es-t-il de internet  ?
 Cette vidéo de conférence met en exergue le retours en arrière du modèle économique d&#x27;internet, qui ressemble de plus en plus à celui du minitel et de la téléphonie traditionnelle. C&#x27;est à dire, un abonnement pour avoir accès à un ensemble de service centralisé (à Paris naturellement). C&#x27;est le cas de mon blog par exemple et de tous les skyblogs plus ceux  hébergés chez 1&amp;amp;1 dédibox etc ..., nos blogs ne sont que des services payants &lt;strong&gt;centralisés&lt;&#x2F;strong&gt; dont l&#x27;objet est de nous permettre d&#x27;héberger un site. On peux rapprocher ça aux pages roses, à par dans le contenu, c&#x27;est exactement la même chose. Google et tous les moteurs de recherche sont comparables au moteur de recherche du minitel, rien n&#x27;a changé depuis, mot clé -&amp;gt; interrogation des serveurs centraux -&amp;gt; réponse.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela fait froid dans le dos. Ce qui m&#x27;a fait le plus peur c&#x27;est le fait fait que les opérateurs empêche toute hébergement décentralisé par les particuliers en bridant l&#x27;upload des connexions aux particuliers(il existe des formes d&#x27;ADSL à débit symétrique mais ils sont réservés aux professionnels).&lt;&#x2F;p&gt;
@@ -2075,13 +2497,19 @@ Cette vidéo de conférence met en exergue le retours en arrière du modèle éc
         <title>Rencontre des lugs bretons au festival interceltique de Lorient</title>
         <published>2007-08-11T00:00:00+00:00</published>
         <updated>2007-08-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/"/>
         <id>https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/</id>
         
-        <content type="html">&lt;p&gt;Nous nous sommes rencontré au stand &amp;quot;TuxBihan - Logiciel Libre&amp;quot; du village solidaire du festival de Lorient. Ce stand était géré et animé par nos hôtes, les GUL morbihanais tuxbihan et rhizomes&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/">&lt;p&gt;Nous nous sommes rencontré au stand &amp;quot;TuxBihan - Logiciel Libre&amp;quot; du village solidaire du festival de Lorient. Ce stand était géré et animé par nos hôtes, les GUL morbihanais tuxbihan et rhizomes&lt;&#x2F;p&gt;
 &lt;p&gt;Cette année le fil mettait à l&#x27;honneur l&#x27;Ecosse.
 On pouvait croiser de nombreux kilts, des drapeaux écossais peints sur des visages.
 Une bien belle ambiance.
@@ -2106,13 +2534,19 @@ Je me souviens d&#x27;Ecossais - je suppose, je sais juste qu&#x27;ils étaient 
         <title>ubuntu en OEM en France</title>
         <published>2007-08-07T00:00:00+00:00</published>
         <updated>2007-08-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/ubuntu-en-oem-en-france/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/ubuntu-en-oem-en-france/"/>
         <id>https://meven.github.io/ubuntu-en-oem-en-france/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;.Dell_logo_t.jpg&quot; alt=&quot;Dell_&quot; &#x2F;&gt;La nouvelle vient de tomber :
+        <content type="html" xml:base="https://meven.github.io/ubuntu-en-oem-en-france/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;.Dell_logo_t.jpg&quot; alt=&quot;Dell_&quot; &#x2F;&gt;La nouvelle vient de tomber :
 Dell proposera &lt;strong&gt;dès demain&lt;&#x2F;strong&gt; des machines avec ubuntu préinstallé.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela fait &lt;a href=&quot;&#x2F;post&#x2F;2007&#x2F;05&#x2F;24&#x2F;ubuntu-en-oem&quot;&gt;à peine trois mois&lt;&#x2F;a&gt; que dell distribue des machines équipé de ubuntu aux Etats Unis.
 Dell fait l&#x27;évènement à nouveau en annonçant que ces mêmes machines seront disponibles en Europe également, pour l&#x27;instant au Royaume Unis, en Allemagne et en France.
@@ -2127,13 +2561,19 @@ Dell bravo !Il a tous les atouts pour que je lui achète mon prochain PC portabl
         <title>Chronique d&#x27;un sauvetage d&#x27;ipod</title>
         <published>2007-07-26T00:00:00+00:00</published>
         <updated>2007-07-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/chronique-dun-sauvetage-dipod/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/chronique-dun-sauvetage-dipod/"/>
         <id>https://meven.github.io/chronique-dun-sauvetage-dipod/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
+        <content type="html" xml:base="https://meven.github.io/chronique-dun-sauvetage-dipod/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
 Mon bon vieux ipod 4G me faisait drolement peur depuis que l&#x27;icône de l&#x27;ipod triste apparaissait à l&#x27;écran. Surtout que je savais qu&#x27;il avait pris un joli coup après une chute très récemment. J&#x27;ai bien cru que c&#x27;était la fin (à nouveau).
 Je me retrouvais au pied du mur, complètement addicte au meilleur des balladeurs mp3. Il allait falloir m&#x27;en acheter un nouveau.
 J&#x27;aurais opté pour un nano 8Go plus petit et plus costaud que mon 4G avec son gros disque dur si fragile. Mais à 259€, je le trouve vraiment trop cher, franchement apple abuse. Mais avec &lt;a href=&quot;http:&#x2F;&#x2F;hideapod.com&#x2F;&quot;&gt;une concurrence aussi impuissante&lt;&#x2F;a&gt; à proposer un produit qui tienne la route, rien ne pousse apple à réduire ses marges.
@@ -2152,13 +2592,19 @@ Conclusion: encore un happy ending à l&#x27;américaine ;)&lt;&#x2F;p&gt;
         <title>Vieilles Charrues 2007 : géniales comme d&#x27;habitude</title>
         <published>2007-07-25T00:00:00+00:00</published>
         <updated>2007-07-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/"/>
         <id>https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;Mes quatrième vieilles charrues restent fidèle aux autres crus : des concerts marquants et survoltés ; une ambiance conviviale, festive et délirante.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/">&lt;p&gt;&lt;a href=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;Mes quatrième vieilles charrues restent fidèle aux autres crus : des concerts marquants et survoltés ; une ambiance conviviale, festive et délirante.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Le Vendredi, j&#x27;en retiendrais le show de Donovan Frankenreiter.&lt;&#x2F;strong&gt;
 Sa musique était ensoleillé par son funk surfeur et le soleil à la fois. Je n&#x27;ai pu profité que de la deuxième moitié du concert (saleté embouteillage mais quand on est quelques milliers à se rendre au même endroit ça semble normal).
 &lt;strong&gt;Je retiendrais également kaolin&lt;&#x2F;strong&gt;, encore un bon groupe de rock à surveiller, en anglais ce serait YARBTKAEO : Yet another rock band to keep an eye on.
@@ -2180,26 +2626,38 @@ Puis vînt Joey Starr. Je n&#x27;ai pas suivi le concert, non pas qu&#x27;il ne 
         <title>Vieilles charrues iminentes !</title>
         <published>2007-07-17T00:00:00+00:00</published>
         <updated>2007-07-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/vieilles-charrues-iminentes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/vieilles-charrues-iminentes/"/>
         <id>https://meven.github.io/vieilles-charrues-iminentes/</id>
         
-        <content type="html">&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; alt=&quot;affiche2007_340.jpg&quot; &#x2F;&gt;</content>
+        <content type="html" xml:base="https://meven.github.io/vieilles-charrues-iminentes/">&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; alt=&quot;affiche2007_340.jpg&quot; &#x2F;&gt;</content>
         
     </entry>
     <entry xml:lang="en">
         <title>Storm le sqlobject de canonical</title>
         <published>2007-07-16T00:00:00+00:00</published>
         <updated>2007-07-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/storm-le-sqlobject-de-canonical/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/storm-le-sqlobject-de-canonical/"/>
         <id>https://meven.github.io/storm-le-sqlobject-de-canonical/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;caninical.png&quot; alt=&quot;caninica&quot; &#x2F;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.canonical.com&#x2F;&quot;&gt;Canonical&lt;&#x2F;a&gt; vient de libérer un composant de leur site &lt;a href=&quot;https:&#x2F;&#x2F;launchpad.net&quot;&gt;launchpad&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/storm-le-sqlobject-de-canonical/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;caninical.png&quot; alt=&quot;caninica&quot; &#x2F;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.canonical.com&#x2F;&quot;&gt;Canonical&lt;&#x2F;a&gt; vient de libérer un composant de leur site &lt;a href=&quot;https:&#x2F;&#x2F;launchpad.net&quot;&gt;launchpad&lt;&#x2F;a&gt;.
 Ils ont libérer Storm, un Object-relational mapping en python, autrement dit un composant qui permet de simplifier les relations entre les données d&#x27;une base de données et les instances des objets instanciés.
 Étant un utilisateur de &lt;a href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;django&lt;&#x2F;a&gt;, je suis déjà familier avec ce genre de concept.
 Leur implémentation est un peu différente de celle de django, mais elle permet les mêmes possibilités et même plus.
@@ -2216,13 +2674,19 @@ Un projet à surveiller.&lt;&#x2F;p&gt;
         <title>Retour du festival des Terres Neuvas à Bobital</title>
         <published>2007-07-12T00:00:00+00:00</published>
         <updated>2007-07-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/retour-de-bobital/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/retour-de-bobital/"/>
         <id>https://meven.github.io/retour-de-bobital/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;header_titre.gif&quot; alt=&quot;header_titre.gif&quot; &#x2F;&gt; Je suis rentré dimanche de Bobital.
+        <content type="html" xml:base="https://meven.github.io/retour-de-bobital/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;header_titre.gif&quot; alt=&quot;header_titre.gif&quot; &#x2F;&gt; Je suis rentré dimanche de Bobital.
 Presque trois heures de route au travers de la Bretagne :D&lt;&#x2F;p&gt;
 &lt;p&gt;Bobital était sympas, Je découvrait le festival.
 Le cadre est bien, le site se trouve juste à côté du bourg en fait. On est pas perdu c&#x27;est foutu comme aux vieilles charrues à quelques exceptions près.&lt;&#x2F;p&gt;
@@ -2255,13 +2719,19 @@ Vraiment très bon concert. Je suis très content de pourvoir dire j&#x27;y éta
         <title>Pensées sur l&#x27;avenir du libre dans les collectivités et ailleurs</title>
         <published>2007-07-04T00:00:00+00:00</published>
         <updated>2007-07-04T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/"/>
         <id>https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/</id>
         
-        <content type="html">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/pensees-sur-lavenir-du-libre-dans-les-collectivites-et-ailleurs/">&lt;p&gt;Il rappelle que le libre c&#x27;est la décision politique de refuser de ne pas pouvoir connaitre fonctionnement du logiciel que l&#x27;on utilise.&lt;&#x2F;p&gt;
 &lt;p&gt;Il rappelle pourquoi le logiciel libre dans les collectivités et les secteurs publics est si évident :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;développement libre = intérêt collectif&lt;&#x2F;li&gt;
@@ -2284,13 +2754,19 @@ Et si les lois, les décisions étaient conçues, débattues avec une forme de w
         <title>Bobital c&#x27;est dans une semaine</title>
         <published>2007-07-01T00:00:00+00:00</published>
         <updated>2007-07-01T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/bobital-cest-dans-une-semaine/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/bobital-cest-dans-une-semaine/"/>
         <id>https://meven.github.io/bobital-cest-dans-une-semaine/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;header_titre.gif|header_titre.gif|R))
+        <content type="html" xml:base="https://meven.github.io/bobital-cest-dans-une-semaine/">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;header_titre.gif|header_titre.gif|R))
 Le festival des terre Neuvas à Bobital, c&#x27;est dans moins d&#x27;une semaine maintenant.
 J&#x27;y  serais le samedi, Je suis impatient.
 L&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.festival-terre-neuvas.com&#x2F;&quot;&gt;affiche&lt;&#x2F;a&gt; est vraiment énorme le samedi : Marilyn Manson, Status Quo, Ziggy Marley, Da Silva, Placebo, Dj Zebra. .   .   .
@@ -2303,13 +2779,19 @@ C&#x27;est le festival breton qui monte.&lt;&#x2F;p&gt;
         <title>Django-fr ouvre ses portes</title>
         <published>2007-06-29T00:00:00+00:00</published>
         <updated>2007-06-29T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/djangofr-ouvre-ses-portes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/djangofr-ouvre-ses-portes/"/>
         <id>https://meven.github.io/djangofr-ouvre-ses-portes/</id>
         
-        <content type="html">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.
+        <content type="html" xml:base="https://meven.github.io/djangofr-ouvre-ses-portes/">&lt;p&gt;&lt;img style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;logo.png&quot; &#x2F;&gt;J&#x27;&lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&#x2F;weblog&#x2F;2007&#x2F;jun&#x2F;26&#x2F;djangostatusupdate&#x2F;&quot;&gt;apprendsnaujourd&#x27;hui&lt;&#x2F;a&gt; la création d&#x27;une &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.django-fr.org&#x2F;&quot;&gt;communauté française&lt;&#x2F;a&gt; de &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.djangoproject.com&quot;&gt;django&lt;&#x2F;a&gt;.
 Je suis très content de cette création étant moi même un utilisateur de djangonet un supporteur.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour rappel django est un framework de développement web en python. Sanphilosophie est simplicité et efficacité.
 Je vous le conseille. Il est facile à prendre en main grâce à landocumentation(ce sera plus long si vous découvrez aussi python :)).&lt;&#x2F;p&gt;
@@ -2320,13 +2802,19 @@ Je vous le conseille. Il est facile à prendre en main grâce à landocumentatio
         <title>Quelques extensions firefox bien utiles !</title>
         <published>2007-06-28T00:00:00+00:00</published>
         <updated>2007-06-28T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/quelques-extensions-firefox-bien-utiles/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/quelques-extensions-firefox-bien-utiles/"/>
         <id>https://meven.github.io/quelques-extensions-firefox-bien-utiles/</id>
         
-        <content type="html">&lt;p&gt;Si vous avez la fâcheuse manie d&#x27;avoir un maximum d&#x27;onglets ouverts dans firefox comme moi, cela risque de vous intéresser.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/quelques-extensions-firefox-bien-utiles/">&lt;p&gt;Si vous avez la fâcheuse manie d&#x27;avoir un maximum d&#x27;onglets ouverts dans firefox comme moi, cela risque de vous intéresser.&lt;&#x2F;p&gt;
 &lt;p&gt;D&#x27;abord &lt;a href=&quot;https:&#x2F;&#x2F;addons.mozilla.org&#x2F;fr&#x2F;firefox&#x2F;addon&#x2F;1343&quot;&gt;vertigo&lt;&#x2F;a&gt; permet d&#x27;afficher la liste des onglets sous la forme d&#x27;une liste &lt;strong&gt;verticale&lt;&#x2F;strong&gt;. Résultat : Un gros gain de lisibilité moyennant un peu de perte dans la largeur des pages (peu dommageables surtout avec une grande résolution).&lt;&#x2F;p&gt;
 &lt;p&gt;Puis il y a le plus connu &lt;a href=&quot;http:&#x2F;&#x2F;paranoid-androids.com&#x2F;tabgroups&#x2F;&quot;&gt;tabgroups&lt;&#x2F;a&gt; qui permet de faire des onglets d&#x27;onglet, bref de grouper plusieurs onglets et avoir accès à un groupe comme on change d&#x27;onglet.&lt;&#x2F;p&gt;
 &lt;p&gt;Dans la catégorie skin et autre goodie ( inutile donc absolument indispensable :-)):
@@ -2338,13 +2826,19 @@ Je vous le conseille. Il est facile à prendre en main grâce à landocumentatio
         <title>Test de OpenBSD l&#x27;OS le plus sur au monde</title>
         <published>2007-06-09T00:00:00+00:00</published>
         <updated>2007-06-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/"/>
         <id>https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;ai installé OpenBSD et le moins que je puisse dire c&#x27;est que je n&#x27;ai pas été déçu !
+        <content type="html" xml:base="https://meven.github.io/test-de-openbsd-los-le-plus-sur-au-monde/">&lt;p&gt;J&#x27;ai installé OpenBSD et le moins que je puisse dire c&#x27;est que je n&#x27;ai pas été déçu !
 &lt;img src=&quot;&#x2F;puffy41.gif&quot; alt=&quot;Puffy la mas&quot; &#x2F;&gt;
 &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;OpenBSD&quot;&gt;OpenBSD&lt;&#x2F;a&gt; est pour ce qui le savent pas un système Unix libre.
 Historiquement il est basé sur le noyau &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Berkeley_Software_Distribution&quot;&gt;BSD&lt;&#x2F;a&gt; lui-même héritié direct du noyau UNIX originel de 1970. C&#x27;est donc un cousin éloigné du noyau Linux.
@@ -2363,13 +2857,19 @@ Résultat une installation en mode texte( partitionage ..), pas d&#x27;interface
         <title>L&#x27;ujap Quimper en final de pro B à Bercy</title>
         <published>2007-06-03T00:00:00+00:00</published>
         <updated>2007-06-03T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/"/>
         <id>https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/</id>
         
-        <content type="html">&lt;p&gt;Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.
+        <content type="html" xml:base="https://meven.github.io/lujap-quimper-en-final-de-pro-b-a-bercy/">&lt;p&gt;Hier moi et quelques 12000 supporters ujapistes étions allés à ParisnBercy.
 Premiere fois à Bercy, je découvre le métro Parisien, le RER. C&#x27;est pas aussinterrible que je pensais, enfin que l&#x27;image que je pouvais m&#x27;en avoirnfaite.
 &lt;a href=&quot;&#x2F;photos&#x2F;IMG_3429.JPG&quot;&gt;&lt;img style=&quot;margin: 0 auto; display: block;&quot; alt=&quot;&quot; src=&quot;&#x2F;photos&#x2F;.IMG_3429_m.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 On a eu le droit à un belle finale de play-off en PRO A entre Roanne et Nancy,nbien disputée si bien que Nancy qui avait eu l&#x27;avantage du score au long dunmatch, a finalement laissé filer 7 points d&#x27;avance pour Roanne juste dans lendernier quart temps. Nancy devient du même coup le poulidor de PRO A aprèsntrois finales consécutive perdues. Roanne l&#x27;emporte 81-74.&lt;&#x2F;p&gt;
@@ -2390,13 +2890,19 @@ Est ce que les joueurs vont rester ? Aura-t-on les moyens de les garder ou d&#x2
         <title>Helloworld série : faire une fenêtre helloworld en Python et Gtk</title>
         <published>2007-05-26T00:00:00+00:00</published>
         <updated>2007-05-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/helloworld-serie-1-python-et-gtk/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/helloworld-serie-1-python-et-gtk/"/>
         <id>https://meven.github.io/helloworld-serie-1-python-et-gtk/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;entame une série de billet avec pour thème la comparaison de différents langages de programmation moderne et de différentes bibliothèques graphiques.
+        <content type="html" xml:base="https://meven.github.io/helloworld-serie-1-python-et-gtk/">&lt;p&gt;J&#x27;entame une série de billet avec pour thème la comparaison de différents langages de programmation moderne et de différentes bibliothèques graphiques.
 J&#x27;ai choisi de faire simple et, pour être un tant soit peu comparable, j&#x27;ai choisi de créer une fenêtre helloworld standard dans chacune des paires langage&#x2F;librairie graphique. Juste une fenêtre et un bouton qui ferme la fenêtre.
 Le but étant de faire découvrir les B-A-Ba de la programmation d&#x27;une interface graphique avec les différentes approches à la fois des langages et des librairies.
 Au menu :&lt;&#x2F;p&gt;
@@ -2444,13 +2950,19 @@ if __name__ ==&amp;quot;__main__&amp;quot;: # équivalent du &amp;#x27;main&amp;
         <title>ubuntu en oem</title>
         <published>2007-05-24T00:00:00+00:00</published>
         <updated>2007-05-24T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/ubuntu-en-oem/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/ubuntu-en-oem/"/>
         <id>https://meven.github.io/ubuntu-en-oem/</id>
         
-        <content type="html">&lt;p&gt;C&#x27;est fait, un grand constructeur lance une distribution en OEM. Ca va faire du bruit sur le net&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/ubuntu-en-oem/">&lt;p&gt;C&#x27;est fait, un grand constructeur lance une distribution en OEM. Ca va faire du bruit sur le net&lt;&#x2F;p&gt;
 &lt;p&gt;Et quelle distribution, ubuntu.&lt;&#x2F;p&gt;
 &lt;p&gt;C&#x27;est chez dell US, La gamme comprend un portable, un PC de bureau et un PC puissant.
 &lt;a href=&quot;&#x2F;linux_3x_banner.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;linux_3x_banner.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
@@ -2463,13 +2975,19 @@ Le &lt;a href=&quot;https:&#x2F;&#x2F;launchpad.net&#x2F;ubuntu&#x2F;+bug&#x2F;1
         <title>Premier billet</title>
         <published>2007-05-22T00:00:00+00:00</published>
         <updated>2007-05-22T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/first/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/first/"/>
         <id>https://meven.github.io/first/</id>
         
-        <content type="html">&lt;p&gt;Premier billet.&lt;&#x2F;p&gt;nCréation hier du &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.gandi.net&#x2F;domaine&#x2F;blog&#x2F;&quot;&gt;gandi-blog&lt;&#x2F;a&gt;, tranquille disponible en moins de 24 heures, bon service.
+        <content type="html" xml:base="https://meven.github.io/first/">&lt;p&gt;Premier billet.&lt;&#x2F;p&gt;nCréation hier du &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;www.gandi.net&#x2F;domaine&#x2F;blog&#x2F;&quot;&gt;gandi-blog&lt;&#x2F;a&gt;, tranquille disponible en moins de 24 heures, bon service.
 &lt;p&gt;Maintenant il me reste à me dépatouiller avec les DNS.&lt;&#x2F;p&gt;
 &lt;p&gt;Mon vieux &lt;a hreflang=&quot;fr&quot; href=&quot;http:&#x2F;&#x2F;meven29.free.fr&quot;&gt;blog dotclear chez free&lt;&#x2F;a&gt; ne me manque pas !&lt;&#x2F;p&gt;
 &lt;p&gt;Maintenant reste le plus marrant, faire une jolie façade à ce dotclear tout neuf.&lt;&#x2F;p&gt;

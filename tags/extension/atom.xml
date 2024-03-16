@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - extension</title>
-    <link href="https://meven.github.io/tags/extension/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/extension/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2009-12-11T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/extension/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Weave par Mozilla la sauvegarde de profil fait maison</title>
         <published>2009-12-11T00:00:00+00:00</published>
         <updated>2009-12-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/"/>
         <id>https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/</id>
         
-        <content type="html">&lt;p&gt;Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
+        <content type="html" xml:base="https://meven.github.io/weave-par-mozilla-la-sauvegarde-de-profil-fait-maison/">&lt;p&gt;Avec la sortie des extensions dans google chrome et la version 4, il me vient une idée :
 Et si pour synchroniser mes marques-pages je pouvais me passer des serveurs de google pour changer.
 Et mieux encore, et si, je pouvais synchroniser les deux meilleurs navigateurs du moment chrome et firefox.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;en rếvais, Mozilla l&#x27;a déjà fait.
@@ -41,13 +47,19 @@ C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F
         <title>Quelques extensions firefox bien utiles !</title>
         <published>2007-06-28T00:00:00+00:00</published>
         <updated>2007-06-28T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/quelques-extensions-firefox-bien-utiles/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/quelques-extensions-firefox-bien-utiles/"/>
         <id>https://meven.github.io/quelques-extensions-firefox-bien-utiles/</id>
         
-        <content type="html">&lt;p&gt;Si vous avez la fâcheuse manie d&#x27;avoir un maximum d&#x27;onglets ouverts dans firefox comme moi, cela risque de vous intéresser.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/quelques-extensions-firefox-bien-utiles/">&lt;p&gt;Si vous avez la fâcheuse manie d&#x27;avoir un maximum d&#x27;onglets ouverts dans firefox comme moi, cela risque de vous intéresser.&lt;&#x2F;p&gt;
 &lt;p&gt;D&#x27;abord &lt;a href=&quot;https:&#x2F;&#x2F;addons.mozilla.org&#x2F;fr&#x2F;firefox&#x2F;addon&#x2F;1343&quot;&gt;vertigo&lt;&#x2F;a&gt; permet d&#x27;afficher la liste des onglets sous la forme d&#x27;une liste &lt;strong&gt;verticale&lt;&#x2F;strong&gt;. Résultat : Un gros gain de lisibilité moyennant un peu de perte dans la largeur des pages (peu dommageables surtout avec une grande résolution).&lt;&#x2F;p&gt;
 &lt;p&gt;Puis il y a le plus connu &lt;a href=&quot;http:&#x2F;&#x2F;paranoid-androids.com&#x2F;tabgroups&#x2F;&quot;&gt;tabgroups&lt;&#x2F;a&gt; qui permet de faire des onglets d&#x27;onglet, bref de grouper plusieurs onglets et avoir accès à un groupe comme on change d&#x27;onglet.&lt;&#x2F;p&gt;
 &lt;p&gt;Dans la catégorie skin et autre goodie ( inutile donc absolument indispensable :-)):

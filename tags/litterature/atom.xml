@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - littérature</title>
-    <link href="https://meven.github.io/tags/litterature/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/litterature/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2007-10-02T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/litterature/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Scroogled de Cory Doctorow, nouvelle des temps présents, vous ne regarderez plus google comme avant</title>
         <published>2007-10-02T00:00:00+00:00</published>
         <updated>2007-10-02T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/"/>
         <id>https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/</id>
         
-        <content type="html">&lt;p&gt;Je vous recommande la lecture de la nouvelle &lt;a href=&quot;http:&#x2F;&#x2F;cfeditions.com&#x2F;scroogled&#x2F;&quot; hreflang=&quot;fr&quot;&gt;&#x27;&#x27;Scroogled&#x27;&#x27; ou enGooglisénen
+        <content type="html" xml:base="https://meven.github.io/scroogled-de-cory-doctorow-nouvelle-de-notre-aire-vous-ne-regarderez-plus-google-comme-avant/">&lt;p&gt;Je vous recommande la lecture de la nouvelle &lt;a href=&quot;http:&#x2F;&#x2F;cfeditions.com&#x2F;scroogled&#x2F;&quot; hreflang=&quot;fr&quot;&gt;&#x27;&#x27;Scroogled&#x27;&#x27; ou enGooglisénen
 français&lt;&#x2F;a&gt; de Cory Doctorow.
 &lt;p&gt;Cory Doctorow est un auteur libertaire, geek à ses heures et l&#x27;un desnauteurs
 d&#x27;un des plus gros blogs au monde &lt;a href=&quot;http:&#x2F;&#x2F;www.boingboing.net&quot; hreflang=&quot;en&quot;&gt;boingboing.net&lt;&#x2F;a&gt;. Il publie ses textes sous licence librenexactement

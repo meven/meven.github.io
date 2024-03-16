@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - fosdem</title>
-    <link href="https://meven.github.io/tags/fosdem/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/fosdem/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2010-02-11T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/fosdem/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Fosdem 2010</title>
         <published>2010-02-11T00:00:00+00:00</published>
         <updated>2010-02-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2010/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2010/"/>
         <id>https://meven.github.io/fosdem-2010/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;étais de passage au fosdem 2010.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2010/">&lt;p&gt;J&#x27;étais de passage au fosdem 2010.&lt;&#x2F;p&gt;
 &lt;p&gt;[((http:&#x2F;&#x2F;farm5.static.flickr.com&#x2F;4067&#x2F;4337980924_a7c77ee92c_m.jpg||R))|http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;itkovian&#x2F;4337980924&#x2F;]&lt;&#x2F;p&gt;
 &lt;p&gt;On pouvait croiser des machines bizarres tels que &lt;a href=&quot;http:&#x2F;&#x2F;reprap.org&#x2F;&quot;&gt;Reprap&lt;&#x2F;a&gt; et autre makerbot dans les stands.&lt;&#x2F;p&gt;
 &lt;p&gt;Cette année je n&#x27;ai assisté que à deux conférences, mais pas des moindre.&lt;&#x2F;p&gt;
@@ -54,13 +60,19 @@ Il faut se rendre que la masse de travail à fournir pour supporter un seul bala
         <title>Fosdem 2009 troisième partie</title>
         <published>2009-03-07T00:00:00+00:00</published>
         <updated>2009-03-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2009-troisieme-partie/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2009-troisieme-partie/"/>
         <id>https://meven.github.io/fosdem-2009-troisieme-partie/</id>
         
-        <content type="html">&lt;h4 id=&quot;upstart-par-scott-james-remnant&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;upstart.ubuntu.com&#x2F;&quot;&gt;Upstart&lt;&#x2F;a&gt; par Scott James Remnant&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2009-troisieme-partie/">&lt;h4 id=&quot;upstart-par-scott-james-remnant&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;upstart.ubuntu.com&#x2F;&quot;&gt;Upstart&lt;&#x2F;a&gt; par Scott James Remnant&lt;&#x2F;h4&gt;
 &lt;p&gt;L&#x27;objectif de Upstart est de fournir un gestionnaire de démarrage remplaçant des scripts init et un système de gestion de services, leur démarrage, arrêt et status.&lt;&#x2F;p&gt;
 &lt;p&gt;Les avancés promises par Upstart sont nombreuses.
 On oublie les &amp;quot;sleep&amp;quot; dans les scripts init qui faisait perdre beaucoup de temps au démarrage.
@@ -88,13 +100,19 @@ La conférence parle du point de vue technique, on parle donc de mediawiki, le w
         <title>Fosdem 2009 deuxième partie</title>
         <published>2009-02-20T00:00:00+00:00</published>
         <updated>2009-02-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2009-partie-2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2009-partie-2/"/>
         <id>https://meven.github.io/fosdem-2009-partie-2/</id>
         
-        <content type="html">&lt;h2 id=&quot;the-debian-status-quo-on-the-openmoko-neo-freerunner&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;fosdem.org&#x2F;2009&#x2F;schedule&#x2F;events&#x2F;debian_openmoko&quot;&gt;The Debian status quo on the Openmoko Neo Freerunner&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2009-partie-2/">&lt;h2 id=&quot;the-debian-status-quo-on-the-openmoko-neo-freerunner&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;fosdem.org&#x2F;2009&#x2F;schedule&#x2F;events&#x2F;debian_openmoko&quot;&gt;The Debian status quo on the Openmoko Neo Freerunner&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
 &lt;p&gt;Debian est porté sur &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Openmoko&quot;&gt;OpenMoko&lt;&#x2F;a&gt;, le smartphone libre.
 Le port avance assez bien.
 Il se repose au maximum sur l&#x27;upstream de debian : le projet openmoko lui même, qtopia, freesmartphone.org...&lt;&#x2F;p&gt;
@@ -113,13 +131,19 @@ L&#x27;interface graphique est également amené à changer en profondeur dans l
         <title>Fosdem 2009 première partie</title>
         <published>2009-02-08T00:00:00+00:00</published>
         <updated>2009-02-08T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-2009/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-2009/"/>
         <id>https://meven.github.io/fosdem-2009/</id>
         
-        <content type="html">&lt;h4 id=&quot;fosdem-2009&quot;&gt;Fosdem 2009&lt;&#x2F;h4&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-2009/">&lt;h4 id=&quot;fosdem-2009&quot;&gt;Fosdem 2009&lt;&#x2F;h4&gt;
 &lt;p&gt;J&#x27;ai assisté au &lt;a href=&quot;http:&#x2F;&#x2F;www.fosdem.org&quot;&gt;Fosdem, (Free and Opensource Software Developper European Meeting)&lt;&#x2F;a&gt; 2009 et &lt;a href=&quot;tag:fosdem&quot;&gt;comme l&#x27;année dernière&lt;&#x2F;a&gt;, je vais partager mon expérience, agrémentée d&#x27;anecdotes.
 C&#x27;est le premier des articles sur le fosdem, je devrais en écrire entre 2 et 3.&lt;&#x2F;p&gt;
 &lt;p&gt;[((http:&#x2F;&#x2F;farm1.static.flickr.com&#x2F;190&#x2F;3264893970_6dfa4875c4_m.jpg|photo du fosdem (licence CC)|C))|http:&#x2F;&#x2F;flickr.com&#x2F;photos&#x2F;lucbyhet&#x2F;3264893970&#x2F;sizes&#x2F;o&#x2F;|en]&lt;&#x2F;p&gt;
@@ -173,13 +197,19 @@ D&#x27;ailleurs, c&#x27;est la façon qui ait jamais fonctionnée.&lt;&#x2F;p&gt
         <title>FOSDEM Part 3</title>
         <published>2008-02-26T00:00:00+00:00</published>
         <updated>2008-02-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-part-3/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-part-3/"/>
         <id>https://meven.github.io/fosdem-part-3/</id>
         
-        <content type="html">&lt;p&gt;Le troisième est moins à chaud mais e vous promet encore un bon divertissement.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/fosdem-part-3/">&lt;p&gt;Le troisième est moins à chaud mais e vous promet encore un bon divertissement.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai malheureusement raté les premières conférences de la journée du dimanche :(.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai commencé les conférences avec une étude de cas d&#x27;un site en ruby en rails par ses dévellopeurs.
 Le site s&#x27;appelle [http:&#x2F;&#x2F;allejobsinleuven.be|http:&#x2F;&#x2F;allejobsinleuven.be|dutch]. C&#x27;est un site d&#x27;offre d&#x27;emploi mais avec une bien meilleur éthique que ceux du secteur (anonymat des chercheurs d&#x27;emploi gratuité de dépôt de l&#x27;offre...).
@@ -200,13 +230,19 @@ Le fosdem, j&#x27;y retournerais c&#x27;est définitif.&lt;&#x2F;p&gt;
         <title>FOSDEM Part 1</title>
         <published>2008-02-23T00:00:00+00:00</published>
         <updated>2008-02-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-part-1/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-part-1/"/>
         <id>https://meven.github.io/fosdem-part-1/</id>
         
-        <content type="html">&lt;p&gt;Je suis de visite ce week end à Bruxelles à l&#x27;occasion du FOSDEM.
+        <content type="html" xml:base="https://meven.github.io/fosdem-part-1/">&lt;p&gt;Je suis de visite ce week end à Bruxelles à l&#x27;occasion du FOSDEM.
 Le but de ce post est de montrer à chaud ce qui se passe ici.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela a commencé vendredi avec le beer event ou comment les geeks apprécient la bière belge.
 Je vous recommande la lecture de l&#x27;algorithme en version 3.0.&lt;&#x2F;p&gt;
@@ -227,13 +263,19 @@ On peut y croiser des gens comme , bière à la main.&lt;&#x2F;p&gt;
         <title>FOSDEM Part 2</title>
         <published>2008-02-23T00:00:00+00:00</published>
         <updated>2008-02-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/fosdem-part-2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/fosdem-part-2/"/>
         <id>https://meven.github.io/fosdem-part-2/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;ai pu assisté à la présentation de mozilla europe.
+        <content type="html" xml:base="https://meven.github.io/fosdem-part-2/">&lt;p&gt;J&#x27;ai pu assisté à la présentation de mozilla europe.
 Cette conférence a parlé :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;des parts de marché de Mozilla Firefox, aujourd&#x27;hui à &lt;strong&gt;20 %&lt;&#x2F;strong&gt;.&lt;&#x2F;li&gt;

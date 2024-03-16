@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - ccc</title>
-    <link href="https://meven.github.io/tags/ccc/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/ccc/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2012-01-15T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/ccc/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>28c3</title>
         <published>2012-01-15T00:00:00+00:00</published>
         <updated>2012-01-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/"/>
         <id>https://meven.github.io/28c3-j-aurais-voulu-y-etre/</id>
         
-        <content type="html">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/28c3-j-aurais-voulu-y-etre/">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;Je vous recommande vivement de les regarder.
 Si vous aimez internet davantage que la censure, ou la distribution des savoirs plus que le contrôle.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;

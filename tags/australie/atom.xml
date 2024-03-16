@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - Australie</title>
-    <link href="https://meven.github.io/tags/australie/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/australie/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2013-06-30T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/australie/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Uluru, Kata Tjula et Kings Canyon</title>
         <published>2013-06-30T00:00:00+00:00</published>
         <updated>2013-06-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/"/>
         <id>https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/</id>
         
-        <content type="html">&lt;p&gt;Je suis parti avec un américain et un hong kongais en road trip à la découverte des sites d&#x27;intérêt du centre rouge : Uluru, Kata Tjula et Kings canyon.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/alice-springs-uluru-kata-tjula-et-kings-canyon/">&lt;p&gt;Je suis parti avec un américain et un hong kongais en road trip à la découverte des sites d&#x27;intérêt du centre rouge : Uluru, Kata Tjula et Kings canyon.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0755.JPG&quot; title=&quot;Feu en face de Uluru&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0755.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Notre trip a duré 3 nuits et 4 jours.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0616.JPG&quot; title=&quot;Arbre en face de Uluru&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Uluru&#x2F;IMG_0616.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -42,13 +48,19 @@ Mais j&#x27;ai eu davantage l&#x27;occasion de voir dingos, chevaux et chameau.&
         <title>Kakadu &amp; Litchfield</title>
         <published>2013-06-17T00:00:00+00:00</published>
         <updated>2013-06-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/kakadu-litchfield/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/kakadu-litchfield/"/>
         <id>https://meven.github.io/kakadu-litchfield/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; title=&quot;Entrée du parc&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/kakadu-litchfield/">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; title=&quot;Entrée du parc&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Kakadu_Litchfield&#x2F;IMG_2893.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Après avoir passé quatre jour à Darwin, j&#x27;ai loué avec un danois, un allemand et un néerlandais un 4x4 pour passer 5 jours dans les parcs nationaux de Kakadu et Litchfield.
 J&#x27;ai pas été déçu.&lt;&#x2F;p&gt;
 &lt;p&gt;Kakadu était un parc que je tenais particulièrement à visiter. Et bien que l&#x27;on y est passé plus de trois jours, cela ne m&#x27;a pas paru suffisamment long pour apprécier la dimension de ce parc. Il est plus grand qu&#x27;un département français.&lt;&#x2F;p&gt;
@@ -79,13 +91,19 @@ C&#x27;est aussi un bon endroit pour pratiquer du off-road en 4x4 sur des pistes
         <title>Cairns et vers Darwin</title>
         <published>2013-06-09T00:00:00+00:00</published>
         <updated>2013-06-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/cairns-et-vers-darwin/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/cairns-et-vers-darwin/"/>
         <id>https://meven.github.io/cairns-et-vers-darwin/</id>
         
-        <content type="html">&lt;p&gt;J&#x27;ai passé un mois à Cairns.
+        <content type="html" xml:base="https://meven.github.io/cairns-et-vers-darwin/">&lt;p&gt;J&#x27;ai passé un mois à Cairns.
 J&#x27;y ai fait pas mal la fête. J&#x27;y ai trouvé un boulot mais pas génial et qui n&#x27;a pas duré.
 J&#x27;ai pu profité du lagoon et du beau temps. Mais il s&#x27;est dégradé au fil du temps où j&#x27;y suis resté.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;Cairns&#x2F;IMG_0709.JPG&quot; title=&quot;Le lagon de Cairns&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;Cairns&#x2F;IMG_0709.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -117,13 +135,19 @@ On s&#x27;est très peu arrêté sauf pendant les deux derniers jours.&lt;&#x2F;
         <title>Suite du périple, Queensland</title>
         <published>2012-12-18T00:00:00+00:00</published>
         <updated>2012-12-18T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/suite-du-periple-flash-forward-queensland/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/suite-du-periple-flash-forward-queensland/"/>
         <id>https://meven.github.io/suite-du-periple-flash-forward-queensland/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/suite-du-periple-flash-forward-queensland/">&lt;p&gt;&lt;a href=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;Australie&#x2F;IMG_0040.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Python dans le parc de Bundjalung&lt;&#x2F;p&gt;
 &lt;p&gt;Après un périple de 1100 km environ et de près d&#x27;un mois sans se fouler, nous sommes à Bundaberg, première grande étape du voyage.
 C&#x27;est une ville entourée de champs où les backpackers sont légions.
@@ -152,13 +176,19 @@ Nous allons y rester pour les fêtes.&lt;&#x2F;p&gt;
         <title>NSW côte Sud et animaux sauvages</title>
         <published>2012-10-30T00:00:00+00:00</published>
         <updated>2012-10-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/nsw-cote-et-animaux-sauvages/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/nsw-cote-et-animaux-sauvages/"/>
         <id>https://meven.github.io/nsw-cote-et-animaux-sauvages/</id>
         
-        <content type="html">&lt;p&gt;Je suis descendu la semaine passée dans le sud du New South Wales, à Berara, puis près de Narooma dans le parc national d&#x27;Eurodalla.
+        <content type="html" xml:base="https://meven.github.io/nsw-cote-et-animaux-sauvages/">&lt;p&gt;Je suis descendu la semaine passée dans le sud du New South Wales, à Berara, puis près de Narooma dans le parc national d&#x27;Eurodalla.
 Cela a été l&#x27;occasion de voir mes premiers kangooroos et wallabies en plein jour.
 J&#x27;ai pu voir aussi de nombreux autres animaux, baleines, dauphins, échidnées, oiseaux en tout genre...&lt;&#x2F;p&gt;
 &lt;p&gt;Les échidnés ressemblent à de gros hérissons. J&#x27;ai eu la chance de tomber dessus deux fois en une semaine, alors que ce n&#x27;est pas un animal facile à trouver.
@@ -182,13 +212,19 @@ Et le voyage n&#x27;en valait pas tellement la peine.&lt;&#x2F;p&gt;
         <title>De Kuala Lumpur à Sydney</title>
         <published>2012-10-14T00:00:00+00:00</published>
         <updated>2012-10-14T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/de-kuala-lumpur-a-sydney/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/de-kuala-lumpur-a-sydney/"/>
         <id>https://meven.github.io/de-kuala-lumpur-a-sydney/</id>
         
-        <content type="html">&lt;p&gt;Atterrissage à Kuaka Lumpur à 6h10, 00h10 heure française.
+        <content type="html" xml:base="https://meven.github.io/de-kuala-lumpur-a-sydney/">&lt;p&gt;Atterrissage à Kuaka Lumpur à 6h10, 00h10 heure française.
 J&#x27;ai 14h à passer sur place, la visite de la ville s&#x27;impose donc.
 En dehors des bâtiments, on ressent très vite la chaleur (aux alentours de 30°C) et l&#x27;humidité.
 Le temps est beau mais instable, d&#x27;ailleurs c&#x27;est parti à l&#x27;orage à un moment.&lt;&#x2F;p&gt;
@@ -205,13 +241,19 @@ Premier tour dans le port de Sydney l&#x27;après-midi. Mais avec la fatigue cum
         <title>Départ en Australie</title>
         <published>2012-10-10T00:00:00+00:00</published>
         <updated>2012-10-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/depart-en-australie/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/depart-en-australie/"/>
         <id>https://meven.github.io/depart-en-australie/</id>
         
-        <content type="html">&lt;p&gt;Demain départ pour l&#x27;Australie.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/depart-en-australie/">&lt;p&gt;Demain départ pour l&#x27;Australie.&lt;&#x2F;p&gt;
 &lt;p&gt;Je suis à 18 heures du décollage à l&#x27;heure ou j&#x27;écris ces lignes.&lt;&#x2F;p&gt;
 &lt;p&gt;Petite escale à Kuala Lumpur et c&#x27;est parti pour l&#x27;aventure.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour l&#x27;instant j&#x27;apprécie la grisaille de Paris en comptant les heures.&lt;&#x2F;p&gt;

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>
+        meven&#x27;s blog
+    </title>
+
+    
+
+<link id="darkly" class="stylesheet" rel="stylesheet"
+    href="https://meven.github.io/darkly.css" />
+
+
+    <!-- This script must follow css -->
+    
+
+    
+
+    
+    <script defer type="text/javascript" src="https://meven.github.io/elasticlunr.min.js"></script>
+    <script defer type="text/javascript" src="https://meven.github.io/search_index.en.js"></script>
+    
+
+    
+    
+
+    <noscript>
+        <style>
+            .navbar-menu {
+                display: block;
+            }
+
+            .js-only {
+                display: none;
+            }
+        </style>
+    </noscript>
+    
+</head>
+
+<body>
+    
+    
+<!-- START NAV -->
+
+
+    
+
+<header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    
+
+                    
+                    <div class="navbar-item search-container js-only">
+                        <input class="input" id="search" type="search" placeholder="Search">
+
+                        <div class="search-results box">
+                            <div class="search-results__items"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+    
+
+<!-- END NAV -->
+<main>
+    <section class="container">
+        <div class="columns is-desktop">
+            <div class="column is-10-desktop is-offset-1-desktop">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <div class="card article">
+                        <div class="card-content">
+                            
+<header>
+    <div class="has-text-centered">
+        <a href="https://meven.github.io/dolphin-24-02/">
+            <p class="title article-title">Dolphin 24.02
+            </p>
+        </a>
+        <div class="tags has-addons level-item">
+            <span class="tag is-rounded">2024-03-16</span>
+                       
+            <span class="tag is-rounded">
+<svg class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round"
+    stroke-linejoin="round" stroke-width="6.25%">
+    <circle cx="16" cy="16" r="14" />
+    <path d="M16 8 L16 16 20 20" />
+</svg>
+<span>&nbsp;5 minute read</span>
+</span>
+        </div>
+    </div>
+</header>
+
+                            <div itemprop="articleBody" class="content article-body">
+                                <p>Since last <a href="https://apps.kde.org/dolphin/">Dolphin</a> version 23.08, I spent a lot of my time making sure the transition to KF6/Qt6 went smoothly for dolphin and its dependencies and plugins and thanks to many others contributions, in particular <a href="https://write.as/alexander-lohnau/">Alexander</a> and <a href="https://nicolasfella.de/">Nicolas</a>, this went well.
+The objective being no-one would notice despite much code has changed and this mostly worked out.</p>
+<h1 id="changes">Changes</h1>
+<p>A few behaviors and default have changed.</p>
+<p>Files and folders are now selected with a single-click and opened with a double-click.
+This will mainly affect Neon Users, since most distros already had this behavior default.
+You can select the single-click-open mode on the first page of systemsettings, as it concerns also Plasma, file/open dialog and other applications.</p>
+<p>The extract here option in the menu now has the behavior of the old &quot;extract here and detect subfolders&quot;.
+This makes the menu less heavy on text while making the action more accessible.</p>
+<p>Service menus will need some adaptation unfortunately, you will need to Moving them to a new location.
+Usually <code>mv ~/.local/share/kservices5/ServiceMenus/* ~/.local/share/kio/servicemenus</code>. (Ensure to have destination directory created: <code>mkdir -p ~/.local/share/kio/servicemenus</code>)
+You can read the <a href="https://develop.kde.org/docs/apps/dolphin/service-menus/">updated documentation</a>.</p>
+<p>The <code>F10</code> shortcut now opens the menu, instead of creating a directory. That's an important change to improve accessibility by providing standard shortcuts. You can change it back if you want, and you can also use the the standard shortcut for this action <code>Ctrl+Shift+N</code>.</p>
+<h1 id="new-features">New features</h1>
+<p>The settings have been reorganized making it easier to find what you are looking for.
+The Interface section regroups setitings regarding the UI elements of dolphin, and the view those that influences how the main view will display your files and folders.</p>
+<p><a href="/captures/dolphin-24.02-settings.png" title=""><img src="/captures/dolphin-24.02-settings.png" with="100%"/></a></p>
+<p>Shoutout to Dimosthenis Krallis for pulling it off, this wasn't an easy task especially for a not yet regular contributor.</p>
+<p>Thanks to <a href="https://blogs.kde.org/authors/carlschwan/">Carl</a>, we got a very nice visual improvement to KDE application with breeze. I really enjoy the change to Dolphin.
+Looking back at dolphin in plasma5 makes it glaring.</p>
+<p>A small new feature, I added, is you can now middle click on a file to open it in the second application associated with its type.
+Let's say you have an html file you normally open with your browser, but sometimes you want to edit it. Now instead of going to the open-with menu you can middle-click it. This works for scripts as well, opening them in your default editor instead of the second application assoctiated with their type.</p>
+<p><a href="/captures/dolphin-24.02-quick-edit.png" title=""><img src="/captures/dolphin-24.02-quick-edit.png" width="100%"/></a></p>
+<p>This was inspired by the fact that folders benefit from middle-click activations to open new tabs.
+Making this behavior configurable might make sense, suggestions welcome, but this seems like a sensible default at least.</p>
+<p><a href="https://wordsmith.social/felix-ernst/">Felix</a>, my fellow dolphin co-maintainer, did a bunch of ui-refinement, like the free space label in the status bar and some very nice <a href="https://wordsmith.social/felix-ernst/f10-for-accessibility-in-kf6">accessibility improvements</a>, including the <code>F10</code> shorcut change that now triggers the app menu by default.</p>
+<p>You can open now open containing folders for <a href="https://invent.kde.org/system/dolphin/-/merge_requests/616">files in the Recent Files</a>.</p>
+<h1 id="bug-fixed">Bug fixed</h1>
+<p>Akseli Lahtinen made sure to <a href="https://invent.kde.org/system/dolphin/-/merge_requests/675">Resort directory size count after refreshing</a>.</p>
+<p>And in total 32 were fixed between Dolphin 23.08.05 and Dolphin 24.02.0.
+<a href="https://bugs.kde.org/show_bug.cgi?id=480098">480098</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=441070">441070</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=477897">477897</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=479596">479596</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=478724">478724</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=476670">476670</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=473999">473999</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=478117">478117</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=477607">477607</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=477288">477288</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=476742">476742</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=172967">172967</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=452587">452587</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=475547">475547</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=422998">422998</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=423884">423884</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=440366">440366</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=474951">474951</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=474999">474999</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=393152">393152</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=473775">473775</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=473377">473377</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=473513">473513</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=420870">420870</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=472912">472912</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=468445">468445</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=469354">469354</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=462778">462778</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=417930">417930</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=464594">464594</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=471999">471999</a>
+<a href="https://bugs.kde.org/show_bug.cgi?id=47197">47197</a></p>
+<h1 id="new-code-new-bugs">New code, new bugs</h1>
+<p>Unfortunately whenever you ship new code, you risk introducing new bugs, and even months of testing didn't iron them all.</p>
+<p>One I think you could have spotted earlier, was that on X11, <a href="https://bugs.kde.org/show_bug.cgi?id=481952">panels are hidden after minimizing Dolphin window</a>.
+Thanks to Nicolas fella, this was swiftly fixed and will reach users in next Dolphin release.
+In the meantime, this is a good time to learn about the shortcuts for panels:</p>
+<ul>
+<li><code>F9</code>: toggle places panel</li>
+<li><code>F11</code>: toggle information panel</li>
+</ul>
+<p>We now have a need process to build packages for Windows and Mac OS, Dolphin has not made the transition though.
+I am working on it to bring latest dolphin to its Window and MacOS users.</p>
+
+                            </div>
+                        </div>
+                        
+                        
+<footer class="card-footer">
+    <div class="article-footer">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <p>
+                    Published
+                    
+
+<time datetime="2024-03-16">
+    2024-03-16
+</time>
+
+
+                    
+
+
+                    
+
+
+in <a href="https://meven.github.io/categories/monde-libre/">
+    <span class="tag is-success">
+        Monde libre
+    </span>
+</a>
+
+
+                    
+
+and tagged
+
+<a href="https://meven.github.io/tags/kde/">
+    <span class="tag is-link">kde </span>
+</a>
+
+
+
+
+                </p>
+            </div>
+            <div class="column">
+                <a class="button is-pulled-right is-info" href="/">Back Home</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    
+
+
+    
+
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_navbar.js"></script>
+
+    
+    <script type="text/javascript" src="https://meven.github.io/js/zulma_search.js"></script>
+    
+
+    
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - matériel</title>
-    <link href="https://meven.github.io/tags/materiel/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/materiel/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2008-08-24T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/materiel/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Meizu M6 par Danelec : avec la radio FM s&#x27;il vous plaît</title>
         <published>2008-08-24T00:00:00+00:00</published>
         <updated>2008-08-24T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/"/>
         <id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
 &lt;p&gt;Si comme moi, vous possédez un &amp;quot;meizu by Danelec&amp;quot;, voici un truc qui pourrait vous servir.
 Le meizu m6 (de son vrai nom) ne possède pas de tuner FM.
 Et bien Si en réalité !
@@ -29,13 +35,19 @@ Pour s&#x27;en convaincre il suffit d&#x27;installer le firmware original, de la
         <title>L&#x27;ipod est mort, vive le miniPlayer</title>
         <published>2008-07-09T00:00:00+00:00</published>
         <updated>2008-07-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/"/>
         <id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;mort-de-mon-ipod&quot;&gt;Mort de mon ipod&lt;&#x2F;h2&gt;
 &lt;p&gt;A bout de 2 dans de bons et loyaux services mon ipod 4G 40Go est mort.
 Cela faisait en réalité presque 4 ans que j&#x27;avais un ipod 4G, grâce à une extension de garantie, J&#x27;avais pu l&#x27;échanger quand j&#x27;ai eu des pépins.
@@ -63,13 +75,19 @@ Rockbox est un firmware alternatif libre, qui supporte une trentaine de modèles
         <title>HowTo gutsy et le chipset wifi 3945ABG</title>
         <published>2007-12-02T00:00:00+00:00</published>
         <updated>2007-12-02T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/"/>
         <id>https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/</id>
         
-        <content type="html">&lt;p&gt;Je possède un dell xps m1330 avec une kubuntu gutsy comme système. J&#x27;ainremarqué comme d&#x27;autre que le pilote wifi plantait parfois en particuliernlorsque l&#x27;on téléchargeait de gros fichier. J&#x27;ai trouvé grâce au forum US denubuntu une solution efficace : Utiliser le pilote libre iwl3945 plutôt que lennon libre ipw3945.
+        <content type="html" xml:base="https://meven.github.io/howto-gutsy-et-le-chipset-wifi-3945abg/">&lt;p&gt;Je possède un dell xps m1330 avec une kubuntu gutsy comme système. J&#x27;ainremarqué comme d&#x27;autre que le pilote wifi plantait parfois en particuliernlorsque l&#x27;on téléchargeait de gros fichier. J&#x27;ai trouvé grâce au forum US denubuntu une solution efficace : Utiliser le pilote libre iwl3945 plutôt que lennon libre ipw3945.
 &lt;strong&gt;Disclaimer&lt;&#x2F;strong&gt; : &lt;strong&gt;attention ce que vous faites&lt;&#x2F;strong&gt;, jenne peux être tenu des conséquences éventuelles.&lt;&#x2F;p&gt;
 &lt;h2&gt;tester afin d&#x27;installer&lt;&#x2F;h2&gt;nIl est possible de tester si votre matériel supportera bien l&#x27;opération ennremplaçant dynamiquement le module du noyau incriminé. Les changements ne sontndonc pas permanents, après un redémarrage tout sera configurer commenoriginalement.n&lt;ul&gt;n&lt;li&gt;d&#x27;abord arrêter le réseau &lt;code&gt;# remplacé eth1 par l&#x27;interface réseau quincorrespond au wifi par exemple wlan0 si nécessaire
 sudo ifdown eth1&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On décharge le module défaillant &lt;code&gt;sudo modprobe -r ipw3945&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On met à plat les dépendances du module &lt;code&gt;sudo depmod -a&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On charge l&#x27;autre module &lt;code&gt;sudo modprobe iwl3945&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;n&lt;h2&gt;Installation permanente&lt;&#x2F;h2&gt;nCe qui suit permet de se passer de ipw3945 de façon permanente (mais pasnirréversible)n&lt;ul&gt;n&lt;li&gt;blacklister le module ipw3945 pour empêcher le noyau de le chargern&lt;code&gt;sudo bash -c &#x27;echo &amp;quot;blacklist ipw3945&amp;quot; &amp;gt;n&#x2F;etc&#x2F;modprobe.d&#x2F;blacklist-ipw3945&#x27;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;Ajouter iwl3945 aux modules charger au démarrage &lt;code&gt;sudo bash -c &#x27;echon&amp;quot;iwl3945&amp;quot; &amp;gt;&amp;gt; &#x2F;etc&#x2F;modules&#x27;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;Il faut ensuite modifier le fichiern&#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;70-persistent-net.rules pour corriger un problème vis à visndu nommage de l&#x27;interface réseau. Il faut commenter la ligne de votre ancienneninterface réseau (pour moi eth1). Vous pouvez le faire avec gedit ou bien avecnla commande : &lt;code&gt;sudo sed -i &amp;quot;s&#x2F;(.*eth1)&#x2F;#1&#x2F;&amp;quot;n&#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;70-persistent-net.rules&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;redémarrer et profiter d&#x27;une connection wifi bien plus stable !&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;n&lt;p&gt;Rapportez les problèmes éventuels je mettrais à jour le howto.&lt;&#x2F;p&gt;n&lt;h2&gt;Sources&lt;&#x2F;h2&gt;n&lt;ul&gt;n&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=595060&quot;&gt;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=595060&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;n&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=593728&quot;&gt;http:&#x2F;&#x2F;ubuntuforums.org&#x2F;showthread.php?t=593728&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;</content>
@@ -79,13 +97,19 @@ sudo ifdown eth1&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;n&lt;li&gt;On décharge le mod
         <title>La difficulté de choisir un ultra-portable</title>
         <published>2007-08-27T00:00:00+00:00</published>
         <updated>2007-08-27T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/"/>
         <id>https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/</id>
         
-        <content type="html">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
+        <content type="html" xml:base="https://meven.github.io/la-difficulte-de-choisir-un-ultra-portable/">&lt;p&gt;Je vais bientôt m&#x27;acheter un ordinateur, un portable cette fois.
 Je privilégie la mobilité et l&#x27;autonomie avant tout. Je me tourne donc vers la catégorie dite des ultra-portable.
 Ca tombe bien, ils sont devenus abordables, l&#x27;entrée de gamme est devenue moins chère, 1000€ environ pour mon plus grand bonheur.
 Etant étudiant je ne peut pas me permettre d&#x27;investir plus de toute façon.

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - ipod</title>
-    <link href="https://meven.github.io/tags/ipod/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/ipod/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2008-07-09T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/ipod/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>L&#x27;ipod est mort, vive le miniPlayer</title>
         <published>2008-07-09T00:00:00+00:00</published>
         <updated>2008-07-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/"/>
         <id>https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/l-ipod-est-mort-vive-le-miniplayer/">&lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;ipod_mort.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;mort-de-mon-ipod&quot;&gt;Mort de mon ipod&lt;&#x2F;h2&gt;
 &lt;p&gt;A bout de 2 dans de bons et loyaux services mon ipod 4G 40Go est mort.
 Cela faisait en réalité presque 4 ans que j&#x27;avais un ipod 4G, grâce à une extension de garantie, J&#x27;avais pu l&#x27;échanger quand j&#x27;ai eu des pépins.
@@ -44,13 +50,19 @@ Rockbox est un firmware alternatif libre, qui supporte une trentaine de modèles
         <title>Chronique d&#x27;un sauvetage d&#x27;ipod</title>
         <published>2007-07-26T00:00:00+00:00</published>
         <updated>2007-07-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/chronique-dun-sauvetage-dipod/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/chronique-dun-sauvetage-dipod/"/>
         <id>https://meven.github.io/chronique-dun-sauvetage-dipod/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
+        <content type="html" xml:base="https://meven.github.io/chronique-dun-sauvetage-dipod/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;sad_ipod.gif&quot; alt=&quot;sad_ipod.gif&quot; &#x2F;&gt;Ce n&#x27;est pas la première fois que j&#x27;ai à faire a des problèmes hardware avec mon ipod, je pourrais même dire que je suis un habitué : remplacé deux fois, merci au service après vente d&#x27;apple et au programme applecare.
 Mon bon vieux ipod 4G me faisait drolement peur depuis que l&#x27;icône de l&#x27;ipod triste apparaissait à l&#x27;écran. Surtout que je savais qu&#x27;il avait pris un joli coup après une chute très récemment. J&#x27;ai bien cru que c&#x27;était la fin (à nouveau).
 Je me retrouvais au pied du mur, complètement addicte au meilleur des balladeurs mp3. Il allait falloir m&#x27;en acheter un nouveau.
 J&#x27;aurais opté pour un nano 8Go plus petit et plus costaud que mon 4G avec son gros disque dur si fragile. Mais à 259€, je le trouve vraiment trop cher, franchement apple abuse. Mais avec &lt;a href=&quot;http:&#x2F;&#x2F;hideapod.com&#x2F;&quot;&gt;une concurrence aussi impuissante&lt;&#x2F;a&gt; à proposer un produit qui tienne la route, rien ne pousse apple à réduire ses marges.

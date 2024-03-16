@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - festival</title>
-    <link href="https://meven.github.io/tags/festival/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/festival/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2008-08-21T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/festival/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Retour de Budapest Sziget ça a le feu</title>
         <published>2008-08-21T00:00:00+00:00</published>
         <updated>2008-08-21T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/"/>
         <id>https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/</id>
         
-        <content type="html">&lt;p&gt;Je suis rentré mardi de Sziget.
+        <content type="html" xml:base="https://meven.github.io/retour-de-budapest-sziget-ca-a-le-feu/">&lt;p&gt;Je suis rentré mardi de Sziget.
 C&#x27;est un festival pour le moins impressionnant.
 La taille d&#x27;abord, 6 jours 385 000 visiteurs.
 Un festival bien plus international que ceux de Bretagne.
@@ -34,13 +40,19 @@ Je retiendrais la très bonne prestation de R.E.M; les bons concerts de l&#x27;a
         <title>Sziget J -7</title>
         <published>2008-08-05T00:00:00+00:00</published>
         <updated>2008-08-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/sziget-j-7/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/sziget-j-7/"/>
         <id>https://meven.github.io/sziget-j-7/</id>
         
-        <content type="html">&lt;p&gt;&lt;img title=&quot;sziget 2008, juin 2008&quot; style=&quot;margin: 0 0 1em 1em; float: right;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;sziget-2008-affiche.jpg&quot; &#x2F;&gt;Dans 7 jours démarre Sziget, le plusngrand festival d&#x27;Europe environ 400 000 personnes sur 6 jours... Dont moi!&lt;&#x2F;p&gt;n&lt;p&gt;J&#x27;arrête avec les chiffres.&lt;&#x2F;p&gt;n&lt;p&gt;La programmation est pour la moins sympathique. Pour donner une idée de lanprogrammation :&lt;&#x2F;p&gt;n&lt;ul&gt;n&lt;li&gt;mardi 12: Iron Maïden&lt;&#x2F;li&gt;n&lt;li&gt;mercredi 13 : THe kooks, Alanis Morissette&lt;&#x2F;li&gt;n&lt;li&gt;jeudi 14 : Kaiser Chiefs, Jamiroquai&lt;&#x2F;li&gt;n&lt;li&gt;vendredi 15 : Sex Pistols&lt;&#x2F;li&gt;n&lt;li&gt;samedi 16 : REM, Serj Talkian, Mademoiselle K&lt;&#x2F;li&gt;n&lt;li&gt;dimanche 17: The killers, The Wombats, Babyshambles&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nEt ça ce ne sont que quelques têtes d&#x27;affiche, après il y a la scène jazz,nWorld, Métal...
+        <content type="html" xml:base="https://meven.github.io/sziget-j-7/">&lt;p&gt;&lt;img title=&quot;sziget 2008, juin 2008&quot; style=&quot;margin: 0 0 1em 1em; float: right;&quot; alt=&quot;&quot; src=&quot;&#x2F;logos&#x2F;sziget-2008-affiche.jpg&quot; &#x2F;&gt;Dans 7 jours démarre Sziget, le plusngrand festival d&#x27;Europe environ 400 000 personnes sur 6 jours... Dont moi!&lt;&#x2F;p&gt;n&lt;p&gt;J&#x27;arrête avec les chiffres.&lt;&#x2F;p&gt;n&lt;p&gt;La programmation est pour la moins sympathique. Pour donner une idée de lanprogrammation :&lt;&#x2F;p&gt;n&lt;ul&gt;n&lt;li&gt;mardi 12: Iron Maïden&lt;&#x2F;li&gt;n&lt;li&gt;mercredi 13 : THe kooks, Alanis Morissette&lt;&#x2F;li&gt;n&lt;li&gt;jeudi 14 : Kaiser Chiefs, Jamiroquai&lt;&#x2F;li&gt;n&lt;li&gt;vendredi 15 : Sex Pistols&lt;&#x2F;li&gt;n&lt;li&gt;samedi 16 : REM, Serj Talkian, Mademoiselle K&lt;&#x2F;li&gt;n&lt;li&gt;dimanche 17: The killers, The Wombats, Babyshambles&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nEt ça ce ne sont que quelques têtes d&#x27;affiche, après il y a la scène jazz,nWorld, Métal...
 &lt;p&gt;Du bon temps en perspective.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela se passe sur cette île en plein milieu de Budapest (merci &lt;a hreflang=&quot;en&quot; href=&quot;http:&#x2F;&#x2F;www.openstreetmap.org&#x2F;&quot;&gt;openstreetmap&lt;&#x2F;a&gt;) :
 &lt;a href=&quot;&#x2F;captures&#x2F;map.png&quot;&gt;&lt;img title=&quot;île de sziget, aoû 2008&quot; style=&quot;margin: 0 1em 1em 0; float: left;&quot; alt=&quot;&quot; src=&quot;&#x2F;captures&#x2F;.map_m.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
@@ -51,13 +63,19 @@ Je retiendrais la très bonne prestation de R.E.M; les bons concerts de l&#x27;a
         <title>Un été, des festivals</title>
         <published>2008-06-19T00:00:00+00:00</published>
         <updated>2008-06-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/un-ete-des-festivals/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/un-ete-des-festivals/"/>
         <id>https://meven.github.io/un-ete-des-festivals/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;sziget-2008-affiche.jpg|sziget 2008|R))&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/un-ete-des-festivals/">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;sziget-2008-affiche.jpg|sziget 2008|R))&lt;&#x2F;p&gt;
 &lt;h4 id=&quot;sziget-a-budapest-hongrie&quot;&gt;Sziget à Budapest, Hongrie.&lt;&#x2F;h4&gt;
 &lt;p&gt;J&#x27;y serais en découverte. J&#x27;en ai déjà entendu beaucoup de bien.
 C&#x27;est un gros festival. Une catégorie au dessus du plus grand festival français.
@@ -93,13 +111,19 @@ Surtout qu&#x27;en ce moment, ils sont plutôt en forme même encagoulé façon 
         <title>Rencontre des lugs bretons au festival interceltique de Lorient</title>
         <published>2007-08-11T00:00:00+00:00</published>
         <updated>2007-08-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/"/>
         <id>https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/</id>
         
-        <content type="html">&lt;p&gt;Nous nous sommes rencontré au stand &amp;quot;TuxBihan - Logiciel Libre&amp;quot; du village solidaire du festival de Lorient. Ce stand était géré et animé par nos hôtes, les GUL morbihanais tuxbihan et rhizomes&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/">&lt;p&gt;Nous nous sommes rencontré au stand &amp;quot;TuxBihan - Logiciel Libre&amp;quot; du village solidaire du festival de Lorient. Ce stand était géré et animé par nos hôtes, les GUL morbihanais tuxbihan et rhizomes&lt;&#x2F;p&gt;
 &lt;p&gt;Cette année le fil mettait à l&#x27;honneur l&#x27;Ecosse.
 On pouvait croiser de nombreux kilts, des drapeaux écossais peints sur des visages.
 Une bien belle ambiance.
@@ -124,13 +148,19 @@ Je me souviens d&#x27;Ecossais - je suppose, je sais juste qu&#x27;ils étaient 
         <title>Vieilles Charrues 2007 : géniales comme d&#x27;habitude</title>
         <published>2007-07-25T00:00:00+00:00</published>
         <updated>2007-07-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/"/>
         <id>https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;Mes quatrième vieilles charrues restent fidèle aux autres crus : des concerts marquants et survoltés ; une ambiance conviviale, festive et délirante.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/vieilles-charrues-2007-genial-comme-dhabitude/">&lt;p&gt;&lt;a href=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;Mes quatrième vieilles charrues restent fidèle aux autres crus : des concerts marquants et survoltés ; une ambiance conviviale, festive et délirante.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Le Vendredi, j&#x27;en retiendrais le show de Donovan Frankenreiter.&lt;&#x2F;strong&gt;
 Sa musique était ensoleillé par son funk surfeur et le soleil à la fois. Je n&#x27;ai pu profité que de la deuxième moitié du concert (saleté embouteillage mais quand on est quelques milliers à se rendre au même endroit ça semble normal).
 &lt;strong&gt;Je retiendrais également kaolin&lt;&#x2F;strong&gt;, encore un bon groupe de rock à surveiller, en anglais ce serait YARBTKAEO : Yet another rock band to keep an eye on.
@@ -152,26 +182,38 @@ Puis vînt Joey Starr. Je n&#x27;ai pas suivi le concert, non pas qu&#x27;il ne 
         <title>Vieilles charrues iminentes !</title>
         <published>2007-07-17T00:00:00+00:00</published>
         <updated>2007-07-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/vieilles-charrues-iminentes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/vieilles-charrues-iminentes/"/>
         <id>https://meven.github.io/vieilles-charrues-iminentes/</id>
         
-        <content type="html">&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; alt=&quot;affiche2007_340.jpg&quot; &#x2F;&gt;</content>
+        <content type="html" xml:base="https://meven.github.io/vieilles-charrues-iminentes/">&lt;img src=&quot;&#x2F;logos&#x2F;affiche2007_340.jpg&quot; alt=&quot;affiche2007_340.jpg&quot; &#x2F;&gt;</content>
         
     </entry>
     <entry xml:lang="en">
         <title>Retour du festival des Terres Neuvas à Bobital</title>
         <published>2007-07-12T00:00:00+00:00</published>
         <updated>2007-07-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/retour-de-bobital/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/retour-de-bobital/"/>
         <id>https://meven.github.io/retour-de-bobital/</id>
         
-        <content type="html">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;header_titre.gif&quot; alt=&quot;header_titre.gif&quot; &#x2F;&gt; Je suis rentré dimanche de Bobital.
+        <content type="html" xml:base="https://meven.github.io/retour-de-bobital/">&lt;p&gt;&lt;img src=&quot;&#x2F;logos&#x2F;header_titre.gif&quot; alt=&quot;header_titre.gif&quot; &#x2F;&gt; Je suis rentré dimanche de Bobital.
 Presque trois heures de route au travers de la Bretagne :D&lt;&#x2F;p&gt;
 &lt;p&gt;Bobital était sympas, Je découvrait le festival.
 Le cadre est bien, le site se trouve juste à côté du bourg en fait. On est pas perdu c&#x27;est foutu comme aux vieilles charrues à quelques exceptions près.&lt;&#x2F;p&gt;
@@ -204,13 +246,19 @@ Vraiment très bon concert. Je suis très content de pourvoir dire j&#x27;y éta
         <title>Bobital c&#x27;est dans une semaine</title>
         <published>2007-07-01T00:00:00+00:00</published>
         <updated>2007-07-01T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/bobital-cest-dans-une-semaine/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/bobital-cest-dans-une-semaine/"/>
         <id>https://meven.github.io/bobital-cest-dans-une-semaine/</id>
         
-        <content type="html">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;header_titre.gif|header_titre.gif|R))
+        <content type="html" xml:base="https://meven.github.io/bobital-cest-dans-une-semaine/">&lt;p&gt;((&#x2F;public&#x2F;logos&#x2F;header_titre.gif|header_titre.gif|R))
 Le festival des terre Neuvas à Bobital, c&#x27;est dans moins d&#x27;une semaine maintenant.
 J&#x27;y  serais le samedi, Je suis impatient.
 L&#x27;&lt;a href=&quot;http:&#x2F;&#x2F;www.festival-terre-neuvas.com&#x2F;&quot;&gt;affiche&lt;&#x2F;a&gt; est vraiment énorme le samedi : Marilyn Manson, Status Quo, Ziggy Marley, Da Silva, Placebo, Dj Zebra. .   .   .

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - internet</title>
-    <link href="https://meven.github.io/tags/internet/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/internet/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2012-01-15T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/internet/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>28c3</title>
         <published>2012-01-15T00:00:00+00:00</published>
         <updated>2012-01-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/28c3-j-aurais-voulu-y-etre/"/>
         <id>https://meven.github.io/28c3-j-aurais-voulu-y-etre/</id>
         
-        <content type="html">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/28c3-j-aurais-voulu-y-etre/">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;Je vous recommande vivement de les regarder.
 Si vous aimez internet davantage que la censure, ou la distribution des savoirs plus que le contrôle.&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
@@ -48,13 +54,19 @@ Les questions soulevées sont des choix de société, d&#x27;éthique, rien de m
         <title>Google Wave s&#x27;ouvre un peu</title>
         <published>2009-07-25T00:00:00+00:00</published>
         <updated>2009-07-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/google-wave-s-ouvre-un-peu/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/google-wave-s-ouvre-un-peu/"/>
         <id>https://meven.github.io/google-wave-s-ouvre-un-peu/</id>
         
-        <content type="html">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
+        <content type="html" xml:base="https://meven.github.io/google-wave-s-ouvre-un-peu/">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
 Cela représente au total 40 000 lignes de code de java disponible via &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Mercurial&quot;&gt;mercurial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;le-operational-transform-ot-c-est-en-fait-l-api-de-base-pour-le-protocole-wave-et-son-modele&quot;&gt;le &amp;quot;Operational Transform&amp;quot; (OT), c&#x27;est en fait l&#x27;API de base pour le protocole Wave et son modèle.&lt;&#x2F;h1&gt;
 &lt;h1 id=&quot;un-prototype-de-client-serveur-implementant-le-protocole-wave&quot;&gt;un prototype de client&#x2F;serveur implémentant le protocole Wave.&lt;&#x2F;h1&gt;
@@ -73,13 +85,19 @@ Une procédure d&#x27;installation est disponible, que j&#x27;ai testé.&lt;&#x2
         <title>Premières impressions sur Google Wave</title>
         <published>2009-07-20T00:00:00+00:00</published>
         <updated>2009-07-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/premieres-impressions-sur-google-wave/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/premieres-impressions-sur-google-wave/"/>
         <id>https://meven.github.io/premieres-impressions-sur-google-wave/</id>
         
-        <content type="html">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/premieres-impressions-sur-google-wave/">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;avais été assez enthousiasmé en juin quand le projet avait été dévoilé.&lt;&#x2F;p&gt;
 &lt;p&gt;Comme vous le savez sans doute, les wave sont des mixs de mail, messagerie instantanée, wiki et plus combiné dans une une même web-app.
 L&#x27;application est à la fois synchrone et asynchrone, extensible via des bots (traduction, publication...), des gadgets (carte, sondage etc..) qui permette d&#x27;enrichir l&#x27;utilisation.&lt;&#x2F;p&gt;
@@ -98,13 +116,19 @@ L&#x27;application est à la fois synchrone et asynchrone, extensible via des bo
         <title>&quot;Nouvelle Origine&quot; de Philippe Lemoine</title>
         <published>2007-09-11T00:00:00+00:00</published>
         <updated>2007-09-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/internet/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/internet/"/>
         <id>https://meven.github.io/internet/</id>
         
-        <content type="html">&lt;p&gt;Je vous recommande la lecture de cette &lt;a href=&quot;http:&#x2F;&#x2F;www.ecrans.fr&#x2F;La-pensee-est-le-seul-moyen-de,2070.html&quot;&gt;interview&lt;&#x2F;a&gt; de Philippe Lemoine.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/internet/">&lt;p&gt;Je vous recommande la lecture de cette &lt;a href=&quot;http:&#x2F;&#x2F;www.ecrans.fr&#x2F;La-pensee-est-le-seul-moyen-de,2070.html&quot;&gt;interview&lt;&#x2F;a&gt; de Philippe Lemoine.&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;interview est très intéressante. Philipe Lemoine, membre de la Cnil y mêle internet, liberté individuelle, philosophie et culture...&lt;&#x2F;p&gt;
 &lt;p&gt;Morceau choisis,
 {{Un véritable combat s’est ouvert, qui explique le malentendu autour du copyright, des droits d’auteur. Les forces d’argent essayent d’agréger autour d’elles les artistes en prétendant que l’on veut les empêcher de vivre, d’être rémunérés. Ce qui est aux antipodes de la volonté des internautes. Au contraire, les artistes ont probablement tout à gagner d’une certaine désintermédiation.}}&lt;&#x2F;p&gt;
@@ -119,13 +143,19 @@ L&#x27;application est à la fois synchrone et asynchrone, extensible via des bo
         <title>Internet libre, ou Minitel 2.0 ? par fdn</title>
         <published>2007-08-14T00:00:00+00:00</published>
         <updated>2007-08-14T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/internet-libre-ou-minitel-20-fdn/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/internet-libre-ou-minitel-20-fdn/"/>
         <id>https://meven.github.io/internet-libre-ou-minitel-20-fdn/</id>
         
-        <content type="html">&lt;p&gt;Je viens de voir à partir de &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;Internet-libre-ou-Minitel-2.html&quot;&gt;cette page&lt;&#x2F;a&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;minitel.avi&quot;&gt;cette vidéo&lt;&#x2F;a&gt; sur &lt;a href=&quot;http:&#x2F;&#x2F;fdn.fr&#x2F;&quot;&gt;fdn.fr&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/internet-libre-ou-minitel-20-fdn/">&lt;p&gt;Je viens de voir à partir de &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;Internet-libre-ou-Minitel-2.html&quot;&gt;cette page&lt;&#x2F;a&gt; &lt;a href=&quot;http:&#x2F;&#x2F;www.fdn.fr&#x2F;minitel.avi&quot;&gt;cette vidéo&lt;&#x2F;a&gt; sur &lt;a href=&quot;http:&#x2F;&#x2F;fdn.fr&#x2F;&quot;&gt;fdn.fr&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Je blog pas mal sur le logiciel libre, mais qu&#x27;en es-t-il de internet  ?
 Cette vidéo de conférence met en exergue le retours en arrière du modèle économique d&#x27;internet, qui ressemble de plus en plus à celui du minitel et de la téléphonie traditionnelle. C&#x27;est à dire, un abonnement pour avoir accès à un ensemble de service centralisé (à Paris naturellement). C&#x27;est le cas de mon blog par exemple et de tous les skyblogs plus ceux  hébergés chez 1&amp;amp;1 dédibox etc ..., nos blogs ne sont que des services payants &lt;strong&gt;centralisés&lt;&#x2F;strong&gt; dont l&#x27;objet est de nous permettre d&#x27;héberger un site. On peux rapprocher ça aux pages roses, à par dans le contenu, c&#x27;est exactement la même chose. Google et tous les moteurs de recherche sont comparables au moteur de recherche du minitel, rien n&#x27;a changé depuis, mot clé -&amp;gt; interrogation des serveurs centraux -&amp;gt; réponse.&lt;&#x2F;p&gt;
 &lt;p&gt;Cela fait froid dans le dos. Ce qui m&#x27;a fait le plus peur c&#x27;est le fait fait que les opérateurs empêche toute hébergement décentralisé par les particuliers en bridant l&#x27;upload des connexions aux particuliers(il existe des formes d&#x27;ADSL à débit symétrique mais ils sont réservés aux professionnels).&lt;&#x2F;p&gt;

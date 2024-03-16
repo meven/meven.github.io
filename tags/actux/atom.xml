@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>meven&#x27;s blog - actux</title>
-    <link href="https://meven.github.io/tags/actux/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://meven.github.io"/>
+    <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/actux/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2007-11-27T00:00:00+00:00</updated>
     <id>https://meven.github.io/tags/actux/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>48h du libre à Rennes</title>
         <published>2007-11-27T00:00:00+00:00</published>
         <updated>2007-11-27T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://meven.github.io/48h-du-libre-a-rennes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/48h-du-libre-a-rennes/"/>
         <id>https://meven.github.io/48h-du-libre-a-rennes/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;&quot;&gt;&lt;strong&gt;Actux&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; organise ànpartir de demain deux jours d&#x27;animation et de conférence autour du logicielnlibre. Au menun&lt;ul&gt;n&lt;li&gt;démonstration de ubuntu essentiellement et de ses différentesndéclinaisons,&lt;&#x2F;li&gt;n&lt;li&gt;troll à volonté ,&lt;&#x2F;li&gt;n&lt;li&gt;conférences grand public&lt;&#x2F;li&gt;n&lt;li&gt;et vulgarisation du Logiciel libre auprès des étudiants de la fac.&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nCela se passe sur le campus de Rennes 1. Plus d&#x27;info sur le &lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;?n=Les48HDuLibre.Les48HDuLibre&quot;&gt;site d&#x27;actux&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/48h-du-libre-a-rennes/">&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;&quot;&gt;&lt;strong&gt;Actux&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; organise ànpartir de demain deux jours d&#x27;animation et de conférence autour du logicielnlibre. Au menun&lt;ul&gt;n&lt;li&gt;démonstration de ubuntu essentiellement et de ses différentesndéclinaisons,&lt;&#x2F;li&gt;n&lt;li&gt;troll à volonté ,&lt;&#x2F;li&gt;n&lt;li&gt;conférences grand public&lt;&#x2F;li&gt;n&lt;li&gt;et vulgarisation du Logiciel libre auprès des étudiants de la fac.&lt;&#x2F;li&gt;n&lt;&#x2F;ul&gt;nCela se passe sur le campus de Rennes 1. Plus d&#x27;info sur le &lt;a href=&quot;http:&#x2F;&#x2F;actux.tuxfamily.org&#x2F;?n=Les48HDuLibre.Les48HDuLibre&quot;&gt;site d&#x27;actux&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 </content>
         
     </entry>
