@@ -38,13 +38,13 @@ You can read the &lt;a href=&quot;https:&#x2F;&#x2F;develop.kde.org&#x2F;docs&#x
 &lt;h1 id=&quot;new-features&quot;&gt;New features&lt;&#x2F;h1&gt;
 &lt;p&gt;The settings have been reorganized making it easier to find what you are looking for.
 The Interface section regroups setitings regarding the UI elements of dolphin, and the view those that influences how the main view will display your files and folders.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; with=&quot;400px&quot;&#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-settings.png&quot; with=&quot;100%&quot;&#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Shoutout to Dimosthenis Krallis for pulling it off, this wasn&#x27;t an easy task especially for a not yet regular contributor.&lt;&#x2F;p&gt;
 &lt;p&gt;Thanks to &lt;a href=&quot;https:&#x2F;&#x2F;blogs.kde.org&#x2F;authors&#x2F;carlschwan&#x2F;&quot;&gt;Carl&lt;&#x2F;a&gt;, we got a very nice visual improvement to KDE application with breeze. I really enjoy the change to Dolphin.
 Looking back at dolphin in plasma5 makes it glaring.&lt;&#x2F;p&gt;
 &lt;p&gt;A small new feature, I added, is you can now middle click on a file to open it in the second application associated with its type.
 Let&#x27;s say you have an html file you normally open with your browser, but sometimes you want to edit it. Now instead of going to the open-with menu you can middle-click it. This works for scripts as well, opening them in your default editor instead of the second application assoctiated with their type.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;dolphin-24.02-quick-edit.png&quot; width=&quot;100%&quot;&#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;This was inspired by the fact that folders benefit from middle-click activations to open new tabs.
 Making this behavior configurable might make sense, suggestions welcome, but this seems like a sensible default at least.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wordsmith.social&#x2F;felix-ernst&#x2F;&quot;&gt;Felix&lt;&#x2F;a&gt;, my fellow dolphin co-maintainer, did a bunch of ui-refinement, like the free space label in the status bar and some very nice &lt;a href=&quot;https:&#x2F;&#x2F;wordsmith.social&#x2F;felix-ernst&#x2F;f10-for-accessibility-in-kf6&quot;&gt;accessibility improvements&lt;&#x2F;a&gt;, including the &lt;code&gt;F10&lt;&#x2F;code&gt; shorcut change that now triggers the app menu by default.&lt;&#x2F;p&gt;
