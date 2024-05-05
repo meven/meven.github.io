@@ -4,8 +4,50 @@
     <link rel="self" type="application/atom+xml" href="https://meven.github.io/categories/monde-libre/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-03-16T10:30:00+00:00</updated>
+    <updated>2024-05-05T14:00:00+00:00</updated>
     <id>https://meven.github.io/categories/monde-libre/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Berlin Goals sprint 2024</title>
+        <published>2024-05-05T14:00:00+00:00</published>
+        <updated>2024-05-05T14:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/berlin-goals-sprint-2024/"/>
+        <id>https://meven.github.io/berlin-goals-sprint-2024/</id>
+        
+        <content type="html" xml:base="https://meven.github.io/berlin-goals-sprint-2024/">&lt;p&gt;As you have probably heard, two weeks ago a bunch of KDE contributors gathered in Berlin to attend to a sprint to move forward on &lt;a href=&quot;https:&#x2F;&#x2F;kde.org&#x2F;goals&#x2F;&quot;&gt;current KDE community Goals&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I attended the sprint and it was a pleasure to get together with fellow KDE contributors, and discuss our experiences, our plans and aspirations.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;goal-work&quot;&gt;Goal Work&lt;&#x2F;h1&gt;
+&lt;p&gt;My main objective for this Goal was to get automated GUI testing merged for Dolphin.
+This is important as it paves the way to better testing, accessibility improvements and power-usage measurement, making progress towards the three Goals at once.&lt;&#x2F;p&gt;
+&lt;p&gt;I wanted to get this done, since last akademy, and I gave it a try but it wasn&#x27;t fruitful then.
+This time with &lt;a href=&quot;https:&#x2F;&#x2F;kde.haraldsitter.eu&#x2F;&quot;&gt;Harald&lt;&#x2F;a&gt; around, &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;sdk&#x2F;selenium-webdriver-at-spi&#x2F;&quot;&gt;selenium webdriver at spi&lt;&#x2F;a&gt; author, I would get a chance to poke him to overcome my difficulties.&lt;&#x2F;p&gt;
+&lt;p&gt;And indeed Harald was very helpful. It took me a while to setup properly my local testing environment.
+But then I could update the existing MR by Marco and iron it up slightly to get &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;system&#x2F;dolphin&#x2F;-&#x2F;merge_requests&#x2F;767&quot;&gt;it merged&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Another objective I had coming to Berlin, was improving KIO-&#x27;s CI-testing situation.
+Currently a bunch of tests are failing and we don&#x27;t require tests to pass for KIO.
+KIO is a very important library for Dolphin, as such I spend an important part of my contributor time on improving it, so this is quite important to me.
+I sent a &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;frameworks&#x2F;kio&#x2F;-&#x2F;merge_requests&#x2F;1610&quot;&gt;fix for a test&lt;&#x2F;a&gt; but CI can&#x27;t really run this kind of test.
+Those test the launch of programs using systemd, except our tests run inside containers which limits what tests can do at runtime.
+We did a little progress, and I learned what needs to be done to fix this case.
+We need some work on our dev-ops side of things for those ones.
+A bunch other tests still need fixing.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;dolphin&quot;&gt;Dolphin&lt;&#x2F;h1&gt;
+&lt;p&gt;And I got busy doing Dolphin reviews.
+A particular one of interests for developpers will be that there will be a &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;sdk&#x2F;dolphin-plugins&#x2F;-&#x2F;merge_requests&#x2F;58&quot;&gt;git clone dialog&lt;&#x2F;a&gt; in dolphin-plugins.
+Nikolai Krasheninnikov, the feature contributor, and myself are still improving it to be both nice and very practical.&lt;&#x2F;p&gt;
+&lt;p&gt;There is another feature I have been reviewing, but it is too early to speak about publicly.&lt;&#x2F;p&gt;
+&lt;p&gt;I also for the first time tried out &lt;a href=&quot;https:&#x2F;&#x2F;apps.kde.org&#x2F;fr&#x2F;neochat&#x2F;&quot;&gt;neochat&lt;&#x2F;a&gt; and I was pleased.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Dolphin 24.02</title>
         <published>2024-03-16T10:30:00+00:00</published>
