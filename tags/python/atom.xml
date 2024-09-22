@@ -33,11 +33,11 @@
 &lt;&#x2F;ul&gt;
 &lt;h4 id=&quot;exemple-d-utilisation&quot;&gt;Exemple d&#x27;utilisation&lt;&#x2F;h4&gt;
 &lt;p&gt;On vérifie que l&#x27;import est possible (le script indiquera si il manque des tags aux fichiers par exemple):&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;musicimporter -v Dossier Source&amp;#x2F; ~&amp;#x2F;Musique&amp;#x2F;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;musicimporter -v Dossier Source&#x2F; ~&#x2F;Musique&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Si tout c&#x27;est bien passé, on importe dans sa collection :&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;musicimporter -vmwd Dossier Source&amp;#x2F; ~&amp;#x2F;Musique&amp;#x2F;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;musicimporter -vmwd Dossier Source&#x2F; ~&#x2F;Musique&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;La prochaine fonctionnalité envisagée est de permettre l&#x27;utilisation d&#x27;un fichier de configuration plutôt que des options en ligne de commande.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Téléchargement : &lt;a href=&quot;http:&#x2F;&#x2F;www.bivouak.fr&#x2F;public&#x2F;musicimporter.py&quot;&gt;musicimporter.py&lt;&#x2F;a&gt;.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Tous les commentaires sont les bienvenus.&lt;&#x2F;p&gt;
@@ -71,21 +71,21 @@ Pour l&#x27;instant, seuls les formats ogg vorbis, flac et mp3 sont supportés.&
 &lt;li&gt;L&#x27;option -m déplace les fichiers dans le dossier output_dir suivant le format de sortie. Le format peut être changer avec l&#x27;option -o.&lt;&#x2F;li&gt;
 &lt;li&gt;-v, verbose mode, permet de suivre de plus prêt ce que fait le script.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;pre&gt;&lt;code&gt;Usage: musicimporter.py [options] src_dir... output_dir
-
-moves and renames audio files cleaning files metadata. It supports mp3 Ogg
-Vorbis and Flac
-
-Options:
-  -h, --help            show this help message and exit
-  -v, --verbose
-  -w, --write           clean metadata of mp3 files, delete ID3v1 tags in
-                        favor of ID3v2.4
-  -m, --move            move files
-  -o OUTPUT_FORMAT, --output-format=OUTPUT_FORMAT
-                        The format of renamed files. Default is
-                        &amp;#x27;$artist&amp;#x2F;$album&amp;#x2F;$track $title.$extension&amp;#x27;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;Usage: musicimporter.py [options] src_dir... output_dir
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;moves and renames audio files cleaning files metadata. It supports mp3 Ogg
+&lt;&#x2F;span&gt;&lt;span&gt;Vorbis and Flac
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Options:
+&lt;&#x2F;span&gt;&lt;span&gt;  -h, --help            show this help message and exit
+&lt;&#x2F;span&gt;&lt;span&gt;  -v, --verbose
+&lt;&#x2F;span&gt;&lt;span&gt;  -w, --write           clean metadata of mp3 files, delete ID3v1 tags in
+&lt;&#x2F;span&gt;&lt;span&gt;                        favor of ID3v2.4
+&lt;&#x2F;span&gt;&lt;span&gt;  -m, --move            move files
+&lt;&#x2F;span&gt;&lt;span&gt;  -o OUTPUT_FORMAT, --output-format=OUTPUT_FORMAT
+&lt;&#x2F;span&gt;&lt;span&gt;                        The format of renamed files. Default is
+&lt;&#x2F;span&gt;&lt;span&gt;                        &amp;#39;$artist&#x2F;$album&#x2F;$track $title.$extension&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Ce script nécessite &lt;a href=&quot;http:&#x2F;&#x2F;www.sacredchao.net&#x2F;quodlibet&#x2F;wiki&#x2F;Development&#x2F;Mutagen&quot;&gt;mutagen&lt;&#x2F;a&gt;.
 Disponible dans Debian&#x2F;ubuntu dans le paquet python-mutagen .&lt;&#x2F;p&gt;
 &lt;p&gt;Téléchargement : &lt;a href=&quot;http:&#x2F;&#x2F;www.bivouak.fr&#x2F;public&#x2F;musicimporter.py&quot;&gt;musicimporter.py&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
@@ -198,27 +198,27 @@ Le premier de la série Helloworld est en python&#x2F;Gtk.&lt;&#x2F;li&gt;
 &lt;img src=&quot;&#x2F;py_gtk.png&quot; alt=&quot;helloworld py&#x2F;gtk&quot; &#x2F;&gt;
 Attention elle a été faire sous kubuntu&#x2F;KDE, elle n&#x27;aurait pas la même décoration et apparence sous ubuntu&#x2F;GNOME.
 Le source :&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;python
-# -*- coding: UTF-8 -*-
-import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
-import gtk
-
-class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&amp;#x27;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
-	def __init__(self):
-		self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
-		self.set_title(&amp;quot;Hello World !&amp;quot;) # On choisit le titre de la fanêtre
-		button = gtk.Button(&amp;quot;Hello World !&amp;quot;) # création d&amp;#x27;un bouton
-		button.connect(&amp;quot;clicked&amp;quot;, gtk.main_quit ) # connection de l&amp;#x27;évènement du bouton clicked avec la fonction gtk.main_quit
-		self.add( button) # on ajoute le bouton à la fenêtre
-		self.connect(&amp;quot;delete_event&amp;quot;, gtk.main_quit ) # on &amp;quot;connecte&amp;quot; l&amp;#x27;évènement de la fenêtre avec la même fonction
-		self.show_all() # on affiche les composants
-	def main(self):
-		gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction
-
-if __name__ ==&amp;quot;__main__&amp;quot;: # équivalent du &amp;#x27;main&amp;#x27; de java et c++
-	hello = HelloWorld() # on  crée instance de l&amp;#x27;objet HelloWorld - noter le typage dynamique de python
-	hello.main() # lancement de l&amp;#x27;interface
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;#!&#x2F;usr&#x2F;bin&#x2F;python
+&lt;&#x2F;span&gt;&lt;span&gt;# -*- coding: UTF-8 -*-
+&lt;&#x2F;span&gt;&lt;span&gt;import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
+&lt;&#x2F;span&gt;&lt;span&gt;import gtk
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&amp;#39;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
+&lt;&#x2F;span&gt;&lt;span&gt;	def __init__(self):
+&lt;&#x2F;span&gt;&lt;span&gt;		self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
+&lt;&#x2F;span&gt;&lt;span&gt;		self.set_title(&amp;quot;Hello World !&amp;quot;) # On choisit le titre de la fanêtre
+&lt;&#x2F;span&gt;&lt;span&gt;		button = gtk.Button(&amp;quot;Hello World !&amp;quot;) # création d&amp;#39;un bouton
+&lt;&#x2F;span&gt;&lt;span&gt;		button.connect(&amp;quot;clicked&amp;quot;, gtk.main_quit ) # connection de l&amp;#39;évènement du bouton clicked avec la fonction gtk.main_quit
+&lt;&#x2F;span&gt;&lt;span&gt;		self.add( button) # on ajoute le bouton à la fenêtre
+&lt;&#x2F;span&gt;&lt;span&gt;		self.connect(&amp;quot;delete_event&amp;quot;, gtk.main_quit ) # on &amp;quot;connecte&amp;quot; l&amp;#39;évènement de la fenêtre avec la même fonction
+&lt;&#x2F;span&gt;&lt;span&gt;		self.show_all() # on affiche les composants
+&lt;&#x2F;span&gt;&lt;span&gt;	def main(self):
+&lt;&#x2F;span&gt;&lt;span&gt;		gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;if __name__ ==&amp;quot;__main__&amp;quot;: # équivalent du &amp;#39;main&amp;#39; de java et c++
+&lt;&#x2F;span&gt;&lt;span&gt;	hello = HelloWorld() # on  crée instance de l&amp;#39;objet HelloWorld - noter le typage dynamique de python
+&lt;&#x2F;span&gt;&lt;span&gt;	hello.main() # lancement de l&amp;#39;interface
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Plus aller plus loin, je vous recommande ces tutoriels :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;le&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;tut&#x2F;tut.html&quot;&gt; tutoriel python en anglais&lt;&#x2F;a&gt; de Guido Von Rossum (l&#x27;auteur de de python)&lt;&#x2F;li&gt;

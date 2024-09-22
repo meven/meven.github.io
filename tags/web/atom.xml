@@ -34,7 +34,7 @@ Il vise à permettre de fusionner ses marques-pages d&#x27;un poste à l&#x27;au
 &lt;p&gt;Ce type de fonctionnalités n&#x27;est pas nouveau, et google le propose dans chrome directement sans extensions.
 La grande différence avec les autres services du genre et celui de google est selon moi &lt;strong&gt;son ouverture&lt;&#x2F;strong&gt;.
 Le code est entièrement ouvert côté client (l&#x27;extension pour firefox) et, chose moins commune, &lt;a href=&quot;https:&#x2F;&#x2F;wiki.mozilla.org&#x2F;Labs&#x2F;Weave&#x2F;1.0&#x2F;Setup&#x2F;Storage&quot;&gt;côté serveur&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Résultat : rien n&#x27;empêche d&#x27;héberger son propre serveur weave pour plus d&#x27;indépendance vis à vis de google ou même de mozilla. 
+&lt;p&gt;Résultat : rien n&#x27;empêche d&#x27;héberger son propre serveur weave pour plus d&#x27;indépendance vis à vis de google ou même de mozilla.
 C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F;wiki.mozilla.org&#x2F;Labs&#x2F;Weave&#x2F;1.0&#x2F;Setup&#x2F;Storage&quot;&gt;procédure&lt;&#x2F;a&gt; du wiki de weave (attention la documentation a des défauts, à suivre avec précaution). Le serveur est en Php, ce qui simplifie grandement le déploiement.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;Capture.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;Capture.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;outil est d&#x27;ores et déjà fonctionnel et la version 1.0 est en préparation.&lt;&#x2F;p&gt;
@@ -59,7 +59,7 @@ C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F
         <link rel="alternate" type="text/html" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/"/>
         <id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
         
-        <content type="html" xml:base="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+        <content type="html" xml:base="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &quot;prêt-à-thémer&quot;.
 Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
 On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
 Pour mémoire, mon blog ressemblait à cela avant :

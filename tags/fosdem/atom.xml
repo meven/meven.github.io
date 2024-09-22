@@ -75,9 +75,9 @@ Il faut se rendre que la masse de travail à fournir pour supporter un seul bala
         <content type="html" xml:base="https://meven.github.io/fosdem-2009-troisieme-partie/">&lt;h4 id=&quot;upstart-par-scott-james-remnant&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;upstart.ubuntu.com&#x2F;&quot;&gt;Upstart&lt;&#x2F;a&gt; par Scott James Remnant&lt;&#x2F;h4&gt;
 &lt;p&gt;L&#x27;objectif de Upstart est de fournir un gestionnaire de démarrage remplaçant des scripts init et un système de gestion de services, leur démarrage, arrêt et status.&lt;&#x2F;p&gt;
 &lt;p&gt;Les avancés promises par Upstart sont nombreuses.
-On oublie les &amp;quot;sleep&amp;quot; dans les scripts init qui faisait perdre beaucoup de temps au démarrage.
+On oublie les &quot;sleep&quot; dans les scripts init qui faisait perdre beaucoup de temps au démarrage.
 Upstart sera charger de synchroniser le démarrage des services du sytème et d&#x27;en gérer les dépendances, Par exemple &#x27;gnome a besoin de dbus pour démarrer.&#x27;.
-Il fournit également un mécanisme d&#x27;évènements du type &amp;quot;dbus quitte&amp;quot;.
+Il fournit également un mécanisme d&#x27;évènements du type &quot;dbus quitte&quot;.
 Oublier la torture des runlevels.&lt;&#x2F;p&gt;
 &lt;p&gt;Upstart est utilisé dans ubuntu et dans fedora 10.&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;année 2009 devrait être marquée par ce projet par la sortie de upstart 1.0 ou bien 0.5 si toutes les fonctionnalités ne sont pas implémentées.
@@ -170,7 +170,7 @@ Il est aussi un amateur de fabrication et de lancé de fusée.&lt;&#x2F;p&gt;
 &lt;p&gt;Il a un histoire importante, créée en 1994, la &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Distribution_Linux&quot;&gt;distribution&lt;&#x2F;a&gt; GNU&#x2F;Linux Debian fut la première distribution à avoir intégré un gestionnaire de paquet en 1995 (peut être même le premier système d&#x27;exploitation à en avoir un) , d&#x27;ailleurs il nous a raconté que à cette époque red hat avait étudié la possibilité d&#x27;utiliser apt au lieu de développer leur propre système (rpm).&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;100 % libre. &amp;quot;Values then Vision, then strategy, then objectives,&amp;quot;. Debian a fait toujours les choix intransigeant pour le logiciel libre. Il n&#x27;y a pas de logiciel propriétaire dans debian même si il est possible de les installé. Ou bien encore dans debian firefox est renommé icewaesel et n&#x27;utilise pas les mêmes icônes car Firefox est une marque déposée.&lt;&#x2F;p&gt;
+&lt;p&gt;100 % libre. &quot;Values then Vision, then strategy, then objectives,&quot;. Debian a fait toujours les choix intransigeant pour le logiciel libre. Il n&#x27;y a pas de logiciel propriétaire dans debian même si il est possible de les installé. Ou bien encore dans debian firefox est renommé icewaesel et n&#x27;utilise pas les mêmes icônes car Firefox est une marque déposée.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;Debian se veut universel, elle fonctionne sur plus d&#x27;une dizaine d&#x27;architectures de processus, et tous types de matériels, du smartphone au serveur, partout et pour tous les usages.&lt;&#x2F;p&gt;
@@ -218,7 +218,7 @@ La conférence a eu pas mal de succès, on avait du mal à garder la porte ferm�
 &lt;p&gt;J&#x27;ai assisté ensuite à le présentation de GEGL, un librairie de traitement graphique qui est en train d&#x27;être progressivement intégré dans GIMP. Elle se base sur le principe de noeud : à chaque noeud correspond une opération effectuée sur l&#x27;image (blur, changement de contraste...).&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai ensuite suivis l&#x27;introduction au packaging de paquet deb pour debian&#x2F;ubuntu. J&#x27;avais déjà des notions, j&#x27;ai pas appris grand chose finalement.&lt;&#x2F;p&gt;
 &lt;p&gt;Puis c&#x27;était la fin, avec une petite conférence de clôture ou il n&#x27;y avait pas grand monde, à la même heure Keith Packard était dans la devRoom de X.org en train de parler de l&#x27;avenir de l&#x27;architecture des drivers pour X.
-On a pu voir la fameuse &amp;quot;FOSDEM Dance&amp;quot; :D .
+On a pu voir la fameuse &quot;FOSDEM Dance&quot; :D .
 Le fosdem, j&#x27;y retournerais c&#x27;est définitif.&lt;&#x2F;p&gt;
 &lt;p&gt;Encore quelques photos :&lt;&#x2F;p&gt;
 &lt;img src=&quot;&#x2F;photos&#x2F;.img_3_m.jpg&quot; alt=&quot;ror case study&quot; &#x2F;&gt;
@@ -250,7 +250,7 @@ Je vous recommande la lecture de l&#x27;algorithme en version 3.0.&lt;&#x2F;p&gt
 Il faut parler anglais, une fois qu&#x27;on s&#x27;y est mis tout roule, on fait connaissance autour d&#x27;une bière.
 On peut y croiser des gens comme , bière à la main.&lt;&#x2F;p&gt;
 &lt;p&gt;Ce matin, j&#x27;ai assisté aux deux premières présentations :
-*Tux with shades, Linux in Hollywood : Intéressant saviez vous que toutes les applications de numérisation de images utilisé dans les studios utilisait Linux ? Autre point je reprendrais une question approximative :&amp;quot;Studios are using Linux. That is great. But why can&#x27;t we play dvd on Linux then ?&amp;quot;.S&#x27;en suis des applaudissements. La réponse elle aussi approximative &amp;quot;The question doesn&#x27;t dependant on studios but on production companies&amp;quot;
+*Tux with shades, Linux in Hollywood : Intéressant saviez vous que toutes les applications de numérisation de images utilisé dans les studios utilisait Linux ? Autre point je reprendrais une question approximative :&quot;Studios are using Linux. That is great. But why can&#x27;t we play dvd on Linux then ?&quot;.S&#x27;en suis des applaudissements. La réponse elle aussi approximative &quot;The question doesn&#x27;t dependant on studios but on production companies&quot;
 *How to scale large open source projects : La success story du projet FreeBSD, l&#x27;un des plus anciens projets open source. Il dérive du unix de BSD de 1992 qui lui même dérive du code original de Unix de 1969.&lt;&#x2F;p&gt;
 &lt;p&gt;Une petite photo ou deux
 &lt;img src=&quot;&#x2F;.&#x2F;.img_0003_m.jpg&quot; alt=&quot;img_0003.jpg))

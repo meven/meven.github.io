@@ -4,8 +4,38 @@
     <link rel="self" type="application/atom+xml" href="https://meven.github.io/tags/kde/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-05-05T14:00:00+00:00</updated>
+    <updated>2024-09-22T14:00:00+00:00</updated>
     <id>https://meven.github.io/tags/kde/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dolphin plugins 24.08</title>
+        <published>2024-09-22T14:00:00+00:00</published>
+        <updated>2024-09-22T14:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/dolphin-plugins-24-08/"/>
+        <id>https://meven.github.io/dolphin-plugins-24-08/</id>
+        
+        <content type="html" xml:base="https://meven.github.io/dolphin-plugins-24-08/">&lt;p&gt;Since dolphin-plugins 24.05, you can &lt;code&gt;git clone&lt;&#x2F;code&gt; from dolphin with dolphin-plugins git plugin.&lt;&#x2F;p&gt;
+&lt;p&gt;Once the plugins are installed and &lt;code&gt;Git&lt;&#x2F;code&gt; is enabled in the context menu settings, you have this context menu action available:&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;captures&#x2F;git-clone-context-menu.png&quot; width=&quot;100%&quot;&#x2F;&gt;
+&lt;p&gt;And this shows this git clone dialog (with my french locale):&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;captures&#x2F;git-clone-dialog.png&quot; width=&quot;100%&quot;&#x2F;&gt;
+&lt;p&gt;You can paste a git repository url and it will fetch its branches.
+If you happen to have a url in your clipboard or a &lt;code&gt;git clone&lt;&#x2F;code&gt; command line, it will directly extract it as the repository url.&lt;&#x2F;p&gt;
+&lt;p&gt;This was &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;sdk&#x2F;dolphin-plugins&#x2F;-&#x2F;merge_requests&#x2F;58&quot;&gt;spearheaded&lt;&#x2F;a&gt; by Nikolai Krasheninnikov, thanks.
+I participated a bit as well and reviewed it.&lt;&#x2F;p&gt;
+&lt;p&gt;There is still opportunity to improve the git implementation, like having a better commit dialog.
+That would be a nice and simple new contributor opportunity :)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Berlin Goals sprint 2024</title>
         <published>2024-05-05T14:00:00+00:00</published>
@@ -71,7 +101,7 @@ The objective being no-one would notice despite much code has changed and this m
 &lt;p&gt;Files and folders are now selected with a single-click and opened with a double-click.
 This will mainly affect Neon Users, since most distros already had this behavior default.
 You can select the single-click-open mode on the first page of systemsettings, as it concerns also Plasma, file&#x2F;open dialog and other applications.&lt;&#x2F;p&gt;
-&lt;p&gt;The extract here option in the menu now has the behavior of the old &amp;quot;extract here and detect subfolders&amp;quot;.
+&lt;p&gt;The extract here option in the menu now has the behavior of the old &quot;extract here and detect subfolders&quot;.
 This makes the menu less heavy on text while making the action more accessible.&lt;&#x2F;p&gt;
 &lt;p&gt;Service menus will need some adaptation unfortunately, you will need to Moving them to a new location.
 Usually &lt;code&gt;mv ~&#x2F;.local&#x2F;share&#x2F;kservices5&#x2F;ServiceMenus&#x2F;* ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;. (Ensure to have destination directory created: &lt;code&gt;mkdir -p ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;)
@@ -173,7 +203,7 @@ It allows to automate UI tests, by using the accessibility API present in applic
 The good news is that it is already in the pipe thanks to the work of &lt;a href=&quot;https:&#x2F;&#x2F;notmart.org&#x2F;blog&#x2F;&quot;&gt;Marco&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Finally, Dolphin 23.08 is close to release, it will feature some bug fix and some small features:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;when hiding hidden files dolphin will also hide files files whose name ends with &amp;quot;~&amp;quot;, &amp;quot;.bak&amp;quot; or &amp;quot;%&amp;quot;. Technically files having the &amp;quot;application&#x2F;x-trash&amp;quot; mimetype. This is configurable by editing mime type either in file association kcm or using the utility command &lt;code&gt;keditfiletype application&#x2F;x-trash&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;when hiding hidden files dolphin will also hide files files whose name ends with &quot;~&quot;, &quot;.bak&quot; or &quot;%&quot;. Technically files having the &quot;application&#x2F;x-trash&quot; mimetype. This is configurable by editing mime type either in file association kcm or using the utility command &lt;code&gt;keditfiletype application&#x2F;x-trash&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;Double clicking on a tab will dupicate the tab.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;akademy&quot;&gt;Akademy&lt;&#x2F;h1&gt;
@@ -238,7 +268,7 @@ Discussing with &lt;a href=&quot;https:&#x2F;&#x2F;notmart.org&#x2F;blog&#x2F;au
 &lt;p&gt;A question I am asking myself is do we want backport to plasma 5.27 ?&lt;&#x2F;p&gt;
 &lt;p&gt;Knowing that if we did, we wouldn&#x27;t have the UI to change the 60 seconds threshold or turn off the feature, we&#x27;d have to edit by hand a tricky config file.
 It is a high priority feature request that can be considered a bug as without this you might waste energy consumption.
-And with Plasma 6 very far off this seems to me reasonable. &lt;&#x2F;p&gt;
+And with Plasma 6 very far off this seems to me reasonable.&lt;&#x2F;p&gt;
 &lt;p&gt;Do you think that would be acceptable ?&lt;&#x2F;p&gt;
 &lt;p&gt;I should be at &lt;a href=&quot;https:&#x2F;&#x2F;akademy.kde.org&#x2F;2023&#x2F;&quot;&gt;Akademy 2023&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
@@ -479,7 +509,7 @@ New depot is at &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x
 &lt;p&gt;The global application menu has is now working in Wayland thanks to Carson Black patch serie: &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27464&quot;&gt;D27464&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28168&quot;&gt;D28168&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28150&quot;&gt;D28150&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28112&quot;&gt;D28112&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27959&quot;&gt;D27959&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27818&quot;&gt;D27818&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28146&quot;&gt;D28146&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=385880&quot;&gt;bug&lt;&#x2F;a&gt;.
 This is typical Wayland work : make new APIs because old ones were X specific or could not work with Wayland, add some wiring code and then use the new one in programs using.
-This most often end up in better code architecture, better decoupled. &lt;&#x2F;p&gt;
+This most often end up in better code architecture, better decoupled.&lt;&#x2F;p&gt;
 &lt;p&gt;The task manager can now bring forward multiple windows of the same program and remembering in which order they are stacked together
 &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=370258&quot;&gt;bug&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29054&quot;&gt;patch 1&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29054&quot;&gt;patch 2&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29055&quot;&gt;patch 3&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29056&quot;&gt;patch 4&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;KRunner is &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27458&quot;&gt;better positioned&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
@@ -552,11 +582,11 @@ It also means that we want to help the wider Wayland community to fill missing f
         <id>https://meven.github.io/recently-used-ioslave/</id>
         
         <content type="html" xml:base="https://meven.github.io/recently-used-ioslave/">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
-This differential revision adds two entries &amp;quot;Recent Files&amp;quot; and &amp;quot;Recent Locations&amp;quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
+This differential revision adds two entries &quot;Recent Files&quot; and &quot;Recent Locations&quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
 &lt;img src=&quot;&#x2F;captures&#x2F;recently-used.png&quot; alt=&quot;Recent screenshot&quot; &#x2F;&gt;
 &lt;p&gt;It leverages the ioslave recentlyused:&#x2F; introduced in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;D22144&lt;&#x2F;a&gt;, allowing to access KActivity data.
-KActivity is the service that provides &amp;quot;recent&amp;quot; elements to kickoff menu and is activity aware as the name suggests.&lt;&#x2F;p&gt;
-&lt;p&gt;So now &amp;quot;Recent Files&amp;quot;, &amp;quot;Recent Locations&amp;quot; in the places panel share the same underlining data with kickoff.&lt;&#x2F;p&gt;
+KActivity is the service that provides &quot;recent&quot; elements to kickoff menu and is activity aware as the name suggests.&lt;&#x2F;p&gt;
+&lt;p&gt;So now &quot;Recent Files&quot;, &quot;Recent Locations&quot; in the places panel share the same underlining data with kickoff.&lt;&#x2F;p&gt;
 &lt;p&gt;But recentlyused:&#x2F; can be used to create your virtual folders for recent files or folders. For instance&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -575,7 +605,7 @@ To filter recently accessed folders in any subdirectory of &#x2F;home&#x2F;meven
 &lt;p&gt;You can read the &lt;a href=&quot;https:&#x2F;&#x2F;cgit.kde.org&#x2F;kio-extras.git&#x2F;tree&#x2F;recentlyused&#x2F;recentlyused.h#n28&quot;&gt;documentation&lt;&#x2F;a&gt; for more details.&lt;&#x2F;p&gt;
 &lt;p&gt;When working on this new feature, It was a great time to improve KActivity.
 So I allowed KActivity to ingest data from gtk applications in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D23112&quot;&gt;differential D23112&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work. 
+&lt;p&gt;I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work.
 And I want to thank all the other reviewers involved.&lt;&#x2F;p&gt;
 </content>
         

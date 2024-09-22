@@ -120,23 +120,23 @@
                             <div itemprop="articleBody" class="content article-body">
                                 <p>If you use <a href="https://github.com/middleman/middleman">middleman</a>  and the nice template solution <a href="https://github.com/slim-template/slim">slim</a> you might encounter the same need as I did: appending your site name at the end of your page titles without hardcoding it everywhere.</p>
 <p>I found a simple solution, in my layout I added:</p>
-<pre><code>    - if current_page.data.title?
-        title= current_page.data.title + &quot; | My Website&quot;
-    - else
-        title My Website
-</code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>    - if current_page.data.title?
+</span><span>        title= current_page.data.title + &quot; | My Website&quot;
+</span><span>    - else
+</span><span>        title My Website
+</span></code></pre>
 <p>When in your slim pages you have :</p>
-<pre><code>---
-title: My page title
----
-
-</code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>---
+</span><span>title: My page title
+</span><span>---
+</span><span>
+</span></code></pre>
 <p>You end up in your generated code using <a href="https://github.com/middleman/middleman">middleman</a> with the title</p>
-<pre><code>&lt;title&gt;My page title | My Website&lt;&#x2F;title&gt;
-</code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>&lt;title&gt;My page title | My Website&lt;/title&gt;
+</span></code></pre>
 <p>And if the page has no title it will default to :</p>
-<pre><code>&lt;title&gt;My Website&lt;&#x2F;title&gt;
-</code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>&lt;title&gt;My Website&lt;/title&gt;
+</span></code></pre>
 <p>This was found when trying to <a href="https://github.com/sgrif/diesel.rs-website/pull/65">improve diesel documentation</a>.</p>
 <p>I hope this can be useful to somebody else.</p>
 

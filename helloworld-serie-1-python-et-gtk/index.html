@@ -132,27 +132,27 @@ Le premier de la série Helloworld est en python/Gtk.</li>
 <img src="/py_gtk.png" alt="helloworld py/gtk" />
 Attention elle a été faire sous kubuntu/KDE, elle n'aurait pas la même décoration et apparence sous ubuntu/GNOME.
 Le source :</p>
-<pre><code>#!&#x2F;usr&#x2F;bin&#x2F;python
-# -*- coding: UTF-8 -*-
-import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
-import gtk
-
-class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&#x27;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
-	def __init__(self):
-		self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
-		self.set_title(&quot;Hello World !&quot;) # On choisit le titre de la fanêtre
-		button = gtk.Button(&quot;Hello World !&quot;) # création d&#x27;un bouton
-		button.connect(&quot;clicked&quot;, gtk.main_quit ) # connection de l&#x27;évènement du bouton clicked avec la fonction gtk.main_quit
-		self.add( button) # on ajoute le bouton à la fenêtre
-		self.connect(&quot;delete_event&quot;, gtk.main_quit ) # on &quot;connecte&quot; l&#x27;évènement de la fenêtre avec la même fonction
-		self.show_all() # on affiche les composants
-	def main(self):
-		gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction
-
-if __name__ ==&quot;__main__&quot;: # équivalent du &#x27;main&#x27; de java et c++
-	hello = HelloWorld() # on  crée instance de l&#x27;objet HelloWorld - noter le typage dynamique de python
-	hello.main() # lancement de l&#x27;interface
-</code></pre>
+<pre style="background-color:#2b303b;color:#c0c5ce;"><code><span>#!/usr/bin/python
+</span><span># -*- coding: UTF-8 -*-
+</span><span>import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
+</span><span>import gtk
+</span><span>
+</span><span>class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&#39;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
+</span><span>	def __init__(self):
+</span><span>		self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
+</span><span>		self.set_title(&quot;Hello World !&quot;) # On choisit le titre de la fanêtre
+</span><span>		button = gtk.Button(&quot;Hello World !&quot;) # création d&#39;un bouton
+</span><span>		button.connect(&quot;clicked&quot;, gtk.main_quit ) # connection de l&#39;évènement du bouton clicked avec la fonction gtk.main_quit
+</span><span>		self.add( button) # on ajoute le bouton à la fenêtre
+</span><span>		self.connect(&quot;delete_event&quot;, gtk.main_quit ) # on &quot;connecte&quot; l&#39;évènement de la fenêtre avec la même fonction
+</span><span>		self.show_all() # on affiche les composants
+</span><span>	def main(self):
+</span><span>		gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction
+</span><span>
+</span><span>if __name__ ==&quot;__main__&quot;: # équivalent du &#39;main&#39; de java et c++
+</span><span>	hello = HelloWorld() # on  crée instance de l&#39;objet HelloWorld - noter le typage dynamique de python
+</span><span>	hello.main() # lancement de l&#39;interface
+</span></code></pre>
 <p>Plus aller plus loin, je vous recommande ces tutoriels :</p>
 <ul>
 <li>le<a href="http://docs.python.org/tut/tut.html"> tutoriel python en anglais</a> de Guido Von Rossum (l'auteur de de python)</li>

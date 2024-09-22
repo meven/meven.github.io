@@ -119,11 +119,11 @@
 
                             <div itemprop="articleBody" class="content article-body">
                                 <p>With <a href="https://phabricator.kde.org/D7446">D7446</a> landing, the new ioslave recentlyused:/ ioslave will become user visible with KDE Frameworks 5.63.
-This differential revision adds two entries &quot;Recent Files&quot; and &quot;Recent Locations&quot; to the place panel (in dolphin and open/save dialogs)</p>
+This differential revision adds two entries "Recent Files" and "Recent Locations" to the place panel (in dolphin and open/save dialogs)</p>
 <img src="/captures/recently-used.png" alt="Recent screenshot" />
 <p>It leverages the ioslave recentlyused:/ introduced in <a href="https://phabricator.kde.org/D22144">D22144</a>, allowing to access KActivity data.
-KActivity is the service that provides &quot;recent&quot; elements to kickoff menu and is activity aware as the name suggests.</p>
-<p>So now &quot;Recent Files&quot;, &quot;Recent Locations&quot; in the places panel share the same underlining data with kickoff.</p>
+KActivity is the service that provides "recent" elements to kickoff menu and is activity aware as the name suggests.</p>
+<p>So now "Recent Files", "Recent Locations" in the places panel share the same underlining data with kickoff.</p>
 <p>But recentlyused:/ can be used to create your virtual folders for recent files or folders. For instance</p>
 <ul>
 <li>
@@ -142,7 +142,7 @@ To filter recently accessed folders in any subdirectory of /home/meven/kde/src/<
 <p>You can read the <a href="https://cgit.kde.org/kio-extras.git/tree/recentlyused/recentlyused.h#n28">documentation</a> for more details.</p>
 <p>When working on this new feature, It was a great time to improve KActivity.
 So I allowed KActivity to ingest data from gtk applications in <a href="https://phabricator.kde.org/D23112">differential D23112</a>.</p>
-<p>I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work. 
+<p>I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work.
 And I want to thank all the other reviewers involved.</p>
 
                             </div>

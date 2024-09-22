@@ -4,8 +4,38 @@
     <link rel="self" type="application/atom+xml" href="https://meven.github.io/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://meven.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-05-05T14:00:00+00:00</updated>
+    <updated>2024-09-22T14:00:00+00:00</updated>
     <id>https://meven.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dolphin plugins 24.08</title>
+        <published>2024-09-22T14:00:00+00:00</published>
+        <updated>2024-09-22T14:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://meven.github.io/dolphin-plugins-24-08/"/>
+        <id>https://meven.github.io/dolphin-plugins-24-08/</id>
+        
+        <content type="html" xml:base="https://meven.github.io/dolphin-plugins-24-08/">&lt;p&gt;Since dolphin-plugins 24.05, you can &lt;code&gt;git clone&lt;&#x2F;code&gt; from dolphin with dolphin-plugins git plugin.&lt;&#x2F;p&gt;
+&lt;p&gt;Once the plugins are installed and &lt;code&gt;Git&lt;&#x2F;code&gt; is enabled in the context menu settings, you have this context menu action available:&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;captures&#x2F;git-clone-context-menu.png&quot; width=&quot;100%&quot;&#x2F;&gt;
+&lt;p&gt;And this shows this git clone dialog (with my french locale):&lt;&#x2F;p&gt;
+&lt;img src=&quot;&#x2F;captures&#x2F;git-clone-dialog.png&quot; width=&quot;100%&quot;&#x2F;&gt;
+&lt;p&gt;You can paste a git repository url and it will fetch its branches.
+If you happen to have a url in your clipboard or a &lt;code&gt;git clone&lt;&#x2F;code&gt; command line, it will directly extract it as the repository url.&lt;&#x2F;p&gt;
+&lt;p&gt;This was &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;sdk&#x2F;dolphin-plugins&#x2F;-&#x2F;merge_requests&#x2F;58&quot;&gt;spearheaded&lt;&#x2F;a&gt; by Nikolai Krasheninnikov, thanks.
+I participated a bit as well and reviewed it.&lt;&#x2F;p&gt;
+&lt;p&gt;There is still opportunity to improve the git implementation, like having a better commit dialog.
+That would be a nice and simple new contributor opportunity :)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Berlin Goals sprint 2024</title>
         <published>2024-05-05T14:00:00+00:00</published>
@@ -71,7 +101,7 @@ The objective being no-one would notice despite much code has changed and this m
 &lt;p&gt;Files and folders are now selected with a single-click and opened with a double-click.
 This will mainly affect Neon Users, since most distros already had this behavior default.
 You can select the single-click-open mode on the first page of systemsettings, as it concerns also Plasma, file&#x2F;open dialog and other applications.&lt;&#x2F;p&gt;
-&lt;p&gt;The extract here option in the menu now has the behavior of the old &amp;quot;extract here and detect subfolders&amp;quot;.
+&lt;p&gt;The extract here option in the menu now has the behavior of the old &quot;extract here and detect subfolders&quot;.
 This makes the menu less heavy on text while making the action more accessible.&lt;&#x2F;p&gt;
 &lt;p&gt;Service menus will need some adaptation unfortunately, you will need to Moving them to a new location.
 Usually &lt;code&gt;mv ~&#x2F;.local&#x2F;share&#x2F;kservices5&#x2F;ServiceMenus&#x2F;* ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;. (Ensure to have destination directory created: &lt;code&gt;mkdir -p ~&#x2F;.local&#x2F;share&#x2F;kio&#x2F;servicemenus&lt;&#x2F;code&gt;)
@@ -173,7 +203,7 @@ It allows to automate UI tests, by using the accessibility API present in applic
 The good news is that it is already in the pipe thanks to the work of &lt;a href=&quot;https:&#x2F;&#x2F;notmart.org&#x2F;blog&#x2F;&quot;&gt;Marco&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Finally, Dolphin 23.08 is close to release, it will feature some bug fix and some small features:&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;when hiding hidden files dolphin will also hide files files whose name ends with &amp;quot;~&amp;quot;, &amp;quot;.bak&amp;quot; or &amp;quot;%&amp;quot;. Technically files having the &amp;quot;application&#x2F;x-trash&amp;quot; mimetype. This is configurable by editing mime type either in file association kcm or using the utility command &lt;code&gt;keditfiletype application&#x2F;x-trash&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;when hiding hidden files dolphin will also hide files files whose name ends with &quot;~&quot;, &quot;.bak&quot; or &quot;%&quot;. Technically files having the &quot;application&#x2F;x-trash&quot; mimetype. This is configurable by editing mime type either in file association kcm or using the utility command &lt;code&gt;keditfiletype application&#x2F;x-trash&lt;&#x2F;code&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;Double clicking on a tab will dupicate the tab.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;akademy&quot;&gt;Akademy&lt;&#x2F;h1&gt;
@@ -238,7 +268,7 @@ Discussing with &lt;a href=&quot;https:&#x2F;&#x2F;notmart.org&#x2F;blog&#x2F;au
 &lt;p&gt;A question I am asking myself is do we want backport to plasma 5.27 ?&lt;&#x2F;p&gt;
 &lt;p&gt;Knowing that if we did, we wouldn&#x27;t have the UI to change the 60 seconds threshold or turn off the feature, we&#x27;d have to edit by hand a tricky config file.
 It is a high priority feature request that can be considered a bug as without this you might waste energy consumption.
-And with Plasma 6 very far off this seems to me reasonable. &lt;&#x2F;p&gt;
+And with Plasma 6 very far off this seems to me reasonable.&lt;&#x2F;p&gt;
 &lt;p&gt;Do you think that would be acceptable ?&lt;&#x2F;p&gt;
 &lt;p&gt;I should be at &lt;a href=&quot;https:&#x2F;&#x2F;akademy.kde.org&#x2F;2023&#x2F;&quot;&gt;Akademy 2023&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 </content>
@@ -508,7 +538,7 @@ New depot is at &lt;a href=&quot;https:&#x2F;&#x2F;invent.kde.org&#x2F;plasma&#x
 &lt;p&gt;The global application menu has is now working in Wayland thanks to Carson Black patch serie: &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27464&quot;&gt;D27464&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28168&quot;&gt;D28168&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28150&quot;&gt;D28150&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28112&quot;&gt;D28112&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27959&quot;&gt;D27959&lt;&#x2F;a&gt;,
 &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27818&quot;&gt;D27818&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D28146&quot;&gt;D28146&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=385880&quot;&gt;bug&lt;&#x2F;a&gt;.
 This is typical Wayland work : make new APIs because old ones were X specific or could not work with Wayland, add some wiring code and then use the new one in programs using.
-This most often end up in better code architecture, better decoupled. &lt;&#x2F;p&gt;
+This most often end up in better code architecture, better decoupled.&lt;&#x2F;p&gt;
 &lt;p&gt;The task manager can now bring forward multiple windows of the same program and remembering in which order they are stacked together
 &lt;a href=&quot;https:&#x2F;&#x2F;bugs.kde.org&#x2F;show_bug.cgi?id=370258&quot;&gt;bug&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29054&quot;&gt;patch 1&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29054&quot;&gt;patch 2&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29055&quot;&gt;patch 3&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D29056&quot;&gt;patch 4&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;KRunner is &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D27458&quot;&gt;better positioned&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
@@ -581,11 +611,11 @@ It also means that we want to help the wider Wayland community to fill missing f
         <id>https://meven.github.io/recently-used-ioslave/</id>
         
         <content type="html" xml:base="https://meven.github.io/recently-used-ioslave/">&lt;p&gt;With &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D7446&quot;&gt;D7446&lt;&#x2F;a&gt; landing, the new ioslave recentlyused:&#x2F; ioslave will become user visible with KDE Frameworks 5.63.
-This differential revision adds two entries &amp;quot;Recent Files&amp;quot; and &amp;quot;Recent Locations&amp;quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
+This differential revision adds two entries &quot;Recent Files&quot; and &quot;Recent Locations&quot; to the place panel (in dolphin and open&#x2F;save dialogs)&lt;&#x2F;p&gt;
 &lt;img src=&quot;&#x2F;captures&#x2F;recently-used.png&quot; alt=&quot;Recent screenshot&quot; &#x2F;&gt;
 &lt;p&gt;It leverages the ioslave recentlyused:&#x2F; introduced in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D22144&quot;&gt;D22144&lt;&#x2F;a&gt;, allowing to access KActivity data.
-KActivity is the service that provides &amp;quot;recent&amp;quot; elements to kickoff menu and is activity aware as the name suggests.&lt;&#x2F;p&gt;
-&lt;p&gt;So now &amp;quot;Recent Files&amp;quot;, &amp;quot;Recent Locations&amp;quot; in the places panel share the same underlining data with kickoff.&lt;&#x2F;p&gt;
+KActivity is the service that provides &quot;recent&quot; elements to kickoff menu and is activity aware as the name suggests.&lt;&#x2F;p&gt;
+&lt;p&gt;So now &quot;Recent Files&quot;, &quot;Recent Locations&quot; in the places panel share the same underlining data with kickoff.&lt;&#x2F;p&gt;
 &lt;p&gt;But recentlyused:&#x2F; can be used to create your virtual folders for recent files or folders. For instance&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -604,7 +634,7 @@ To filter recently accessed folders in any subdirectory of &#x2F;home&#x2F;meven
 &lt;p&gt;You can read the &lt;a href=&quot;https:&#x2F;&#x2F;cgit.kde.org&#x2F;kio-extras.git&#x2F;tree&#x2F;recentlyused&#x2F;recentlyused.h#n28&quot;&gt;documentation&lt;&#x2F;a&gt; for more details.&lt;&#x2F;p&gt;
 &lt;p&gt;When working on this new feature, It was a great time to improve KActivity.
 So I allowed KActivity to ingest data from gtk applications in &lt;a href=&quot;https:&#x2F;&#x2F;phabricator.kde.org&#x2F;D23112&quot;&gt;differential D23112&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work. 
+&lt;p&gt;I want to thank Ivan Lukić for building KActivity service and library and reviewing most of this work.
 And I want to thank all the other reviewers involved.&lt;&#x2F;p&gt;
 </content>
         
@@ -672,23 +702,23 @@ And I had great discussions with the people there.&lt;&#x2F;p&gt;
         
         <content type="html" xml:base="https://meven.github.io/appending-your-website-name-at-the-end-of-its-pages-title-with-middleman-and-slim/">&lt;p&gt;If you use &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;middleman&#x2F;middleman&quot;&gt;middleman&lt;&#x2F;a&gt;  and the nice template solution &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;slim-template&#x2F;slim&quot;&gt;slim&lt;&#x2F;a&gt; you might encounter the same need as I did: appending your site name at the end of your page titles without hardcoding it everywhere.&lt;&#x2F;p&gt;
 &lt;p&gt;I found a simple solution, in my layout I added:&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;    - if current_page.data.title?
-        title= current_page.data.title + &amp;quot; | My Website&amp;quot;
-    - else
-        title My Website
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;    - if current_page.data.title?
+&lt;&#x2F;span&gt;&lt;span&gt;        title= current_page.data.title + &amp;quot; | My Website&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;    - else
+&lt;&#x2F;span&gt;&lt;span&gt;        title My Website
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;When in your slim pages you have :&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My page title
----
-
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;---
+&lt;&#x2F;span&gt;&lt;span&gt;title: My page title
+&lt;&#x2F;span&gt;&lt;span&gt;---
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;You end up in your generated code using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;middleman&#x2F;middleman&quot;&gt;middleman&lt;&#x2F;a&gt; with the title&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;title&amp;gt;My page title | My Website&amp;lt;&amp;#x2F;title&amp;gt;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;title&amp;gt;My page title | My Website&amp;lt;&#x2F;title&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;And if the page has no title it will default to :&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;title&amp;gt;My Website&amp;lt;&amp;#x2F;title&amp;gt;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;&amp;lt;title&amp;gt;My Website&amp;lt;&#x2F;title&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;This was found when trying to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sgrif&#x2F;diesel.rs-website&#x2F;pull&#x2F;65&quot;&gt;improve diesel documentation&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;I hope this can be useful to somebody else.&lt;&#x2F;p&gt;
 </content>
@@ -715,224 +745,224 @@ Go and rust have some very nice new features and their design and tooling reflec
 So I have been hacking with go and rust.&lt;&#x2F;p&gt;
 &lt;p&gt;I share this piece of rust code that solves sudoku, in the hope it will be useful to someone.
 It is not very much optimized as the algorithm is naive, but the purpose of this code was to get more comfortable with rust.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;rust&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;
-fn print_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) {
-
-    let mut cnt = 0;
-    let mut line = 0;
-
-    for &amp;amp;x in g.iter() {
-
-        cnt = cnt + 1;
-
-        match x {
-            Some(i) =&amp;gt; print!(&amp;quot;{}&amp;quot;, i),
-            None =&amp;gt; print!(&amp;quot;_&amp;quot;),
-        }
-
-        if cnt == 9 {
-            line = line + 1;
-            println!(&amp;quot;&amp;quot;);
-            cnt = 0;
-            if line == 3 {
-                line = 0;
-                println!(&amp;quot;&amp;quot;);
-            }
-        } else if cnt % 3 == 0 {
-            print!(&amp;quot;   &amp;quot;);
-
-        } else {
-            print!(&amp;quot; &amp;quot;);
-        }
-    }
-}
-
-fn check_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; bool {
-
-    &amp;#x2F;&amp;#x2F; check lines
-    for x in 0..9 {
-        let i = 9 * x;
-        let val = [i, i + 1, i + 2, i + 3, i + 4, i + 5, i + 6, i + 7, i + 8];
-
-        for v in 0..(val.len() - 1) {
-            let valv = g[val[v]];
-            if valv != None {
-                for c in 1..val.len() {
-                    let valc = g[val[c]];
-                    if valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
-                        &amp;#x2F;&amp;#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
-                        return false;
-                    }
-                }
-            }
-        }
-    }
-
-    &amp;#x2F;&amp;#x2F; check columns
-    for x in 0..9 {
-        let val = [x, x + 9, x + 18, x + 27, x + 36, x + 45, x + 54, x + 63, x + 72];
-
-        for v in 0..(val.len() - 1) {
-            let valv = g[val[v]];
-            if valv != None {
-                for c in 1..val.len() {
-                    let valc = g[val[c]];
-                    if valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
-                        &amp;#x2F;&amp;#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
-                        return false;
-                    }
-                }
-            }
-        }
-    }
-
-    &amp;#x2F;&amp;#x2F; check blocks
-    for x in 0..9 {
-        let mut i = 3 * (x % 3);
-        if x &amp;gt; 2 {
-            i = i + 27;
-        } else if x &amp;gt; 5 {
-            i = i + 54;
-        }
-
-        let val = [i, i + 1, i + 2, i + 9, i + 10, i + 11, i + 18, i + 19, i + 20];
-
-        for v in 0..(val.len() - 1) {
-            let valv = g[val[v]];
-            if valv != None {
-                for c in 1..val.len() {
-                    let valc = g[val[c]];
-                    if valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
-                        &amp;#x2F;&amp;#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
-                        return false;
-                    }
-                }
-            }
-        }
-    }
-
-    return true;
-}
-
-fn is_grid_complete(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; bool {
-    let mut ret = true;
-    for &amp;amp;x in g.iter() {
-        match x {
-            Some(_) =&amp;gt; {}
-            None =&amp;gt; {
-                ret = false;
-                break;
-            }
-        }
-    }
-    return ret;
-}
-
-fn clone_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; [Option&amp;lt;i32&amp;gt;; 81] {
-    let mut new_g: [Option&amp;lt;i32&amp;gt;; 81] = [None; 81];
-    for x in 0..g.len() {
-        new_g[x] = g[x];
-    }
-    return new_g;
-}
-
-
-fn solve_grid(g: [Option&amp;lt;i32&amp;gt;; 81]) -&amp;gt; Option&amp;lt;[Option&amp;lt;i32&amp;gt;; 81]&amp;gt; {
-
-    if is_grid_complete(g) {
-        return Some(g);
-    }
-
-    for x in 0..g.len() {
-        match g[x] {
-            Some(_) =&amp;gt; {}
-            None =&amp;gt; {
-
-                let mut checked: [bool; 9] = [false; 9];
-
-                for v in 1..10 {
-
-                    let mut new_g = clone_grid(g);
-                    new_g[x] = Some(v);
-
-                    checked[(v - 1) as usize] = true;
-
-                    if check_grid(new_g) {
-                        match solve_grid(new_g) {
-                            None =&amp;gt; {
-                                if checked == [true; 9] {
-                                    &amp;#x2F;&amp;#x2F; the path is a dead end
-                                    return None;
-                                } else {
-                                    continue;
-                                }
-                            }
-
-                            Some(gx) =&amp;gt; return Some(gx),
-                        }
-                    }
-                }
-
-                if checked == [true; 9] {
-                    &amp;#x2F;&amp;#x2F; Detected a dead end
-                    return None;
-                }
-            }
-        }
-    }
-
-    return None;
-}
-
-fn parse_grid(grid_string: &amp;amp;str) -&amp;gt; [Option&amp;lt;i32&amp;gt;; 81] {
-    let mut grid = [None; 81];
-
-    let mut i = 0;
-    for s in grid_string.split_whitespace() {
-        match s {
-            &amp;quot;_&amp;quot; =&amp;gt; {}
-            val =&amp;gt; {
-                grid[i] = Some(val.parse::&amp;lt;i32&amp;gt;().unwrap());
-            }
-        }
-        i = i + 1;
-    }
-
-    return grid;
-}
-
-fn main() {
-    let grid_string = r#&amp;quot;
-            1 _ _   _ _ _   _ _ 3
-            _ 4 _   _ _ 9   2 6 _
-            _ _ _   7 _ _   _ 5 4
-
-            _ _ _   1 7 _   9 _ _
-            _ _ 2   _ _ _   6 _ _
-            _ _ 3   _ 9 5   _ _ _
-
-            2 7 _   _ _ 1   _ _ _
-            _ 8 9   3 _ _   _ 7 _
-            6 _ _   _ _ _   _ _ 2&amp;quot;#;
-
-    let grid: [Option&amp;lt;i32&amp;gt;; 81] = parse_grid(grid_string);
-
-    print_grid(grid);
-
-    match solve_grid(grid) {
-        Some(g) =&amp;gt; {
-            println!(&amp;quot;Grid complete !&amp;quot;);
-            print_grid(g)
-        }
-        None =&amp;gt; println!(&amp;quot;Couldn&amp;#x27;t solve the sudoku&amp;quot;),
-    }
-
-}
-
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;print_grid&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; 81]) {
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; cnt = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; line = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;&amp;amp;x in g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;iter&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        cnt = cnt + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span&gt; x {
+&lt;&#x2F;span&gt;&lt;span&gt;            Some(i) =&amp;gt; print!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;{}&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;, i),
+&lt;&#x2F;span&gt;&lt;span&gt;            None =&amp;gt; print!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;),
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; cnt == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;            line = line + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;            println!(&amp;quot;&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;            cnt = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; line == &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;                line = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;                println!(&amp;quot;&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;            }
+&lt;&#x2F;span&gt;&lt;span&gt;        } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if&lt;&#x2F;span&gt;&lt;span&gt; cnt % &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;            print!(&amp;quot;   &amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;            print!(&amp;quot; &amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;check_grid&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; 81]) -&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;bool &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; check lines
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span&gt;* x;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; val = [i, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;7&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;8&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..(val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; valv = g[val[v]];
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; valv != None {
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; c in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;..val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; valc = g[val[c]];
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
+&lt;&#x2F;span&gt;&lt;span&gt;                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
+&lt;&#x2F;span&gt;&lt;span&gt;                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;                    }
+&lt;&#x2F;span&gt;&lt;span&gt;                }
+&lt;&#x2F;span&gt;&lt;span&gt;            }
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; check columns
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; val = [x, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;18&lt;&#x2F;span&gt;&lt;span&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;27&lt;&#x2F;span&gt;&lt;span&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;36&lt;&#x2F;span&gt;&lt;span&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;54&lt;&#x2F;span&gt;&lt;span&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;63&lt;&#x2F;span&gt;&lt;span&gt;, x + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;72&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..(val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; valv = g[val[v]];
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; valv != None {
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; c in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;..val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; valc = g[val[c]];
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
+&lt;&#x2F;span&gt;&lt;span&gt;                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
+&lt;&#x2F;span&gt;&lt;span&gt;                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;                    }
+&lt;&#x2F;span&gt;&lt;span&gt;                }
+&lt;&#x2F;span&gt;&lt;span&gt;            }
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; check blocks
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3 &lt;&#x2F;span&gt;&lt;span&gt;* (x % &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; x &amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;            i = i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;27&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else if&lt;&#x2F;span&gt;&lt;span&gt; x &amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;5 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;            i = i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;54&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; val = [i, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;11&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;18&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;19&lt;&#x2F;span&gt;&lt;span&gt;, i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;20&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..(val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) {
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; valv = g[val[v]];
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; valv != None {
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; c in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;..val.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; valc = g[val[c]];
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; valc != None &amp;amp;&amp;amp; val[v] != val[c] &amp;amp;&amp;amp; valv == valc {
+&lt;&#x2F;span&gt;&lt;span&gt;                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; println!(&amp;quot;Block false at {}&amp;quot;, x);
+&lt;&#x2F;span&gt;&lt;span&gt;                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;                    }
+&lt;&#x2F;span&gt;&lt;span&gt;                }
+&lt;&#x2F;span&gt;&lt;span&gt;            }
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;is_grid_complete&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; 81]) -&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;bool &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; ret = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span&gt;&amp;amp;x in g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;iter&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span&gt; x {
+&lt;&#x2F;span&gt;&lt;span&gt;            Some(_) =&amp;gt; {}
+&lt;&#x2F;span&gt;&lt;span&gt;            None =&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;                ret = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;break&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;            }
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; ret;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;clone_grid&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; 81]) -&amp;gt; [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;] {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; new_g: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;] = [None; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;        new_g[x] = g[x];
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; new_g;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;solve_grid&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;g&lt;&#x2F;span&gt;&lt;span&gt;: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; 81]) -&amp;gt; Option&amp;lt;[Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;]&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;is_grid_complete&lt;&#x2F;span&gt;&lt;span&gt;(g) {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;Some(g);
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; x in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;..g.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span&gt; g[x] {
+&lt;&#x2F;span&gt;&lt;span&gt;            Some(_) =&amp;gt; {}
+&lt;&#x2F;span&gt;&lt;span&gt;            None =&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; checked: [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;bool&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span&gt;] = [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; v in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;..&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;10 &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; new_g = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;clone_grid&lt;&#x2F;span&gt;&lt;span&gt;(g);
+&lt;&#x2F;span&gt;&lt;span&gt;                    new_g[x] = Some(v);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                    checked[(v - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) as &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span&gt;] = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;check_grid&lt;&#x2F;span&gt;&lt;span&gt;(new_g) {
+&lt;&#x2F;span&gt;&lt;span&gt;                        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;solve_grid&lt;&#x2F;span&gt;&lt;span&gt;(new_g) {
+&lt;&#x2F;span&gt;&lt;span&gt;                            None =&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;                                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; checked == [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span&gt;] {
+&lt;&#x2F;span&gt;&lt;span&gt;                                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; the path is a dead end
+&lt;&#x2F;span&gt;&lt;span&gt;                                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;None;
+&lt;&#x2F;span&gt;&lt;span&gt;                                } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;else &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;                                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;continue&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;                                }
+&lt;&#x2F;span&gt;&lt;span&gt;                            }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                            Some(gx) =&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;Some(gx),
+&lt;&#x2F;span&gt;&lt;span&gt;                        }
+&lt;&#x2F;span&gt;&lt;span&gt;                    }
+&lt;&#x2F;span&gt;&lt;span&gt;                }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;                &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span&gt; checked == [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;9&lt;&#x2F;span&gt;&lt;span&gt;] {
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Detected a dead end
+&lt;&#x2F;span&gt;&lt;span&gt;                    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;None;
+&lt;&#x2F;span&gt;&lt;span&gt;                }
+&lt;&#x2F;span&gt;&lt;span&gt;            }
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span&gt;None;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;parse_grid&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;grid_string&lt;&#x2F;span&gt;&lt;span&gt;: &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;str&lt;&#x2F;span&gt;&lt;span&gt;) -&amp;gt; [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;] {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; grid = [None; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;];
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; i = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span&gt; s in grid_string.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;split_whitespace&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match&lt;&#x2F;span&gt;&lt;span&gt; s {
+&lt;&#x2F;span&gt;&lt;span&gt;            &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;_&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; =&amp;gt; {}
+&lt;&#x2F;span&gt;&lt;span&gt;            val =&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;                grid[i] = Some(val.parse::&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;unwrap&lt;&#x2F;span&gt;&lt;span&gt;());
+&lt;&#x2F;span&gt;&lt;span&gt;            }
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;        i = i + &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return&lt;&#x2F;span&gt;&lt;span&gt; grid;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; grid_string = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;r&lt;&#x2F;span&gt;&lt;span&gt;#&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            1 _ _   _ _ _   _ _ 3
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            _ 4 _   _ _ 9   2 6 _
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            _ _ _   7 _ _   _ 5 4
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            _ _ _   1 7 _   9 _ _
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            _ _ 2   _ _ _   6 _ _
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            _ _ 3   _ 9 5   _ _ _
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            2 7 _   _ _ 1   _ _ _
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            _ 8 9   3 _ _   _ 7 _
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;            6 _ _   _ _ _   _ _ 2&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;#;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; grid: [Option&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;i32&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;81&lt;&#x2F;span&gt;&lt;span&gt;] = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;parse_grid&lt;&#x2F;span&gt;&lt;span&gt;(grid_string);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print_grid&lt;&#x2F;span&gt;&lt;span&gt;(grid);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;match &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;solve_grid&lt;&#x2F;span&gt;&lt;span&gt;(grid) {
+&lt;&#x2F;span&gt;&lt;span&gt;        Some(g) =&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span&gt;            println!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Grid complete !&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;print_grid&lt;&#x2F;span&gt;&lt;span&gt;(g)
+&lt;&#x2F;span&gt;&lt;span&gt;        }
+&lt;&#x2F;span&gt;&lt;span&gt;        None =&amp;gt; println!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;Couldn&amp;#39;t solve the sudoku&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;),
+&lt;&#x2F;span&gt;&lt;span&gt;    }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;You can just, given you have installed &lt;a href=&quot;https:&#x2F;&#x2F;www.rustup.rs&#x2F;&quot;&gt;rust&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;cargo build
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;cargo build
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
         
     </entry>
@@ -1361,26 +1391,26 @@ Premier tour dans le port de Sydney l&#x27;après-midi. Mais avec la fatigue cum
         <content type="html" xml:base="https://meven.github.io/28c3-j-aurais-voulu-y-etre/">&lt;p&gt;Juste un billet pour promouvoir deux vidéos de conférences qui se sont passées en décembre à Berlin à l&#x27;occasion du [Chaos Computer Club|http:&#x2F;&#x2F;www.ccc.de|de] ( &lt;a href=&quot;http:&#x2F;&#x2F;www.ccc.de&#x2F;en&#x2F;&quot;&gt;Chaos Computer Club (en)&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;Je vous recommande vivement de les regarder.
 Si vous aimez internet davantage que la censure, ou la distribution des savoirs plus que le contrôle.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
-&amp;lt;object type=&amp;quot;application&amp;#x2F;x-shockwave-flash&amp;quot; data=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;HUEvRyemKSg&amp;quot; width=&amp;quot;425&amp;quot; height=&amp;quot;350&amp;quot;&amp;gt;
-  &amp;lt;param name=&amp;quot;movie&amp;quot; value=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;HUEvRyemKSg&amp;quot; &amp;#x2F;&amp;gt;
-  &amp;lt;param name=&amp;quot;wmode&amp;quot; value=&amp;quot;transparent&amp;quot; &amp;#x2F;&amp;gt;
-&amp;lt;&amp;#x2F;object&amp;gt;
-&amp;lt;br &amp;#x2F;&amp;gt;28c3: The coming war on general computation 
-&amp;lt;&amp;#x2F;div&amp;gt;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;external-media&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;style&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1em &lt;&#x2F;span&gt;&lt;span&gt;auto; text-align: center;&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;application&#x2F;x-shockwave-flash&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;data&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;HUEvRyemKSg&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;width&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;425&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;350&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;movie&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;HUEvRyemKSg&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;wmode&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;transparent&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;br &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&amp;gt;28c3: The coming war on general computation 
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Il y a en relation un article sur linuxfr ( &lt;a href=&quot;http:&#x2F;&#x2F;linuxfr.org&#x2F;news&#x2F;%C2%A0guerre-et-paix%C2%A0%C2%A0-tolsto%C3%AF-au-21e-si%C3%A8cle-par-cory-doctorow-au-28c3&quot;&gt;Guerre et paix : Tolstoï au 21e siècle, par Cory Doctorow au 28C3&lt;&#x2F;a&gt; ).&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.torproject.org&#x2F;&quot;&gt;Tor&lt;&#x2F;a&gt; est le plus connu des outils d&#x27;anonymisation sur internet.
 Il est combattu par les gouvernements, les même qui privent à leur citoyen certaines libertés élémentaires.
 Son actualité est très animée.&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
-&amp;lt;object type=&amp;quot;application&amp;#x2F;x-shockwave-flash&amp;quot; data=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;DX46Qv_b7F4&amp;amp;amp;hl=en&amp;quot; width=&amp;quot;425&amp;quot; height=&amp;quot;350&amp;quot;&amp;gt;
-  &amp;lt;param name=&amp;quot;movie&amp;quot; value=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;DX46Qv_b7F4&amp;quot; &amp;#x2F;&amp;gt;
-  &amp;lt;param name=&amp;quot;wmode&amp;quot; value=&amp;quot;transparent&amp;quot; &amp;#x2F;&amp;gt;
-&amp;lt;&amp;#x2F;object&amp;gt;
-&amp;lt;br &amp;#x2F;&amp;gt;28c3: How governments have tried to block Tor 
-&amp;lt;&amp;#x2F;div&amp;gt;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;external-media&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;style&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1em &lt;&#x2F;span&gt;&lt;span&gt;auto; text-align: center;&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;application&#x2F;x-shockwave-flash&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;data&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;DX46Qv_b7F4&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hl=en&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;width&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;425&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;350&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;movie&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;DX46Qv_b7F4&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;wmode&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;transparent&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;br &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&amp;gt;28c3: How governments have tried to block Tor 
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Je qualifie ce billet de politique car il en traite.
 Les questions soulevées sont des choix de société, d&#x27;éthique, rien de moi.&lt;&#x2F;p&gt;
 </content>
@@ -1464,7 +1494,7 @@ Il vise à permettre de fusionner ses marques-pages d&#x27;un poste à l&#x27;au
 &lt;p&gt;Ce type de fonctionnalités n&#x27;est pas nouveau, et google le propose dans chrome directement sans extensions.
 La grande différence avec les autres services du genre et celui de google est selon moi &lt;strong&gt;son ouverture&lt;&#x2F;strong&gt;.
 Le code est entièrement ouvert côté client (l&#x27;extension pour firefox) et, chose moins commune, &lt;a href=&quot;https:&#x2F;&#x2F;wiki.mozilla.org&#x2F;Labs&#x2F;Weave&#x2F;1.0&#x2F;Setup&#x2F;Storage&quot;&gt;côté serveur&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Résultat : rien n&#x27;empêche d&#x27;héberger son propre serveur weave pour plus d&#x27;indépendance vis à vis de google ou même de mozilla. 
+&lt;p&gt;Résultat : rien n&#x27;empêche d&#x27;héberger son propre serveur weave pour plus d&#x27;indépendance vis à vis de google ou même de mozilla.
 C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F;wiki.mozilla.org&#x2F;Labs&#x2F;Weave&#x2F;1.0&#x2F;Setup&#x2F;Storage&quot;&gt;procédure&lt;&#x2F;a&gt; du wiki de weave (attention la documentation a des défauts, à suivre avec précaution). Le serveur est en Php, ce qui simplifie grandement le déploiement.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;Capture.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;Capture.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;outil est d&#x27;ores et déjà fonctionnel et la version 1.0 est en préparation.&lt;&#x2F;p&gt;
@@ -1491,7 +1521,7 @@ C&#x27;est ce que j&#x27;ai fait grâce à la &lt;a href=&quot;https:&#x2F;&#x2F
         
         <content type="html" xml:base="https://meven.github.io/google-wave-s-ouvre-un-peu/">&lt;p&gt;Google a fait &lt;a href=&quot;http:&#x2F;&#x2F;googlewavedev.blogspot.com&#x2F;2009&#x2F;07&#x2F;google-wave-federation-protocol-and.html&quot;&gt;l&#x27;annonce&lt;&#x2F;a&gt; d&#x27;une libération de code sous Licence Apache 2, de deux programmes en relation avec le protocole Wave.
 Cela représente au total 40 000 lignes de code de java disponible via &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Mercurial&quot;&gt;mercurial&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;h1 id=&quot;le-operational-transform-ot-c-est-en-fait-l-api-de-base-pour-le-protocole-wave-et-son-modele&quot;&gt;le &amp;quot;Operational Transform&amp;quot; (OT), c&#x27;est en fait l&#x27;API de base pour le protocole Wave et son modèle.&lt;&#x2F;h1&gt;
+&lt;h1 id=&quot;le-operational-transform-ot-c-est-en-fait-l-api-de-base-pour-le-protocole-wave-et-son-modele&quot;&gt;le &quot;Operational Transform&quot; (OT), c&#x27;est en fait l&#x27;API de base pour le protocole Wave et son modèle.&lt;&#x2F;h1&gt;
 &lt;h1 id=&quot;un-prototype-de-client-serveur-implementant-le-protocole-wave&quot;&gt;un prototype de client&#x2F;serveur implémentant le protocole Wave.&lt;&#x2F;h1&gt;
 &lt;p&gt;Le serveur est une extension du serveur XMPP &lt;a href=&quot;http:&#x2F;&#x2F;www.igniterealtime.org&#x2F;projects&#x2F;openfire&#x2F;index.jsp&quot;&gt;openfire&lt;&#x2F;a&gt;.
 Une procédure d&#x27;installation est disponible, que j&#x27;ai testé.&lt;&#x2F;p&gt;
@@ -1520,14 +1550,14 @@ Une procédure d&#x27;installation est disponible, que j&#x27;ai testé.&lt;&#x2
         <link rel="alternate" type="text/html" href="https://meven.github.io/premieres-impressions-sur-google-wave/"/>
         <id>https://meven.github.io/premieres-impressions-sur-google-wave/</id>
         
-        <content type="html" xml:base="https://meven.github.io/premieres-impressions-sur-google-wave/">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &amp;quot;developper preview&amp;quot; de Google Wave.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/premieres-impressions-sur-google-wave/">&lt;p&gt;Je viens d&#x27;obtenir un compte sur la &quot;developper preview&quot; de Google Wave.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;avais été assez enthousiasmé en juin quand le projet avait été dévoilé.&lt;&#x2F;p&gt;
 &lt;p&gt;Comme vous le savez sans doute, les wave sont des mixs de mail, messagerie instantanée, wiki et plus combiné dans une une même web-app.
 L&#x27;application est à la fois synchrone et asynchrone, extensible via des bots (traduction, publication...), des gadgets (carte, sondage etc..) qui permette d&#x27;enrichir l&#x27;utilisation.&lt;&#x2F;p&gt;
 &lt;p&gt;Je vous livre mes premières impressions.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;Capture-google-wave.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;Capture-google-wave.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Rapide&lt;&#x2F;strong&gt; : On est surpris par la fréquence des mises à jour et l&#x27;instantanéité. On peut suivre un autre utilisateur en train d&#x27;éditer une wave. On se croirait avec &lt;a href=&quot;http:&#x2F;&#x2F;gobby.0x539.de&#x2F;trac&#x2F;&quot;&gt;gobby&lt;&#x2F;a&gt;, excepté qu&#x27;il s&#x27;agit d&#x27;une application web dans un navigateur.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Bruyant&lt;&#x2F;strong&gt; : Les utilisateurs sont des développeurs. On parle nouveauté, information pratique, le tout avec beaucoup, beaucoup de bruit. Il y a une fonction &amp;quot;spam!&amp;quot;, il faudra que je la teste.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Bruyant&lt;&#x2F;strong&gt; : Les utilisateurs sont des développeurs. On parle nouveauté, information pratique, le tout avec beaucoup, beaucoup de bruit. Il y a une fonction &quot;spam!&quot;, il faudra que je la teste.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Prometteur&lt;&#x2F;strong&gt; : Les fonctionnalités sont là : édition des pages à plusieurs, messages en fil de discussion, avec possibilité de le faire en privé...&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;En devenir&lt;&#x2F;strong&gt; On est encore au stade preview, l&#x27;instabilité se fait sentir. Et pour moi il manque surtout l&#x27;ouverture d&#x27;une implémentation d&#x27;un serveur, qui promet d&#x27;être interopérable avec les autres serveurs implémentant le &lt;a href=&quot;http:&#x2F;&#x2F;www.waveprotocol.org&#x2F;&quot;&gt;protocole&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai hâte d&#x27;en avoir une utilisation dans un cadre réel et davantage décentralisé.&lt;&#x2F;p&gt;
@@ -1602,16 +1632,16 @@ Au choix :&lt;&#x2F;p&gt;
         <link rel="alternate" type="text/html" href="https://meven.github.io/creation-et-liberte-taxe-et-flicage/"/>
         <id>https://meven.github.io/creation-et-liberte-taxe-et-flicage/</id>
         
-        <content type="html" xml:base="https://meven.github.io/creation-et-liberte-taxe-et-flicage/">&lt;p&gt;Avec la loi dite &amp;quot;Internet et création&amp;quot;, dite HADOPI, nos ministres sont de dignes de &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;George_Orwell&quot;&gt;Georges Orwell&lt;&#x2F;a&gt; qui avait imaginé un système politique dans lequel le pouvoir se projetait dans un anti-thèse &amp;quot;La guerre c’est la paix - La liberté, c’est l’esclavage - L’ignorance, c’est la force&amp;quot;.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/creation-et-liberte-taxe-et-flicage/">&lt;p&gt;Avec la loi dite &quot;Internet et création&quot;, dite HADOPI, nos ministres sont de dignes de &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;George_Orwell&quot;&gt;Georges Orwell&lt;&#x2F;a&gt; qui avait imaginé un système politique dans lequel le pouvoir se projetait dans un anti-thèse &quot;La guerre c’est la paix - La liberté, c’est l’esclavage - L’ignorance, c’est la force&quot;.&lt;&#x2F;p&gt;
 &lt;p&gt;Il n&#x27;y a pas de quoi rougir de la comparaison. Ce texte de loi n&#x27;est tout simplement pas ce qu&#x27;il prétend être mais son exact opposé - tout comme Orwell l&#x27;avait imaginé.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Cette loi affirme soutenir la création&lt;&#x2F;strong&gt; - hors elle ne prévoit nullement de soutien à la création, pas de financement, ni aucun autre forme de soutien.
 Tout ce qu&#x27;elle érige, c&#x27;est une rustine pour faire peur aux internautes et les rediriger vers les distributeurs autorisés tels que deezer, itunes ou si ils ont les moyens vers un supermarché de la musique.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;strong&gt;Elle prétend parler de Internet&lt;&#x2F;strong&gt;, qui pour moi est encore un espace de liberté. Mais elle parle davantage des moyens à mettre en place pour rendre internet en France un peu plus comme celui en Chine où  &amp;quot;The great Fire wall China&amp;quot; (le grand pare feu de Chine) permet à leur gouvernement de purement et simplement filtrer, supprimer des contenus et poursuivre leurs dissidents.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Elle prétend parler de Internet&lt;&#x2F;strong&gt;, qui pour moi est encore un espace de liberté. Mais elle parle davantage des moyens à mettre en place pour rendre internet en France un peu plus comme celui en Chine où  &quot;The great Fire wall China&quot; (le grand pare feu de Chine) permet à leur gouvernement de purement et simplement filtrer, supprimer des contenus et poursuivre leurs dissidents.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.flickr.com&#x2F;photos&#x2F;nitot&#x2F;3290342285&#x2F;&quot;&gt;((http:&#x2F;&#x2F;farm4.static.flickr.com&#x2F;3357&#x2F;3290342285_d593318a57_o.jpg))&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;Hadopi, c&#x27;est un filtre d&#x27;état qui ne dit pas son nom.
 Pour l&#x27;instant, ce pouvoir de pistage des internautes sera remis dans les mains d&#x27;entreprises privés, qui n&#x27;aurait qu&#x27;à dénoncer les méchants pirates qui ont osé télécharger ou pire &#x27;&#x27;partager&#x27;&#x27; le dernier album d&#x27;un de leur artiste. L&#x27;artiste tellement heureux d&#x27;être distribué accepte avec joie la part des 8% de ses ventes qui lui reviennent.&lt;&#x2F;p&gt;
 &lt;p&gt;C&#x27;est d&#x27;autant plus évident lorsque nos droits sont réaffirmés au parlement Européen.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.ecrans.fr&#x2F;+-amendement-138-+.html&quot;&gt;L&#x27;amendement 138&lt;&#x2F;a&gt;, adopté à 88 % par le parlement Européen, prévoyait qu&#x27;&amp;quot;aucune restriction aux droits et libertés fondamentales des utilisateurs finaux ne doit être prise sans décision préalable de l&#x27;autorité judiciaire&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.ecrans.fr&#x2F;+-amendement-138-+.html&quot;&gt;L&#x27;amendement 138&lt;&#x2F;a&gt;, adopté à 88 % par le parlement Européen, prévoyait qu&#x27;&quot;aucune restriction aux droits et libertés fondamentales des utilisateurs finaux ne doit être prise sans décision préalable de l&#x27;autorité judiciaire&quot;.&lt;&#x2F;p&gt;
 &lt;p&gt;Pour cet amendement, dit amendement Bono du nom de son auteur, c&#x27;est notre gouvernement en la personne de notre président qui en a demandé le retrait qui pourrait perturber la mise en place de la loi.
 Finalement la commission va affirmer son indépendance en disant non,
 Mais par la suite le conseil des ministres de l&#x27;Union va le supprimer en catimini sans autre forme de procès.&lt;&#x2F;p&gt;
@@ -1666,9 +1696,9 @@ Le premier pas serait d&#x27;adopté des principes qui garantiraient nos libert�
         <content type="html" xml:base="https://meven.github.io/fosdem-2009-troisieme-partie/">&lt;h4 id=&quot;upstart-par-scott-james-remnant&quot;&gt;&lt;a href=&quot;http:&#x2F;&#x2F;upstart.ubuntu.com&#x2F;&quot;&gt;Upstart&lt;&#x2F;a&gt; par Scott James Remnant&lt;&#x2F;h4&gt;
 &lt;p&gt;L&#x27;objectif de Upstart est de fournir un gestionnaire de démarrage remplaçant des scripts init et un système de gestion de services, leur démarrage, arrêt et status.&lt;&#x2F;p&gt;
 &lt;p&gt;Les avancés promises par Upstart sont nombreuses.
-On oublie les &amp;quot;sleep&amp;quot; dans les scripts init qui faisait perdre beaucoup de temps au démarrage.
+On oublie les &quot;sleep&quot; dans les scripts init qui faisait perdre beaucoup de temps au démarrage.
 Upstart sera charger de synchroniser le démarrage des services du sytème et d&#x27;en gérer les dépendances, Par exemple &#x27;gnome a besoin de dbus pour démarrer.&#x27;.
-Il fournit également un mécanisme d&#x27;évènements du type &amp;quot;dbus quitte&amp;quot;.
+Il fournit également un mécanisme d&#x27;évènements du type &quot;dbus quitte&quot;.
 Oublier la torture des runlevels.&lt;&#x2F;p&gt;
 &lt;p&gt;Upstart est utilisé dans ubuntu et dans fedora 10.&lt;&#x2F;p&gt;
 &lt;p&gt;L&#x27;année 2009 devrait être marquée par ce projet par la sortie de upstart 1.0 ou bien 0.5 si toutes les fonctionnalités ne sont pas implémentées.
@@ -1781,7 +1811,7 @@ Il est aussi un amateur de fabrication et de lancé de fusée.&lt;&#x2F;p&gt;
 &lt;p&gt;Il a un histoire importante, créée en 1994, la &lt;a href=&quot;http:&#x2F;&#x2F;fr.wikipedia.org&#x2F;wiki&#x2F;Distribution_Linux&quot;&gt;distribution&lt;&#x2F;a&gt; GNU&#x2F;Linux Debian fut la première distribution à avoir intégré un gestionnaire de paquet en 1995 (peut être même le premier système d&#x27;exploitation à en avoir un) , d&#x27;ailleurs il nous a raconté que à cette époque red hat avait étudié la possibilité d&#x27;utiliser apt au lieu de développer leur propre système (rpm).&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;100 % libre. &amp;quot;Values then Vision, then strategy, then objectives,&amp;quot;. Debian a fait toujours les choix intransigeant pour le logiciel libre. Il n&#x27;y a pas de logiciel propriétaire dans debian même si il est possible de les installé. Ou bien encore dans debian firefox est renommé icewaesel et n&#x27;utilise pas les mêmes icônes car Firefox est une marque déposée.&lt;&#x2F;p&gt;
+&lt;p&gt;100 % libre. &quot;Values then Vision, then strategy, then objectives,&quot;. Debian a fait toujours les choix intransigeant pour le logiciel libre. Il n&#x27;y a pas de logiciel propriétaire dans debian même si il est possible de les installé. Ou bien encore dans debian firefox est renommé icewaesel et n&#x27;utilise pas les mêmes icônes car Firefox est une marque déposée.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;Debian se veut universel, elle fonctionne sur plus d&#x27;une dizaine d&#x27;architectures de processus, et tous types de matériels, du smartphone au serveur, partout et pour tous les usages.&lt;&#x2F;p&gt;
@@ -1831,11 +1861,11 @@ D&#x27;ailleurs, c&#x27;est la façon qui ait jamais fonctionnée.&lt;&#x2F;p&gt
 &lt;&#x2F;ul&gt;
 &lt;h4 id=&quot;exemple-d-utilisation&quot;&gt;Exemple d&#x27;utilisation&lt;&#x2F;h4&gt;
 &lt;p&gt;On vérifie que l&#x27;import est possible (le script indiquera si il manque des tags aux fichiers par exemple):&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;musicimporter -v Dossier Source&amp;#x2F; ~&amp;#x2F;Musique&amp;#x2F;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;musicimporter -v Dossier Source&#x2F; ~&#x2F;Musique&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Si tout c&#x27;est bien passé, on importe dans sa collection :&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;musicimporter -vmwd Dossier Source&amp;#x2F; ~&amp;#x2F;Musique&amp;#x2F;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;musicimporter -vmwd Dossier Source&#x2F; ~&#x2F;Musique&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;La prochaine fonctionnalité envisagée est de permettre l&#x27;utilisation d&#x27;un fichier de configuration plutôt que des options en ligne de commande.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Téléchargement : &lt;a href=&quot;http:&#x2F;&#x2F;www.bivouak.fr&#x2F;public&#x2F;musicimporter.py&quot;&gt;musicimporter.py&lt;&#x2F;a&gt;.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Tous les commentaires sont les bienvenus.&lt;&#x2F;p&gt;
@@ -1865,7 +1895,7 @@ Et vous connaissez sans doute déjà certaines personnes qui la soutienne : &lt;
 Bien que ce nombre n&#x27;a pas été atteint, c&#x27;est tout de même plus de 1000 personnes qui ont rejoint l&#x27;april depuis le début de la campagne, portant le nombre d&#x27;adhérent à plus de 3600.&lt;&#x2F;p&gt;
 &lt;p&gt;Mais cet objectif n&#x27;est pas abandonné, la durée de la campagne a été allongé jusqu&#x27;au 14 février, date de la prochaine assemblée générale de l&#x27;april.&lt;&#x2F;p&gt;
 &lt;p&gt;A cette occasion, les petites mains de l&#x27;april ont réalisé un questionnaire, sous forme de roman photo pour le moins humoristique...&lt;&#x2F;p&gt;
-&lt;p&gt;Je vous le laisse &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-campagne-adhesion&quot;&gt;le découvrir&lt;&#x2F;a&gt; : &lt;&#x2F;p&gt;
+&lt;p&gt;Je vous le laisse &lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-campagne-adhesion&quot;&gt;le découvrir&lt;&#x2F;a&gt; :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-pourquoi-lapril-a-t-elle-besoin-de-financement&quot;&gt;Pourquoi l&#x27;April a-t-elle besoin de financement ?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.april.org&#x2F;fr&#x2F;roman-photo-pourquoi-lapril-a-t-elle-besoin-de-plus-de-membres&quot;&gt;Pourquoi l&#x27;April a-t-elle besoin de plus de membres ?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -1913,7 +1943,7 @@ Les versions se succèdent mais ne se ressemblent pas.&lt;&#x2F;p&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;captures&#x2F;players&#x2F;rhythmbox.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;players&#x2F;rhythmbox.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;amarok.kde.org&quot;&gt;amarok v2&lt;&#x2F;a&gt;, nouveau look, nouveau &amp;quot;paradigme d&#x27;organisation&amp;quot; le mot est laché. Plus de service web intégré mais il reste un lecteur très bien pensé avec une bonne intégration dans kde et très agréable d&#x27;utilisation. Son seul défaut est qu&#x27;il est un peu lourd.
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;amarok.kde.org&quot;&gt;amarok v2&lt;&#x2F;a&gt;, nouveau look, nouveau &quot;paradigme d&#x27;organisation&quot; le mot est laché. Plus de service web intégré mais il reste un lecteur très bien pensé avec une bonne intégration dans kde et très agréable d&#x27;utilisation. Son seul défaut est qu&#x27;il est un peu lourd.
 &lt;a href=&quot;&#x2F;captures&#x2F;players&#x2F;amarok.png&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;captures&#x2F;players&#x2F;amarok.png&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;J&#x27;aurais pu parler de &lt;a href=&quot;http:&#x2F;&#x2F;banshee-project.org&#x2F;&quot;&gt;banshee&lt;&#x2F;a&gt; également ou de &lt;a href=&quot;http:&#x2F;&#x2F;www.listen-project.org&#x2F;&quot;&gt;listen&lt;&#x2F;a&gt; mais je vais me contenter des trois précédents que je préfèrent ne me demander pas pourquoi.&lt;&#x2F;p&gt;
@@ -1937,21 +1967,21 @@ Les versions se succèdent mais ne se ressemblent pas.&lt;&#x2F;p&gt;
         <link rel="alternate" type="text/html" href="https://meven.github.io/la-main-visible/"/>
         <id>https://meven.github.io/la-main-visible/</id>
         
-        <content type="html" xml:base="https://meven.github.io/la-main-visible/">&lt;p&gt;Je suis tombé sur cette article 
+        <content type="html" xml:base="https://meven.github.io/la-main-visible/">&lt;p&gt;Je suis tombé sur cette article
 [http:&#x2F;&#x2F;radar.oreilly.com&#x2F;2008&#x2F;11&#x2F;the-visible-hand.html] via [http:&#x2F;&#x2F;standblog.org&#x2F;blog&#x2F;post&#x2F;2008&#x2F;11&#x2F;17&#x2F;En-vrac-de-retour-de-Californie].&lt;&#x2F;p&gt;
 &lt;p&gt;Je le trouve assez intéressant pour avoir envie de le traduire en partie.
 Morceau choisit traduit par mes soins. Je vous recommande la lecture de l&#x27;article original pour éviter les contre sens qui m&#x27;ont certainement échappés, mais en substance l&#x27;idée devrait être là.
 Dale Dougherty de O&#x27;Reilly radar :&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;(Après un tiers de l&#x27;article)
-C&#x27;est dur d&#x27;encaisser que notre gouvernement doive payer la note de Wall Street. Cela signifie que nous parions notre future sur les mêmes personnes qui ont ont créées cette situation. Pour paraphraser une blaque que j&#x27;ai entendu : C&#x27;est comme aller au casino à Vegas en jouant sa maison. Un lecteur du New York Times a exprimé la frustration que beaucoup ont ressentis: &amp;quot;Pourquoi ont ne peut pas prendre la moitié des 700 milliard et simplement construire quelque chose ?&amp;quot;
-Ces évènements secouent notre croyance que les marchés libres fonctionne pour le bien de tous. Le dogme fondamental du capitalisme est la &amp;quot;main invisible&amp;quot;: Adam Smith a écrit que &amp;quot;En cherchant son propre intérêt chaque personne soutient fréquemment celui de la société&amp;quot;. Cette année, le prix nobel d&#x27;économie Joseph Stiglitz a déclaré: &amp;quot;Dans un sens, la chute de Wall Street est pour le fondement de l&#x27;économie de marché ce que la chute du mur de Berlin fut pour le communisme - cela nous apprend que ce système économique n&#x27;est pas viable.&amp;quot;&lt;&#x2F;p&gt;
-&lt;p&gt;Un gros titre dans le Christian Science Monitor (www.csmonitor.com) affirmait: &amp;quot;Avec la crise financière, finit l&#x27;ère du laissez faire.&amp;quot; Le gouvernement aura besoin d&#x27;être plus ferme dans la régulation de Wall Street. Mais je pense que cela va plus loin que ça. Je me demande si, en tant qu&#x27;individus, nous avons pas été dans une ère laisser faire. Est ce que nous américains, sommes devenus dépendant d&#x27;une force invisible pour subvenir à nos besoins ? Nous sommes nous habitués à laisser les questions importantes à des experts, jusqu&#x27;à ce qu&#x27;il s&#x27;avère qu&#x27;ils se trompent ?&lt;&#x2F;p&gt;
+C&#x27;est dur d&#x27;encaisser que notre gouvernement doive payer la note de Wall Street. Cela signifie que nous parions notre future sur les mêmes personnes qui ont ont créées cette situation. Pour paraphraser une blaque que j&#x27;ai entendu : C&#x27;est comme aller au casino à Vegas en jouant sa maison. Un lecteur du New York Times a exprimé la frustration que beaucoup ont ressentis: &quot;Pourquoi ont ne peut pas prendre la moitié des 700 milliard et simplement construire quelque chose ?&quot;
+Ces évènements secouent notre croyance que les marchés libres fonctionne pour le bien de tous. Le dogme fondamental du capitalisme est la &quot;main invisible&quot;: Adam Smith a écrit que &quot;En cherchant son propre intérêt chaque personne soutient fréquemment celui de la société&quot;. Cette année, le prix nobel d&#x27;économie Joseph Stiglitz a déclaré: &quot;Dans un sens, la chute de Wall Street est pour le fondement de l&#x27;économie de marché ce que la chute du mur de Berlin fut pour le communisme - cela nous apprend que ce système économique n&#x27;est pas viable.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Un gros titre dans le Christian Science Monitor (www.csmonitor.com) affirmait: &quot;Avec la crise financière, finit l&#x27;ère du laissez faire.&quot; Le gouvernement aura besoin d&#x27;être plus ferme dans la régulation de Wall Street. Mais je pense que cela va plus loin que ça. Je me demande si, en tant qu&#x27;individus, nous avons pas été dans une ère laisser faire. Est ce que nous américains, sommes devenus dépendant d&#x27;une force invisible pour subvenir à nos besoins ? Nous sommes nous habitués à laisser les questions importantes à des experts, jusqu&#x27;à ce qu&#x27;il s&#x27;avère qu&#x27;ils se trompent ?&lt;&#x2F;p&gt;
 &lt;p&gt;N&#x27;est il pas tant que nous reprenions le contrôle ?&lt;&#x2F;p&gt;
 &lt;p&gt;Nous, les gens, faisons face à d&#x27;énormes défis. En plus du bazar économique, des changements fondamentaux arrivent du fait du réchauffement climatique. Notre dépendance au fuel fossile n&#x27;est pas viable. Le changement arrive, que l&#x27;on le veille ou non.&lt;&#x2F;p&gt;
-&lt;p&gt;Nous ferions bien de ne pas nous voiler la face et d&#x27;affronter ces défis. Un journaliste du New York Times l&#x27;a résumé ainsi: &amp;quot;Nous avons besoin de recommencer à fabriquer des choses, basé sur de l&#x27;ingénierie réel, pas seulement sur de l&#x27;ingénierie financière. Nous devons retourner à un monde où les gens sont capables de réaliser le rêve américain - une maison avec un jardin - grâce au travail de leur main et non pas grâce à un &amp;quot;prêt menteur&amp;quot; ... Le rêve américain est une aspiration, pas un droit.&amp;quot;&lt;&#x2F;p&gt;
-&lt;p&gt;Nous devons nous convaincre que ça commence par chacun d&#x27;entre nous - pas un gouvernement anonyme ou une bureaucratie d&#x27;entreprise. Il est temps pour nous, individuellement et en travaillant ensemble, de reconsidérer ce que &amp;quot;être productif&amp;quot; veut dire, pas seulement rentable. Il est temps pour nous de nous impliquer à nouveau dans les priorités de notre gouvernement en matière d&#x27;éducation, de santé, de logement et de transport.&lt;&#x2F;p&gt;
-&lt;p&gt;Le paradigme du &amp;quot;Do it yourself&amp;quot; (Fais le toi-même) promu dans ce magazine dois à nouveau devenir un compétence essentiel basée sur la nécessité et la pratique. Notre sécurité futur dépend de la connaissance de notre capacité à créer et comment nous savons nous adapter au changement en faisant preuve de ressource.&lt;&#x2F;p&gt;
+&lt;p&gt;Nous ferions bien de ne pas nous voiler la face et d&#x27;affronter ces défis. Un journaliste du New York Times l&#x27;a résumé ainsi: &quot;Nous avons besoin de recommencer à fabriquer des choses, basé sur de l&#x27;ingénierie réel, pas seulement sur de l&#x27;ingénierie financière. Nous devons retourner à un monde où les gens sont capables de réaliser le rêve américain - une maison avec un jardin - grâce au travail de leur main et non pas grâce à un &quot;prêt menteur&quot; ... Le rêve américain est une aspiration, pas un droit.&quot;&lt;&#x2F;p&gt;
+&lt;p&gt;Nous devons nous convaincre que ça commence par chacun d&#x27;entre nous - pas un gouvernement anonyme ou une bureaucratie d&#x27;entreprise. Il est temps pour nous, individuellement et en travaillant ensemble, de reconsidérer ce que &quot;être productif&quot; veut dire, pas seulement rentable. Il est temps pour nous de nous impliquer à nouveau dans les priorités de notre gouvernement en matière d&#x27;éducation, de santé, de logement et de transport.&lt;&#x2F;p&gt;
+&lt;p&gt;Le paradigme du &quot;Do it yourself&quot; (Fais le toi-même) promu dans ce magazine dois à nouveau devenir un compétence essentiel basée sur la nécessité et la pratique. Notre sécurité futur dépend de la connaissance de notre capacité à créer et comment nous savons nous adapter au changement en faisant preuve de ressource.&lt;&#x2F;p&gt;
 &lt;p&gt;Un défi aussi grand peut faire ressortir le meilleur de nous. On a besoin de tout le monde, parce que tout le monde a une sa contribution à apporter. Nous avons besoin de toutes les bonnes volontés.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 </content>
@@ -1984,21 +2014,21 @@ Pour l&#x27;instant, seuls les formats ogg vorbis, flac et mp3 sont supportés.&
 &lt;li&gt;L&#x27;option -m déplace les fichiers dans le dossier output_dir suivant le format de sortie. Le format peut être changer avec l&#x27;option -o.&lt;&#x2F;li&gt;
 &lt;li&gt;-v, verbose mode, permet de suivre de plus prêt ce que fait le script.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;pre&gt;&lt;code&gt;Usage: musicimporter.py [options] src_dir... output_dir
-
-moves and renames audio files cleaning files metadata. It supports mp3 Ogg
-Vorbis and Flac
-
-Options:
-  -h, --help            show this help message and exit
-  -v, --verbose
-  -w, --write           clean metadata of mp3 files, delete ID3v1 tags in
-                        favor of ID3v2.4
-  -m, --move            move files
-  -o OUTPUT_FORMAT, --output-format=OUTPUT_FORMAT
-                        The format of renamed files. Default is
-                        &amp;#x27;$artist&amp;#x2F;$album&amp;#x2F;$track $title.$extension&amp;#x27;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;Usage: musicimporter.py [options] src_dir... output_dir
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;moves and renames audio files cleaning files metadata. It supports mp3 Ogg
+&lt;&#x2F;span&gt;&lt;span&gt;Vorbis and Flac
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;Options:
+&lt;&#x2F;span&gt;&lt;span&gt;  -h, --help            show this help message and exit
+&lt;&#x2F;span&gt;&lt;span&gt;  -v, --verbose
+&lt;&#x2F;span&gt;&lt;span&gt;  -w, --write           clean metadata of mp3 files, delete ID3v1 tags in
+&lt;&#x2F;span&gt;&lt;span&gt;                        favor of ID3v2.4
+&lt;&#x2F;span&gt;&lt;span&gt;  -m, --move            move files
+&lt;&#x2F;span&gt;&lt;span&gt;  -o OUTPUT_FORMAT, --output-format=OUTPUT_FORMAT
+&lt;&#x2F;span&gt;&lt;span&gt;                        The format of renamed files. Default is
+&lt;&#x2F;span&gt;&lt;span&gt;                        &amp;#39;$artist&#x2F;$album&#x2F;$track $title.$extension&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Ce script nécessite &lt;a href=&quot;http:&#x2F;&#x2F;www.sacredchao.net&#x2F;quodlibet&#x2F;wiki&#x2F;Development&#x2F;Mutagen&quot;&gt;mutagen&lt;&#x2F;a&gt;.
 Disponible dans Debian&#x2F;ubuntu dans le paquet python-mutagen .&lt;&#x2F;p&gt;
 &lt;p&gt;Téléchargement : &lt;a href=&quot;http:&#x2F;&#x2F;www.bivouak.fr&#x2F;public&#x2F;musicimporter.py&quot;&gt;musicimporter.py&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
@@ -2023,11 +2053,11 @@ Disponible dans Debian&#x2F;ubuntu dans le paquet python-mutagen .&lt;&#x2F;p&gt
         <id>https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/</id>
         
         <content type="html" xml:base="https://meven.github.io/meizu-m6-par-danelec-avec-la-radio-fm-s-il-vous-plait/">&lt;p&gt;((&#x2F;public&#x2F;photos&#x2F;.sl08_s.jpg|meizu m6|R|meizu m6, juil 2008))&lt;&#x2F;p&gt;
-&lt;p&gt;Si comme moi, vous possédez un &amp;quot;meizu by Danelec&amp;quot;, voici un truc qui pourrait vous servir.
+&lt;p&gt;Si comme moi, vous possédez un &quot;meizu by Danelec&quot;, voici un truc qui pourrait vous servir.
 Le meizu m6 (de son vrai nom) ne possède pas de tuner FM.
 Et bien Si en réalité !
 Pour s&#x27;en convaincre il suffit d&#x27;installer le firmware original, de la version SP du baladeur (disponible  &lt;a href=&quot;http:&#x2F;&#x2F;en.meizu.com&#x2F;down_x.asp?MZ_ID=140&amp;amp;Type=2&quot;&gt;là bas&lt;&#x2F;a&gt;) du constructeur.&lt;&#x2F;p&gt;
-&lt;p&gt;Après la mise à jour, vous aurez un nouveau onglet &amp;quot;FM Tuner&amp;quot; :p&lt;&#x2F;p&gt;
+&lt;p&gt;Après la mise à jour, vous aurez un nouveau onglet &quot;FM Tuner&quot; :p&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -2110,14 +2140,14 @@ Du coup il a fallu que je retrouve un baladeur et vite.
 &lt;h2 id=&quot;meizu-miniplayer-m6&quot;&gt;Meizu miniPlayer m6&lt;&#x2F;h2&gt;
 &lt;p&gt;Je m&#x27;étais toujours dit que je me rachèterais un ipod, car certes c&#x27;est cher mais il y a pas mieux en particulier en matière d&#x27;ergonomie.
 Mais grâce aux commentaires de ce &lt;a href=&quot;http:&#x2F;&#x2F;blog.nixternal.com&#x2F;2008.07.04&#x2F;looking-for-a-decent-portable-music-player&#x2F;&quot;&gt;billet&lt;&#x2F;a&gt;, j&#x27;ai trouvé baladeur à mes oreilles.
-Un meizu m6 fabriqué en Chine comme les ipods moins l&#x27;hypocrite &amp;quot;Designed in California&amp;quot; gravé au dos quand même.
+Un meizu m6 fabriqué en Chine comme les ipods moins l&#x27;hypocrite &quot;Designed in California&quot; gravé au dos quand même.
 Très sympa, moins ergonomique qu&#x27;un ipod certes mais avec plus de fonctionnalités (support du ogg  flac et du xvid en particulier), un grand écran et un prix, tout petit, 100€ pour la version 8 Go.&lt;&#x2F;p&gt;
 &lt;p&gt;Le m6 est bien plus pratique qu&#x27;un ipod dès lors qu&#x27;il s&#x27;agit d&#x27;ajouter de la musique, ou communiquer avec un PC,  puisqu&#x27;avec lui, je n&#x27;ai plus besoin spécialement besoin d&#x27;un gestionnaire de musique pour ajouter de la musique.
 Fini les cables très cher, spéciaux pour ipod. Avec le meizu plus de tracas, un cable pour Appareil photo numérique suffit, en plus ça tombe bien, j&#x27;ai deux PC et deux cables, du coup fini les passages du cable d&#x27;un PC à l&#x27;autre...
 Ce petit baladeur est parait-il populaire en Chine.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;rockbox&quot;&gt;Rockbox&lt;&#x2F;h2&gt;
 &lt;p&gt;&lt;a href=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;boite_a_musique.jpg&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;feu_ipod&#x2F;boite_a_musique.jpg&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;J&#x27;avais pu testé &lt;a href=&quot;http:&#x2F;&#x2F;www.rockbox.org&#x2F;&quot;&gt;Rockbox&lt;&#x2F;a&gt; sur feu ma &amp;quot;boîte à musique&amp;quot;.
+&lt;p&gt;J&#x27;avais pu testé &lt;a href=&quot;http:&#x2F;&#x2F;www.rockbox.org&#x2F;&quot;&gt;Rockbox&lt;&#x2F;a&gt; sur feu ma &quot;boîte à musique&quot;.
 Rockbox est un firmware alternatif libre, qui supporte une trentaine de modèles de baladeurs et qui présente l&#x27;avantage d&#x27;avoir beaucoup de fonctions en plus comparés aux firmwares par défaut des baladeur.&lt;&#x2F;p&gt;
 &lt;p&gt;C&#x27;est particulièrement vrai avec un ipod, qui ne supporte que quelques formats audio(3 il me semble), quand Rockbox supporte tous les principaux, dont le ogg, le flac.&lt;&#x2F;p&gt;
 &lt;p&gt;Et la bonne nouvelle c&#x27;est que un port de Rockbox sur meizu m6 est en cours.&lt;&#x2F;p&gt;
@@ -2184,14 +2214,14 @@ Route du rock ?
 On verra bien. L&#x27;été ne commence que dans deux jours.&lt;&#x2F;p&gt;
 &lt;p&gt;Et Rock en seine, le mercredi, dernière date de Rage against the Machine en France avant longtemps.
 Surtout qu&#x27;en ce moment, ils sont plutôt en forme même encagoulé façon Guantanamo. Des images valent mieux que des mots :&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;div class=&amp;quot;external-media&amp;quot; style=&amp;quot;margin: 1em auto; text-align: center;&amp;quot;&amp;gt;
-&amp;lt;object type=&amp;quot;application&amp;#x2F;x-shockwave-flash&amp;quot; data=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;r9-B47hg9aQ&amp;amp;amp;hl=en&amp;quot; width=&amp;quot;425&amp;quot; height=&amp;quot;350&amp;quot;&amp;gt;
-  &amp;lt;param name=&amp;quot;movie&amp;quot; value=&amp;quot;http:&amp;#x2F;&amp;#x2F;www.youtube.com&amp;#x2F;v&amp;#x2F;r9-B47hg9aQ&amp;amp;amp;hl=en&amp;quot; &amp;#x2F;&amp;gt;
-  &amp;lt;param name=&amp;quot;wmode&amp;quot; value=&amp;quot;transparent&amp;quot; &amp;#x2F;&amp;gt;
-&amp;lt;&amp;#x2F;object&amp;gt;
-&amp;lt;br &amp;#x2F;&amp;gt;Rage Against The Machine &amp;amp;quot;Intro Bombtrack&amp;amp;quot; Pinkpop 2008
-&amp;lt;&amp;#x2F;div&amp;gt;
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre data-lang=&quot;html&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;external-media&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;style&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;margin: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1em &lt;&#x2F;span&gt;&lt;span&gt;auto; text-align: center;&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;application&#x2F;x-shockwave-flash&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;data&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;r9-B47hg9aQ&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hl=en&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;width&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;425&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;height&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;350&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;movie&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;http:&#x2F;&#x2F;www.youtube.com&#x2F;v&#x2F;r9-B47hg9aQ&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;hl=en&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;param &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;wmode&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;value&lt;&#x2F;span&gt;&lt;span&gt;=&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;transparent&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot; &#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;object&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;br &lt;&#x2F;span&gt;&lt;span&gt;&#x2F;&amp;gt;Rage Against The Machine &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;quot;&lt;&#x2F;span&gt;&lt;span&gt;Intro Bombtrack&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;quot;&lt;&#x2F;span&gt;&lt;span&gt; Pinkpop 2008
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;div&lt;&#x2F;span&gt;&lt;span&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
         
     </entry>
@@ -2211,7 +2241,7 @@ Surtout qu&#x27;en ce moment, ils sont plutôt en forme même encagoulé façon 
         <link rel="alternate" type="text/html" href="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/"/>
         <id>https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/</id>
         
-        <content type="html" xml:base="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &amp;quot;prêt-à-thémer&amp;quot;.
+        <content type="html" xml:base="https://meven.github.io/changement-de-theme-pour-mevens-blog-enfin2/">&lt;p&gt;Je me suis décidé à franchir le pas et a adopté un thème déjà &quot;prêt-à-thémer&quot;.
 Grâce à &lt;a href=&quot;http:&#x2F;&#x2F;www.gandi.net&quot;&gt;gandi&lt;&#x2F;a&gt; et à son thème &lt;a href=&quot;http:&#x2F;&#x2F;iwi.lebardegandi.net&#x2F;post&#x2F;2008&#x2F;02&#x2F;20&#x2F;Des-cadeaux-contre-un-peu-de-couleur&quot;&gt;Blowup&lt;&#x2F;a&gt;, en trois clics on obtient un thème simple à personnaliser.
 On peut changer la bannière, les tailles de police et les couleurs. Le tout très simplifient par le biais d&#x27;une interface web.
 Pour mémoire, mon blog ressemblait à cela avant :
@@ -2245,7 +2275,7 @@ La conférence a eu pas mal de succès, on avait du mal à garder la porte ferm�
 &lt;p&gt;J&#x27;ai assisté ensuite à le présentation de GEGL, un librairie de traitement graphique qui est en train d&#x27;être progressivement intégré dans GIMP. Elle se base sur le principe de noeud : à chaque noeud correspond une opération effectuée sur l&#x27;image (blur, changement de contraste...).&lt;&#x2F;p&gt;
 &lt;p&gt;J&#x27;ai ensuite suivis l&#x27;introduction au packaging de paquet deb pour debian&#x2F;ubuntu. J&#x27;avais déjà des notions, j&#x27;ai pas appris grand chose finalement.&lt;&#x2F;p&gt;
 &lt;p&gt;Puis c&#x27;était la fin, avec une petite conférence de clôture ou il n&#x27;y avait pas grand monde, à la même heure Keith Packard était dans la devRoom de X.org en train de parler de l&#x27;avenir de l&#x27;architecture des drivers pour X.
-On a pu voir la fameuse &amp;quot;FOSDEM Dance&amp;quot; :D .
+On a pu voir la fameuse &quot;FOSDEM Dance&quot; :D .
 Le fosdem, j&#x27;y retournerais c&#x27;est définitif.&lt;&#x2F;p&gt;
 &lt;p&gt;Encore quelques photos :&lt;&#x2F;p&gt;
 &lt;img src=&quot;&#x2F;photos&#x2F;.img_3_m.jpg&quot; alt=&quot;ror case study&quot; &#x2F;&gt;
@@ -2277,7 +2307,7 @@ Je vous recommande la lecture de l&#x27;algorithme en version 3.0.&lt;&#x2F;p&gt
 Il faut parler anglais, une fois qu&#x27;on s&#x27;y est mis tout roule, on fait connaissance autour d&#x27;une bière.
 On peut y croiser des gens comme , bière à la main.&lt;&#x2F;p&gt;
 &lt;p&gt;Ce matin, j&#x27;ai assisté aux deux premières présentations :
-*Tux with shades, Linux in Hollywood : Intéressant saviez vous que toutes les applications de numérisation de images utilisé dans les studios utilisait Linux ? Autre point je reprendrais une question approximative :&amp;quot;Studios are using Linux. That is great. But why can&#x27;t we play dvd on Linux then ?&amp;quot;.S&#x27;en suis des applaudissements. La réponse elle aussi approximative &amp;quot;The question doesn&#x27;t dependant on studios but on production companies&amp;quot;
+*Tux with shades, Linux in Hollywood : Intéressant saviez vous que toutes les applications de numérisation de images utilisé dans les studios utilisait Linux ? Autre point je reprendrais une question approximative :&quot;Studios are using Linux. That is great. But why can&#x27;t we play dvd on Linux then ?&quot;.S&#x27;en suis des applaudissements. La réponse elle aussi approximative &quot;The question doesn&#x27;t dependant on studios but on production companies&quot;
 *How to scale large open source projects : La success story du projet FreeBSD, l&#x27;un des plus anciens projets open source. Il dérive du unix de BSD de 1992 qui lui même dérive du code original de Unix de 1969.&lt;&#x2F;p&gt;
 &lt;p&gt;Une petite photo ou deux
 &lt;img src=&quot;&#x2F;.&#x2F;.img_0003_m.jpg&quot; alt=&quot;img_0003.jpg))
@@ -2433,7 +2463,7 @@ J&#x27;en retiens deux choses :&lt;&#x2F;p&gt;
 &lt;li&gt;Arrêt sur image est critiquable, en particulier en tant que journalistes je trouve, personnellement, qu&#x27;ils manquent d&#x27;objectivité parfois à la recherche du scoop, de la phrase choc même sortie de son contexte, un peu à la Marc Olivier Fogiel (paroxisme de la chose). J&#x27;espère que de tels comportements qui n&#x27;ont pas lieu d&#x27;être en journalisme disparaissent un jour.&lt;&#x2F;li&gt;
 &lt;li&gt;asi tentent un modèle économique de l&#x27;abonnement, pas sûr que ça marche.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;p&gt;Je vous conseille les articles de la série &amp;quot;Ils ne veulent plus d&#x27;arrêt sur image&amp;quot;. La rétrospective est assez affolante.&lt;&#x2F;p&gt;
+&lt;p&gt;Je vous conseille les articles de la série &quot;Ils ne veulent plus d&#x27;arrêt sur image&quot;. La rétrospective est assez affolante.&lt;&#x2F;p&gt;
 </content>
         
     </entry>
@@ -2499,7 +2529,7 @@ Malheureusement le tableau n&#x27;est pas si idyllique que ça : il est cher à 
 Dell a quand même le mérite de faire de la communication sur le sujet, encore un exemple à suivre pour les autres constructeurs.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;l&#x27;ASUSTeK A8E-4P014C&lt;&#x2F;strong&gt;, qui offre toutes les conditions, un meilleur processeur que le dell, seul bémol un écran 14&#x27;, 13.3&#x27; me suffisent amplement, résultat il est un peu lourd 2,4kg. En prime on a sacoche et souris inclus. Seul hic délai de au moins 30 jours, cela reste moins que pour dell ou bien sans délai mais sans la saccoche et la souris.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;strong&gt;le TOSHIBA  Satellite U300-11Q&lt;&#x2F;strong&gt; remplit les trois premiers critères au moins, idéal dans les spécifications : écran 13.3&#x27;, un processeur T5250 mieux que celui du dell mais moins bien que le asus, un peu moins joli que les autres peu être.
-Deux regrets sur ces offres : &lt;&#x2F;li&gt;
+Deux regrets sur ces offres :&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h1 id=&quot;aucune-n-incluent-2go-de-memoire-vive-dommage&quot;&gt;aucune n&#x27;incluent 2Go de mémoire vive dommage&lt;&#x2F;h1&gt;
 &lt;h1 id=&quot;aucune-n-est-disponible-sans-vista-autant-que-je-sache-prepaye-pre-installe-et-pre-encrasses-par-les-softs-maisons-des-constructeurs-j-aurais-bien-voulu-voir-le-choix-et-economiser-les-50-a-100eur-que-ces-logiciels-representent-pour-le-prix-achat&quot;&gt;aucune n&#x27;est disponible sans Vista (autant que je sache) prépayé, pré-installé et pré-encrassés par les softs maisons des constructeurs. J&#x27;aurais bien voulu voir le choix et économiser les 50 à 100€ que ces logiciels représentent pour le prix achat.&lt;&#x2F;h1&gt;
@@ -2551,20 +2581,20 @@ Cette vidéo de conférence met en exergue le retours en arrière du modèle éc
         <link rel="alternate" type="text/html" href="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/"/>
         <id>https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/</id>
         
-        <content type="html" xml:base="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/">&lt;p&gt;Nous nous sommes rencontré au stand &amp;quot;TuxBihan - Logiciel Libre&amp;quot; du village solidaire du festival de Lorient. Ce stand était géré et animé par nos hôtes, les GUL morbihanais tuxbihan et rhizomes&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://meven.github.io/rencontre-des-lugs-bretons-au-festival-interceltique-de-lorient/">&lt;p&gt;Nous nous sommes rencontré au stand &quot;TuxBihan - Logiciel Libre&quot; du village solidaire du festival de Lorient. Ce stand était géré et animé par nos hôtes, les GUL morbihanais tuxbihan et rhizomes&lt;&#x2F;p&gt;
 &lt;p&gt;Cette année le fil mettait à l&#x27;honneur l&#x27;Ecosse.
 On pouvait croiser de nombreux kilts, des drapeaux écossais peints sur des visages.
 Une bien belle ambiance.
 &lt;a href=&quot;&#x2F;photos&#x2F;IMG_3561.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;IMG_3561.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 [&lt;img src=&quot;&#x2F;photos&#x2F;.IMG_3563_s.jpg&quot; alt=&quot;kilkeny-fil&quot; &#x2F;&gt;Une bonne petite kilkeny.|&#x2F;public&#x2F;photos&#x2F;IMG_3563.JPG]&lt;&#x2F;p&gt;
 &lt;p&gt;Le stand des morbihanais a réussi sa mission, présenté le logiciel libre en tant que alternative aux solutions propriétaires.
-Cela donna lieu à plusieurs &amp;quot;conversions&amp;quot; de gens, vingt cinq à peu près. A défaut de passer leur OS du côté libre, ils ont pu expliquer le LL.
+Cela donna lieu à plusieurs &quot;conversions&quot; de gens, vingt cinq à peu près. A défaut de passer leur OS du côté libre, ils ont pu expliquer le LL.
 &lt;a href=&quot;&#x2F;photos&#x2F;IMG_3554.JPG&quot; title=&quot;&quot;&gt;&lt;img src=&quot;&#x2F;photos&#x2F;IMG_3554.JPG&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 Ce fut l&#x27;occasion de nous rencontrer. Ce jour là étaient représentés les GULs &lt;a href=&quot;http:&#x2F;&#x2F;www.linuxquimper.org&quot;&gt;Linuxquimper&lt;&#x2F;a&gt; bien sûr, &lt;a href=&quot;http:&#x2F;&#x2F;www.tuxbihan.org&#x2F;&quot;&gt;tuxbihan&lt;&#x2F;a&gt;, &lt;a href=&quot;http:&#x2F;&#x2F;www.rhizomes.org&#x2F;&quot;&gt;rhizomes&lt;&#x2F;a&gt; et le &lt;a href=&quot;http:&#x2F;&#x2F;ploug.eu.org&#x2F;&quot;&gt;P.L.O.U.G&lt;&#x2F;a&gt;.
 Absent et excusé &lt;a href=&quot;http:&#x2F;&#x2F;www.gulliver.eu.org&#x2F;&quot;&gt;gulliver&lt;&#x2F;a&gt;, et &lt;a href=&quot;http:&#x2F;&#x2F;www.finix.eu.org&#x2F;&quot;&gt;finix&lt;&#x2F;a&gt; qui était présent la veille.&lt;&#x2F;p&gt;
 &lt;p&gt;Nous avons beaucoup discuté de tout et de rien, troller jusqu&#x27;à plus soif.
 En soirée, nous avons dîné ensemble.
-Une très bonne ambiance régnait. Exemple, je cite Stéphane du PLOUG au sujet de l&#x27;attente avant d&#x27;avoir de la place dans le restaurant ou nous allions mangé, ça donnait à peu près:&amp;quot;Il faut attendre qu&#x27;ils défragmentent, il y a plus d&#x27;espace disponible, après on pourra se compiler tous ensemble.&amp;quot;
+Une très bonne ambiance régnait. Exemple, je cite Stéphane du PLOUG au sujet de l&#x27;attente avant d&#x27;avoir de la place dans le restaurant ou nous allions mangé, ça donnait à peu près:&quot;Il faut attendre qu&#x27;ils défragmentent, il y a plus d&#x27;espace disponible, après on pourra se compiler tous ensemble.&quot;
 Quelques idées ont été lancées. Notamment maintenir un contact entre les LUG bretons dans l&#x27;optique d&#x27;organiser des évènements d&#x27;ampleur à plusieurs GUL, de pouvoir se cordonner et pour le plaisir de se rencontrer aussi.&lt;&#x2F;p&gt;
 &lt;p&gt;D&#x27;un autre côté cela a permis aux festivaliers de consulter librement internet, leur mail, etc...
 Je me souviens d&#x27;Ecossais - je suppose, je sais juste qu&#x27;ils étaient anglophones - agréablement surpris voire effarés d&#x27;avoir au beau milieu d&#x27;un tel festival un accès internet qui plus est gratuit.&lt;&#x2F;p&gt;
@@ -2594,7 +2624,7 @@ Dell proposera &lt;strong&gt;dès demain&lt;&#x2F;strong&gt; des machines avec u
 Dell fait l&#x27;évènement à nouveau en annonçant que ces mêmes machines seront disponibles en Europe également, pour l&#x27;instant au Royaume Unis, en Allemagne et en France.
 &lt;img src=&quot;&#x2F;logos&#x2F;ubuntu_logo.gif&quot; alt=&quot;ubuntu_logo&quot; &#x2F;&gt;
 Plus d&#x27;information sur [http:&#x2F;&#x2F;www.ubuntu.com&#x2F;dell] et [http:&#x2F;&#x2F;dell.fr&#x2F;ubuntu].
-Décidément dell est de plus en plus mon constructeur favoris. Il a les meilleurs liens avec la communauté de ses clients avec ses sites studiodell et surtout ideastorm. Aucun de ses concurrents ne peut se targuer d&#x27;une aussi bonne communication. Il est le premier grand constructeur à vendre des machines compétitives avec une distribution GNU&#x2F;Linux préinstallée en lieu et place de windows(r). Et avec ça il veut devenir le constructeur le plus &amp;quot;vert&amp;quot;.
+Décidément dell est de plus en plus mon constructeur favoris. Il a les meilleurs liens avec la communauté de ses clients avec ses sites studiodell et surtout ideastorm. Aucun de ses concurrents ne peut se targuer d&#x27;une aussi bonne communication. Il est le premier grand constructeur à vendre des machines compétitives avec une distribution GNU&#x2F;Linux préinstallée en lieu et place de windows(r). Et avec ça il veut devenir le constructeur le plus &quot;vert&quot;.
 Dell bravo !Il a tous les atouts pour que je lui achète mon prochain PC portable.&lt;&#x2F;p&gt;
 </content>
         
@@ -2652,9 +2682,9 @@ Sa musique était ensoleillé par son funk surfeur et le soleil à la fois. Je n
 &lt;strong&gt;Je retiendrais également kaolin&lt;&#x2F;strong&gt;, encore un bon groupe de rock à surveiller, en anglais ce serait YARBTKAEO : Yet another rock band to keep an eye on.
 &lt;strong&gt;Que dire de Arcade fire&lt;&#x2F;strong&gt;, « ils mirent le feu » serait un euphémisme. Les dix artistes sur scène étaient géniaux, alternant les instruments entre les morceaux et entre eux aussi : orgue, guitares, caisse claire, batterie (il y a un batteur et une batteuse), violons . .  . Un concert époustouflant pour mon plus grand plaisir et celui du public.
 Le dernier de mes concerts du vendredi était &lt;strong&gt;clap your hands Say Yeah&lt;&#x2F;strong&gt;. Malheureusement, je n&#x27;en ai vu que les première vingt minutes, (mes potes étaient trop crevé, tout le monde ne peut être en vacance au moment des charrues). C&#x27;est d&#x27;autant plus dommage que le concert a mis un certains temps à se lancer, tant pis. Je suis quand même très content de les avoir vu et d&#x27;entendre leur « Yankee go home ».&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;Le lendemain retour sur le site vers 17h40, dommage, on a raté tout le concert de Sean Lennon. Je n&amp;#x27;ai fait que l&amp;#x27;entendre de loin. Quand on a enfin passé la fil à l&amp;#x27;entrée, on a pu profité que de son dernier petit solo psychédélique et puis plus rien, il a terminé avec 15 minutes d&amp;#x27;avance :&amp;#x27;( .
-__Ensuite vînt Bryan Ferry__, je ne connaissais ni son répertoire, ni le personnage. Il semblerait qu&amp;#x27;il s&amp;#x27;est approprié celui de Dylan récemment, un peu comme Renaud chante Brassens. C&amp;#x27;était sympas, la musique était bonne, et on a pu reconnaître « knocking on heaven&amp;#x27;s door » ainsi qu&amp;#x27;une chanson de Lennon, père.
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;Le lendemain retour sur le site vers 17h40, dommage, on a raté tout le concert de Sean Lennon. Je n&amp;#39;ai fait que l&amp;#39;entendre de loin. Quand on a enfin passé la fil à l&amp;#39;entrée, on a pu profité que de son dernier petit solo psychédélique et puis plus rien, il a terminé avec 15 minutes d&amp;#39;avance :&amp;#39;( .
+&lt;&#x2F;span&gt;&lt;span&gt;__Ensuite vînt Bryan Ferry__, je ne connaissais ni son répertoire, ni le personnage. Il semblerait qu&amp;#39;il s&amp;#39;est approprié celui de Dylan récemment, un peu comme Renaud chante Brassens. C&amp;#39;était sympas, la musique était bonne, et on a pu reconnaître « knocking on heaven&amp;#39;s door » ainsi qu&amp;#39;une chanson de Lennon, père.
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;__S&#x27;en suivis le moment fort du samedi, la prestation de Tryo.__J&#x27;avais déjà assisté à un concert de tryo mais sans y prêter attention. Là rien à voir, ambiance de dingue. Un karoaké de 40 000 personnes vous avez déjà vu ? Plus tout l&#x27;humour du groupe, l&#x27;invité surprise Bernard Lavilliers... Encore un concert dont je me souviendrai longtemps.
 &lt;strong&gt;Emillie Simon enchaîna sur la seconde scène.&lt;&#x2F;strong&gt;
 Magique, belle, tantôt ensorcelante, tantôt  plus rock, toujours à sa façon à elle. Avec elle une bassine d&#x27;eau devient un instrument, le batteur est remplacée par un monsieur avec des cheveux longs, un grand chapeau, des boîtes à rythme, une guitare allongée et un triangle . .  . Que du plaisir.
@@ -2746,7 +2776,7 @@ Ils sont trois dans le groupe mais ils sont 5 sur scène, Molko qui deux fois s&
 &lt;p&gt;Ils ont mis plus d&#x27;une heure et demi juste à mettre en place la mise en scène et le décors. Et quel décors, un rideau noir cachait la scène. Deux MM d&#x27;un rouge sang étaient peint au milieu du rideau.
 Après un quart d&#x27;heure de retard, une lumière rouge illumina l&#x27;arrière du rideau. Une ombre portée apparut sur le rideau. On entend les premières notes de musique et en instant on découvre le décor, les chandelles, les costumes et maquillages des membres du groupe.&lt;&#x2F;p&gt;
 &lt;p&gt;Le premier morceau était If I Was Your Vampire si je me souviens bien.
-Marilyn était franchement très fort sur scène. Il profitait de l&#x27;avancée sur la foule à outrance pour le plus grand bonheur des personnes aux premiers rangs dont moi :) . Il se mettait à croupi face à la foule, se penchait vers elle. J&#x27;avais jamais vu ça. J&#x27;avais jamais vu non plus un chanteur craché autant sur scène, sur la foule et la foule qui lui répond ses crachats. Il a réussi à nous faire tous entonné &amp;quot;We hate love. We love Hate&amp;quot;, faut il traduire ?
+Marilyn était franchement très fort sur scène. Il profitait de l&#x27;avancée sur la foule à outrance pour le plus grand bonheur des personnes aux premiers rangs dont moi :) . Il se mettait à croupi face à la foule, se penchait vers elle. J&#x27;avais jamais vu ça. J&#x27;avais jamais vu non plus un chanteur craché autant sur scène, sur la foule et la foule qui lui répond ses crachats. Il a réussi à nous faire tous entonné &quot;We hate love. We love Hate&quot;, faut il traduire ?
 Les membres du groupe étaient comme on peut les imaginer, L&#x27;un des guitaristes, celui de mon côté, était très statique, stoïc avec une crête blanche et une façon de mettre du rouge à lèvre bien à lui.
 On a eu le droit aux meilleurs morceaux de son dernier album Putting Holes In Happiness, I Was Your Vampire, ou Heart-Shaped Glasses que j&#x27;aime beaucoup. On a eu aussi les bons vieux morceux disposable teen, Fight Song...&lt;&#x2F;p&gt;
 &lt;p&gt;Que du bonheur avec toujours Marilyn qui gesticule, change de tenu, se déshabille,, se penche, crache, s&#x27;agite, se roule par terre, exhibe son cul ou presque. Un sacré showman dans le genre provocateur.
@@ -2782,7 +2812,7 @@ Vraiment très bon concert. Je suis très content de pourvoir dire j&#x27;y éta
 &lt;p&gt;Pourquoi le marché des OS est tel quel (95% pour l&#x27;un, les restes pour les autres) :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;pour la plupart des gens, un PC c&#x27;est une machine qui fait tourner windÔws. C&#x27;est à dire l&#x27;ignorance de la concurrence.&lt;&#x2F;li&gt;
-&lt;li&gt;faire comprendre aux sceptiques que &amp;quot;un processus collaboratif peut non seulement marcher mais peut marcher &lt;strong&gt;mieux&lt;&#x2F;strong&gt; que pour un processsus propriétaire&amp;quot;&lt;&#x2F;li&gt;
+&lt;li&gt;faire comprendre aux sceptiques que &quot;un processus collaboratif peut non seulement marcher mais peut marcher &lt;strong&gt;mieux&lt;&#x2F;strong&gt; que pour un processsus propriétaire&quot;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;p&gt;Il parlent également des conséquences des idées du libre sur le monde politique.
 Et si les lois, les décisions étaient conçues, débattues avec une forme de wiki : collaborativement et coopérativement, ouvert aux suggestions, ouvert au plus grand nombre ?&lt;&#x2F;p&gt;
@@ -2958,27 +2988,27 @@ Le premier de la série Helloworld est en python&#x2F;Gtk.&lt;&#x2F;li&gt;
 &lt;img src=&quot;&#x2F;py_gtk.png&quot; alt=&quot;helloworld py&#x2F;gtk&quot; &#x2F;&gt;
 Attention elle a été faire sous kubuntu&#x2F;KDE, elle n&#x27;aurait pas la même décoration et apparence sous ubuntu&#x2F;GNOME.
 Le source :&lt;&#x2F;p&gt;
-&lt;pre&gt;&lt;code&gt;#!&amp;#x2F;usr&amp;#x2F;bin&amp;#x2F;python
-# -*- coding: UTF-8 -*-
-import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
-import gtk
-
-class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&amp;#x27;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
-	def __init__(self):
-		self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
-		self.set_title(&amp;quot;Hello World !&amp;quot;) # On choisit le titre de la fanêtre
-		button = gtk.Button(&amp;quot;Hello World !&amp;quot;) # création d&amp;#x27;un bouton
-		button.connect(&amp;quot;clicked&amp;quot;, gtk.main_quit ) # connection de l&amp;#x27;évènement du bouton clicked avec la fonction gtk.main_quit
-		self.add( button) # on ajoute le bouton à la fenêtre
-		self.connect(&amp;quot;delete_event&amp;quot;, gtk.main_quit ) # on &amp;quot;connecte&amp;quot; l&amp;#x27;évènement de la fenêtre avec la même fonction
-		self.show_all() # on affiche les composants
-	def main(self):
-		gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction
-
-if __name__ ==&amp;quot;__main__&amp;quot;: # équivalent du &amp;#x27;main&amp;#x27; de java et c++
-	hello = HelloWorld() # on  crée instance de l&amp;#x27;objet HelloWorld - noter le typage dynamique de python
-	hello.main() # lancement de l&amp;#x27;interface
-&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;pre style=&quot;background-color:#2b303b;color:#c0c5ce;&quot;&gt;&lt;code&gt;&lt;span&gt;#!&#x2F;usr&#x2F;bin&#x2F;python
+&lt;&#x2F;span&gt;&lt;span&gt;# -*- coding: UTF-8 -*-
+&lt;&#x2F;span&gt;&lt;span&gt;import pygtk # on importe les librairies grâce au module pygtk qui permet la communication entre python et gtk (qui est écrit dans un autre langage)
+&lt;&#x2F;span&gt;&lt;span&gt;import gtk
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;class HelloWorld(gtk.Window): # remarquer la syntax python pour hériter d&amp;#39;une super-classe, ici gtk.Window qui est la classe de base des fenêtres en gtk
+&lt;&#x2F;span&gt;&lt;span&gt;	def __init__(self):
+&lt;&#x2F;span&gt;&lt;span&gt;		self = gtk.Window(gtk.WINDOW_TOPLEVEL) # appelle du constructeur de la super-classe
+&lt;&#x2F;span&gt;&lt;span&gt;		self.set_title(&amp;quot;Hello World !&amp;quot;) # On choisit le titre de la fanêtre
+&lt;&#x2F;span&gt;&lt;span&gt;		button = gtk.Button(&amp;quot;Hello World !&amp;quot;) # création d&amp;#39;un bouton
+&lt;&#x2F;span&gt;&lt;span&gt;		button.connect(&amp;quot;clicked&amp;quot;, gtk.main_quit ) # connection de l&amp;#39;évènement du bouton clicked avec la fonction gtk.main_quit
+&lt;&#x2F;span&gt;&lt;span&gt;		self.add( button) # on ajoute le bouton à la fenêtre
+&lt;&#x2F;span&gt;&lt;span&gt;		self.connect(&amp;quot;delete_event&amp;quot;, gtk.main_quit ) # on &amp;quot;connecte&amp;quot; l&amp;#39;évènement de la fenêtre avec la même fonction
+&lt;&#x2F;span&gt;&lt;span&gt;		self.show_all() # on affiche les composants
+&lt;&#x2F;span&gt;&lt;span&gt;	def main(self):
+&lt;&#x2F;span&gt;&lt;span&gt;		gtk.main()                 # pour pouvoir afficher des composants Gtk il est nécessaire de lancer cette fonction
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;if __name__ ==&amp;quot;__main__&amp;quot;: # équivalent du &amp;#39;main&amp;#39; de java et c++
+&lt;&#x2F;span&gt;&lt;span&gt;	hello = HelloWorld() # on  crée instance de l&amp;#39;objet HelloWorld - noter le typage dynamique de python
+&lt;&#x2F;span&gt;&lt;span&gt;	hello.main() # lancement de l&amp;#39;interface
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Plus aller plus loin, je vous recommande ces tutoriels :&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;le&lt;a href=&quot;http:&#x2F;&#x2F;docs.python.org&#x2F;tut&#x2F;tut.html&quot;&gt; tutoriel python en anglais&lt;&#x2F;a&gt; de Guido Von Rossum (l&#x27;auteur de de python)&lt;&#x2F;li&gt;
